@@ -45,12 +45,17 @@ def write_prototype(category, name, data):
 
 
 def main():
+	raw_prototypes = read_log_file('factorio/factorio-current.log')
+
+	if len(raw_prototypes) == 0:
+		print('ERROR: No prototypes found in log file')
+		return
+
 	if DATA_RAW_DIR.exists():
 		data = str(DATA_RAW_DIR)
 		print('Deleting %s recursively' % data)
 		shutil.rmtree(data)
 
-	raw_prototypes = read_log_file('factorio-previous.log')
 	parse_prototypes(raw_prototypes)
 
 
