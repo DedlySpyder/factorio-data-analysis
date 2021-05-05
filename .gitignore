@@ -1,1 +1,11 @@
+bin/
+config/
+data/
+temp/
+
+achievements.dat
+config-path.cfg
+*.log
+player-data.json
+
 *.iml
