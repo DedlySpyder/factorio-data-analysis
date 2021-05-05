@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 15,
+  ingredients = {
+    {
+      "defender-capsule",
+      4
+    },
+    {
+      "advanced-circuit",
+      3
+    }
+  },
+  name = "distractor-capsule",
+  result = "distractor-capsule",
+  type = "recipe"
+}

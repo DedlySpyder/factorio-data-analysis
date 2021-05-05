@@ -1,0 +1,8 @@
+{
+  name = "efficiency-program",
+  sound = {
+    filename = "__base__/sound/ambient/efficiency-program.ogg"
+  },
+  track_type = "main-track",
+  type = "ambient-sound"
+}

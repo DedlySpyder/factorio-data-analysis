@@ -1,0 +1,38 @@
+{
+  expression = {
+    arguments = {
+      points = {
+        source_location = {
+          filename = "__core__/prototypes/noise-programs.lua",
+          line_number = 564
+        },
+        type = "variable",
+        variable_name = "starting_positions"
+      },
+      x = {
+        source_location = {
+          filename = "__core__/prototypes/noise-programs.lua",
+          line_number = 564
+        },
+        type = "variable",
+        variable_name = "x"
+      },
+      y = {
+        source_location = {
+          filename = "__core__/prototypes/noise-programs.lua",
+          line_number = 564
+        },
+        type = "variable",
+        variable_name = "y"
+      }
+    },
+    function_name = "distance-from-nearest-point",
+    source_location = {
+      filename = "__core__/prototypes/noise-programs.lua",
+      line_number = 564
+    },
+    type = "function-application"
+  },
+  name = "distance",
+  type = "noise-expression"
+}

@@ -1,0 +1,40 @@
+{
+  ammo_type = {
+    {
+      action = {
+        action_delivery = {
+          stream = "handheld-flamethrower-fire-stream",
+          type = "stream"
+        },
+        type = "direct"
+      },
+      category = "flamethrower",
+      clamp_position = true,
+      source_type = "default",
+      target_type = "position"
+    },
+    {
+      action = {
+        action_delivery = {
+          stream = "tank-flamethrower-fire-stream",
+          type = "stream"
+        },
+        type = "direct"
+      },
+      category = "flamethrower",
+      clamp_position = true,
+      consumption_modifier = 1.125,
+      source_type = "vehicle",
+      target_type = "position"
+    }
+  },
+  icon = "__base__/graphics/icons/flamethrower-ammo.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  magazine_size = 100,
+  name = "flamethrower-ammo",
+  order = "e[flamethrower]",
+  stack_size = 100,
+  subgroup = "ammo",
+  type = "ammo"
+}

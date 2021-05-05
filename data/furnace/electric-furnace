@@ -1,0 +1,341 @@
+{
+  allowed_effects = {
+    "consumption",
+    "speed",
+    "productivity",
+    "pollution"
+  },
+  animation = {
+    layers = {
+      {
+        filename = "__base__/graphics/entity/electric-furnace/electric-furnace-base.png",
+        frame_count = 1,
+        height = 100,
+        hr_version = {
+          filename = "__base__/graphics/entity/electric-furnace/hr-electric-furnace.png",
+          frame_count = 1,
+          height = 219,
+          priority = "high",
+          scale = 0.5,
+          shift = {
+            0.0234375,
+            0.1796875
+          },
+          width = 239
+        },
+        priority = "high",
+        shift = {
+          0.421875,
+          0
+        },
+        width = 129
+      },
+      {
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/electric-furnace/electric-furnace-shadow.png",
+        frame_count = 1,
+        height = 100,
+        hr_version = {
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/electric-furnace/hr-electric-furnace-shadow.png",
+          frame_count = 1,
+          height = 171,
+          priority = "high",
+          scale = 0.5,
+          shift = {
+            0.3515625,
+            0.2421875
+          },
+          width = 227
+        },
+        priority = "high",
+        shift = {
+          0.421875,
+          0
+        },
+        width = 129
+      }
+    }
+  },
+  close_sound = {
+    {
+      filename = "__base__/sound/machine-close.ogg",
+      volume = 0.5
+    }
+  },
+  collision_box = {
+    {
+      -1.2,
+      -1.2
+    },
+    {
+      1.2,
+      1.2
+    }
+  },
+  corpse = "electric-furnace-remnants",
+  crafting_categories = {
+    "smelting"
+  },
+  crafting_speed = 2,
+  damaged_trigger_effect = {
+    damage_type_filters = "fire",
+    entity_name = "spark-explosion",
+    offset_deviation = {
+      {
+        -0.5,
+        -0.5
+      },
+      {
+        0.5,
+        0.5
+      }
+    },
+    offsets = {
+      {
+        0,
+        1
+      }
+    },
+    type = "create-entity"
+  },
+  dying_explosion = "electric-furnace-explosion",
+  energy_source = {
+    emissions_per_minute = 1,
+    type = "electric",
+    usage_priority = "secondary-input"
+  },
+  energy_usage = "180kW",
+  fast_replaceable_group = "furnace",
+  flags = {
+    "placeable-neutral",
+    "placeable-player",
+    "player-creation"
+  },
+  icon = "__base__/graphics/icons/electric-furnace.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  max_health = 350,
+  minable = {
+    mining_time = 0.2,
+    result = "electric-furnace"
+  },
+  module_specification = {
+    module_info_icon_shift = {
+      0,
+      0.8
+    },
+    module_slots = 2
+  },
+  name = "electric-furnace",
+  open_sound = {
+    {
+      filename = "__base__/sound/machine-open.ogg",
+      volume = 0.5
+    }
+  },
+  resistances = {
+    {
+      percent = 80,
+      type = "fire"
+    }
+  },
+  result_inventory_size = 1,
+  selection_box = {
+    {
+      -1.5,
+      -1.5
+    },
+    {
+      1.5,
+      1.5
+    }
+  },
+  source_inventory_size = 1,
+  type = "furnace",
+  vehicle_impact_sound = {
+    {
+      filename = "__base__/sound/car-metal-impact-2.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-3.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-4.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-5.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-6.ogg",
+      volume = 0.5
+    }
+  },
+  water_reflection = {
+    orientation_to_variation = false,
+    pictures = {
+      filename = "__base__/graphics/entity/electric-furnace/electric-furnace-reflection.png",
+      height = 24,
+      priority = "extra-high",
+      scale = 5,
+      shift = {
+        0.15625,
+        1.25
+      },
+      variation_count = 1,
+      width = 24
+    },
+    rotate = false
+  },
+  working_sound = {
+    audible_distance_modifier = 0.6,
+    fade_in_ticks = 4,
+    fade_out_ticks = 20,
+    sound = {
+      filename = "__base__/sound/electric-furnace.ogg",
+      volume = 0.6
+    }
+  },
+  working_visualisations = {
+    {
+      animation = {
+        layers = {
+          {
+            animation_speed = 0.5,
+            filename = "__base__/graphics/entity/electric-furnace/electric-furnace-heater.png",
+            frame_count = 12,
+            height = 15,
+            hr_version = {
+              animation_speed = 0.5,
+              filename = "__base__/graphics/entity/electric-furnace/hr-electric-furnace-heater.png",
+              frame_count = 12,
+              height = 56,
+              priority = "high",
+              scale = 0.5,
+              shift = {
+                0.0546875,
+                1.0234375
+              },
+              width = 60
+            },
+            priority = "high",
+            shift = {
+              0.015625,
+              0.890625
+            },
+            width = 25
+          },
+          {
+            blend_mode = "additive",
+            filename = "__base__/graphics/entity/electric-furnace/electric-furnace-light.png",
+            height = 102,
+            hr_version = {
+              blend_mode = "additive",
+              filename = "__base__/graphics/entity/electric-furnace/hr-electric-furnace-light.png",
+              height = 202,
+              repeat_count = 12,
+              scale = 0.5,
+              shift = {
+                0.03125,
+                0
+              },
+              width = 202
+            },
+            repeat_count = 12,
+            shift = {
+              0,
+              0
+            },
+            width = 104
+          }
+        }
+      },
+      draw_as_light = true,
+      fadeout = true
+    },
+    {
+      animation = {
+        blend_mode = "additive",
+        filename = "__base__/graphics/entity/electric-furnace/electric-furnace-ground-light.png",
+        height = 64,
+        hr_version = {
+          blend_mode = "additive",
+          filename = "__base__/graphics/entity/electric-furnace/hr-electric-furnace-ground-light.png",
+          height = 124,
+          scale = 0.5,
+          shift = {
+            0.09375,
+            2.15625
+          },
+          width = 166
+        },
+        shift = {
+          0.125,
+          2.125
+        },
+        width = 82
+      },
+      draw_as_light = true,
+      draw_as_sprite = false,
+      fadeout = true
+    },
+    {
+      animation = {
+        animation_speed = 0.5,
+        filename = "__base__/graphics/entity/electric-furnace/electric-furnace-propeller-1.png",
+        frame_count = 4,
+        height = 13,
+        hr_version = {
+          animation_speed = 0.5,
+          filename = "__base__/graphics/entity/electric-furnace/hr-electric-furnace-propeller-1.png",
+          frame_count = 4,
+          height = 25,
+          priority = "high",
+          scale = 0.5,
+          shift = {
+            -0.640625,
+            -0.578125
+          },
+          width = 37
+        },
+        priority = "high",
+        shift = {
+          -0.671875,
+          -0.640625
+        },
+        width = 19
+      }
+    },
+    {
+      animation = {
+        animation_speed = 0.5,
+        filename = "__base__/graphics/entity/electric-furnace/electric-furnace-propeller-2.png",
+        frame_count = 4,
+        height = 9,
+        hr_version = {
+          animation_speed = 0.5,
+          filename = "__base__/graphics/entity/electric-furnace/hr-electric-furnace-propeller-2.png",
+          frame_count = 4,
+          height = 15,
+          priority = "high",
+          scale = 0.5,
+          shift = {
+            0.109375,
+            -1.1875
+          },
+          width = 23
+        },
+        priority = "high",
+        shift = {
+          0.0625,
+          -1.234375
+        },
+        width = 12
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  category = "rocket-building",
+  enabled = false,
+  energy_required = 3,
+  hidden = true,
+  ingredients = {
+    {
+      "rocket-control-unit",
+      10
+    },
+    {
+      "low-density-structure",
+      10
+    },
+    {
+      "rocket-fuel",
+      10
+    }
+  },
+  name = "rocket-part",
+  result = "rocket-part",
+  type = "recipe"
+}

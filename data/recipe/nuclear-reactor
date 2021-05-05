@@ -1,0 +1,26 @@
+{
+  enabled = false,
+  energy_required = 8,
+  ingredients = {
+    {
+      "concrete",
+      500
+    },
+    {
+      "steel-plate",
+      500
+    },
+    {
+      "advanced-circuit",
+      500
+    },
+    {
+      "copper-plate",
+      500
+    }
+  },
+  name = "nuclear-reactor",
+  requester_paste_multiplier = 1,
+  result = "nuclear-reactor",
+  type = "recipe"
+}

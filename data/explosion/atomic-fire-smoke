@@ -1,0 +1,37 @@
+{
+  animations = {
+    {
+      animation_speed = 0.5,
+      filename = "__base__/graphics/entity/smoke/smoke.png",
+      flags = {
+        "smoke"
+      },
+      frame_count = 60,
+      height = 120,
+      line_length = 5,
+      priority = "high",
+      shift = {
+        -0.53125,
+        -0.4375
+      },
+      tint = {
+        a = 0.5,
+        b = 0.34499999999999997,
+        g = 0.47799999999999994,
+        r = 0.62699999999999996
+      },
+      width = 152
+    }
+  },
+  correct_rotation = true,
+  fade_out_duration = 40,
+  name = "atomic-fire-smoke",
+  scale = 1.5,
+  scale_animation_speed = true,
+  scale_deviation = 0.2,
+  scale_in_duration = 10,
+  scale_increment_per_tick = 0.005,
+  scale_initial = 0.1,
+  scale_out_duration = 50,
+  type = "explosion"
+}

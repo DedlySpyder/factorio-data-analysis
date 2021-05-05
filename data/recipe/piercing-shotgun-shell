@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 8,
+  ingredients = {
+    {
+      "shotgun-shell",
+      2
+    },
+    {
+      "copper-plate",
+      5
+    },
+    {
+      "steel-plate",
+      2
+    }
+  },
+  name = "piercing-shotgun-shell",
+  result = "piercing-shotgun-shell",
+  type = "recipe"
+}

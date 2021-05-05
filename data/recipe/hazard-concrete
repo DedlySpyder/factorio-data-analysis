@@ -1,0 +1,15 @@
+{
+  category = "crafting",
+  enabled = false,
+  energy_required = 0.25,
+  ingredients = {
+    {
+      "concrete",
+      10
+    }
+  },
+  name = "hazard-concrete",
+  result = "hazard-concrete",
+  result_count = 10,
+  type = "recipe"
+}

@@ -1,0 +1,26 @@
+{
+  enabled = false,
+  energy_required = 4,
+  ingredients = {
+    {
+      "concrete",
+      100
+    },
+    {
+      "steel-plate",
+      50
+    },
+    {
+      "advanced-circuit",
+      100
+    },
+    {
+      "iron-gear-wheel",
+      100
+    }
+  },
+  name = "centrifuge",
+  requester_paste_multiplier = 10,
+  result = "centrifuge",
+  type = "recipe"
+}

@@ -1,0 +1,5 @@
+{
+  name = "drag-building",
+  order = "f-[drag-building]",
+  type = "tips-and-tricks-item-category"
+}

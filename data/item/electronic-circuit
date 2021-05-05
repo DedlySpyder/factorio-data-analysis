@@ -1,0 +1,10 @@
+{
+  icon = "__base__/graphics/icons/electronic-circuit.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "electronic-circuit",
+  order = "e[electronic-circuit]",
+  stack_size = 200,
+  subgroup = "intermediate-product",
+  type = "item"
+}

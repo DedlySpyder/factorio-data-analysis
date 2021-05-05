@@ -1,0 +1,22 @@
+{
+  flags = {
+    "hidden"
+  },
+  icon_mipmaps = 4,
+  icon_size = 64,
+  icons = {
+    {
+      icon = "__base__/graphics/icons/tree-01.png",
+      icon_mipmaps = 4,
+      icon_size = 64
+    },
+    {
+      icon = "__core__/graphics/cancel.png",
+      icon_size = 64
+    }
+  },
+  name = "tree-dying-proxy",
+  speed = 0.05,
+  time_to_live = 150,
+  type = "flying-text"
+}

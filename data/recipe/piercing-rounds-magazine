@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 3,
+  ingredients = {
+    {
+      "firearm-magazine",
+      1
+    },
+    {
+      "steel-plate",
+      1
+    },
+    {
+      "copper-plate",
+      5
+    }
+  },
+  name = "piercing-rounds-magazine",
+  result = "piercing-rounds-magazine",
+  type = "recipe"
+}

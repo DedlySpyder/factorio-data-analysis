@@ -1,0 +1,2879 @@
+{
+  autoplace = {
+    control = "coal",
+    order = "b",
+    probability_expression = {
+      arguments = {
+        {
+          expression = {
+            arguments = {
+              {
+                arguments = {
+                  {
+                    arguments = {
+                      basement_value = {
+                        arguments = {
+                          {
+                            arguments = {
+                              {
+                                literal_value = -6,
+                                source_location = {
+                                  filename = "__core__/lualib/noise.lua",
+                                  line_number = 78
+                                },
+                                type = "literal-number"
+                              },
+                              {
+                                arguments = {
+                                  {
+                                    literal_value = 0.125,
+                                    source_location = {
+                                      filename = "__core__/lualib/noise.lua",
+                                      line_number = 78
+                                    },
+                                    type = "literal-number"
+                                  },
+                                  {
+                                    arguments = {
+                                      {
+                                        arguments = {
+                                          {
+                                            arguments = {
+                                              {
+                                                arguments = {
+                                                  {
+                                                    literal_value = 1.125,
+                                                    source_location = {
+                                                      filename = "__core__/lualib/noise.lua",
+                                                      line_number = 78
+                                                    },
+                                                    type = "literal-number"
+                                                  },
+                                                  {
+                                                    arguments = {
+                                                      {
+                                                        arguments = {
+                                                          {
+                                                            arguments = {
+                                                              {
+                                                                arguments = {
+                                                                  {
+                                                                    arguments = {
+                                                                      {
+                                                                        literal_value = 8,
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/noise.lua",
+                                                                          line_number = 78
+                                                                        },
+                                                                        type = "literal-number"
+                                                                      },
+                                                                      {
+                                                                        arguments = {
+                                                                          {
+                                                                            source_location = {
+                                                                              filename = "__core__/lualib/noise.lua",
+                                                                              line_number = 415
+                                                                            },
+                                                                            type = "variable",
+                                                                            variable_name = "control-setting:coal:frequency:multiplier"
+                                                                          },
+                                                                          {
+                                                                            source_location = {
+                                                                              filename = "__core__/lualib/noise.lua",
+                                                                              line_number = 415
+                                                                            },
+                                                                            type = "variable",
+                                                                            variable_name = "control-setting:coal:size:multiplier"
+                                                                          }
+                                                                        },
+                                                                        function_name = "multiply",
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                                                          line_number = 100
+                                                                        },
+                                                                        type = "function-application"
+                                                                      }
+                                                                    },
+                                                                    function_name = "multiply",
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                                      line_number = 170
+                                                                    },
+                                                                    type = "function-application"
+                                                                  },
+                                                                  {
+                                                                    arguments = {
+                                                                      {
+                                                                        literal_value = 1,
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/noise.lua",
+                                                                          line_number = 54
+                                                                        },
+                                                                        type = "literal-number"
+                                                                      },
+                                                                      {
+                                                                        arguments = {
+                                                                          {
+                                                                            arguments = {
+                                                                              {
+                                                                                literal_value = 1300,
+                                                                                source_location = {
+                                                                                  filename = "__core__/lualib/noise.lua",
+                                                                                  line_number = 303
+                                                                                },
+                                                                                type = "literal-number"
+                                                                              },
+                                                                              {
+                                                                                literal_value = 0,
+                                                                                source_location = {
+                                                                                  filename = "__core__/lualib/noise.lua",
+                                                                                  line_number = 304
+                                                                                },
+                                                                                type = "literal-number"
+                                                                              },
+                                                                              {
+                                                                                literal_value = 1300,
+                                                                                source_location = {
+                                                                                  filename = "__core__/lualib/noise.lua",
+                                                                                  line_number = 305
+                                                                                },
+                                                                                type = "literal-number"
+                                                                              }
+                                                                            },
+                                                                            function_name = "clamp",
+                                                                            source_location = {
+                                                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                                                              line_number = 168
+                                                                            },
+                                                                            type = "function-application"
+                                                                          },
+                                                                          {
+                                                                            literal_value = 1300,
+                                                                            source_location = {
+                                                                              filename = "__core__/lualib/noise.lua",
+                                                                              line_number = 86
+                                                                            },
+                                                                            type = "literal-number"
+                                                                          }
+                                                                        },
+                                                                        function_name = "divide",
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                                                          line_number = 169
+                                                                        },
+                                                                        type = "function-application"
+                                                                      }
+                                                                    },
+                                                                    function_name = "add",
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                                      line_number = 169
+                                                                    },
+                                                                    type = "function-application"
+                                                                  }
+                                                                },
+                                                                function_name = "multiply",
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                                  line_number = 170
+                                                                },
+                                                                type = "function-application"
+                                                              },
+                                                              {
+                                                                arguments = {
+                                                                  {
+                                                                    literal_value = 4.9333333333333336,
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 303
+                                                                    },
+                                                                    type = "literal-number"
+                                                                  },
+                                                                  {
+                                                                    literal_value = 0,
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 304
+                                                                    },
+                                                                    type = "literal-number"
+                                                                  },
+                                                                  {
+                                                                    literal_value = 1,
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 305
+                                                                    },
+                                                                    type = "literal-number"
+                                                                  }
+                                                                },
+                                                                function_name = "clamp",
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                                  line_number = 170
+                                                                },
+                                                                type = "function-application"
+                                                              }
+                                                            },
+                                                            function_name = "multiply",
+                                                            source_location = {
+                                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                                              line_number = 170
+                                                            },
+                                                            type = "function-application"
+                                                          },
+                                                          {
+                                                            literal_value = 1000000,
+                                                            source_location = {
+                                                              filename = "__core__/lualib/noise.lua",
+                                                              line_number = 78
+                                                            },
+                                                            type = "literal-number"
+                                                          }
+                                                        },
+                                                        function_name = "multiply",
+                                                        source_location = {
+                                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                                          line_number = 184
+                                                        },
+                                                        type = "function-application"
+                                                      },
+                                                      {
+                                                        arguments = {
+                                                          {
+                                                            literal_value = 2.5,
+                                                            source_location = {
+                                                              filename = "__core__/lualib/noise.lua",
+                                                              line_number = 78
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[2].arguments[1] ]=]
+                                                        },
+                                                        function_name = "multiply",
+                                                        source_location = {
+                                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                                          line_number = 172
+                                                        },
+                                                        type = "function-application"
+                                                      }
+                                                    },
+                                                    function_name = "divide",
+                                                    source_location = {
+                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                      line_number = 184
+                                                    },
+                                                    type = "function-application"
+                                                  }
+                                                },
+                                                function_name = "multiply",
+                                                source_location = {
+                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                  line_number = 189
+                                                },
+                                                type = "function-application"
+                                              },
+                                              {
+                                                arguments = {
+                                                  {
+                                                    literal_value = 1,
+                                                    source_location = {
+                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                      line_number = 63
+                                                    },
+                                                    type = "literal-number"
+                                                  },
+                                                  {
+                                                    literal_value = 3,
+                                                    source_location = {
+                                                      filename = "__core__/lualib/noise.lua",
+                                                      line_number = 86
+                                                    },
+                                                    type = "literal-number"
+                                                  }
+                                                },
+                                                function_name = "divide",
+                                                source_location = {
+                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                  line_number = 63
+                                                },
+                                                type = "function-application"
+                                              }
+                                            },
+                                            function_name = "exponentiate",
+                                            source_location = {
+                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                              line_number = 192
+                                            },
+                                            type = "function-application"
+                                          },
+                                          {
+                                            literal_value = 0.010471975511965979,
+                                            source_location = {
+                                              filename = "__core__/lualib/noise.lua",
+                                              line_number = 86
+                                            },
+                                            type = "literal-number"
+                                          }
+                                        },
+                                        function_name = "divide",
+                                        source_location = {
+                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                          line_number = 192
+                                        },
+                                        type = "function-application"
+                                      },
+                                      {
+                                        literal_value = -1/0 --[[-math.huge]],
+                                        source_location = {
+                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                          line_number = 203
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      {
+                                        arguments = {
+                                          {
+                                            arguments = {
+                                              {
+                                                arguments = {
+                                                  {
+                                                    literal_value = 1.125,
+                                                    source_location = {
+                                                      filename = "__core__/lualib/noise.lua",
+                                                      line_number = 78
+                                                    },
+                                                    type = "literal-number"
+                                                  },
+                                                  {
+                                                    arguments = {
+                                                      {
+                                                        arguments = {
+                                                          {
+                                                            arguments = {
+                                                              {
+                                                                arguments = {
+                                                                  {
+                                                                    arguments = {
+                                                                      {
+                                                                        literal_value = 8,
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/noise.lua",
+                                                                          line_number = 78
+                                                                        },
+                                                                        type = "literal-number"
+                                                                      },
+                                                                      0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[2] ]=]
+                                                                    },
+                                                                    function_name = "multiply",
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                                      line_number = 170
+                                                                    },
+                                                                    type = "function-application"
+                                                                  },
+                                                                  {
+                                                                    arguments = {
+                                                                      {
+                                                                        literal_value = 1,
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/noise.lua",
+                                                                          line_number = 54
+                                                                        },
+                                                                        type = "literal-number"
+                                                                      },
+                                                                      {
+                                                                        arguments = {
+                                                                          {
+                                                                            arguments = {
+                                                                              {
+                                                                                literal_value = 1300,
+                                                                                source_location = {
+                                                                                  filename = "__core__/lualib/noise.lua",
+                                                                                  line_number = 303
+                                                                                },
+                                                                                type = "literal-number"
+                                                                              },
+                                                                              {
+                                                                                literal_value = 0,
+                                                                                source_location = {
+                                                                                  filename = "__core__/lualib/noise.lua",
+                                                                                  line_number = 304
+                                                                                },
+                                                                                type = "literal-number"
+                                                                              },
+                                                                              {
+                                                                                literal_value = 1300,
+                                                                                source_location = {
+                                                                                  filename = "__core__/lualib/noise.lua",
+                                                                                  line_number = 305
+                                                                                },
+                                                                                type = "literal-number"
+                                                                              }
+                                                                            },
+                                                                            function_name = "clamp",
+                                                                            source_location = {
+                                                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                                                              line_number = 168
+                                                                            },
+                                                                            type = "function-application"
+                                                                          },
+                                                                          {
+                                                                            literal_value = 1300,
+                                                                            source_location = {
+                                                                              filename = "__core__/lualib/noise.lua",
+                                                                              line_number = 86
+                                                                            },
+                                                                            type = "literal-number"
+                                                                          }
+                                                                        },
+                                                                        function_name = "divide",
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                                                          line_number = 169
+                                                                        },
+                                                                        type = "function-application"
+                                                                      }
+                                                                    },
+                                                                    function_name = "add",
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                                      line_number = 169
+                                                                    },
+                                                                    type = "function-application"
+                                                                  }
+                                                                },
+                                                                function_name = "multiply",
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                                  line_number = 170
+                                                                },
+                                                                type = "function-application"
+                                                              },
+                                                              {
+                                                                arguments = {
+                                                                  {
+                                                                    literal_value = 4.9333333333333336,
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 303
+                                                                    },
+                                                                    type = "literal-number"
+                                                                  },
+                                                                  {
+                                                                    literal_value = 0,
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 304
+                                                                    },
+                                                                    type = "literal-number"
+                                                                  },
+                                                                  {
+                                                                    literal_value = 1,
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 305
+                                                                    },
+                                                                    type = "literal-number"
+                                                                  }
+                                                                },
+                                                                function_name = "clamp",
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                                  line_number = 170
+                                                                },
+                                                                type = "function-application"
+                                                              }
+                                                            },
+                                                            function_name = "multiply",
+                                                            source_location = {
+                                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                                              line_number = 170
+                                                            },
+                                                            type = "function-application"
+                                                          },
+                                                          {
+                                                            literal_value = 1000000,
+                                                            source_location = {
+                                                              filename = "__core__/lualib/noise.lua",
+                                                              line_number = 78
+                                                            },
+                                                            type = "literal-number"
+                                                          }
+                                                        },
+                                                        function_name = "multiply",
+                                                        source_location = {
+                                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                                          line_number = 184
+                                                        },
+                                                        type = "function-application"
+                                                      },
+                                                      0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2] ]=]
+                                                    },
+                                                    function_name = "divide",
+                                                    source_location = {
+                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                      line_number = 184
+                                                    },
+                                                    type = "function-application"
+                                                  }
+                                                },
+                                                function_name = "multiply",
+                                                source_location = {
+                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                  line_number = 189
+                                                },
+                                                type = "function-application"
+                                              },
+                                              0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[2] ]=]
+                                            },
+                                            function_name = "exponentiate",
+                                            source_location = {
+                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                              line_number = 192
+                                            },
+                                            type = "function-application"
+                                          },
+                                          {
+                                            literal_value = 0.010471975511965979,
+                                            source_location = {
+                                              filename = "__core__/lualib/noise.lua",
+                                              line_number = 86
+                                            },
+                                            type = "literal-number"
+                                          }
+                                        },
+                                        function_name = "divide",
+                                        source_location = {
+                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                          line_number = 192
+                                        },
+                                        type = "function-application"
+                                      }
+                                    },
+                                    function_name = "clamp",
+                                    source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[2].source_location ]=],
+                                    type = "function-application"
+                                  }
+                                },
+                                function_name = "multiply",
+                                source_location = {
+                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                  line_number = 203
+                                },
+                                type = "function-application"
+                              }
+                            },
+                            function_name = "multiply",
+                            source_location = {
+                              filename = "__core__/lualib/resource-autoplace.lua",
+                              line_number = 248
+                            },
+                            type = "function-application"
+                          },
+                          {
+                            literal_value = -1/0 --[[-math.huge]],
+                            source_location = {
+                              filename = "__core__/lualib/resource-autoplace.lua",
+                              line_number = 248
+                            },
+                            type = "literal-number"
+                          },
+                          {
+                            arguments = {
+                              {
+                                literal_value = -6,
+                                source_location = {
+                                  filename = "__core__/lualib/noise.lua",
+                                  line_number = 78
+                                },
+                                type = "literal-number"
+                              },
+                              {
+                                arguments = {
+                                  {
+                                    literal_value = 0.125,
+                                    source_location = {
+                                      filename = "__core__/lualib/noise.lua",
+                                      line_number = 78
+                                    },
+                                    type = "literal-number"
+                                  },
+                                  {
+                                    arguments = {
+                                      {
+                                        arguments = {
+                                          {
+                                            arguments = {
+                                              {
+                                                arguments = {
+                                                  {
+                                                    arguments = {
+                                                      {
+                                                        arguments = {
+                                                          {
+                                                            literal_value = 320000,
+                                                            source_location = {
+                                                              filename = "__core__/lualib/noise.lua",
+                                                              line_number = 78
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          {
+                                                            arguments = {
+                                                              {
+                                                                arguments = {
+                                                                  {
+                                                                    arguments = {
+                                                                      0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[2].arguments[1] ]=],
+                                                                      {
+                                                                        literal_value = 1,
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/noise.lua",
+                                                                          line_number = 62
+                                                                        },
+                                                                        type = "literal-number"
+                                                                      }
+                                                                    },
+                                                                    function_name = "subtract",
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                                      line_number = 217
+                                                                    },
+                                                                    type = "function-application"
+                                                                  },
+                                                                  {
+                                                                    literal_value = 0.5,
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 78
+                                                                    },
+                                                                    type = "literal-number"
+                                                                  }
+                                                                },
+                                                                function_name = "multiply",
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                                  line_number = 217
+                                                                },
+                                                                type = "function-application"
+                                                              },
+                                                              {
+                                                                literal_value = 1,
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/noise.lua",
+                                                                  line_number = 54
+                                                                },
+                                                                type = "literal-number"
+                                                              }
+                                                            },
+                                                            function_name = "add",
+                                                            source_location = {
+                                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                                              line_number = 217
+                                                            },
+                                                            type = "function-application"
+                                                          }
+                                                        },
+                                                        function_name = "multiply",
+                                                        source_location = {
+                                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                                          line_number = 218
+                                                        },
+                                                        type = "function-application"
+                                                      },
+                                                      0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2] ]=]
+                                                    },
+                                                    function_name = "multiply",
+                                                    source_location = {
+                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                      line_number = 218
+                                                    },
+                                                    type = "function-application"
+                                                  },
+                                                  {
+                                                    literal_value = 0.5,
+                                                    source_location = {
+                                                      filename = "__core__/lualib/noise.lua",
+                                                      line_number = 86
+                                                    },
+                                                    type = "literal-number"
+                                                  }
+                                                },
+                                                function_name = "divide",
+                                                source_location = {
+                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                  line_number = 236
+                                                },
+                                                type = "function-application"
+                                              },
+                                              0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[2].arguments[1] ]=]
+                                            },
+                                            function_name = "divide",
+                                            source_location = {
+                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                              line_number = 236
+                                            },
+                                            type = "function-application"
+                                          },
+                                          {
+                                            literal_value = 0.3333333333333333,
+                                            source_location = {
+                                              filename = "__core__/lualib/noise.lua",
+                                              line_number = 94
+                                            },
+                                            type = "literal-number"
+                                          }
+                                        },
+                                        function_name = "exponentiate",
+                                        source_location = {
+                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                          line_number = 237
+                                        },
+                                        type = "function-application"
+                                      },
+                                      {
+                                        literal_value = 0.025859368100977216,
+                                        source_location = {
+                                          filename = "__core__/lualib/noise.lua",
+                                          line_number = 86
+                                        },
+                                        type = "literal-number"
+                                      }
+                                    },
+                                    function_name = "divide",
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 237
+                                    },
+                                    type = "function-application"
+                                  }
+                                },
+                                function_name = "multiply",
+                                source_location = {
+                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                  line_number = 238
+                                },
+                                type = "function-application"
+                              }
+                            },
+                            function_name = "multiply",
+                            source_location = {
+                              filename = "__core__/lualib/resource-autoplace.lua",
+                              line_number = 249
+                            },
+                            type = "function-application"
+                          }
+                        },
+                        function_name = "clamp",
+                        source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[2].source_location ]=],
+                        type = "function-application"
+                      },
+                      candidate_spot_count = {
+                        literal_value = 32,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 295
+                        },
+                        type = "literal-number"
+                      },
+                      density_expression = {
+                        literal_value = {
+                          arguments = {
+                            {
+                              arguments = {
+                                0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[3].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1] ]=],
+                                {
+                                  literal_value = 45238.93421169302,
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 86
+                                  },
+                                  type = "literal-number"
+                                }
+                              },
+                              function_name = "divide",
+                              source_location = {
+                                filename = "__core__/lualib/resource-autoplace.lua",
+                                line_number = 222
+                              },
+                              type = "function-application"
+                            },
+                            {
+                              arguments = {
+                                {
+                                  arguments = {
+                                    {
+                                      arguments = {
+                                        {
+                                          literal_value = 120,
+                                          source_location = {
+                                            filename = "__core__/lualib/noise.lua",
+                                            line_number = 62
+                                          },
+                                          type = "literal-number"
+                                        },
+                                        {
+                                          source_location = {
+                                            filename = "__core__/lualib/resource-autoplace.lua",
+                                            line_number = 126
+                                          },
+                                          type = "variable",
+                                          variable_name = "distance"
+                                        }
+                                      },
+                                      function_name = "subtract",
+                                      source_location = {
+                                        filename = "__core__/lualib/resource-autoplace.lua",
+                                        line_number = 225
+                                      },
+                                      type = "function-application"
+                                    },
+                                    {
+                                      literal_value = 1/0 --[[math.huge]],
+                                      source_location = {
+                                        filename = "__core__/lualib/resource-autoplace.lua",
+                                        line_number = 220
+                                      },
+                                      type = "literal-number"
+                                    }
+                                  },
+                                  function_name = "multiply",
+                                  source_location = {
+                                    filename = "__core__/lualib/resource-autoplace.lua",
+                                    line_number = 225
+                                  },
+                                  type = "function-application"
+                                },
+                                {
+                                  literal_value = 0,
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 304
+                                  },
+                                  type = "literal-number"
+                                },
+                                {
+                                  literal_value = 1,
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 305
+                                  },
+                                  type = "literal-number"
+                                }
+                              },
+                              function_name = "clamp",
+                              source_location = {
+                                filename = "__core__/lualib/resource-autoplace.lua",
+                                line_number = 225
+                              },
+                              type = "function-application"
+                            }
+                          },
+                          function_name = "multiply",
+                          source_location = {
+                            filename = "__core__/lualib/resource-autoplace.lua",
+                            line_number = 297
+                          },
+                          type = "function-application"
+                        },
+                        type = "literal-expression"
+                      },
+                      hard_region_target_quantity = {
+                        literal_value = true,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 299
+                        },
+                        type = "literal-boolean"
+                      },
+                      maximum_spot_basement_radius = {
+                        literal_value = 128,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 307
+                        },
+                        type = "literal-number"
+                      },
+                      minimum_candidate_point_spacing = {
+                        literal_value = 32,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 296
+                        },
+                        type = "literal-number"
+                      },
+                      region_size = {
+                        literal_value = 240,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 294
+                        },
+                        type = "literal-number"
+                      },
+                      seed0 = {
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 290
+                        },
+                        type = "variable",
+                        variable_name = "map_seed"
+                      },
+                      seed1 = {
+                        literal_value = 101,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 291
+                        },
+                        type = "literal-number"
+                      },
+                      skip_offset = {
+                        literal_value = 2,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 278
+                        },
+                        type = "literal-number"
+                      },
+                      skip_span = {
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 292
+                        },
+                        type = "variable",
+                        variable_name = "starting-resource-patch-set-count"
+                      },
+                      spot_favorability_expression = {
+                        literal_value = {
+                          arguments = {
+                            {
+                              arguments = {
+                                {
+                                  arguments = {
+                                    {
+                                      arguments = {
+                                        {
+                                          arguments = {
+                                            {
+                                              arguments = {
+                                                {
+                                                  arguments = {
+                                                    {
+                                                      source_location = {
+                                                        filename = "__core__/lualib/resource-autoplace.lua",
+                                                        line_number = 125
+                                                      },
+                                                      type = "variable",
+                                                      variable_name = "elevation"
+                                                    },
+                                                    {
+                                                      literal_value = 1,
+                                                      source_location = {
+                                                        filename = "__core__/lualib/noise.lua",
+                                                        line_number = 62
+                                                      },
+                                                      type = "literal-number"
+                                                    }
+                                                  },
+                                                  function_name = "subtract",
+                                                  source_location = {
+                                                    filename = "__core__/lualib/resource-autoplace.lua",
+                                                    line_number = 227
+                                                  },
+                                                  type = "function-application"
+                                                },
+                                                {
+                                                  literal_value = 10,
+                                                  source_location = {
+                                                    filename = "__core__/lualib/noise.lua",
+                                                    line_number = 86
+                                                  },
+                                                  type = "literal-number"
+                                                }
+                                              },
+                                              function_name = "divide",
+                                              source_location = {
+                                                filename = "__core__/lualib/resource-autoplace.lua",
+                                                line_number = 227
+                                              },
+                                              type = "function-application"
+                                            },
+                                            {
+                                              literal_value = 0,
+                                              source_location = {
+                                                filename = "__core__/lualib/noise.lua",
+                                                line_number = 304
+                                              },
+                                              type = "literal-number"
+                                            },
+                                            {
+                                              literal_value = 1,
+                                              source_location = {
+                                                filename = "__core__/lualib/noise.lua",
+                                                line_number = 305
+                                              },
+                                              type = "literal-number"
+                                            }
+                                          },
+                                          function_name = "clamp",
+                                          source_location = {
+                                            filename = "__core__/lualib/resource-autoplace.lua",
+                                            line_number = 227
+                                          },
+                                          type = "function-application"
+                                        },
+                                        0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.density_expression.literal_value.arguments[2] ]=]
+                                      },
+                                      function_name = "multiply",
+                                      source_location = {
+                                        filename = "__core__/lualib/resource-autoplace.lua",
+                                        line_number = 227
+                                      },
+                                      type = "function-application"
+                                    },
+                                    {
+                                      literal_value = 2,
+                                      source_location = {
+                                        filename = "__core__/lualib/noise.lua",
+                                        line_number = 78
+                                      },
+                                      type = "literal-number"
+                                    }
+                                  },
+                                  function_name = "multiply",
+                                  source_location = {
+                                    filename = "__core__/lualib/resource-autoplace.lua",
+                                    line_number = 302
+                                  },
+                                  type = "function-application"
+                                },
+                                {
+                                  arguments = {
+                                    {
+                                      arguments = {
+                                        {
+                                          literal_value = 1,
+                                          source_location = {
+                                            filename = "__core__/lualib/noise.lua",
+                                            line_number = 78
+                                          },
+                                          type = "literal-number"
+                                        },
+                                        0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.density_expression.literal_value.arguments[2].arguments[1].arguments[1].arguments[2] ]=]
+                                      },
+                                      function_name = "multiply",
+                                      source_location = {
+                                        filename = "__core__/lualib/resource-autoplace.lua",
+                                        line_number = 303
+                                      },
+                                      type = "function-application"
+                                    },
+                                    {
+                                      literal_value = 120,
+                                      source_location = {
+                                        filename = "__core__/lualib/noise.lua",
+                                        line_number = 86
+                                      },
+                                      type = "literal-number"
+                                    }
+                                  },
+                                  function_name = "divide",
+                                  source_location = {
+                                    filename = "__core__/lualib/resource-autoplace.lua",
+                                    line_number = 303
+                                  },
+                                  type = "function-application"
+                                }
+                              },
+                              function_name = "subtract",
+                              source_location = {
+                                filename = "__core__/lualib/resource-autoplace.lua",
+                                line_number = 302
+                              },
+                              type = "function-application"
+                            },
+                            {
+                              arguments = {
+                                amplitude = {
+                                  literal_value = 0.5,
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 256
+                                  },
+                                  type = "literal-number"
+                                },
+                                source = {
+                                  literal_value = 0.5,
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 255
+                                  },
+                                  type = "literal-number"
+                                },
+                                x = {
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 253
+                                  },
+                                  type = "variable",
+                                  variable_name = "x"
+                                },
+                                y = {
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 254
+                                  },
+                                  type = "variable",
+                                  variable_name = "y"
+                                }
+                              },
+                              function_name = "random-penalty",
+                              source_location = {
+                                filename = "__core__/lualib/resource-autoplace.lua",
+                                line_number = 304
+                              },
+                              type = "function-application"
+                            }
+                          },
+                          function_name = "add",
+                          source_location = {
+                            filename = "__core__/lualib/resource-autoplace.lua",
+                            line_number = 303
+                          },
+                          type = "function-application"
+                        },
+                        type = "literal-expression"
+                      },
+                      spot_quantity_expression = {
+                        literal_value = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[3].arguments[2].arguments[2].arguments[1].arguments[1] ]=],
+                        type = "literal-expression"
+                      },
+                      spot_radius_expression = {
+                        literal_value = {
+                          arguments = {
+                            {
+                              literal_value = 0.15714285714285716,
+                              source_location = {
+                                filename = "__core__/lualib/noise.lua",
+                                line_number = 78
+                              },
+                              type = "literal-number"
+                            },
+                            {
+                              arguments = {
+                                0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[3].arguments[2].arguments[2].arguments[1].arguments[1] ]=],
+                                0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[2] ]=]
+                              },
+                              function_name = "exponentiate",
+                              source_location = {
+                                filename = "__core__/lualib/resource-autoplace.lua",
+                                line_number = 300
+                              },
+                              type = "function-application"
+                            }
+                          },
+                          function_name = "multiply",
+                          source_location = {
+                            filename = "__core__/lualib/resource-autoplace.lua",
+                            line_number = 300
+                          },
+                          type = "function-application"
+                        },
+                        type = "literal-expression"
+                      },
+                      x = {
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 288
+                        },
+                        type = "variable",
+                        variable_name = "x"
+                      },
+                      y = {
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 289
+                        },
+                        type = "variable",
+                        variable_name = "y"
+                      }
+                    },
+                    function_name = "spot-noise",
+                    source_location = {
+                      filename = "__core__/lualib/resource-autoplace.lua",
+                      line_number = 283
+                    },
+                    type = "function-application"
+                  },
+                  {
+                    arguments = {
+                      {
+                        arguments = {
+                          {
+                            arguments = {
+                              {
+                                arguments = {
+                                  input_scale = {
+                                    literal_value = 0.125,
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 328
+                                    },
+                                    type = "literal-number"
+                                  },
+                                  output_scale = {
+                                    literal_value = 1,
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 329
+                                    },
+                                    type = "literal-number"
+                                  },
+                                  seed0 = {
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 326
+                                    },
+                                    type = "variable",
+                                    variable_name = "map_seed"
+                                  },
+                                  seed1 = {
+                                    literal_value = 100,
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 327
+                                    },
+                                    type = "literal-number"
+                                  },
+                                  x = {
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 324
+                                    },
+                                    type = "variable",
+                                    variable_name = "x"
+                                  },
+                                  y = {
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 325
+                                    },
+                                    type = "variable",
+                                    variable_name = "y"
+                                  }
+                                },
+                                function_name = "factorio-basis-noise",
+                                source_location = {
+                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                  line_number = 319
+                                },
+                                type = "function-application"
+                              },
+                              {
+                                arguments = {
+                                  input_scale = {
+                                    literal_value = 0.041666666666666661,
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 340
+                                    },
+                                    type = "literal-number"
+                                  },
+                                  output_scale = {
+                                    literal_value = 1,
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 341
+                                    },
+                                    type = "literal-number"
+                                  },
+                                  seed0 = {
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 338
+                                    },
+                                    type = "variable",
+                                    variable_name = "map_seed"
+                                  },
+                                  seed1 = {
+                                    literal_value = 100,
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 339
+                                    },
+                                    type = "literal-number"
+                                  },
+                                  x = {
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 336
+                                    },
+                                    type = "variable",
+                                    variable_name = "x"
+                                  },
+                                  y = {
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 337
+                                    },
+                                    type = "variable",
+                                    variable_name = "y"
+                                  }
+                                },
+                                function_name = "factorio-basis-noise",
+                                source_location = {
+                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                  line_number = 331
+                                },
+                                type = "function-application"
+                              }
+                            },
+                            function_name = "add",
+                            source_location = {
+                              filename = "__core__/lualib/resource-autoplace.lua",
+                              line_number = 331
+                            },
+                            type = "function-application"
+                          },
+                          {
+                            literal_value = 0.25,
+                            source_location = {
+                              filename = "__core__/lualib/noise.lua",
+                              line_number = 62
+                            },
+                            type = "literal-number"
+                          }
+                        },
+                        function_name = "subtract",
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 344
+                        },
+                        type = "function-application"
+                      },
+                      0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[3].arguments[2] ]=]
+                    },
+                    function_name = "multiply",
+                    source_location = {
+                      filename = "__core__/lualib/resource-autoplace.lua",
+                      line_number = 362
+                    },
+                    type = "function-application"
+                  }
+                },
+                function_name = "add",
+                source_location = {
+                  filename = "__core__/lualib/resource-autoplace.lua",
+                  line_number = 362
+                },
+                type = "function-application"
+              },
+              {
+                arguments = {
+                  {
+                    arguments = {
+                      basement_value = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value ]=],
+                      candidate_spot_count = {
+                        literal_value = 21,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 261
+                        },
+                        type = "literal-number"
+                      },
+                      density_expression = {
+                        literal_value = {
+                          arguments = {
+                            {
+                              arguments = {
+                                {
+                                  arguments = {
+                                    {
+                                      literal_value = 8,
+                                      source_location = {
+                                        filename = "__core__/lualib/noise.lua",
+                                        line_number = 78
+                                      },
+                                      type = "literal-number"
+                                    },
+                                    0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[2] ]=]
+                                  },
+                                  function_name = "multiply",
+                                  source_location = {
+                                    filename = "__core__/lualib/resource-autoplace.lua",
+                                    line_number = 170
+                                  },
+                                  type = "function-application"
+                                },
+                                {
+                                  arguments = {
+                                    {
+                                      literal_value = 1,
+                                      source_location = {
+                                        filename = "__core__/lualib/noise.lua",
+                                        line_number = 54
+                                      },
+                                      type = "literal-number"
+                                    },
+                                    {
+                                      arguments = {
+                                        {
+                                          arguments = {
+                                            {
+                                              arguments = {
+                                                0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.density_expression.literal_value.arguments[2].arguments[1].arguments[1].arguments[2] ]=],
+                                                {
+                                                  literal_value = 300,
+                                                  source_location = {
+                                                    filename = "__core__/lualib/noise.lua",
+                                                    line_number = 62
+                                                  },
+                                                  type = "literal-number"
+                                                }
+                                              },
+                                              function_name = "subtract",
+                                              source_location = {
+                                                filename = "__core__/lualib/resource-autoplace.lua",
+                                                line_number = 161
+                                              },
+                                              type = "function-application"
+                                            },
+                                            {
+                                              literal_value = 0,
+                                              source_location = {
+                                                filename = "__core__/lualib/noise.lua",
+                                                line_number = 304
+                                              },
+                                              type = "literal-number"
+                                            },
+                                            {
+                                              literal_value = 1300,
+                                              source_location = {
+                                                filename = "__core__/lualib/noise.lua",
+                                                line_number = 305
+                                              },
+                                              type = "literal-number"
+                                            }
+                                          },
+                                          function_name = "clamp",
+                                          source_location = {
+                                            filename = "__core__/lualib/resource-autoplace.lua",
+                                            line_number = 168
+                                          },
+                                          type = "function-application"
+                                        },
+                                        {
+                                          literal_value = 1300,
+                                          source_location = {
+                                            filename = "__core__/lualib/noise.lua",
+                                            line_number = 86
+                                          },
+                                          type = "literal-number"
+                                        }
+                                      },
+                                      function_name = "divide",
+                                      source_location = {
+                                        filename = "__core__/lualib/resource-autoplace.lua",
+                                        line_number = 169
+                                      },
+                                      type = "function-application"
+                                    }
+                                  },
+                                  function_name = "add",
+                                  source_location = {
+                                    filename = "__core__/lualib/resource-autoplace.lua",
+                                    line_number = 169
+                                  },
+                                  type = "function-application"
+                                }
+                              },
+                              function_name = "multiply",
+                              source_location = {
+                                filename = "__core__/lualib/resource-autoplace.lua",
+                                line_number = 170
+                              },
+                              type = "function-application"
+                            },
+                            {
+                              arguments = {
+                                {
+                                  arguments = {
+                                    {
+                                      arguments = {
+                                        0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.density_expression.literal_value.arguments[2].arguments[1].arguments[1].arguments[2] ]=],
+                                        {
+                                          literal_value = 120,
+                                          source_location = {
+                                            filename = "__core__/lualib/noise.lua",
+                                            line_number = 62
+                                          },
+                                          type = "literal-number"
+                                        }
+                                      },
+                                      function_name = "subtract",
+                                      source_location = {
+                                        filename = "__core__/lualib/resource-autoplace.lua",
+                                        line_number = 146
+                                      },
+                                      type = "function-application"
+                                    },
+                                    {
+                                      literal_value = 300,
+                                      source_location = {
+                                        filename = "__core__/lualib/noise.lua",
+                                        line_number = 86
+                                      },
+                                      type = "literal-number"
+                                    }
+                                  },
+                                  function_name = "divide",
+                                  source_location = {
+                                    filename = "__core__/lualib/resource-autoplace.lua",
+                                    line_number = 146
+                                  },
+                                  type = "function-application"
+                                },
+                                {
+                                  literal_value = 0,
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 304
+                                  },
+                                  type = "literal-number"
+                                },
+                                {
+                                  literal_value = 1,
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 305
+                                  },
+                                  type = "literal-number"
+                                }
+                              },
+                              function_name = "clamp",
+                              source_location = {
+                                filename = "__core__/lualib/resource-autoplace.lua",
+                                line_number = 170
+                              },
+                              type = "function-application"
+                            }
+                          },
+                          function_name = "multiply",
+                          source_location = {
+                            filename = "__core__/lualib/resource-autoplace.lua",
+                            line_number = 170
+                          },
+                          type = "function-application"
+                        },
+                        type = "literal-expression"
+                      },
+                      hard_region_target_quantity = {
+                        literal_value = false,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 267
+                        },
+                        type = "literal-boolean"
+                      },
+                      maximum_spot_basement_radius = {
+                        literal_value = 128,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 271
+                        },
+                        type = "literal-number"
+                      },
+                      region_size = {
+                        literal_value = 1024,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 260
+                        },
+                        type = "literal-number"
+                      },
+                      seed0 = {
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 258
+                        },
+                        type = "variable",
+                        variable_name = "map_seed"
+                      },
+                      seed1 = {
+                        literal_value = 100,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 259
+                        },
+                        type = "literal-number"
+                      },
+                      skip_offset = {
+                        literal_value = 2,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 264
+                        },
+                        type = "literal-number"
+                      },
+                      skip_span = {
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 263
+                        },
+                        type = "variable",
+                        variable_name = "regular-resource-patch-set-count"
+                      },
+                      spot_favorability_expression = {
+                        literal_value = {
+                          literal_value = 1,
+                          source_location = {
+                            filename = "__core__/lualib/noise.lua",
+                            line_number = 452
+                          },
+                          type = "literal-number"
+                        },
+                        type = "literal-expression"
+                      },
+                      spot_quantity_expression = {
+                        literal_value = {
+                          arguments = {
+                            {
+                              arguments = {
+                                amplitude = {
+                                  literal_value = 1.75,
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 256
+                                  },
+                                  type = "literal-number"
+                                },
+                                source = {
+                                  literal_value = 2,
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 255
+                                  },
+                                  type = "literal-number"
+                                },
+                                x = {
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 253
+                                  },
+                                  type = "variable",
+                                  variable_name = "x"
+                                },
+                                y = {
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 254
+                                  },
+                                  type = "variable",
+                                  variable_name = "y"
+                                }
+                              },
+                              function_name = "random-penalty",
+                              source_location = {
+                                filename = "__core__/lualib/resource-autoplace.lua",
+                                line_number = 196
+                              },
+                              type = "function-application"
+                            },
+                            {
+                              arguments = {
+                                {
+                                  arguments = {
+                                    {
+                                      arguments = {
+                                        {
+                                          arguments = {
+                                            {
+                                              arguments = {
+                                                {
+                                                  literal_value = 8,
+                                                  source_location = {
+                                                    filename = "__core__/lualib/noise.lua",
+                                                    line_number = 78
+                                                  },
+                                                  type = "literal-number"
+                                                },
+                                                0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[2] ]=]
+                                              },
+                                              function_name = "multiply",
+                                              source_location = {
+                                                filename = "__core__/lualib/resource-autoplace.lua",
+                                                line_number = 170
+                                              },
+                                              type = "function-application"
+                                            },
+                                            {
+                                              arguments = {
+                                                {
+                                                  literal_value = 1,
+                                                  source_location = {
+                                                    filename = "__core__/lualib/noise.lua",
+                                                    line_number = 54
+                                                  },
+                                                  type = "literal-number"
+                                                },
+                                                {
+                                                  arguments = {
+                                                    {
+                                                      arguments = {
+                                                        {
+                                                          arguments = {
+                                                            0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.density_expression.literal_value.arguments[2].arguments[1].arguments[1].arguments[2] ]=],
+                                                            {
+                                                              literal_value = 300,
+                                                              source_location = {
+                                                                filename = "__core__/lualib/noise.lua",
+                                                                line_number = 62
+                                                              },
+                                                              type = "literal-number"
+                                                            }
+                                                          },
+                                                          function_name = "subtract",
+                                                          source_location = {
+                                                            filename = "__core__/lualib/resource-autoplace.lua",
+                                                            line_number = 161
+                                                          },
+                                                          type = "function-application"
+                                                        },
+                                                        {
+                                                          literal_value = 0,
+                                                          source_location = {
+                                                            filename = "__core__/lualib/noise.lua",
+                                                            line_number = 304
+                                                          },
+                                                          type = "literal-number"
+                                                        },
+                                                        {
+                                                          literal_value = 1300,
+                                                          source_location = {
+                                                            filename = "__core__/lualib/noise.lua",
+                                                            line_number = 305
+                                                          },
+                                                          type = "literal-number"
+                                                        }
+                                                      },
+                                                      function_name = "clamp",
+                                                      source_location = {
+                                                        filename = "__core__/lualib/resource-autoplace.lua",
+                                                        line_number = 168
+                                                      },
+                                                      type = "function-application"
+                                                    },
+                                                    {
+                                                      literal_value = 1300,
+                                                      source_location = {
+                                                        filename = "__core__/lualib/noise.lua",
+                                                        line_number = 86
+                                                      },
+                                                      type = "literal-number"
+                                                    }
+                                                  },
+                                                  function_name = "divide",
+                                                  source_location = {
+                                                    filename = "__core__/lualib/resource-autoplace.lua",
+                                                    line_number = 169
+                                                  },
+                                                  type = "function-application"
+                                                }
+                                              },
+                                              function_name = "add",
+                                              source_location = {
+                                                filename = "__core__/lualib/resource-autoplace.lua",
+                                                line_number = 169
+                                              },
+                                              type = "function-application"
+                                            }
+                                          },
+                                          function_name = "multiply",
+                                          source_location = {
+                                            filename = "__core__/lualib/resource-autoplace.lua",
+                                            line_number = 170
+                                          },
+                                          type = "function-application"
+                                        },
+                                        {
+                                          arguments = {
+                                            {
+                                              arguments = {
+                                                {
+                                                  arguments = {
+                                                    0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.density_expression.literal_value.arguments[2].arguments[1].arguments[1].arguments[2] ]=],
+                                                    {
+                                                      literal_value = 120,
+                                                      source_location = {
+                                                        filename = "__core__/lualib/noise.lua",
+                                                        line_number = 62
+                                                      },
+                                                      type = "literal-number"
+                                                    }
+                                                  },
+                                                  function_name = "subtract",
+                                                  source_location = {
+                                                    filename = "__core__/lualib/resource-autoplace.lua",
+                                                    line_number = 146
+                                                  },
+                                                  type = "function-application"
+                                                },
+                                                {
+                                                  literal_value = 300,
+                                                  source_location = {
+                                                    filename = "__core__/lualib/noise.lua",
+                                                    line_number = 86
+                                                  },
+                                                  type = "literal-number"
+                                                }
+                                              },
+                                              function_name = "divide",
+                                              source_location = {
+                                                filename = "__core__/lualib/resource-autoplace.lua",
+                                                line_number = 146
+                                              },
+                                              type = "function-application"
+                                            },
+                                            {
+                                              literal_value = 0,
+                                              source_location = {
+                                                filename = "__core__/lualib/noise.lua",
+                                                line_number = 304
+                                              },
+                                              type = "literal-number"
+                                            },
+                                            {
+                                              literal_value = 1,
+                                              source_location = {
+                                                filename = "__core__/lualib/noise.lua",
+                                                line_number = 305
+                                              },
+                                              type = "literal-number"
+                                            }
+                                          },
+                                          function_name = "clamp",
+                                          source_location = {
+                                            filename = "__core__/lualib/resource-autoplace.lua",
+                                            line_number = 170
+                                          },
+                                          type = "function-application"
+                                        }
+                                      },
+                                      function_name = "multiply",
+                                      source_location = {
+                                        filename = "__core__/lualib/resource-autoplace.lua",
+                                        line_number = 170
+                                      },
+                                      type = "function-application"
+                                    },
+                                    {
+                                      literal_value = 1000000,
+                                      source_location = {
+                                        filename = "__core__/lualib/noise.lua",
+                                        line_number = 78
+                                      },
+                                      type = "literal-number"
+                                    }
+                                  },
+                                  function_name = "multiply",
+                                  source_location = {
+                                    filename = "__core__/lualib/resource-autoplace.lua",
+                                    line_number = 184
+                                  },
+                                  type = "function-application"
+                                },
+                                0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2] ]=]
+                              },
+                              function_name = "divide",
+                              source_location = {
+                                filename = "__core__/lualib/resource-autoplace.lua",
+                                line_number = 184
+                              },
+                              type = "function-application"
+                            }
+                          },
+                          function_name = "multiply",
+                          source_location = {
+                            filename = "__core__/lualib/resource-autoplace.lua",
+                            line_number = 196
+                          },
+                          type = "function-application"
+                        },
+                        type = "literal-expression"
+                      },
+                      spot_radius_expression = {
+                        literal_value = {
+                          arguments = {
+                            {
+                              literal_value = 32,
+                              source_location = {
+                                filename = "__core__/lualib/resource-autoplace.lua",
+                                line_number = 197
+                              },
+                              type = "literal-number"
+                            },
+                            {
+                              literal_value = -1/0 --[[-math.huge]],
+                              source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[2].arguments[1].arguments.spot_radius_expression.literal_value.arguments[1].source_location ]=],
+                              type = "literal-number"
+                            },
+                            {
+                              arguments = {
+                                {
+                                  literal_value = 0.1,
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 78
+                                  },
+                                  type = "literal-number"
+                                },
+                                {
+                                  arguments = {
+                                    0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[2].arguments[1].arguments.spot_quantity_expression.literal_value ]=],
+                                    0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[2] ]=]
+                                  },
+                                  function_name = "exponentiate",
+                                  source_location = {
+                                    filename = "__core__/lualib/resource-autoplace.lua",
+                                    line_number = 197
+                                  },
+                                  type = "function-application"
+                                }
+                              },
+                              function_name = "multiply",
+                              source_location = {
+                                filename = "__core__/lualib/resource-autoplace.lua",
+                                line_number = 197
+                              },
+                              type = "function-application"
+                            }
+                          },
+                          function_name = "clamp",
+                          source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[2].arguments[1].arguments.spot_radius_expression.literal_value.arguments[1].source_location ]=],
+                          type = "function-application"
+                        },
+                        type = "literal-expression"
+                      },
+                      suggested_minimum_candidate_point_spacing = {
+                        literal_value = 45.254833995939045,
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 262
+                        },
+                        type = "literal-number"
+                      },
+                      x = {
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 256
+                        },
+                        type = "variable",
+                        variable_name = "x"
+                      },
+                      y = {
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 257
+                        },
+                        type = "variable",
+                        variable_name = "y"
+                      }
+                    },
+                    function_name = "spot-noise",
+                    source_location = {
+                      filename = "__core__/lualib/resource-autoplace.lua",
+                      line_number = 251
+                    },
+                    type = "function-application"
+                  },
+                  {
+                    arguments = {
+                      {
+                        arguments = {
+                          {
+                            arguments = {
+                              0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[2].arguments[1].arguments[1] ]=],
+                              {
+                                arguments = {
+                                  input_scale = {
+                                    literal_value = 0.015625,
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 355
+                                    },
+                                    type = "literal-number"
+                                  },
+                                  output_scale = {
+                                    literal_value = 1.5,
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 356
+                                    },
+                                    type = "literal-number"
+                                  },
+                                  seed0 = {
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 353
+                                    },
+                                    type = "variable",
+                                    variable_name = "map_seed"
+                                  },
+                                  seed1 = {
+                                    literal_value = 100,
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 354
+                                    },
+                                    type = "literal-number"
+                                  },
+                                  x = {
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 351
+                                    },
+                                    type = "variable",
+                                    variable_name = "x"
+                                  },
+                                  y = {
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 352
+                                    },
+                                    type = "variable",
+                                    variable_name = "y"
+                                  }
+                                },
+                                function_name = "factorio-basis-noise",
+                                source_location = {
+                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                  line_number = 346
+                                },
+                                type = "function-application"
+                              }
+                            },
+                            function_name = "add",
+                            source_location = {
+                              filename = "__core__/lualib/resource-autoplace.lua",
+                              line_number = 346
+                            },
+                            type = "function-application"
+                          },
+                          0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[2] ]=]
+                        },
+                        function_name = "subtract",
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 359
+                        },
+                        type = "function-application"
+                      },
+                      {
+                        arguments = {
+                          {
+                            literal_value = 0.125,
+                            source_location = {
+                              filename = "__core__/lualib/noise.lua",
+                              line_number = 78
+                            },
+                            type = "literal-number"
+                          },
+                          {
+                            arguments = {
+                              {
+                                arguments = {
+                                  {
+                                    arguments = {
+                                      {
+                                        arguments = {
+                                          {
+                                            literal_value = 1.125,
+                                            source_location = {
+                                              filename = "__core__/lualib/noise.lua",
+                                              line_number = 78
+                                            },
+                                            type = "literal-number"
+                                          },
+                                          {
+                                            arguments = {
+                                              {
+                                                arguments = {
+                                                  {
+                                                    arguments = {
+                                                      {
+                                                        arguments = {
+                                                          {
+                                                            arguments = {
+                                                              {
+                                                                literal_value = 8,
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/noise.lua",
+                                                                  line_number = 78
+                                                                },
+                                                                type = "literal-number"
+                                                              },
+                                                              0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[2] ]=]
+                                                            },
+                                                            function_name = "multiply",
+                                                            source_location = {
+                                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                                              line_number = 170
+                                                            },
+                                                            type = "function-application"
+                                                          },
+                                                          {
+                                                            arguments = {
+                                                              {
+                                                                literal_value = 1,
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/noise.lua",
+                                                                  line_number = 54
+                                                                },
+                                                                type = "literal-number"
+                                                              },
+                                                              {
+                                                                arguments = {
+                                                                  {
+                                                                    arguments = {
+                                                                      {
+                                                                        literal_value = 1300,
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/noise.lua",
+                                                                          line_number = 303
+                                                                        },
+                                                                        type = "literal-number"
+                                                                      },
+                                                                      {
+                                                                        literal_value = 0,
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/noise.lua",
+                                                                          line_number = 304
+                                                                        },
+                                                                        type = "literal-number"
+                                                                      },
+                                                                      {
+                                                                        literal_value = 1300,
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/noise.lua",
+                                                                          line_number = 305
+                                                                        },
+                                                                        type = "literal-number"
+                                                                      }
+                                                                    },
+                                                                    function_name = "clamp",
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                                      line_number = 168
+                                                                    },
+                                                                    type = "function-application"
+                                                                  },
+                                                                  {
+                                                                    literal_value = 1300,
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 86
+                                                                    },
+                                                                    type = "literal-number"
+                                                                  }
+                                                                },
+                                                                function_name = "divide",
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                                  line_number = 169
+                                                                },
+                                                                type = "function-application"
+                                                              }
+                                                            },
+                                                            function_name = "add",
+                                                            source_location = {
+                                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                                              line_number = 169
+                                                            },
+                                                            type = "function-application"
+                                                          }
+                                                        },
+                                                        function_name = "multiply",
+                                                        source_location = {
+                                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                                          line_number = 170
+                                                        },
+                                                        type = "function-application"
+                                                      },
+                                                      {
+                                                        arguments = {
+                                                          {
+                                                            literal_value = 4.9333333333333336,
+                                                            source_location = {
+                                                              filename = "__core__/lualib/noise.lua",
+                                                              line_number = 303
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          {
+                                                            literal_value = 0,
+                                                            source_location = {
+                                                              filename = "__core__/lualib/noise.lua",
+                                                              line_number = 304
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/lualib/noise.lua",
+                                                              line_number = 305
+                                                            },
+                                                            type = "literal-number"
+                                                          }
+                                                        },
+                                                        function_name = "clamp",
+                                                        source_location = {
+                                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                                          line_number = 170
+                                                        },
+                                                        type = "function-application"
+                                                      }
+                                                    },
+                                                    function_name = "multiply",
+                                                    source_location = {
+                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                      line_number = 170
+                                                    },
+                                                    type = "function-application"
+                                                  },
+                                                  {
+                                                    literal_value = 1000000,
+                                                    source_location = {
+                                                      filename = "__core__/lualib/noise.lua",
+                                                      line_number = 78
+                                                    },
+                                                    type = "literal-number"
+                                                  }
+                                                },
+                                                function_name = "multiply",
+                                                source_location = {
+                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                  line_number = 184
+                                                },
+                                                type = "function-application"
+                                              },
+                                              0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2] ]=]
+                                            },
+                                            function_name = "divide",
+                                            source_location = {
+                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                              line_number = 184
+                                            },
+                                            type = "function-application"
+                                          }
+                                        },
+                                        function_name = "multiply",
+                                        source_location = {
+                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                          line_number = 189
+                                        },
+                                        type = "function-application"
+                                      },
+                                      0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[2] ]=]
+                                    },
+                                    function_name = "exponentiate",
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 192
+                                    },
+                                    type = "function-application"
+                                  },
+                                  {
+                                    literal_value = 0.010471975511965979,
+                                    source_location = {
+                                      filename = "__core__/lualib/noise.lua",
+                                      line_number = 86
+                                    },
+                                    type = "literal-number"
+                                  }
+                                },
+                                function_name = "divide",
+                                source_location = {
+                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                  line_number = 192
+                                },
+                                type = "function-application"
+                              },
+                              {
+                                literal_value = -1/0 --[[-math.huge]],
+                                source_location = {
+                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                  line_number = 203
+                                },
+                                type = "literal-number"
+                              },
+                              {
+                                arguments = {
+                                  {
+                                    arguments = {
+                                      {
+                                        arguments = {
+                                          {
+                                            literal_value = 1.125,
+                                            source_location = {
+                                              filename = "__core__/lualib/noise.lua",
+                                              line_number = 78
+                                            },
+                                            type = "literal-number"
+                                          },
+                                          {
+                                            arguments = {
+                                              {
+                                                arguments = {
+                                                  {
+                                                    arguments = {
+                                                      {
+                                                        arguments = {
+                                                          {
+                                                            arguments = {
+                                                              {
+                                                                literal_value = 8,
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/noise.lua",
+                                                                  line_number = 78
+                                                                },
+                                                                type = "literal-number"
+                                                              },
+                                                              0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[2] ]=]
+                                                            },
+                                                            function_name = "multiply",
+                                                            source_location = {
+                                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                                              line_number = 170
+                                                            },
+                                                            type = "function-application"
+                                                          },
+                                                          {
+                                                            arguments = {
+                                                              {
+                                                                literal_value = 1,
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/noise.lua",
+                                                                  line_number = 54
+                                                                },
+                                                                type = "literal-number"
+                                                              },
+                                                              {
+                                                                arguments = {
+                                                                  {
+                                                                    arguments = {
+                                                                      {
+                                                                        arguments = {
+                                                                          0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.density_expression.literal_value.arguments[2].arguments[1].arguments[1].arguments[2] ]=],
+                                                                          {
+                                                                            literal_value = 300,
+                                                                            source_location = {
+                                                                              filename = "__core__/lualib/noise.lua",
+                                                                              line_number = 62
+                                                                            },
+                                                                            type = "literal-number"
+                                                                          }
+                                                                        },
+                                                                        function_name = "subtract",
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                                                          line_number = 161
+                                                                        },
+                                                                        type = "function-application"
+                                                                      },
+                                                                      {
+                                                                        literal_value = 0,
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/noise.lua",
+                                                                          line_number = 304
+                                                                        },
+                                                                        type = "literal-number"
+                                                                      },
+                                                                      {
+                                                                        literal_value = 1300,
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/noise.lua",
+                                                                          line_number = 305
+                                                                        },
+                                                                        type = "literal-number"
+                                                                      }
+                                                                    },
+                                                                    function_name = "clamp",
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                                      line_number = 168
+                                                                    },
+                                                                    type = "function-application"
+                                                                  },
+                                                                  {
+                                                                    literal_value = 1300,
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 86
+                                                                    },
+                                                                    type = "literal-number"
+                                                                  }
+                                                                },
+                                                                function_name = "divide",
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                                  line_number = 169
+                                                                },
+                                                                type = "function-application"
+                                                              }
+                                                            },
+                                                            function_name = "add",
+                                                            source_location = {
+                                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                                              line_number = 169
+                                                            },
+                                                            type = "function-application"
+                                                          }
+                                                        },
+                                                        function_name = "multiply",
+                                                        source_location = {
+                                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                                          line_number = 170
+                                                        },
+                                                        type = "function-application"
+                                                      },
+                                                      {
+                                                        arguments = {
+                                                          {
+                                                            arguments = {
+                                                              {
+                                                                arguments = {
+                                                                  0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.density_expression.literal_value.arguments[2].arguments[1].arguments[1].arguments[2] ]=],
+                                                                  {
+                                                                    literal_value = 120,
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 62
+                                                                    },
+                                                                    type = "literal-number"
+                                                                  }
+                                                                },
+                                                                function_name = "subtract",
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                                  line_number = 146
+                                                                },
+                                                                type = "function-application"
+                                                              },
+                                                              {
+                                                                literal_value = 300,
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/noise.lua",
+                                                                  line_number = 86
+                                                                },
+                                                                type = "literal-number"
+                                                              }
+                                                            },
+                                                            function_name = "divide",
+                                                            source_location = {
+                                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                                              line_number = 146
+                                                            },
+                                                            type = "function-application"
+                                                          },
+                                                          {
+                                                            literal_value = 0,
+                                                            source_location = {
+                                                              filename = "__core__/lualib/noise.lua",
+                                                              line_number = 304
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/lualib/noise.lua",
+                                                              line_number = 305
+                                                            },
+                                                            type = "literal-number"
+                                                          }
+                                                        },
+                                                        function_name = "clamp",
+                                                        source_location = {
+                                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                                          line_number = 170
+                                                        },
+                                                        type = "function-application"
+                                                      }
+                                                    },
+                                                    function_name = "multiply",
+                                                    source_location = {
+                                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                                      line_number = 170
+                                                    },
+                                                    type = "function-application"
+                                                  },
+                                                  {
+                                                    literal_value = 1000000,
+                                                    source_location = {
+                                                      filename = "__core__/lualib/noise.lua",
+                                                      line_number = 78
+                                                    },
+                                                    type = "literal-number"
+                                                  }
+                                                },
+                                                function_name = "multiply",
+                                                source_location = {
+                                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                                  line_number = 184
+                                                },
+                                                type = "function-application"
+                                              },
+                                              0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2] ]=]
+                                            },
+                                            function_name = "divide",
+                                            source_location = {
+                                              filename = "__core__/lualib/resource-autoplace.lua",
+                                              line_number = 184
+                                            },
+                                            type = "function-application"
+                                          }
+                                        },
+                                        function_name = "multiply",
+                                        source_location = {
+                                          filename = "__core__/lualib/resource-autoplace.lua",
+                                          line_number = 189
+                                        },
+                                        type = "function-application"
+                                      },
+                                      0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.basement_value.arguments[1].arguments[2].arguments[2].arguments[1].arguments[1].arguments[2] ]=]
+                                    },
+                                    function_name = "exponentiate",
+                                    source_location = {
+                                      filename = "__core__/lualib/resource-autoplace.lua",
+                                      line_number = 192
+                                    },
+                                    type = "function-application"
+                                  },
+                                  {
+                                    literal_value = 0.010471975511965979,
+                                    source_location = {
+                                      filename = "__core__/lualib/noise.lua",
+                                      line_number = 86
+                                    },
+                                    type = "literal-number"
+                                  }
+                                },
+                                function_name = "divide",
+                                source_location = {
+                                  filename = "__core__/lualib/resource-autoplace.lua",
+                                  line_number = 192
+                                },
+                                type = "function-application"
+                              }
+                            },
+                            function_name = "clamp",
+                            source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[2].arguments[2].arguments[2].arguments[2].arguments[2].source_location ]=],
+                            type = "function-application"
+                          }
+                        },
+                        function_name = "multiply",
+                        source_location = {
+                          filename = "__core__/lualib/resource-autoplace.lua",
+                          line_number = 203
+                        },
+                        type = "function-application"
+                      }
+                    },
+                    function_name = "multiply",
+                    source_location = {
+                      filename = "__core__/lualib/resource-autoplace.lua",
+                      line_number = 361
+                    },
+                    type = "function-application"
+                  }
+                },
+                function_name = "add",
+                source_location = {
+                  filename = "__core__/lualib/resource-autoplace.lua",
+                  line_number = 361
+                },
+                type = "function-application"
+              },
+              {
+                literal_value = 1/0 --[[math.huge]],
+                source_location = {
+                  filename = "__core__/lualib/resource-autoplace.lua",
+                  line_number = 366
+                },
+                type = "literal-number"
+              }
+            },
+            function_name = "clamp",
+            source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[3].source_location ]=],
+            type = "function-application"
+          },
+          source_location = {
+            filename = "__core__/lualib/noise.lua",
+            line_number = 303
+          },
+          type = "procedure-delimiter"
+        },
+        {
+          literal_value = 0,
+          source_location = {
+            filename = "__core__/lualib/noise.lua",
+            line_number = 304
+          },
+          type = "literal-number"
+        },
+        {
+          literal_value = 1,
+          source_location = {
+            filename = "__core__/lualib/noise.lua",
+            line_number = 305
+          },
+          type = "literal-number"
+        }
+      },
+      function_name = "clamp",
+      source_location = {
+        filename = "__core__/lualib/resource-autoplace.lua",
+        line_number = 374
+      },
+      type = "function-application"
+    },
+    richness_expression = {
+      arguments = {
+        {
+          arguments = {
+            0 --[=[ ref [""].autoplace.probability_expression.arguments[1] ]=],
+            {
+              arguments = {
+                {
+                  literal_value = 1,
+                  source_location = {
+                    filename = "__core__/lualib/resource-autoplace.lua",
+                    line_number = 405
+                  },
+                  type = "literal-number"
+                },
+                {
+                  arguments = {
+                    {
+                      arguments = {
+                        {
+                          literal_value = 1300,
+                          source_location = {
+                            filename = "__core__/lualib/noise.lua",
+                            line_number = 54
+                          },
+                          type = "literal-number"
+                        },
+                        {
+                          arguments = {
+                            0 --[=[ ref [""].autoplace.probability_expression.arguments[1].expression.arguments[1].arguments[1].arguments.density_expression.literal_value.arguments[2].arguments[1].arguments[1].arguments[2] ]=],
+                            {
+                              literal_value = 300,
+                              source_location = {
+                                filename = "__core__/lualib/noise.lua",
+                                line_number = 62
+                              },
+                              type = "literal-number"
+                            }
+                          },
+                          function_name = "subtract",
+                          source_location = {
+                            filename = "__core__/lualib/resource-autoplace.lua",
+                            line_number = 161
+                          },
+                          type = "function-application"
+                        }
+                      },
+                      function_name = "add",
+                      source_location = {
+                        filename = "__core__/lualib/resource-autoplace.lua",
+                        line_number = 403
+                      },
+                      type = "function-application"
+                    },
+                    {
+                      literal_value = 2600,
+                      source_location = {
+                        filename = "__core__/lualib/noise.lua",
+                        line_number = 86
+                      },
+                      type = "literal-number"
+                    }
+                  },
+                  function_name = "divide",
+                  source_location = {
+                    filename = "__core__/lualib/resource-autoplace.lua",
+                    line_number = 403
+                  },
+                  type = "function-application"
+                },
+                {
+                  literal_value = 1/0 --[[math.huge]],
+                  source_location = 0 --[=[ ref [""].autoplace.richness_expression.arguments[1].arguments[2].arguments[1].source_location ]=],
+                  type = "literal-number"
+                }
+              },
+              function_name = "clamp",
+              source_location = 0 --[=[ ref [""].autoplace.richness_expression.arguments[1].arguments[2].arguments[1].source_location ]=],
+              type = "function-application"
+            }
+          },
+          function_name = "multiply",
+          source_location = {
+            filename = "__core__/lualib/resource-autoplace.lua",
+            line_number = 407
+          },
+          type = "function-application"
+        },
+        {
+          arguments = {
+            {
+              literal_value = 1,
+              source_location = {
+                filename = "__core__/lualib/noise.lua",
+                line_number = 78
+              },
+              type = "literal-number"
+            },
+            {
+              source_location = {
+                filename = "__core__/lualib/noise.lua",
+                line_number = 415
+              },
+              type = "variable",
+              variable_name = "control-setting:coal:richness:multiplier"
+            }
+          },
+          function_name = "multiply",
+          source_location = {
+            filename = "__core__/lualib/resource-autoplace.lua",
+            line_number = 113
+          },
+          type = "function-application"
+        }
+      },
+      function_name = "multiply",
+      source_location = {
+        filename = "__core__/lualib/resource-autoplace.lua",
+        line_number = 407
+      },
+      type = "function-application"
+    }
+  },
+  collision_box = {
+    {
+      -0.1,
+      -0.1
+    },
+    {
+      0.1,
+      0.1
+    }
+  },
+  flags = {
+    "placeable-neutral"
+  },
+  icon = "__base__/graphics/icons/coal.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  map_color = {
+    0,
+    0,
+    0
+  },
+  minable = {
+    mining_particle = "coal-particle",
+    mining_time = 1,
+    result = "coal"
+  },
+  mining_visualisation_tint = {
+    a = 1,
+    b = 0.46500000000000004,
+    g = 0.46500000000000004,
+    r = 0.46500000000000004
+  },
+  name = "coal",
+  order = "a-b-b",
+  selection_box = {
+    {
+      -0.5,
+      -0.5
+    },
+    {
+      0.5,
+      0.5
+    }
+  },
+  stage_counts = {
+    15000,
+    9500,
+    5500,
+    2900,
+    1300,
+    400,
+    150,
+    80
+  },
+  stages = {
+    sheet = {
+      filename = "__base__/graphics/entity/coal/coal.png",
+      frame_count = 8,
+      hr_version = {
+        filename = "__base__/graphics/entity/coal/hr-coal.png",
+        frame_count = 8,
+        priority = "extra-high",
+        scale = 0.5,
+        size = 128,
+        variation_count = 8
+      },
+      priority = "extra-high",
+      size = 64,
+      variation_count = 8
+    }
+  },
+  tree_removal_max_distance = 1024,
+  tree_removal_probability = 0.8,
+  type = "resource",
+  walking_sound = {
+    {
+      filename = "__base__/sound/walking/resources/ore-01.ogg",
+      volume = 0.7
+    },
+    {
+      filename = "__base__/sound/walking/resources/ore-02.ogg",
+      volume = 0.7
+    },
+    {
+      filename = "__base__/sound/walking/resources/ore-03.ogg",
+      volume = 0.7
+    },
+    {
+      filename = "__base__/sound/walking/resources/ore-04.ogg",
+      volume = 0.7
+    },
+    {
+      filename = "__base__/sound/walking/resources/ore-05.ogg",
+      volume = 0.7
+    },
+    {
+      filename = "__base__/sound/walking/resources/ore-06.ogg",
+      volume = 0.7
+    },
+    {
+      filename = "__base__/sound/walking/resources/ore-07.ogg",
+      volume = 0.7
+    },
+    {
+      filename = "__base__/sound/walking/resources/ore-08.ogg",
+      volume = 0.7
+    },
+    {
+      filename = "__base__/sound/walking/resources/ore-09.ogg",
+      volume = 0.7
+    },
+    {
+      filename = "__base__/sound/walking/resources/ore-10.ogg",
+      volume = 0.7
+    }
+  }
+} --[[incomplete output with shared/self-references skipped]]

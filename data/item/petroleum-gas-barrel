@@ -1,0 +1,44 @@
+{
+  icon_mipmaps = 4,
+  icon_size = 64,
+  icons = {
+    {
+      icon = "__base__/graphics/icons/fluid/barreling/empty-barrel.png",
+      icon_mipmaps = 4,
+      icon_size = 64
+    },
+    {
+      icon = "__base__/graphics/icons/fluid/barreling/barrel-side-mask.png",
+      icon_mipmaps = 4,
+      icon_size = 64,
+      tint = {
+        a = 0.75,
+        b = 0.3,
+        g = 0.1,
+        r = 0.3
+      }
+    },
+    {
+      icon = "__base__/graphics/icons/fluid/barreling/barrel-hoop-top-mask.png",
+      icon_mipmaps = 4,
+      icon_size = 64,
+      tint = {
+        a = 0.75,
+        b = 0.8,
+        g = 0.8,
+        r = 0.8
+      }
+    }
+  },
+  localised_name = {
+    "item-name.filled-barrel",
+    {
+      "fluid-name.petroleum-gas"
+    }
+  },
+  name = "petroleum-gas-barrel",
+  order = "b[petroleum-gas-barrel]",
+  stack_size = 10,
+  subgroup = "barrel",
+  type = "item"
+}

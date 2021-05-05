@@ -1,0 +1,20 @@
+{
+  category = "fast-replace",
+  dependencies = {
+    "fast-replace"
+  },
+  indent = 1,
+  name = "fast-replace-belt-underground",
+  order = "d",
+  simulation = {
+    init = "\n    game.surfaces[1].create_entities_from_blueprint_string\n    {\n      string = \"0eNqV1e1qgzAUBuB7Ob9j8fiV6q2UUbQ9jIBGSdJtIt57Y2Vj0JWd889ofIwfr+8CXX+jyRkboFnAXEbroTkt4M27bfttX5gnggZMoAEU2HbYRsG11k+jC0lHfYBVgbFX+oIG1zcFZIMJhnbpMZjP9jZ05OKEH8OH0VLy2fZ9dKfRx1NGu10xMgnmh1LBHLfqQ7mu6snJWM6/TP7qlp6XVH1TaaQUXI2jy348+wMu+LAWwSUfLkRwxYdLEaz5cCaCj3w4F8E1H05FMKZ8GWUysmUhnLFh4bPgZ0/29pCfPdn3hvzsyRKC/OzJMo387Mn+QsjPnuy/ibWwIDB9URCprCF2J7bXo+maX8Wo4IOc31d8xELXmcZK61rH+XcbjFt7\",\n      position = {0, 0}\n    }\n\n    player = game.create_test_player{name = \"big k\"}\n    player.teleport({0, 2.5})\n    game.camera_player = player\n    game.camera_player_cursor_position = player.position\n    game.camera_alt_info = true\n    item_name = \"transport-belt\"\n    direction = 2\n    start_position = {-2.75, -0.5}\n    end_position = {2.75, -0.5}\n\n    step_1 = function()\n      player.cursor_stack.set_stack{name = item_name, count = 50}\n      game.camera_player_cursor_direction = direction\n      script.on_nth_tick(1, function()\n        if game.move_cursor{position = start_position} then\n          step_2()\n        end\n      end)\n    end\n\n    step_2 = function()\n      local count = 30\n      bippity = nil\n      boppity = nil\n      script.on_nth_tick(1, function()\n        if count > 0 then count = count - 1 return end\n        local finished = game.move_cursor{position = end_position}\n        if item_name == \"underground-belt\" then\n\n          if not bippity then\n            player.build_from_cursor{position = game.camera_player_cursor_position, direction = direction}\n            bippity = true\n          end\n\n          if not boppity then\n            if game.camera_player_cursor_position.x > 2.51 then\n              player.build_from_cursor{position = game.camera_player_cursor_position, direction = direction}\n              boppity = true\n            end\n          end\n\n        else\n          player.build_from_cursor{position = game.camera_player_cursor_position, direction = direction}\n        end\n        if finished then\n          step_3()\n        end\n      end)\n    end\n\n    step_3 = function()\n      local count = 30\n      script.on_nth_tick(1, function()\n        if count > 0 then count = count - 1 return end\n        player.clear_cursor()\n        player.clear_items_inside()\n        local finished = game.move_cursor{position = player.position}\n        if finished then\n          start()\n        end\n      end)\n    end\n\n    start = function()\n      local count = 60\n      script.on_nth_tick(1, function()\n        if count > 0 then count = count - 1 return end\n        item_name = item_name == \"transport-belt\" and \"underground-belt\" or \"transport-belt\"\n        step_1()\n      end)\n    end\n\n    start()\n\n  "
+  },
+  tag = "[item=transport-belt][item=underground-belt]",
+  trigger = {
+    count = 20,
+    entity = "underground-belt",
+    match_type_only = true,
+    type = "build-entity"
+  },
+  type = "tips-and-tricks-item"
+}

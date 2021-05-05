@@ -1,0 +1,100 @@
+{
+  acceleration = 0,
+  action = {
+    action_delivery = {
+      target_effects = {
+        {
+          damage = {
+            amount = 350,
+            type = "physical"
+          },
+          type = "damage"
+        },
+        {
+          entity_name = "uranium-cannon-explosion",
+          type = "create-entity"
+        }
+      },
+      type = "instant"
+    },
+    type = "direct"
+  },
+  animation = {
+    draw_as_glow = true,
+    filename = "__base__/graphics/entity/bullet/bullet.png",
+    frame_count = 1,
+    height = 50,
+    priority = "high",
+    width = 3
+  },
+  collision_box = {
+    {
+      -0.3,
+      -1.1000000000000001
+    },
+    {
+      0.3,
+      1.1000000000000001
+    }
+  },
+  final_action = {
+    action_delivery = {
+      target_effects = {
+        {
+          entity_name = "uranium-cannon-shell-explosion",
+          type = "create-entity"
+        },
+        {
+          action = {
+            action_delivery = {
+              target_effects = {
+                {
+                  damage = {
+                    amount = 315,
+                    type = "explosion"
+                  },
+                  type = "damage"
+                },
+                {
+                  entity_name = "uranium-cannon-explosion",
+                  type = "create-entity"
+                }
+              },
+              type = "instant"
+            },
+            radius = 4.25,
+            type = "area"
+          },
+          type = "nested-result"
+        },
+        {
+          check_buildability = true,
+          entity_name = "medium-scorchmark-tintable",
+          type = "create-entity"
+        },
+        {
+          repeat_count = 1,
+          type = "invoke-tile-trigger"
+        },
+        {
+          decoratives_with_trigger_only = false,
+          from_render_layer = "decorative",
+          include_decals = false,
+          include_soft_decoratives = true,
+          invoke_decorative_trigger = true,
+          radius = 3.25,
+          to_render_layer = "object",
+          type = "destroy-decoratives"
+        }
+      },
+      type = "instant"
+    },
+    type = "direct"
+  },
+  flags = {
+    "not-on-map"
+  },
+  name = "explosive-uranium-cannon-projectile",
+  piercing_damage = 150,
+  type = "projectile"
+}

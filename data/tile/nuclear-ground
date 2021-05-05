@@ -1,0 +1,1182 @@
+{
+  collision_mask = {
+    "ground-tile"
+  },
+  layer = 33,
+  map_color = {
+    b = 35,
+    g = 40,
+    r = 48
+  },
+  name = "nuclear-ground",
+  order = "d[destruction]-a[nuclear]-a[nuclear-ground]",
+  pollution_absorption_per_second = 2.5e-06,
+  transitions = {
+    {
+      inner_corner = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      inner_corner_effect_map = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-dirt-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/effect-maps/water-dirt-mask.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      inner_corner_mask = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground.png",
+          scale = 0.5,
+          x = 2176,
+          y = 0
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground.png",
+        x = 1088,
+        y = 0
+      },
+      o_transition = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground.png",
+          scale = 0.5,
+          tall = false,
+          x = 0,
+          y = 2304
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground.png",
+        tall = false,
+        x = 0,
+        y = 1152
+      },
+      o_transition_effect_map = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-dirt-mask.png",
+          scale = 0.5,
+          tall = false,
+          x = 0,
+          y = 2304
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/effect-maps/water-dirt-mask.png",
+        tall = false,
+        x = 0,
+        y = 1152
+      },
+      o_transition_mask = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground.png",
+          scale = 0.5,
+          x = 2176,
+          y = 2304
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground.png",
+        x = 1088,
+        y = 1152
+      },
+      outer_corner = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      outer_corner_effect_map = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-dirt-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/effect-maps/water-dirt-mask.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      outer_corner_mask = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground.png",
+          scale = 0.5,
+          x = 2176,
+          y = 576
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground.png",
+        x = 1088,
+        y = 288
+      },
+      side = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      side_effect_map = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-dirt-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/effect-maps/water-dirt-mask.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      side_mask = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1152
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground.png",
+        x = 1088,
+        y = 576
+      },
+      to_tiles = {
+        "water",
+        "deepwater",
+        "water-green",
+        "deepwater-green",
+        "water-shallow",
+        "water-mud",
+        "water-wube"
+      },
+      transition_group = 1,
+      u_transition = {
+        count = 2,
+        hr_version = {
+          count = 2,
+          line_length = 2,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1728
+        },
+        line_length = 2,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground.png",
+        tall = true,
+        x = 0,
+        y = 864
+      },
+      u_transition_effect_map = {
+        count = 2,
+        hr_version = {
+          count = 2,
+          line_length = 2,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-dirt-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1728
+        },
+        line_length = 2,
+        picture = "__base__/graphics/terrain/effect-maps/water-dirt-mask.png",
+        tall = true,
+        x = 0,
+        y = 864
+      },
+      u_transition_mask = {
+        count = 2,
+        hr_version = {
+          count = 2,
+          line_length = 2,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1728
+        },
+        line_length = 2,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground.png",
+        x = 1088,
+        y = 864
+      }
+    },
+    {
+      background_layer_group = "zero",
+      background_layer_offset = 1,
+      inner_corner_background = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 0
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 0
+      },
+      inner_corner_mask = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 0
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        x = 1088,
+        y = 0
+      },
+      o_transition_background = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          tall = false,
+          x = 1088,
+          y = 2304
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        tall = false,
+        x = 544,
+        y = 1152
+      },
+      o_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 2304
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        x = 1088,
+        y = 1152
+      },
+      offset_background_layer_by_tile_layer = true,
+      outer_corner_background = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 576
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 288
+      },
+      outer_corner_mask = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 576
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        x = 1088,
+        y = 288
+      },
+      side_background = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1152
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 576
+      },
+      side_mask = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1152
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        x = 1088,
+        y = 576
+      },
+      to_tiles = {
+        "out-of-map"
+      },
+      transition_group = 2,
+      u_transition_background = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 864
+      },
+      u_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        x = 1088,
+        y = 864
+      }
+    }
+  },
+  transitions_between_transitions = {
+    {
+      inner_corner = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground-transition.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      inner_corner_effect_map = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-dirt-to-land-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/effect-maps/water-dirt-to-land-mask.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      inner_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground-transition.png",
+        x = 1088,
+        y = 0
+      },
+      outer_corner = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground-transition.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      outer_corner_effect_map = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-dirt-to-land-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/effect-maps/water-dirt-to-land-mask.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      outer_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground-transition.png",
+        x = 1088,
+        y = 288
+      },
+      side = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground-transition.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      side_effect_map = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-dirt-to-land-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/effect-maps/water-dirt-to-land-mask.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      side_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground-transition.png",
+        x = 1088,
+        y = 576
+      },
+      transition_group = 0,
+      transition_group1 = 0,
+      transition_group2 = 1,
+      u_transition = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground-transition.png",
+        tall = true,
+        x = 0,
+        y = 864
+      },
+      u_transition_effect_map = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-dirt-to-land-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/effect-maps/water-dirt-to-land-mask.png",
+        tall = true,
+        x = 0,
+        y = 864
+      },
+      u_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/water-transitions/hr-nuclear-ground-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/water-transitions/nuclear-ground-transition.png",
+        x = 1088,
+        y = 864
+      },
+      water_patch = {
+        filename = "__base__/graphics/terrain/water-transitions/water-patch.png",
+        height = 32,
+        hr_version = {
+          filename = "__base__/graphics/terrain/water-transitions/hr-water-patch.png",
+          height = 64,
+          scale = 0.5,
+          width = 64
+        },
+        width = 32
+      }
+    },
+    {
+      background_layer_group = "zero",
+      background_layer_offset = 1,
+      inner_corner_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-dirt-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/dirt-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 0
+      },
+      inner_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-dirt-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/dirt-out-of-map-transition.png",
+        x = 1088,
+        y = 0
+      },
+      offset_background_layer_by_tile_layer = true,
+      outer_corner_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-dirt-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/dirt-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 288
+      },
+      outer_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-dirt-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/dirt-out-of-map-transition.png",
+        x = 1088,
+        y = 288
+      },
+      side_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-dirt-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/dirt-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 576
+      },
+      side_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-dirt-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/dirt-out-of-map-transition.png",
+        x = 1088,
+        y = 576
+      },
+      transition_group = 0,
+      transition_group1 = 0,
+      transition_group2 = 2,
+      u_transition_background = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-dirt-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/dirt-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 864
+      },
+      u_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-dirt-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/dirt-out-of-map-transition.png",
+        x = 1088,
+        y = 864
+      }
+    },
+    {
+      background_layer_group = "zero",
+      background_layer_offset = 1,
+      inner_corner = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-nuclear-ground-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/nuclear-ground-shore-out-of-map-transition.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      inner_corner_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-nuclear-ground-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/nuclear-ground-shore-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 0
+      },
+      inner_corner_effect_map = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-dirt-to-out-of-map-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/effect-maps/water-dirt-to-out-of-map-mask.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      inner_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-nuclear-ground-shore-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/nuclear-ground-shore-out-of-map-transition.png",
+        x = 1088,
+        y = 0
+      },
+      offset_background_layer_by_tile_layer = true,
+      outer_corner = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-nuclear-ground-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/nuclear-ground-shore-out-of-map-transition.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      outer_corner_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-nuclear-ground-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/nuclear-ground-shore-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 288
+      },
+      outer_corner_effect_map = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-dirt-to-out-of-map-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/effect-maps/water-dirt-to-out-of-map-mask.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      outer_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-nuclear-ground-shore-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/nuclear-ground-shore-out-of-map-transition.png",
+        x = 1088,
+        y = 288
+      },
+      side = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-nuclear-ground-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/nuclear-ground-shore-out-of-map-transition.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      side_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-nuclear-ground-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/nuclear-ground-shore-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 576
+      },
+      side_effect_map = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-dirt-to-out-of-map-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/effect-maps/water-dirt-to-out-of-map-mask.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      side_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-nuclear-ground-shore-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/nuclear-ground-shore-out-of-map-transition.png",
+        x = 1088,
+        y = 576
+      },
+      transition_group = 1,
+      transition_group1 = 1,
+      transition_group2 = 2,
+      u_transition = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-nuclear-ground-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/nuclear-ground-shore-out-of-map-transition.png",
+        tall = true,
+        x = 0,
+        y = 864
+      },
+      u_transition_background = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-nuclear-ground-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/nuclear-ground-shore-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 864
+      },
+      u_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-nuclear-ground-shore-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/nuclear-ground-shore-out-of-map-transition.png",
+        x = 1088,
+        y = 864
+      }
+    }
+  },
+  type = "tile",
+  variants = {
+    inner_corner_mask = {
+      count = 8,
+      hr_version = {
+        count = 8,
+        line_length = 8,
+        picture = "__base__/graphics/terrain/masks/hr-transition-1.png",
+        scale = 0.5,
+        x = 0
+      },
+      line_length = 8,
+      picture = "__base__/graphics/terrain/masks/transition-1.png",
+      x = 0
+    },
+    main = {
+      {
+        count = 1,
+        picture = "__base__/graphics/terrain/concrete/concrete-dummy.png",
+        size = 1
+      },
+      {
+        count = 1,
+        picture = "__base__/graphics/terrain/concrete/concrete-dummy.png",
+        probability = 0.39000000000000004,
+        size = 2
+      },
+      {
+        count = 1,
+        picture = "__base__/graphics/terrain/concrete/concrete-dummy.png",
+        probability = 1,
+        size = 4
+      }
+    },
+    material_background = {
+      count = 4,
+      hr_version = {
+        count = 4,
+        picture = "__base__/graphics/terrain/hr-nuclear-ground.png",
+        scale = 0.5
+      },
+      picture = "__base__/graphics/terrain/nuclear-ground.png"
+    },
+    o_transition_mask = {
+      count = 1,
+      hr_version = {
+        count = 1,
+        line_length = 2,
+        picture = "__base__/graphics/terrain/masks/hr-transition-1.png",
+        scale = 0.5,
+        x = 2304
+      },
+      line_length = 2,
+      picture = "__base__/graphics/terrain/masks/transition-1.png",
+      x = 1152
+    },
+    outer_corner_mask = {
+      count = 8,
+      hr_version = {
+        count = 8,
+        line_length = 8,
+        picture = "__base__/graphics/terrain/masks/hr-transition-1.png",
+        scale = 0.5,
+        x = 576
+      },
+      line_length = 8,
+      picture = "__base__/graphics/terrain/masks/transition-1.png",
+      x = 288
+    },
+    side_mask = {
+      count = 8,
+      hr_version = {
+        count = 8,
+        line_length = 8,
+        picture = "__base__/graphics/terrain/masks/hr-transition-1.png",
+        scale = 0.5,
+        x = 1152
+      },
+      line_length = 8,
+      picture = "__base__/graphics/terrain/masks/transition-1.png",
+      x = 576
+    },
+    u_transition_mask = {
+      count = 1,
+      hr_version = {
+        count = 1,
+        line_length = 1,
+        picture = "__base__/graphics/terrain/masks/hr-transition-1.png",
+        scale = 0.5,
+        x = 1728
+      },
+      line_length = 1,
+      picture = "__base__/graphics/terrain/masks/transition-1.png",
+      x = 864
+    }
+  },
+  vehicle_friction_modifier = 1.6000000000000001,
+  walking_sound = {
+    {
+      filename = "__base__/sound/walking/sand-01.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/sand-02.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/sand-03.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/sand-04.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/sand-05.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/sand-06.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/sand-07.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/sand-08.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/sand-09.ogg",
+      volume = 0.8
+    }
+  }
+}

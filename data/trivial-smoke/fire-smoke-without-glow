@@ -1,0 +1,36 @@
+{
+  affected_by_wind = true,
+  animation = {
+    animation_speed = 0.25,
+    axially_symmetrical = false,
+    direction_count = 1,
+    filename = "__base__/graphics/entity/fire-smoke/fire-smoke.png",
+    flags = {
+      "smoke"
+    },
+    frame_count = 60,
+    height = 210,
+    line_length = 8,
+    priority = "high",
+    shift = {
+      -0.265625,
+      -0.09375
+    },
+    width = 253
+  },
+  color = {
+    a = 0.25,
+    b = 0.25,
+    g = 0.25,
+    r = 0.25
+  },
+  cyclic = true,
+  duration = 300,
+  end_scale = 1,
+  fade_away_duration = 90,
+  fade_in_duration = 60,
+  name = "fire-smoke-without-glow",
+  spread_duration = 600,
+  start_scale = 0.5,
+  type = "trivial-smoke"
+}

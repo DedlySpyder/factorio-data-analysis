@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/arithmetic-combinator.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "arithmetic-combinator",
+  order = "c[combinators]-a[arithmetic-combinator]",
+  place_result = "arithmetic-combinator",
+  stack_size = 50,
+  subgroup = "circuit-network",
+  type = "item"
+}

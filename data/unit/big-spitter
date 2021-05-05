@@ -1,0 +1,837 @@
+{
+  ai_settings = {
+    allow_try_return_to_spawner = true,
+    destroy_when_commands_fail = true
+  },
+  alternative_attacking_frame_sequence = {
+    attacking_animation_speed = 0.025,
+    attacking_frame_sequence = {
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      13,
+      14,
+      13,
+      12,
+      11,
+      10,
+      9,
+      8
+    },
+    back_to_walk_animation_speed = 0.066666666666666661,
+    back_to_walk_frame_sequence = {
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+    },
+    cooldown_animation_speed = 0.05,
+    cooldown_frame_sequence = {
+      7
+    },
+    prepared_animation_speed = 0.2,
+    prepared_frame_sequence = {
+      7
+    },
+    warmup2_frame_sequence = {
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    },
+    warmup_animation_speed = 0.066666666666666661,
+    warmup_frame_sequence = {
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    }
+  },
+  attack_parameters = {
+    ammo_category = "biological",
+    ammo_type = {
+      action = {
+        action_delivery = {
+          stream = "acid-stream-spitter-big",
+          type = "stream"
+        },
+        type = "direct"
+      },
+      category = "biological"
+    },
+    animation = {
+      layers = {
+        {
+          animation_speed = 0.4,
+          direction_count = 16,
+          filenames = {
+            "__base__/graphics/entity/spitter/spitter-attack-01.png",
+            "__base__/graphics/entity/spitter/spitter-attack-02.png",
+            "__base__/graphics/entity/spitter/spitter-attack-03.png",
+            "__base__/graphics/entity/spitter/spitter-attack-04.png"
+          },
+          frame_count = 14,
+          height = 132,
+          hr_version = {
+            animation_speed = 0.4,
+            direction_count = 16,
+            filenames = {
+              "__base__/graphics/entity/spitter/hr-spitter-attack-01.png",
+              "__base__/graphics/entity/spitter/hr-spitter-attack-02.png",
+              "__base__/graphics/entity/spitter/hr-spitter-attack-03.png",
+              "__base__/graphics/entity/spitter/hr-spitter-attack-04.png"
+            },
+            frame_count = 14,
+            height = 264,
+            line_length = 7,
+            lines_per_file = 8,
+            run_mode = "forward-then-backward",
+            scale = 0.5,
+            shift = {
+              0,
+              -0.5625
+            },
+            slice = 7,
+            width = 312
+          },
+          line_length = 7,
+          lines_per_file = 8,
+          run_mode = "forward-then-backward",
+          scale = 1,
+          shift = {
+            0,
+            -0.5625
+          },
+          slice = 7,
+          width = 156
+        },
+        {
+          animation_speed = 0.4,
+          direction_count = 16,
+          filenames = {
+            "__base__/graphics/entity/spitter/spitter-attack-mask1-01.png",
+            "__base__/graphics/entity/spitter/spitter-attack-mask1-02.png",
+            "__base__/graphics/entity/spitter/spitter-attack-mask1-03.png",
+            "__base__/graphics/entity/spitter/spitter-attack-mask1-04.png"
+          },
+          flags = {
+            "mask"
+          },
+          frame_count = 14,
+          height = 126,
+          hr_version = {
+            animation_speed = 0.4,
+            direction_count = 16,
+            filenames = {
+              "__base__/graphics/entity/spitter/hr-spitter-attack-mask1-01.png",
+              "__base__/graphics/entity/spitter/hr-spitter-attack-mask1-02.png",
+              "__base__/graphics/entity/spitter/hr-spitter-attack-mask1-03.png",
+              "__base__/graphics/entity/spitter/hr-spitter-attack-mask1-04.png"
+            },
+            frame_count = 14,
+            height = 246,
+            line_length = 7,
+            lines_per_file = 8,
+            run_mode = "forward-then-backward",
+            scale = 0.5,
+            shift = {
+              -0.03125,
+              -0.40625
+            },
+            slice = 7,
+            tint = {
+              a = 1,
+              b = 0.68000000000000007,
+              g = 0.42999999999999998,
+              r = 0.15
+            },
+            width = 316
+          },
+          line_length = 7,
+          lines_per_file = 8,
+          run_mode = "forward-then-backward",
+          scale = 1,
+          shift = {
+            0,
+            -0.4375
+          },
+          slice = 7,
+          tint = 0 --[=[ ref [""].attack_parameters.animation.layers[2].hr_version.tint ]=],
+          width = 156
+        },
+        {
+          animation_speed = 0.4,
+          direction_count = 16,
+          filenames = {
+            "__base__/graphics/entity/spitter/spitter-attack-mask2-01.png",
+            "__base__/graphics/entity/spitter/spitter-attack-mask2-02.png",
+            "__base__/graphics/entity/spitter/spitter-attack-mask2-03.png",
+            "__base__/graphics/entity/spitter/spitter-attack-mask2-04.png"
+          },
+          flags = {
+            "mask"
+          },
+          frame_count = 14,
+          height = 124,
+          hr_version = {
+            animation_speed = 0.4,
+            direction_count = 16,
+            filenames = {
+              "__base__/graphics/entity/spitter/hr-spitter-attack-mask2-01.png",
+              "__base__/graphics/entity/spitter/hr-spitter-attack-mask2-02.png",
+              "__base__/graphics/entity/spitter/hr-spitter-attack-mask2-03.png",
+              "__base__/graphics/entity/spitter/hr-spitter-attack-mask2-04.png"
+            },
+            frame_count = 14,
+            height = 244,
+            line_length = 7,
+            lines_per_file = 8,
+            run_mode = "forward-then-backward",
+            scale = 0.5,
+            shift = {
+              0,
+              -0.40625
+            },
+            slice = 7,
+            tint = {
+              a = 1,
+              b = 0.85,
+              g = 0.81999999999999993,
+              r = 0.8
+            },
+            width = 310
+          },
+          line_length = 7,
+          lines_per_file = 8,
+          run_mode = "forward-then-backward",
+          scale = 1,
+          shift = {
+            -0.0625,
+            -0.4375
+          },
+          slice = 7,
+          tint = 0 --[=[ ref [""].attack_parameters.animation.layers[3].hr_version.tint ]=],
+          width = 160
+        },
+        {
+          animation_speed = 0.4,
+          direction_count = 16,
+          draw_as_shadow = true,
+          filenames = {
+            "__base__/graphics/entity/spitter/spitter-attack-shadow-01.png",
+            "__base__/graphics/entity/spitter/spitter-attack-shadow-02.png",
+            "__base__/graphics/entity/spitter/spitter-attack-shadow-03.png",
+            "__base__/graphics/entity/spitter/spitter-attack-shadow-04.png"
+          },
+          frame_count = 14,
+          height = 110,
+          hr_version = {
+            animation_speed = 0.4,
+            direction_count = 16,
+            draw_as_shadow = true,
+            filenames = {
+              "__base__/graphics/entity/spitter/hr-spitter-attack-shadow-01.png",
+              "__base__/graphics/entity/spitter/hr-spitter-attack-shadow-02.png",
+              "__base__/graphics/entity/spitter/hr-spitter-attack-shadow-03.png",
+              "__base__/graphics/entity/spitter/hr-spitter-attack-shadow-04.png"
+            },
+            frame_count = 14,
+            height = 224,
+            line_length = 7,
+            lines_per_file = 8,
+            run_mode = "forward-then-backward",
+            scale = 0.5,
+            shift = {
+              0.71875,
+              -0.03125
+            },
+            slice = 7,
+            width = 370
+          },
+          line_length = 7,
+          lines_per_file = 8,
+          run_mode = "forward-then-backward",
+          scale = 1,
+          shift = {
+            0.6875,
+            0
+          },
+          slice = 7,
+          width = 188
+        }
+      }
+    },
+    cooldown = 100,
+    cooldown_deviation = 0.15,
+    cyclic_sound = {
+      begin_sound = {
+        {
+          filename = "__base__/sound/creatures/spitter-spit-start-big-1.ogg",
+          volume = 0.46999999999999993
+        },
+        {
+          filename = "__base__/sound/creatures/spitter-spit-start-big-2.ogg",
+          volume = 0.46999999999999993
+        },
+        {
+          filename = "__base__/sound/creatures/spitter-spit-start-big-3.ogg",
+          volume = 0.46999999999999993
+        },
+        {
+          filename = "__base__/sound/creatures/spitter-spit-start-big-4.ogg",
+          volume = 0.46999999999999993
+        },
+        {
+          filename = "__base__/sound/creatures/spitter-spit-start-big-5.ogg",
+          volume = 0.46999999999999993
+        },
+        {
+          filename = "__base__/sound/creatures/spitter-spit-start-big-6.ogg",
+          volume = 0.46999999999999993
+        },
+        {
+          filename = "__base__/sound/creatures/spitter-spit-start-big-7.ogg",
+          volume = 0.46999999999999993
+        },
+        {
+          filename = "__base__/sound/creatures/spitter-spit-start-big-8.ogg",
+          volume = 0.46999999999999993
+        },
+        {
+          filename = "__base__/sound/creatures/spitter-spit-start-big-9.ogg",
+          volume = 0.46999999999999993
+        },
+        {
+          filename = "__base__/sound/creatures/spitter-spit-start-big-10.ogg",
+          volume = 0.46999999999999993
+        }
+      },
+      end_sound = {
+        {
+          filename = "__base__/sound/creatures/spitter-spit-end-1.ogg",
+          volume = 0
+        }
+      },
+      middle_sound = {
+        {
+          filename = "__base__/sound/fight/flamethrower-mid.ogg",
+          volume = 0
+        }
+      }
+    },
+    damage_modifier = 36,
+    lead_target_for_projectile_speed = 0.3375,
+    min_attack_distance = 10,
+    projectile_creation_parameters = {
+      {
+        0,
+        {
+          0,
+          -2.734375
+        }
+      },
+      {
+        0.0625,
+        {
+          0.6125,
+          -2.6531250000000002
+        }
+      },
+      {
+        0.125,
+        {
+          1.1937500000000001,
+          -2.3343750000000001
+        }
+      },
+      {
+        0.1875,
+        {
+          1.7625000000000002,
+          -1.878125
+        }
+      },
+      {
+        0.25,
+        {
+          1.96875,
+          -1.140625
+        }
+      },
+      {
+        0.3125,
+        {
+          1.7312500000000002,
+          -0.434375
+        }
+      },
+      {
+        0.375,
+        {
+          1.2562500000000001,
+          0.053124999999999982
+        }
+      },
+      {
+        0.4375,
+        {
+          0.64375,
+          0.30937500000000009
+        }
+      },
+      {
+        0.5,
+        {
+          0.015625,
+          0.421875
+        }
+      },
+      {
+        0.5625,
+        {
+          -0.659375,
+          0.32500000000000009
+        }
+      },
+      {
+        0.625,
+        {
+          -1.2406250000000001,
+          0.084374999999999982
+        }
+      },
+      {
+        0.6875,
+        {
+          -1.6843750000000002,
+          -0.403125
+        }
+      },
+      {
+        0.75,
+        {
+          -1.953125,
+          -1.109375
+        }
+      },
+      {
+        0.8125,
+        {
+          -1.6843750000000002,
+          -1.846875
+        }
+      },
+      {
+        0.875,
+        {
+          -1.2093750000000001,
+          -2.3031250000000001
+        }
+      },
+      {
+        0.9375,
+        {
+          -0.596875,
+          -2.5281250000000002
+        }
+      }
+    },
+    range = 15,
+    range_mode = "bounding-box-to-bounding-box",
+    type = "stream",
+    use_shooter_direction = true,
+    warmup = 30
+  },
+  collision_box = {
+    {
+      -0.4,
+      -0.4
+    },
+    {
+      0.4,
+      0.4
+    }
+  },
+  corpse = "big-spitter-corpse",
+  damaged_trigger_effect = {
+    damage_type_filters = "fire",
+    entity_name = "enemy-damaged-explosion",
+    offset_deviation = {
+      {
+        -0.5,
+        -0.5
+      },
+      {
+        0.5,
+        0.5
+      }
+    },
+    offsets = {
+      {
+        0,
+        0
+      }
+    },
+    type = "create-entity"
+  },
+  distance_per_frame = 0.070000000000000009,
+  distraction_cooldown = 300,
+  dying_explosion = "big-spitter-die",
+  dying_sound = {
+    {
+      filename = "__base__/sound/creatures/spitter-death-big-1.ogg",
+      volume = 0.70999999999999996
+    },
+    {
+      filename = "__base__/sound/creatures/spitter-death-big-2.ogg",
+      volume = 0.70999999999999996
+    },
+    {
+      filename = "__base__/sound/creatures/spitter-death-big-3.ogg",
+      volume = 0.70999999999999996
+    },
+    {
+      filename = "__base__/sound/creatures/spitter-death-big-4.ogg",
+      volume = 0.70999999999999996
+    },
+    {
+      filename = "__base__/sound/creatures/spitter-death-big-5.ogg",
+      volume = 0.70999999999999996
+    },
+    {
+      filename = "__base__/sound/creatures/spitter-death-big-6.ogg",
+      volume = 0.70999999999999996
+    },
+    {
+      filename = "__base__/sound/creatures/spitter-death-big-7.ogg",
+      volume = 0.70999999999999996
+    }
+  },
+  flags = {
+    "placeable-player",
+    "placeable-enemy",
+    "placeable-off-grid",
+    "breaths-air",
+    "not-repairable"
+  },
+  healing_per_tick = 0.01,
+  icon = "__base__/graphics/icons/big-spitter.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  max_health = 200,
+  max_pursue_distance = 50,
+  min_pursue_time = 600,
+  movement_speed = 0.15,
+  name = "big-spitter",
+  order = "b-b-c",
+  pollution_to_join_attack = 30,
+  resistances = {
+    {
+      percent = 15,
+      type = "explosion"
+    }
+  },
+  run_animation = {
+    layers = {
+      {
+        direction_count = 16,
+        filenames = {
+          "__base__/graphics/entity/spitter/spitter-run-01.png",
+          "__base__/graphics/entity/spitter/spitter-run-02.png",
+          "__base__/graphics/entity/spitter/spitter-run-03.png",
+          "__base__/graphics/entity/spitter/spitter-run-04.png"
+        },
+        frame_count = 16,
+        height = 110,
+        hr_version = {
+          direction_count = 16,
+          filenames = {
+            "__base__/graphics/entity/spitter/hr-spitter-run-01.png",
+            "__base__/graphics/entity/spitter/hr-spitter-run-02.png",
+            "__base__/graphics/entity/spitter/hr-spitter-run-03.png",
+            "__base__/graphics/entity/spitter/hr-spitter-run-04.png"
+          },
+          frame_count = 16,
+          height = 220,
+          line_length = 8,
+          lines_per_file = 8,
+          scale = 0.5,
+          shift = {
+            0,
+            -0.375
+          },
+          slice = 8,
+          width = 248
+        },
+        line_length = 8,
+        lines_per_file = 8,
+        scale = 1,
+        shift = {
+          0,
+          -0.375
+        },
+        slice = 8,
+        width = 124
+      },
+      {
+        direction_count = 16,
+        filenames = {
+          "__base__/graphics/entity/spitter/spitter-run-mask1-01.png",
+          "__base__/graphics/entity/spitter/spitter-run-mask1-02.png",
+          "__base__/graphics/entity/spitter/spitter-run-mask1-03.png",
+          "__base__/graphics/entity/spitter/spitter-run-mask1-04.png"
+        },
+        flags = {
+          "mask"
+        },
+        frame_count = 16,
+        height = 100,
+        hr_version = {
+          direction_count = 16,
+          filenames = {
+            "__base__/graphics/entity/spitter/hr-spitter-run-mask1-01.png",
+            "__base__/graphics/entity/spitter/hr-spitter-run-mask1-02.png",
+            "__base__/graphics/entity/spitter/hr-spitter-run-mask1-03.png",
+            "__base__/graphics/entity/spitter/hr-spitter-run-mask1-04.png"
+          },
+          frame_count = 16,
+          height = 194,
+          line_length = 8,
+          lines_per_file = 8,
+          scale = 0.5,
+          shift = {
+            0,
+            -0.53125
+          },
+          slice = 8,
+          tint = 0 --[=[ ref [""].attack_parameters.animation.layers[2].hr_version.tint ]=],
+          width = 248
+        },
+        line_length = 8,
+        lines_per_file = 8,
+        scale = 1,
+        shift = {
+          0,
+          -0.5625
+        },
+        slice = 8,
+        tint = 0 --[=[ ref [""].attack_parameters.animation.layers[2].hr_version.tint ]=],
+        width = 124
+      },
+      {
+        direction_count = 16,
+        filenames = {
+          "__base__/graphics/entity/spitter/spitter-run-mask2-01.png",
+          "__base__/graphics/entity/spitter/spitter-run-mask2-02.png",
+          "__base__/graphics/entity/spitter/spitter-run-mask2-03.png",
+          "__base__/graphics/entity/spitter/spitter-run-mask2-04.png"
+        },
+        flags = {
+          "mask"
+        },
+        frame_count = 16,
+        height = 98,
+        hr_version = {
+          direction_count = 16,
+          filenames = {
+            "__base__/graphics/entity/spitter/hr-spitter-run-mask2-01.png",
+            "__base__/graphics/entity/spitter/hr-spitter-run-mask2-02.png",
+            "__base__/graphics/entity/spitter/hr-spitter-run-mask2-03.png",
+            "__base__/graphics/entity/spitter/hr-spitter-run-mask2-04.png"
+          },
+          frame_count = 16,
+          height = 196,
+          line_length = 8,
+          lines_per_file = 8,
+          scale = 0.5,
+          shift = {
+            -0.03125,
+            -0.5625
+          },
+          slice = 8,
+          tint = 0 --[=[ ref [""].attack_parameters.animation.layers[3].hr_version.tint ]=],
+          width = 252
+        },
+        line_length = 8,
+        lines_per_file = 8,
+        scale = 1,
+        shift = {
+          0,
+          -0.5625
+        },
+        slice = 8,
+        tint = 0 --[=[ ref [""].attack_parameters.animation.layers[3].hr_version.tint ]=],
+        width = 124
+      },
+      {
+        direction_count = 16,
+        draw_as_shadow = true,
+        filenames = {
+          "__base__/graphics/entity/spitter/spitter-run-shadow-01.png",
+          "__base__/graphics/entity/spitter/spitter-run-shadow-02.png",
+          "__base__/graphics/entity/spitter/spitter-run-shadow-03.png",
+          "__base__/graphics/entity/spitter/spitter-run-shadow-04.png"
+        },
+        frame_count = 16,
+        height = 88,
+        hr_version = {
+          direction_count = 16,
+          draw_as_shadow = true,
+          filenames = {
+            "__base__/graphics/entity/spitter/hr-spitter-run-shadow-01.png",
+            "__base__/graphics/entity/spitter/hr-spitter-run-shadow-02.png",
+            "__base__/graphics/entity/spitter/hr-spitter-run-shadow-03.png",
+            "__base__/graphics/entity/spitter/hr-spitter-run-shadow-04.png"
+          },
+          frame_count = 16,
+          height = 180,
+          line_length = 8,
+          lines_per_file = 8,
+          scale = 0.5,
+          shift = {
+            0.5,
+            -0.03125
+          },
+          slice = 8,
+          width = 306
+        },
+        line_length = 8,
+        lines_per_file = 8,
+        scale = 1,
+        shift = {
+          0.5,
+          0
+        },
+        slice = 8,
+        width = 154
+      }
+    }
+  },
+  running_sound_animation_positions = {
+    2
+  },
+  selection_box = {
+    {
+      -0.7,
+      -1
+    },
+    {
+      0.7,
+      1
+    }
+  },
+  spawning_time_modifier = 3,
+  sticker_box = {
+    {
+      -0.3,
+      -0.5
+    },
+    {
+      0.3,
+      0.1
+    }
+  },
+  subgroup = "enemies",
+  type = "unit",
+  vision_distance = 30,
+  walking_sound = {
+    aggregation = {
+      max_count = 2,
+      remove = true
+    },
+    variations = {
+      {
+        filename = "__base__/sound/creatures/spitter-walk-big-1.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-walk-big-2.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-walk-big-3.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-walk-big-4.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-walk-big-5.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-walk-big-6.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-walk-big-7.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-walk-big-8.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-walk-big-9.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-walk-big-10.ogg",
+        volume = 0.5
+      }
+    }
+  },
+  water_reflection = {
+    orientation_to_variation = false,
+    pictures = {
+      filename = "__base__/graphics/entity/spitter/spitter-reflection.png",
+      height = 32,
+      priority = "extra-high",
+      scale = 5,
+      shift = {
+        0.15625,
+        0.46875
+      },
+      variation_count = 1,
+      width = 20
+    },
+    rotate = true
+  },
+  working_sound = {
+    probability = 0.0041666666666666661,
+    sound = {
+      {
+        filename = "__base__/sound/creatures/spitter-call-big-1.ogg",
+        volume = 0.46000000000000005
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-call-big-2.ogg",
+        volume = 0.46000000000000005
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-call-big-3.ogg",
+        volume = 0.46000000000000005
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-call-big-4.ogg",
+        volume = 0.46000000000000005
+      },
+      {
+        filename = "__base__/sound/creatures/spitter-call-big-5.ogg",
+        volume = 0.46000000000000005
+      }
+    }
+  }
+} --[[incomplete output with shared/self-references skipped]]

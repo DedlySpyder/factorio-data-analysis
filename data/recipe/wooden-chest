@@ -1,0 +1,11 @@
+{
+  ingredients = {
+    {
+      "wood",
+      2
+    }
+  },
+  name = "wooden-chest",
+  result = "wooden-chest",
+  type = "recipe"
+}

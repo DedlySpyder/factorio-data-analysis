@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 8,
+  ingredients = {
+    {
+      "rocket",
+      1
+    },
+    {
+      "explosives",
+      2
+    }
+  },
+  name = "explosive-rocket",
+  result = "explosive-rocket",
+  type = "recipe"
+}

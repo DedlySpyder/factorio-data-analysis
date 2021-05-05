@@ -1,0 +1,64 @@
+{
+  capsule_action = {
+    attack_parameters = {
+      activation_type = "consume",
+      ammo_category = "capsule",
+      ammo_type = {
+        action = {
+          action_delivery = {
+            target_effects = {
+              {
+                damage = {
+                  amount = -80,
+                  type = "physical"
+                },
+                type = "damage"
+              },
+              {
+                sound = {
+                  {
+                    filename = "__base__/sound/eat.ogg",
+                    volume = 0.6
+                  },
+                  {
+                    filename = "__base__/sound/eat-1.ogg",
+                    volume = 0.6
+                  },
+                  {
+                    filename = "__base__/sound/eat-2.ogg",
+                    volume = 0.6
+                  },
+                  {
+                    filename = "__base__/sound/eat-3.ogg",
+                    volume = 0.6
+                  },
+                  {
+                    filename = "__base__/sound/eat-4.ogg",
+                    volume = 0.6
+                  }
+                },
+                type = "play-sound"
+              }
+            },
+            type = "instant"
+          },
+          type = "direct"
+        },
+        category = "capsule",
+        target_type = "position"
+      },
+      cooldown = 30,
+      range = 0,
+      type = "projectile"
+    },
+    type = "use-on-self"
+  },
+  icon = "__base__/graphics/icons/fish.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "raw-fish",
+  order = "h[raw-fish]",
+  stack_size = 100,
+  subgroup = "raw-resource",
+  type = "capsule"
+}

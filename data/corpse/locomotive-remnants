@@ -1,0 +1,92 @@
+{
+  animation = {
+    layers = {
+      {
+        direction_count = 8,
+        filename = "__base__/graphics/entity/diesel-locomotive/remnants/diesel-locomotive-base-remnants.png",
+        frame_count = 1,
+        height = 218,
+        hr_version = {
+          direction_count = 8,
+          filename = "__base__/graphics/entity/diesel-locomotive/remnants/hr-diesel-locomotive-base-remnants.png",
+          frame_count = 1,
+          height = 436,
+          line_length = 1,
+          scale = 0.5,
+          shift = {
+            0.125,
+            0.015625
+          },
+          width = 460
+        },
+        line_length = 1,
+        shift = {
+          0.125,
+          0
+        },
+        width = 230
+      },
+      {
+        apply_runtime_tint = true,
+        direction_count = 8,
+        filename = "__base__/graphics/entity/diesel-locomotive/remnants/mask/diesel-locomotive-remnants-mask.png",
+        frame_count = 1,
+        height = 146,
+        hr_version = {
+          apply_runtime_tint = true,
+          direction_count = 8,
+          filename = "__base__/graphics/entity/diesel-locomotive/remnants/mask/hr-diesel-locomotive-remnants-mask.png",
+          frame_count = 1,
+          height = 292,
+          priority = "low",
+          scale = 0.5,
+          shift = {
+            0,
+            0.0625
+          },
+          width = 390
+        },
+        priority = "low",
+        shift = {
+          0,
+          0.0625
+        },
+        width = 196
+      }
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "building-direction-8-way",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/locomotive.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.locomotive"
+    }
+  },
+  name = "locomotive-remnants",
+  order = "a-f-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -1,
+      -3
+    },
+    {
+      1,
+      3
+    }
+  },
+  subgroup = "train-transport-remnants",
+  tile_height = 6,
+  tile_width = 2,
+  time_before_removed = 54000,
+  type = "corpse"
+}

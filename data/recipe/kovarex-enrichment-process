@@ -1,0 +1,34 @@
+{
+  allow_decomposition = false,
+  category = "centrifuging",
+  enabled = false,
+  energy_required = 60,
+  icon = "__base__/graphics/icons/kovarex-enrichment-process.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  ingredients = {
+    {
+      "uranium-235",
+      40
+    },
+    {
+      "uranium-238",
+      5
+    }
+  },
+  main_product = "",
+  name = "kovarex-enrichment-process",
+  order = "r[uranium-processing]-c[kovarex-enrichment-process]",
+  results = {
+    {
+      "uranium-235",
+      41
+    },
+    {
+      "uranium-238",
+      2
+    }
+  },
+  subgroup = "intermediate-product",
+  type = "recipe"
+}

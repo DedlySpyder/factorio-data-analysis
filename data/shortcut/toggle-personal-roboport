@@ -1,0 +1,51 @@
+{
+  action = "toggle-personal-roboport",
+  associated_control_input = "toggle-personal-roboport",
+  disabled_icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/toggle-personal-roboport-x32-white.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 32
+  },
+  disabled_small_icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/toggle-personal-roboport-x24-white.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 24
+  },
+  icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/toggle-personal-roboport-x32.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 32
+  },
+  localised_name = {
+    "shortcut.toggle-personal-roboport"
+  },
+  name = "toggle-personal-roboport",
+  order = "c[toggles]-a[roboport]",
+  small_icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/toggle-personal-roboport-x24.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 24
+  },
+  technology_to_unlock = "personal-roboport-equipment",
+  type = "shortcut"
+}

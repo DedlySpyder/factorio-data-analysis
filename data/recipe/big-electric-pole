@@ -1,0 +1,20 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "iron-stick",
+      8
+    },
+    {
+      "steel-plate",
+      5
+    },
+    {
+      "copper-plate",
+      5
+    }
+  },
+  name = "big-electric-pole",
+  result = "big-electric-pole",
+  type = "recipe"
+}

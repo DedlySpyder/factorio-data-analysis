@@ -1,0 +1,203 @@
+{
+  expression = {
+    arguments = {
+      {
+        arguments = {
+          {
+            arguments = {
+              {
+                literal_value = 0.375,
+                source_location = {
+                  filename = "__core__/lualib/noise.lua",
+                  line_number = 54
+                },
+                type = "literal-number"
+              },
+              {
+                arguments = {
+                  input_scale = {
+                    literal_value = 0.00390625,
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 155
+                    },
+                    type = "literal-number"
+                  },
+                  octave_input_scale_multiplier = {
+                    literal_value = 0.3333333333333333,
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 159
+                    },
+                    type = "literal-number"
+                  },
+                  octave_output_scale_multiplier = {
+                    literal_value = 1.5,
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 158
+                    },
+                    type = "literal-number"
+                  },
+                  octaves = {
+                    literal_value = 4,
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 157
+                    },
+                    type = "literal-number"
+                  },
+                  output_scale = {
+                    literal_value = 0.125,
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 156
+                    },
+                    type = "literal-number"
+                  },
+                  seed0 = {
+                    source_location = {
+                      filename = "__core__/lualib/noise.lua",
+                      line_number = 284
+                    },
+                    type = "variable",
+                    variable_name = "map_seed"
+                  },
+                  seed1 = {
+                    literal_value = 6,
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 154
+                    },
+                    type = "literal-number"
+                  },
+                  x = {
+                    arguments = {
+                      {
+                        arguments = {
+                          {
+                            source_location = {
+                              filename = "__core__/lualib/noise.lua",
+                              line_number = 273
+                            },
+                            type = "variable",
+                            variable_name = "x"
+                          },
+                          {
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 356
+                            },
+                            type = "variable",
+                            variable_name = "control-setting:moisture:frequency:multiplier"
+                          }
+                        },
+                        function_name = "multiply",
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 356
+                        },
+                        type = "function-application"
+                      },
+                      {
+                        literal_value = 30000,
+                        source_location = {
+                          filename = "__core__/lualib/noise.lua",
+                          line_number = 54
+                        },
+                        type = "literal-number"
+                      }
+                    },
+                    function_name = "add",
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 356
+                    },
+                    type = "function-application"
+                  },
+                  y = {
+                    arguments = {
+                      {
+                        source_location = {
+                          filename = "__core__/lualib/noise.lua",
+                          line_number = 274
+                        },
+                        type = "variable",
+                        variable_name = "y"
+                      },
+                      {
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 357
+                        },
+                        type = "variable",
+                        variable_name = "control-setting:moisture:frequency:multiplier"
+                      }
+                    },
+                    function_name = "multiply",
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 357
+                    },
+                    type = "function-application"
+                  }
+                },
+                function_name = "factorio-quick-multioctave-noise",
+                source_location = {
+                  filename = "__core__/prototypes/noise-programs.lua",
+                  line_number = 360
+                },
+                type = "function-application"
+              }
+            },
+            function_name = "add",
+            source_location = {
+              filename = "__core__/prototypes/noise-programs.lua",
+              line_number = 359
+            },
+            type = "function-application"
+          },
+          {
+            source_location = {
+              filename = "__core__/prototypes/noise-programs.lua",
+              line_number = 361
+            },
+            type = "variable",
+            variable_name = "control-setting:moisture:bias"
+          }
+        },
+        function_name = "add",
+        source_location = {
+          filename = "__core__/prototypes/noise-programs.lua",
+          line_number = 360
+        },
+        type = "function-application"
+      },
+      {
+        literal_value = 0,
+        source_location = {
+          filename = "__core__/lualib/noise.lua",
+          line_number = 304
+        },
+        type = "literal-number"
+      },
+      {
+        literal_value = 1,
+        source_location = {
+          filename = "__core__/lualib/noise.lua",
+          line_number = 305
+        },
+        type = "literal-number"
+      }
+    },
+    function_name = "clamp",
+    source_location = {
+      filename = "__core__/prototypes/noise-programs.lua",
+      line_number = 362
+    },
+    type = "function-application"
+  },
+  intended_property = "moisture",
+  name = "moisture",
+  type = "noise-expression"
+}

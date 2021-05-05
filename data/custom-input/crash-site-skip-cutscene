@@ -1,0 +1,7 @@
+{
+  enabled_while_in_cutscene = true,
+  key_sequence = "TAB",
+  linked_game_control = "confirm-message",
+  name = "crash-site-skip-cutscene",
+  type = "custom-input"
+}

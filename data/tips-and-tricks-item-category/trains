@@ -1,0 +1,5 @@
+{
+  name = "trains",
+  order = "h-[trains]",
+  type = "tips-and-tricks-item-category"
+}

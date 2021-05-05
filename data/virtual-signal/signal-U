@@ -1,0 +1,9 @@
+{
+  icon = "__base__/graphics/icons/signal/signal_U.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "signal-U",
+  order = "c[letters]-[U]",
+  subgroup = "virtual-signal-letter",
+  type = "virtual-signal"
+}

@@ -1,0 +1,203 @@
+{
+  animations = {
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/small-explosion/small-explosion-1.png",
+      frame_count = 24,
+      height = 90,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/small-explosion/hr-small-explosion-1.png",
+        frame_count = 24,
+        height = 178,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          -0.03125,
+          -0.75
+        },
+        width = 88
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        -0.03125,
+        -0.75
+      },
+      width = 44
+    },
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/small-explosion/small-explosion-2.png",
+      frame_count = 24,
+      height = 76,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/small-explosion/hr-small-explosion-2.png",
+        frame_count = 24,
+        height = 152,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          0.0625,
+          -0.234375
+        },
+        width = 92
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        0.0625,
+        -0.25
+      },
+      width = 46
+    }
+  },
+  created_effect = {
+    action_delivery = {
+      target_effects = {
+        {
+          initial_height = 0.3,
+          initial_height_deviation = 0.5,
+          initial_vertical_speed = 0.078000000000000007,
+          initial_vertical_speed_deviation = 0.056000000000000005,
+          offset_deviation = {
+            {
+              -0.19530000000000001,
+              -0.19530000000000001
+            },
+            {
+              0.19530000000000001,
+              0.19530000000000001
+            }
+          },
+          particle_name = "gate-metal-particle-big",
+          repeat_count = 4,
+          speed_from_center = 0.03,
+          speed_from_center_deviation = 0.047999999999999998,
+          type = "create-particle"
+        },
+        {
+          initial_height = 0.9,
+          initial_height_deviation = 0.5,
+          initial_vertical_speed = 0.077000000000000002,
+          initial_vertical_speed_deviation = 0.056000000000000005,
+          offset_deviation = {
+            {
+              -0.4883,
+              -0.59770000000000003
+            },
+            {
+              0.4883,
+              0.59770000000000003
+            }
+          },
+          particle_name = "gate-metal-particle-medium",
+          repeat_count = 7,
+          speed_from_center = 0.03,
+          speed_from_center_deviation = 0.05,
+          type = "create-particle"
+        },
+        {
+          initial_height = 1,
+          initial_height_deviation = 0.5,
+          initial_vertical_speed = 0.075999999999999996,
+          initial_vertical_speed_deviation = 0.055,
+          offset_deviation = {
+            {
+              -0.39060000000000002,
+              -0.4883
+            },
+            {
+              0.39060000000000002,
+              0.4883
+            }
+          },
+          particle_name = "gate-metal-particle-small",
+          repeat_count = 17,
+          speed_from_center = 0.02,
+          speed_from_center_deviation = 0.05,
+          type = "create-particle"
+        },
+        {
+          initial_height = 0.1,
+          initial_height_deviation = 0.5,
+          initial_vertical_speed = 0.092999999999999989,
+          initial_vertical_speed_deviation = 0.052000000000000002,
+          offset_deviation = {
+            {
+              -0.5,
+              -0.5
+            },
+            {
+              0.5,
+              0.5
+            }
+          },
+          particle_name = "gate-stone-particle-small",
+          repeat_count = 39,
+          speed_from_center = 0.05,
+          speed_from_center_deviation = 0.05,
+          type = "create-particle"
+        }
+      },
+      type = "instant"
+    },
+    type = "direct"
+  },
+  flags = {
+    "not-on-map",
+    "hidden"
+  },
+  height = 0,
+  icon = "__base__/graphics/icons/gate.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "dying-explosion-name",
+    {
+      "entity-name.gate"
+    }
+  },
+  name = "gate-explosion",
+  order = "b-b-a",
+  smoke = "smoke-fast",
+  smoke_count = 2,
+  smoke_slow_down_factor = 1,
+  sound = {
+    aggregation = {
+      max_count = 1,
+      remove = true
+    },
+    variations = {
+      {
+        filename = "__base__/sound/small-explosion-1.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/small-explosion-2.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/small-explosion-3.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/small-explosion-4.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/small-explosion-5.ogg",
+        volume = 0.5
+      }
+    }
+  },
+  subgroup = "defensive-structure-explosions",
+  type = "explosion"
+}

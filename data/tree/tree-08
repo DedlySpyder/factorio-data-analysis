@@ -1,0 +1,2220 @@
+{
+  autoplace = {
+    control = "trees",
+    max_probability = 0.35,
+    order = "a[tree]-b[forest]",
+    peaks = {
+      {
+        influence = 0,
+        richness_influence = 0.75
+      },
+      {
+        influence = -1.75,
+        richness_influence = 1.75
+      },
+      {
+        influence = 0.375,
+        noise_layer = "trees-13",
+        noise_octaves_difference = -0.5,
+        noise_persistence = 0.8,
+        richness_influence = -0.5
+      },
+      {
+        influence = 0.5,
+        noise_layer = "trees",
+        noise_octaves_difference = -0.5,
+        noise_persistence = 0.6,
+        richness_influence = -0.5
+      },
+      {
+        influence = 1,
+        richness_influence = 0,
+        temperature_max_range = 7.5,
+        temperature_optimal = 20,
+        temperature_range = 5,
+        water_max_range = 0.15000000000000002,
+        water_optimal = 0.1,
+        water_range = 0.1
+      },
+      {
+        distance_max_range = 192,
+        distance_optimal = 0,
+        distance_range = 64,
+        distance_top_property_limit = 128,
+        influence = -0.25,
+        richness_influence = 0
+      }
+    },
+    random_probability_penalty = 0.001,
+    richness_base = 0,
+    richness_multiplier = 1,
+    sharpness = 0.4
+  },
+  collision_box = {
+    {
+      -0.4,
+      -0.4
+    },
+    {
+      0.4,
+      0.4
+    }
+  },
+  colors = {
+    {
+      b = 83,
+      g = 255,
+      r = 231
+    },
+    {
+      b = 58,
+      g = 255,
+      r = 209
+    },
+    {
+      b = 4,
+      g = 159,
+      r = 165
+    },
+    {
+      b = 73,
+      g = 231,
+      r = 194
+    },
+    {
+      b = 44,
+      g = 242,
+      r = 245
+    },
+    {
+      b = 102,
+      g = 242,
+      r = 248
+    },
+    {
+      b = 118,
+      g = 238,
+      r = 208
+    }
+  },
+  corpse = "tree-08-stump",
+  damaged_trigger_effect = {
+    {
+      damage_type_filters = "fire",
+      sound = {
+        {
+          filename = "__base__/sound/particles/tree-leaves-1.ogg",
+          volume = 0.35
+        },
+        {
+          filename = "__base__/sound/particles/tree-leaves-2.ogg",
+          volume = 0.35
+        },
+        {
+          filename = "__base__/sound/particles/tree-leaves-3.ogg",
+          volume = 0.35
+        },
+        {
+          filename = "__base__/sound/particles/tree-leaves-4.ogg",
+          volume = 0.35
+        }
+      },
+      type = "play-sound"
+    }
+  },
+  darkness_of_burnt_tree = 0.5,
+  drawing_box = {
+    {
+      -0.9,
+      -3.5
+    },
+    {
+      0.9,
+      0.6
+    }
+  },
+  emissions_per_second = -0.001,
+  flags = {
+    "placeable-neutral",
+    "placeable-off-grid",
+    "breaths-air"
+  },
+  icon = "__base__/graphics/icons/tree-08.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "entity-name.tree"
+  },
+  max_health = 50,
+  minable = {
+    count = 4,
+    mining_particle = "wooden-particle",
+    mining_time = 0.55,
+    mining_trigger = {
+      {
+        action_delivery = {
+          {
+            target_effects = 0 --[=[ ref [""].damaged_trigger_effect ]=],
+            type = "instant"
+          }
+        },
+        type = "direct"
+      }
+    },
+    result = "wood"
+  },
+  mined_sound = 0 --[=[ ref [""].damaged_trigger_effect[1].sound ]=],
+  name = "tree-08",
+  order = "a[tree]-a[regular]-m[tree-08]",
+  remains_when_mined = "tree-08-stump",
+  selection_box = {
+    {
+      -0.9,
+      -2.2000000000000002
+    },
+    {
+      0.9,
+      0.6
+    }
+  },
+  subgroup = "trees",
+  type = "tree",
+  variation_weights = {
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0.3,
+    0.3,
+    0.05,
+    0.05
+  },
+  variations = {
+    {
+      branch_generation = {
+        frame_speed = 0.4,
+        initial_height = 2,
+        initial_height_deviation = 2,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "branch-particle",
+        repeat_count = 15,
+        speed_from_center = 0.03,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaf_generation = {
+        initial_height = 2,
+        initial_height_deviation = 0.05,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "leaf-particle",
+        speed_from_center = 0.01,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaves = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-a-leaves.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 3,
+        height = 142,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-a-leaves.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 3,
+          height = 282,
+          scale = 0.5,
+          shift = {
+            -0.1875,
+            -2.40625
+          },
+          width = 262
+        },
+        shift = {
+          -0.1875,
+          -2.4375
+        },
+        width = 130
+      },
+      normal = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-a-normal.png",
+        frame_count = 3,
+        height = 112,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-a-normal.png",
+          frame_count = 3,
+          height = 222,
+          scale = 0.5,
+          shift = {
+            -0.15625,
+            -2.84375
+          },
+          width = 260
+        },
+        shift = {
+          -0.15625,
+          -2.84375
+        },
+        width = 130
+      },
+      shadow = {
+        disable_shadow_distortion_beginning_at_frame = 2,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/tree/08/tree-08-a-shadow.png",
+        flags = {
+          "mipmap",
+          "shadow"
+        },
+        frame_count = 4,
+        height = 110,
+        hr_version = {
+          disable_shadow_distortion_beginning_at_frame = 2,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-a-shadow.png",
+          flags = {
+            "mipmap",
+            "shadow"
+          },
+          frame_count = 4,
+          height = 222,
+          scale = 0.5,
+          shift = {
+            2.21875,
+            0.0625
+          },
+          width = 310
+        },
+        shift = {
+          2.1875,
+          0.0625
+        },
+        width = 156
+      },
+      trunk = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-a-trunk.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 1,
+        height = 142,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-a-trunk.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 1,
+          height = 286,
+          scale = 0.5,
+          shift = {
+            -0.15625,
+            -1.8125
+          },
+          width = 210
+        },
+        shift = {
+          -0.1875,
+          -1.8125
+        },
+        width = 106
+      },
+      water_reflection = {
+        orientation_to_variation = false,
+        pictures = {
+          filename = "__base__/graphics/entity/tree/08/tree-08-reflection.png",
+          height = 40,
+          priority = "extra-high",
+          scale = 5,
+          shift = {
+            0,
+            2.34375
+          },
+          variation_count = 4,
+          width = 36,
+          y = 0
+        },
+        rotate = false
+      }
+    },
+    {
+      branch_generation = {
+        frame_speed = 0.4,
+        initial_height = 2,
+        initial_height_deviation = 2,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "branch-particle",
+        repeat_count = 15,
+        speed_from_center = 0.03,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaf_generation = {
+        initial_height = 2,
+        initial_height_deviation = 0.05,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "leaf-particle",
+        speed_from_center = 0.01,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaves = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-b-leaves.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 3,
+        height = 154,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-b-leaves.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 3,
+          height = 306,
+          scale = 0.5,
+          shift = {
+            -0.09375,
+            -2.1875
+          },
+          width = 322
+        },
+        shift = {
+          -0.125,
+          -2.25
+        },
+        width = 162
+      },
+      normal = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-b-normal.png",
+        frame_count = 3,
+        height = 104,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-b-normal.png",
+          frame_count = 3,
+          height = 206,
+          scale = 0.5,
+          shift = {
+            -0.0625,
+            -2.96875
+          },
+          width = 322
+        },
+        shift = {
+          -0.0625,
+          -2.96875
+        },
+        width = 162
+      },
+      shadow = {
+        disable_shadow_distortion_beginning_at_frame = 2,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/tree/08/tree-08-b-shadow.png",
+        flags = {
+          "mipmap",
+          "shadow"
+        },
+        frame_count = 4,
+        height = 90,
+        hr_version = {
+          disable_shadow_distortion_beginning_at_frame = 2,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-b-shadow.png",
+          flags = {
+            "mipmap",
+            "shadow"
+          },
+          frame_count = 4,
+          height = 178,
+          scale = 0.5,
+          shift = {
+            2.40625,
+            -0.15625
+          },
+          width = 322
+        },
+        shift = {
+          2.375,
+          -0.1875
+        },
+        width = 162
+      },
+      trunk = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-b-trunk.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 1,
+        height = 138,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-b-trunk.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 1,
+          height = 276,
+          scale = 0.5,
+          shift = {
+            -0.09375,
+            -1.71875
+          },
+          width = 238
+        },
+        shift = {
+          -0.125,
+          -1.75
+        },
+        width = 120
+      },
+      water_reflection = {
+        orientation_to_variation = false,
+        pictures = {
+          filename = "__base__/graphics/entity/tree/08/tree-08-reflection.png",
+          height = 40,
+          priority = "extra-high",
+          scale = 5,
+          shift = {
+            0,
+            2.34375
+          },
+          variation_count = 4,
+          width = 36,
+          y = 40
+        },
+        rotate = false
+      }
+    },
+    {
+      branch_generation = {
+        frame_speed = 0.4,
+        initial_height = 2,
+        initial_height_deviation = 2,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "branch-particle",
+        repeat_count = 15,
+        speed_from_center = 0.03,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaf_generation = {
+        initial_height = 2,
+        initial_height_deviation = 0.05,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "leaf-particle",
+        speed_from_center = 0.01,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaves = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-c-leaves.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 3,
+        height = 146,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-c-leaves.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 3,
+          height = 294,
+          scale = 0.5,
+          shift = {
+            0.1875,
+            -2.59375
+          },
+          width = 252
+        },
+        shift = {
+          0.1875,
+          -2.625
+        },
+        width = 126
+      },
+      normal = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-c-normal.png",
+        frame_count = 3,
+        height = 130,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-c-normal.png",
+          frame_count = 3,
+          height = 260,
+          scale = 0.5,
+          shift = {
+            0.203125,
+            -2.8125
+          },
+          width = 254
+        },
+        shift = {
+          0.21875,
+          -2.8125
+        },
+        width = 128
+      },
+      shadow = {
+        disable_shadow_distortion_beginning_at_frame = 2,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/tree/08/tree-08-c-shadow.png",
+        flags = {
+          "mipmap",
+          "shadow"
+        },
+        frame_count = 4,
+        height = 114,
+        hr_version = {
+          disable_shadow_distortion_beginning_at_frame = 2,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-c-shadow.png",
+          flags = {
+            "mipmap",
+            "shadow"
+          },
+          frame_count = 4,
+          height = 228,
+          scale = 0.5,
+          shift = {
+            2.25,
+            -0.0625
+          },
+          width = 326
+        },
+        shift = {
+          2.1875,
+          -0.0625
+        },
+        width = 166
+      },
+      trunk = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-c-trunk.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 1,
+        height = 152,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-c-trunk.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 1,
+          height = 300,
+          scale = 0.5,
+          shift = {
+            0.09375,
+            -1.96875
+          },
+          width = 210
+        },
+        shift = {
+          0.0625,
+          -2
+        },
+        width = 106
+      },
+      water_reflection = {
+        orientation_to_variation = false,
+        pictures = {
+          filename = "__base__/graphics/entity/tree/08/tree-08-reflection.png",
+          height = 40,
+          priority = "extra-high",
+          scale = 5,
+          shift = {
+            0,
+            2.34375
+          },
+          variation_count = 4,
+          width = 36,
+          y = 80
+        },
+        rotate = false
+      }
+    },
+    {
+      branch_generation = {
+        frame_speed = 0.4,
+        initial_height = 2,
+        initial_height_deviation = 2,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "branch-particle",
+        repeat_count = 15,
+        speed_from_center = 0.03,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaf_generation = {
+        initial_height = 2,
+        initial_height_deviation = 0.05,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "leaf-particle",
+        speed_from_center = 0.01,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaves = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-d-leaves.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 3,
+        height = 110,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-d-leaves.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 3,
+          height = 220,
+          scale = 0.5,
+          shift = {
+            0,
+            -2.28125
+          },
+          width = 214
+        },
+        shift = {
+          -0.0625,
+          -2.3125
+        },
+        width = 110
+      },
+      normal = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-d-normal.png",
+        frame_count = 3,
+        height = 92,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-d-normal.png",
+          frame_count = 3,
+          height = 182,
+          scale = 0.5,
+          shift = {
+            0.015625,
+            -2.5625
+          },
+          width = 216
+        },
+        shift = {
+          0,
+          -2.5625
+        },
+        width = 108
+      },
+      shadow = {
+        disable_shadow_distortion_beginning_at_frame = 2,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/tree/08/tree-08-d-shadow.png",
+        flags = {
+          "mipmap",
+          "shadow"
+        },
+        frame_count = 4,
+        height = 86,
+        hr_version = {
+          disable_shadow_distortion_beginning_at_frame = 2,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-d-shadow.png",
+          flags = {
+            "mipmap",
+            "shadow"
+          },
+          frame_count = 4,
+          height = 170,
+          scale = 0.5,
+          shift = {
+            2.21875,
+            0.21875
+          },
+          width = 274
+        },
+        shift = {
+          2.1875,
+          0.1875
+        },
+        width = 138
+      },
+      trunk = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-d-trunk.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 1,
+        height = 114,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-d-trunk.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 1,
+          height = 228,
+          scale = 0.5,
+          shift = {
+            0.03125,
+            -1.40625
+          },
+          width = 166
+        },
+        shift = {
+          0,
+          -1.4375
+        },
+        width = 84
+      },
+      water_reflection = {
+        orientation_to_variation = false,
+        pictures = {
+          filename = "__base__/graphics/entity/tree/08/tree-08-reflection.png",
+          height = 40,
+          priority = "extra-high",
+          scale = 5,
+          shift = {
+            0,
+            2.34375
+          },
+          variation_count = 4,
+          width = 36,
+          y = 120
+        },
+        rotate = false
+      }
+    },
+    {
+      branch_generation = {
+        frame_speed = 0.4,
+        initial_height = 2,
+        initial_height_deviation = 2,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "branch-particle",
+        repeat_count = 15,
+        speed_from_center = 0.03,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaf_generation = {
+        initial_height = 2,
+        initial_height_deviation = 0.05,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "leaf-particle",
+        speed_from_center = 0.01,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaves = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-e-leaves.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 3,
+        height = 106,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-e-leaves.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 3,
+          height = 210,
+          scale = 0.5,
+          shift = {
+            0.0625,
+            -2.21875
+          },
+          width = 228
+        },
+        shift = {
+          0,
+          -2.25
+        },
+        width = 118
+      },
+      normal = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-e-normal.png",
+        frame_count = 3,
+        height = 84,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-e-normal.png",
+          frame_count = 3,
+          height = 166,
+          scale = 0.5,
+          shift = {
+            0.078125,
+            -2.484375
+          },
+          width = 228
+        },
+        shift = {
+          0.09375,
+          -2.46875
+        },
+        width = 116
+      },
+      shadow = {
+        disable_shadow_distortion_beginning_at_frame = 2,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/tree/08/tree-08-e-shadow.png",
+        flags = {
+          "mipmap",
+          "shadow"
+        },
+        frame_count = 4,
+        height = 76,
+        hr_version = {
+          disable_shadow_distortion_beginning_at_frame = 2,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-e-shadow.png",
+          flags = {
+            "mipmap",
+            "shadow"
+          },
+          frame_count = 4,
+          height = 150,
+          scale = 0.5,
+          shift = {
+            2.03125,
+            0.15625
+          },
+          width = 296
+        },
+        shift = {
+          2,
+          0.125
+        },
+        width = 150
+      },
+      trunk = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-e-trunk.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 1,
+        height = 122,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-e-trunk.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 1,
+          height = 242,
+          scale = 0.5,
+          shift = {
+            -0.21875,
+            -1.53125
+          },
+          width = 172
+        },
+        shift = {
+          -0.25,
+          -1.5625
+        },
+        width = 86
+      },
+      water_reflection = {
+        orientation_to_variation = false,
+        pictures = {
+          filename = "__base__/graphics/entity/tree/08/tree-08-reflection.png",
+          height = 40,
+          priority = "extra-high",
+          scale = 5,
+          shift = {
+            0,
+            2.34375
+          },
+          variation_count = 4,
+          width = 36,
+          y = 160
+        },
+        rotate = false
+      }
+    },
+    {
+      branch_generation = {
+        frame_speed = 0.4,
+        initial_height = 2,
+        initial_height_deviation = 2,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "branch-particle",
+        repeat_count = 15,
+        speed_from_center = 0.03,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaf_generation = {
+        initial_height = 2,
+        initial_height_deviation = 0.05,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "leaf-particle",
+        speed_from_center = 0.01,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaves = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-f-leaves.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 3,
+        height = 148,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-f-leaves.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 3,
+          height = 294,
+          scale = 0.5,
+          shift = {
+            -0.0625,
+            -2.09375
+          },
+          width = 218
+        },
+        shift = {
+          -0.0625,
+          -2.125
+        },
+        width = 108
+      },
+      normal = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-f-normal.png",
+        frame_count = 3,
+        height = 102,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-f-normal.png",
+          frame_count = 3,
+          height = 200,
+          scale = 0.5,
+          shift = {
+            -0.03125,
+            -2.828125
+          },
+          width = 216
+        },
+        shift = {
+          -0.03125,
+          -2.8125
+        },
+        width = 108
+      },
+      shadow = {
+        disable_shadow_distortion_beginning_at_frame = 2,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/tree/08/tree-08-f-shadow.png",
+        flags = {
+          "mipmap",
+          "shadow"
+        },
+        frame_count = 4,
+        height = 86,
+        hr_version = {
+          disable_shadow_distortion_beginning_at_frame = 2,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-f-shadow.png",
+          flags = {
+            "mipmap",
+            "shadow"
+          },
+          frame_count = 4,
+          height = 170,
+          scale = 0.5,
+          shift = {
+            1.96875,
+            -0.21875
+          },
+          width = 274
+        },
+        shift = {
+          1.9375,
+          -0.25
+        },
+        width = 138
+      },
+      trunk = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-f-trunk.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 1,
+        height = 138,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-f-trunk.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 1,
+          height = 272,
+          scale = 0.5,
+          shift = {
+            -0.09375,
+            -1.71875
+          },
+          width = 166
+        },
+        shift = {
+          -0.125,
+          -1.75
+        },
+        width = 84
+      },
+      water_reflection = {
+        orientation_to_variation = false,
+        pictures = {
+          filename = "__base__/graphics/entity/tree/08/tree-08-reflection.png",
+          height = 40,
+          priority = "extra-high",
+          scale = 5,
+          shift = {
+            0,
+            2.34375
+          },
+          variation_count = 4,
+          width = 36,
+          y = 200
+        },
+        rotate = false
+      }
+    },
+    {
+      branch_generation = {
+        frame_speed = 0.4,
+        initial_height = 2,
+        initial_height_deviation = 2,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "branch-particle",
+        repeat_count = 15,
+        speed_from_center = 0.03,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaf_generation = {
+        initial_height = 2,
+        initial_height_deviation = 0.05,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "leaf-particle",
+        speed_from_center = 0.01,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaves = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-g-leaves.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 3,
+        height = 96,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-g-leaves.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 3,
+          height = 192,
+          scale = 0.5,
+          shift = {
+            0.375,
+            -2.21875
+          },
+          width = 190
+        },
+        shift = {
+          0.375,
+          -2.25
+        },
+        width = 94
+      },
+      normal = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-g-normal.png",
+        frame_count = 3,
+        height = 82,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-g-normal.png",
+          frame_count = 3,
+          height = 164,
+          scale = 0.5,
+          shift = {
+            0.390625,
+            -2.40625
+          },
+          width = 192
+        },
+        shift = {
+          0.375,
+          -2.40625
+        },
+        width = 96
+      },
+      shadow = {
+        disable_shadow_distortion_beginning_at_frame = 2,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/tree/08/tree-08-g-shadow.png",
+        flags = {
+          "mipmap",
+          "shadow"
+        },
+        frame_count = 4,
+        height = 72,
+        hr_version = {
+          disable_shadow_distortion_beginning_at_frame = 2,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-g-shadow.png",
+          flags = {
+            "mipmap",
+            "shadow"
+          },
+          frame_count = 4,
+          height = 138,
+          scale = 0.5,
+          shift = {
+            2,
+            -0.25
+          },
+          width = 272
+        },
+        shift = {
+          2,
+          -0.3125
+        },
+        width = 136
+      },
+      trunk = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-g-trunk.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 1,
+        height = 112,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-g-trunk.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 1,
+          height = 222,
+          scale = 0.5,
+          shift = {
+            0.4375,
+            -1.34375
+          },
+          width = 146
+        },
+        shift = {
+          0.4375,
+          -1.375
+        },
+        width = 72
+      },
+      water_reflection = {
+        orientation_to_variation = false,
+        pictures = {
+          filename = "__base__/graphics/entity/tree/08/tree-08-reflection.png",
+          height = 40,
+          priority = "extra-high",
+          scale = 5,
+          shift = {
+            0,
+            2.34375
+          },
+          variation_count = 4,
+          width = 36,
+          y = 240
+        },
+        rotate = false
+      }
+    },
+    {
+      branch_generation = {
+        frame_speed = 0.4,
+        initial_height = 2,
+        initial_height_deviation = 2,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "branch-particle",
+        repeat_count = 15,
+        speed_from_center = 0.03,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaf_generation = {
+        initial_height = 2,
+        initial_height_deviation = 0.05,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "leaf-particle",
+        speed_from_center = 0.01,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaves = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-h-leaves.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 3,
+        height = 86,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-h-leaves.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 3,
+          height = 174,
+          scale = 0.5,
+          shift = {
+            -0.28125,
+            -1.6875
+          },
+          width = 218
+        },
+        shift = {
+          -0.3125,
+          -1.6875
+        },
+        width = 110
+      },
+      normal = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-h-normal.png",
+        frame_count = 3,
+        height = 78,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-h-normal.png",
+          frame_count = 3,
+          height = 152,
+          scale = 0.5,
+          shift = {
+            -0.265625,
+            -1.828125
+          },
+          width = 218
+        },
+        shift = {
+          -0.25,
+          -1.8125
+        },
+        width = 110
+      },
+      shadow = {
+        disable_shadow_distortion_beginning_at_frame = 2,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/tree/08/tree-08-h-shadow.png",
+        flags = {
+          "mipmap",
+          "shadow"
+        },
+        frame_count = 4,
+        height = 66,
+        hr_version = {
+          disable_shadow_distortion_beginning_at_frame = 2,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-h-shadow.png",
+          flags = {
+            "mipmap",
+            "shadow"
+          },
+          frame_count = 4,
+          height = 128,
+          scale = 0.5,
+          shift = {
+            1.65625,
+            0.21875
+          },
+          width = 224
+        },
+        shift = {
+          1.625,
+          0.1875
+        },
+        width = 114
+      },
+      trunk = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-h-trunk.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 1,
+        height = 94,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-h-trunk.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 1,
+          height = 190,
+          scale = 0.5,
+          shift = {
+            -0.3125,
+            -1.0625
+          },
+          width = 160
+        },
+        shift = {
+          -0.3125,
+          -1.0625
+        },
+        width = 80
+      },
+      water_reflection = {
+        orientation_to_variation = false,
+        pictures = {
+          filename = "__base__/graphics/entity/tree/08/tree-08-reflection.png",
+          height = 40,
+          priority = "extra-high",
+          scale = 5,
+          shift = {
+            0,
+            2.34375
+          },
+          variation_count = 4,
+          width = 36,
+          y = 280
+        },
+        rotate = false
+      }
+    },
+    {
+      branch_generation = {
+        frame_speed = 0.4,
+        initial_height = 2,
+        initial_height_deviation = 2,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "branch-particle",
+        repeat_count = 15,
+        speed_from_center = 0.03,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaf_generation = {
+        initial_height = 2,
+        initial_height_deviation = 0.05,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "leaf-particle",
+        speed_from_center = 0.01,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaves = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-i-leaves.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 3,
+        height = 84,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-i-leaves.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 3,
+          height = 168,
+          scale = 0.5,
+          shift = {
+            0.09375,
+            -1.875
+          },
+          width = 130
+        },
+        shift = {
+          0.0625,
+          -1.875
+        },
+        width = 66
+      },
+      normal = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-i-normal.png",
+        frame_count = 3,
+        height = 78,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-i-normal.png",
+          frame_count = 3,
+          height = 154,
+          scale = 0.5,
+          shift = {
+            0.125,
+            -1.953125
+          },
+          width = 128
+        },
+        shift = {
+          0.125,
+          -1.9375
+        },
+        width = 64
+      },
+      shadow = {
+        disable_shadow_distortion_beginning_at_frame = 2,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/tree/08/tree-08-i-shadow.png",
+        flags = {
+          "mipmap",
+          "shadow"
+        },
+        frame_count = 4,
+        height = 52,
+        hr_version = {
+          disable_shadow_distortion_beginning_at_frame = 2,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-i-shadow.png",
+          flags = {
+            "mipmap",
+            "shadow"
+          },
+          frame_count = 4,
+          height = 102,
+          scale = 0.5,
+          shift = {
+            1.40625,
+            -0.15625
+          },
+          width = 186
+        },
+        shift = {
+          1.375,
+          -0.1875
+        },
+        width = 94
+      },
+      trunk = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-i-trunk.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 1,
+        height = 90,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-i-trunk.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 1,
+          height = 176,
+          scale = 0.5,
+          shift = {
+            -0.0625,
+            -1.03125
+          },
+          width = 78
+        },
+        shift = {
+          -0.0625,
+          -1.0625
+        },
+        width = 38
+      },
+      water_reflection = {
+        orientation_to_variation = false,
+        pictures = {
+          filename = "__base__/graphics/entity/tree/08/tree-08-reflection.png",
+          height = 40,
+          priority = "extra-high",
+          scale = 5,
+          shift = {
+            0,
+            2.34375
+          },
+          variation_count = 4,
+          width = 36,
+          y = 320
+        },
+        rotate = false
+      }
+    },
+    {
+      branch_generation = {
+        frame_speed = 0.4,
+        initial_height = 2,
+        initial_height_deviation = 2,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "branch-particle",
+        repeat_count = 15,
+        speed_from_center = 0.03,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaf_generation = {
+        initial_height = 2,
+        initial_height_deviation = 0.05,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "leaf-particle",
+        speed_from_center = 0.01,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaves = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-j-leaves.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 3,
+        height = 78,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-j-leaves.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 3,
+          height = 160,
+          scale = 0.5,
+          shift = {
+            0.09375,
+            -1.75
+          },
+          width = 162
+        },
+        shift = {
+          0.0625,
+          -1.75
+        },
+        width = 82
+      },
+      normal = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-j-normal.png",
+        frame_count = 3,
+        height = 74,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-j-normal.png",
+          frame_count = 3,
+          height = 148,
+          scale = 0.5,
+          shift = {
+            0.125,
+            -1.828125
+          },
+          width = 162
+        },
+        shift = {
+          0.125,
+          -1.84375
+        },
+        width = 82
+      },
+      shadow = {
+        disable_shadow_distortion_beginning_at_frame = 2,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/tree/08/tree-08-j-shadow.png",
+        flags = {
+          "mipmap",
+          "shadow"
+        },
+        frame_count = 4,
+        height = 50,
+        hr_version = {
+          disable_shadow_distortion_beginning_at_frame = 2,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-j-shadow.png",
+          flags = {
+            "mipmap",
+            "shadow"
+          },
+          frame_count = 4,
+          height = 100,
+          scale = 0.5,
+          shift = {
+            1.4375,
+            -0.0625
+          },
+          width = 208
+        },
+        shift = {
+          1.4375,
+          -0.0625
+        },
+        width = 104
+      },
+      trunk = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-j-trunk.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 1,
+        height = 90,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-j-trunk.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 1,
+          height = 180,
+          scale = 0.5,
+          shift = {
+            0.09375,
+            -1.03125
+          },
+          width = 88
+        },
+        shift = {
+          0.0625,
+          -1.0625
+        },
+        width = 46
+      },
+      water_reflection = {
+        orientation_to_variation = false,
+        pictures = {
+          filename = "__base__/graphics/entity/tree/08/tree-08-reflection.png",
+          height = 40,
+          priority = "extra-high",
+          scale = 5,
+          shift = {
+            0,
+            2.34375
+          },
+          variation_count = 4,
+          width = 36,
+          y = 360
+        },
+        rotate = false
+      }
+    },
+    {
+      branch_generation = {
+        frame_speed = 0.4,
+        initial_height = 2,
+        initial_height_deviation = 2,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "branch-particle",
+        repeat_count = 15,
+        speed_from_center = 0.03,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaf_generation = {
+        initial_height = 2,
+        initial_height_deviation = 0.05,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "leaf-particle",
+        speed_from_center = 0.01,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaves = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-k-leaves.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 3,
+        height = 120,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-k-leaves.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 3,
+          height = 240,
+          scale = 0.5,
+          shift = {
+            -1.0625,
+            -1.09375
+          },
+          width = 308
+        },
+        shift = {
+          -1.1875,
+          -1.125
+        },
+        width = 150
+      },
+      normal = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-k-normal.png",
+        frame_count = 3,
+        height = 94,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-k-normal.png",
+          frame_count = 3,
+          height = 188,
+          scale = 0.5,
+          shift = {
+            -2.078125,
+            -1.453125
+          },
+          width = 180
+        },
+        shift = {
+          -2.0625,
+          -1.46875
+        },
+        width = 92
+      },
+      shadow = {
+        disable_shadow_distortion_beginning_at_frame = 2,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/tree/08/tree-08-k-shadow.png",
+        flags = {
+          "mipmap",
+          "shadow"
+        },
+        frame_count = 4,
+        height = 90,
+        hr_version = {
+          disable_shadow_distortion_beginning_at_frame = 2,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-k-shadow.png",
+          flags = {
+            "mipmap",
+            "shadow"
+          },
+          frame_count = 4,
+          height = 180,
+          scale = 0.5,
+          shift = {
+            -0.5625,
+            -0.5
+          },
+          width = 320
+        },
+        shift = {
+          -0.5625,
+          -0.5
+        },
+        width = 160
+      },
+      trunk = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-k-trunk.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 1,
+        height = 108,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-k-trunk.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 1,
+          height = 218,
+          scale = 0.5,
+          shift = {
+            -0.6875,
+            -0.75
+          },
+          width = 300
+        },
+        shift = {
+          -0.6875,
+          -0.75
+        },
+        width = 150
+      },
+      water_reflection = {
+        orientation_to_variation = false,
+        pictures = {
+          filename = "__base__/graphics/entity/tree/08/tree-08-reflection.png",
+          height = 40,
+          priority = "extra-high",
+          scale = 5,
+          shift = {
+            0,
+            2.34375
+          },
+          variation_count = 4,
+          width = 36,
+          y = 400
+        },
+        rotate = false
+      }
+    },
+    {
+      branch_generation = {
+        frame_speed = 0.4,
+        initial_height = 2,
+        initial_height_deviation = 2,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "branch-particle",
+        repeat_count = 15,
+        speed_from_center = 0.03,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaf_generation = {
+        initial_height = 2,
+        initial_height_deviation = 0.05,
+        initial_vertical_speed = 0.01,
+        offset_deviation = {
+          {
+            -0.5,
+            -0.5
+          },
+          {
+            0.5,
+            0.5
+          }
+        },
+        particle_name = "leaf-particle",
+        speed_from_center = 0.01,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+      },
+      leaves = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-l-leaves.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 3,
+        height = 98,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-l-leaves.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 3,
+          height = 198,
+          scale = 0.5,
+          shift = {
+            1.5,
+            0.28125
+          },
+          width = 246
+        },
+        shift = {
+          1.5,
+          0.25
+        },
+        width = 122
+      },
+      normal = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-l-normal.png",
+        frame_count = 3,
+        height = 54,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-l-normal.png",
+          frame_count = 3,
+          height = 108,
+          scale = 0.5,
+          shift = {
+            1.875,
+            0.875
+          },
+          width = 200
+        },
+        shift = {
+          1.875,
+          0.875
+        },
+        width = 100
+      },
+      shadow = {
+        disable_shadow_distortion_beginning_at_frame = 2,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/tree/08/tree-08-l-shadow.png",
+        flags = {
+          "mipmap",
+          "shadow"
+        },
+        frame_count = 4,
+        height = 108,
+        hr_version = {
+          disable_shadow_distortion_beginning_at_frame = 2,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-l-shadow.png",
+          flags = {
+            "mipmap",
+            "shadow"
+          },
+          frame_count = 4,
+          height = 216,
+          scale = 0.5,
+          shift = {
+            1.3125,
+            0.75
+          },
+          width = 324
+        },
+        shift = {
+          1.3125,
+          0.75
+        },
+        width = 162
+      },
+      trunk = {
+        filename = "__base__/graphics/entity/tree/08/tree-08-l-trunk.png",
+        flags = {
+          "mipmap"
+        },
+        frame_count = 1,
+        height = 102,
+        hr_version = {
+          filename = "__base__/graphics/entity/tree/08/hr-tree-08-l-trunk.png",
+          flags = {
+            "mipmap"
+          },
+          frame_count = 1,
+          height = 204,
+          scale = 0.5,
+          shift = {
+            0.78125,
+            0.3125
+          },
+          width = 274
+        },
+        shift = {
+          0.75,
+          0.3125
+        },
+        width = 138
+      },
+      water_reflection = {
+        orientation_to_variation = false,
+        pictures = {
+          filename = "__base__/graphics/entity/tree/08/tree-08-reflection.png",
+          height = 40,
+          priority = "extra-high",
+          scale = 5,
+          shift = {
+            0,
+            2.34375
+          },
+          variation_count = 4,
+          width = 36,
+          y = 440
+        },
+        rotate = false
+      }
+    }
+  },
+  vehicle_impact_sound = {
+    {
+      filename = "__base__/sound/car-tree-wood-impact-01.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-tree-wood-impact-02.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-tree-wood-impact-03.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-tree-wood-impact-04.ogg",
+      volume = 0.5
+    }
+  }
+} --[[incomplete output with shared/self-references skipped]]

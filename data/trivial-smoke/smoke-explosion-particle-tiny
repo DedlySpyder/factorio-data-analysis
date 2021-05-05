@@ -1,0 +1,27 @@
+{
+  affected_by_wind = false,
+  animation = {
+    animation_speed = 0.5,
+    filename = "__base__/graphics/entity/smoke-fast/smoke-fast.png",
+    frame_count = 16,
+    height = 50,
+    priority = "high",
+    scale = 0.2,
+    tint = {
+      a = 0.5,
+      b = 0.1,
+      g = 0.1,
+      r = 0.1
+    },
+    width = 50
+  },
+  duration = 150,
+  end_scale = 0.1,
+  fade_away_duration = 60,
+  movement_slow_down_factor = 0.95999999999999996,
+  name = "smoke-explosion-particle-tiny",
+  render_layer = "object",
+  show_when_smoke_off = true,
+  start_scale = 0.1,
+  type = "trivial-smoke"
+}

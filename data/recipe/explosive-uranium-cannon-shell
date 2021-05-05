@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 12,
+  ingredients = {
+    {
+      "explosive-cannon-shell",
+      1
+    },
+    {
+      "uranium-238",
+      1
+    }
+  },
+  name = "explosive-uranium-cannon-shell",
+  result = "explosive-uranium-cannon-shell",
+  type = "recipe"
+}

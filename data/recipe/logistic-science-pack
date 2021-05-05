@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 6,
+  ingredients = {
+    {
+      "inserter",
+      1
+    },
+    {
+      "transport-belt",
+      1
+    }
+  },
+  name = "logistic-science-pack",
+  result = "logistic-science-pack",
+  type = "recipe"
+}

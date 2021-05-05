@@ -1,0 +1,13 @@
+{
+  expression = {
+    source_location = {
+      filename = "__core__/prototypes/noise-programs.lua",
+      line_number = 543
+    },
+    type = "variable",
+    variable_name = "0_17-lakes-elevation"
+  },
+  intended_property = "elevation",
+  name = "elevation",
+  type = "noise-expression"
+}

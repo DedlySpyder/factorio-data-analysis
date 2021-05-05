@@ -1,0 +1,25 @@
+{
+  icon = "__base__/graphics/technology/flammables.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "flammables",
+  order = "e-c-a",
+  prerequisites = {
+    "oil-processing"
+  },
+  type = "technology",
+  unit = {
+    count = 50,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      }
+    },
+    time = 30
+  }
+}

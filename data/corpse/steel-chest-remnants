@@ -1,0 +1,61 @@
+{
+  animation = {
+    direction_count = 1,
+    filename = "__base__/graphics/entity/steel-chest/remnants/steel-chest-remnants.png",
+    frame_count = 1,
+    height = 44,
+    hr_version = {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/steel-chest/remnants/hr-steel-chest-remnants.png",
+      frame_count = 1,
+      height = 88,
+      line_length = 1,
+      scale = 0.5,
+      shift = {
+        0.46875,
+        -0.03125
+      },
+      width = 150
+    },
+    line_length = 1,
+    shift = {
+      0.46875,
+      -0.03125
+    },
+    width = 76
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "building-direction-8-way",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/steel-chest.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.steel-chest"
+    }
+  },
+  name = "steel-chest-remnants",
+  order = "a-c-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -0.5,
+      -0.5
+    },
+    {
+      0.5,
+      0.5
+    }
+  },
+  subgroup = "storage-remnants",
+  tile_height = 1,
+  tile_width = 1,
+  time_before_removed = 54000,
+  type = "corpse"
+}

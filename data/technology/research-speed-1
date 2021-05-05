@@ -1,0 +1,47 @@
+{
+  effects = {
+    {
+      modifier = 0.2,
+      type = "laboratory-speed"
+    }
+  },
+  icon_mipmaps = 4,
+  icon_size = 256,
+  icons = {
+    {
+      icon = "__base__/graphics/technology/research-speed.png",
+      icon_mipmaps = 4,
+      icon_size = 256
+    },
+    {
+      icon = "__core__/graphics/icons/technology/constants/constant-speed.png",
+      icon_mipmaps = 3,
+      icon_size = 128,
+      shift = {
+        100,
+        100
+      }
+    }
+  },
+  name = "research-speed-1",
+  order = "c-m-a",
+  prerequisites = {
+    "automation-2"
+  },
+  type = "technology",
+  unit = {
+    count = 100,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      }
+    },
+    time = 30
+  },
+  upgrade = true
+}

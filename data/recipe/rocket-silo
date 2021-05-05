@@ -1,0 +1,30 @@
+{
+  enabled = false,
+  energy_required = 30,
+  ingredients = {
+    {
+      "steel-plate",
+      1000
+    },
+    {
+      "concrete",
+      1000
+    },
+    {
+      "pipe",
+      100
+    },
+    {
+      "processing-unit",
+      200
+    },
+    {
+      "electric-engine-unit",
+      200
+    }
+  },
+  name = "rocket-silo",
+  requester_paste_multiplier = 1,
+  result = "rocket-silo",
+  type = "recipe"
+}

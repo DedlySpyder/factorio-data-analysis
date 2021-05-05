@@ -1,0 +1,16 @@
+{
+  durability = 1,
+  durability_description_key = "description.science-pack-remaining-amount-key",
+  durability_description_value = "description.science-pack-remaining-amount-value",
+  icon = "__base__/graphics/icons/logistic-science-pack.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_description = {
+    "item-description.science-pack"
+  },
+  name = "logistic-science-pack",
+  order = "b[logistic-science-pack]",
+  stack_size = 200,
+  subgroup = "science-pack",
+  type = "tool"
+}

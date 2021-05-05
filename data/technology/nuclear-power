@@ -1,0 +1,47 @@
+{
+  effects = {
+    {
+      recipe = "nuclear-reactor",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "heat-exchanger",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "heat-pipe",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "steam-turbine",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/nuclear-power.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "nuclear-power",
+  order = "e-p-b-c",
+  prerequisites = {
+    "uranium-processing"
+  },
+  type = "technology",
+  unit = {
+    count = 800,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      },
+      {
+        "chemical-science-pack",
+        1
+      }
+    },
+    time = 30
+  }
+}

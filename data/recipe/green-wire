@@ -1,0 +1,16 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "electronic-circuit",
+      1
+    },
+    {
+      "copper-cable",
+      1
+    }
+  },
+  name = "green-wire",
+  result = "green-wire",
+  type = "recipe"
+}

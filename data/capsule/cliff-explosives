@@ -1,0 +1,37 @@
+{
+  capsule_action = {
+    attack_parameters = {
+      activation_type = "throw",
+      ammo_category = "grenade",
+      ammo_type = {
+        action = {
+          action_delivery = {
+            projectile = "cliff-explosives",
+            starting_speed = 0.3,
+            type = "projectile"
+          },
+          type = "direct"
+        },
+        category = "grenade",
+        target_type = "position"
+      },
+      cooldown = 30,
+      projectile_creation_distance = 0.6,
+      range = 10,
+      type = "projectile"
+    },
+    radius = 1.5,
+    type = "destroy-cliffs"
+  },
+  flags = {
+    "hide-from-bonus-gui"
+  },
+  icon = "__base__/graphics/icons/cliff-explosives.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "cliff-explosives",
+  order = "d[cliff-explosives]",
+  stack_size = 20,
+  subgroup = "terrain",
+  type = "capsule"
+}

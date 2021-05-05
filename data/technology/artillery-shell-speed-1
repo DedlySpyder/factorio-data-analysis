@@ -1,0 +1,68 @@
+{
+  effects = {
+    {
+      ammo_category = "artillery-shell",
+      icon = "__base__/graphics/icons/artillery-shell.png",
+      icon_mipmaps = 2,
+      icon_size = 64,
+      modifier = 1,
+      type = "gun-speed"
+    }
+  },
+  icon_mipmaps = 4,
+  icon_size = 256,
+  icons = {
+    {
+      icon = "__base__/graphics/technology/artillery-speed.png",
+      icon_mipmaps = 4,
+      icon_size = 256
+    },
+    {
+      icon = "__core__/graphics/icons/technology/constants/constant-speed.png",
+      icon_mipmaps = 3,
+      icon_size = 128,
+      shift = {
+        100,
+        100
+      }
+    }
+  },
+  max_level = "infinite",
+  name = "artillery-shell-speed-1",
+  order = "e-k-k",
+  prerequisites = {
+    "artillery",
+    "space-science-pack"
+  },
+  type = "technology",
+  unit = {
+    count_formula = "1000+3^(L-1)*1000",
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      },
+      {
+        "chemical-science-pack",
+        1
+      },
+      {
+        "military-science-pack",
+        1
+      },
+      {
+        "utility-science-pack",
+        1
+      },
+      {
+        "space-science-pack",
+        1
+      }
+    },
+    time = 60
+  }
+}

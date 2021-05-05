@@ -1,0 +1,8 @@
+{
+  border = true,
+  border_color = {},
+  from = "default",
+  name = "default-game",
+  size = 18,
+  type = "font"
+}

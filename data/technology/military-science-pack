@@ -1,0 +1,32 @@
+{
+  effects = {
+    {
+      recipe = "military-science-pack",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/military-science-pack.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "military-science-pack",
+  order = "c-a",
+  prerequisites = {
+    "military-2",
+    "stone-wall"
+  },
+  type = "technology",
+  unit = {
+    count = 30,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      }
+    },
+    time = 15
+  }
+}

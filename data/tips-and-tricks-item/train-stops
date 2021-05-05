@@ -1,0 +1,38 @@
+{
+  category = "trains",
+  dependencies = {
+    "trains"
+  },
+  indent = 1,
+  name = "train-stops",
+  order = "c",
+  simulation = {
+    init = "    game.surfaces[1].create_entities_from_blueprint_string\n    {\n      string = \"0eNqdle1ugjAUhu/l/C4L5XNyK8tCAA+sWWlJW5Y5w72v1c0ZBaTzj8Hi877ns0eo+YiDYsJAcQTWSKGheDmCZp2ouPvNHAaEApjBHgiIqndPbaVNYFQl9CCVCWrkBiYCTOzxEwo6kYcE5NgYxZoABaruEFgHqNqqwStONL0SQGGYYXi2dXo4lGLsa1RWaAOOwCC1JUjhvFhqQFMCB0cnsGfK/u90lhCox7ZFVWr2ZZE0vHxcODfK0UVZ9xXnwUV/kHxWM346q4ZPqdUVyLq3Wo7KhRW/zgjEngLZMj8iNJmTSFbLeS+R/EjQk8RV6qIZeOoJT33g2V9yTNW822prVLbgK6ZdXmZI+XZSuk569gw4Wgo4m4HvPOHxEjyZgdPQkx76WKd0e4rD9RTTyNMo9TIabzdKHxhN/KY39FwO9Ga6RrsvVaek/X7UEfFdR5DLghbD6Nb4vVz2z/aLNrVf/u9g8uVg5GiWormZVC6r/WyRf1V2/gn7m1cmWibsWdC8oV4d1XPxf98vNRrDRKfdewp7+YHlaM+4bUjcl+4ytUdGjTi5W/J0uRZXtzmBD1T6vEGfaZLvopxmeb7Lsmn6BoqXoPE=\",\n      position = {-8, 5}\n    }\n\n    local surface = game.surfaces[1]\n    for x = -31, 31, 2 do\n      surface.create_entity{name = \"straight-rail\", position = {x, -1}, direction = 2}\n    end\n\n    global.train_stop = surface.create_entity{name = \"train-stop\", position = {7, 1}, direction = 2, force = \"player\"}\n    global.end_rail = surface.find_entity(\"straight-rail\", {31, -1})\n    game.forces.player.stack_inserter_capacity_bonus = 7\n\n\n    script.on_nth_tick(1000, function()\n      if global.locomotive and global.locomotive.valid then\n        global.locomotive.destroy()\n      end\n      if global.wagon and global.wagon.valid then\n        global.wagon.destroy()\n      end\n      global.locomotive = game.surfaces[1].create_entity{name = \"locomotive\", position = {-20, 1}, orientation = 0.25, force = \"player\"}\n      global.wagon = game.surfaces[1].create_entity{name = \"cargo-wagon\", position = {-26, 1}, orientation = 0.25, force = \"player\"}\n      global.locomotive.train.schedule =\n      {\n        current = 1,\n        records =\n        {\n          {\n            station = global.train_stop.backer_name,\n            wait_conditions =\n            {\n              {\n                type = \"inactivity\",\n                compare_type = \"and\",\n                ticks = 100\n              }\n            }\n          },\n          {\n            rail = global.end_rail,\n            wait_conditions =\n            {\n              {\n                type = \"time\",\n                compare_type = \"and\",\n                ticks = 350\n              }\n            }\n          }\n        }\n      }\n      global.locomotive.train.manual_mode = false\n      global.locomotive.insert(\"coal\")\n      global.wagon.insert({name = \"iron-ore\", count = 300})\n    end)\n  "
+  },
+  tag = "[item=train-stop]",
+  trigger = {
+    triggers = {
+      {
+        entity = "train-stop",
+        type = "build-entity"
+      },
+      {
+        triggers = {
+          {
+            technology = "automated-rail-transportation",
+            type = "research"
+          },
+          {
+            count = 20,
+            entity = "straight-rail",
+            type = "build-entity"
+          }
+        },
+        type = "and"
+      }
+    },
+    type = "or"
+  },
+  tutorial = "trains-stations",
+  type = "tips-and-tricks-item"
+}

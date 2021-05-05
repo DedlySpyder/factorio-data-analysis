@@ -1,0 +1,56 @@
+{
+  expression = {
+    arguments = {
+      {
+        arguments = {
+          {
+            source_location = {
+              filename = "__core__/lualib/noise.lua",
+              line_number = 273
+            },
+            type = "variable",
+            variable_name = "x"
+          },
+          {
+            literal_value = 0.25,
+            source_location = {
+              filename = "__core__/lualib/noise.lua",
+              line_number = 78
+            },
+            type = "literal-number"
+          }
+        },
+        function_name = "multiply",
+        source_location = {
+          filename = "__core__/prototypes/noise-programs.lua",
+          line_number = 348
+        },
+        type = "function-application"
+      },
+      {
+        literal_value = -20,
+        source_location = {
+          filename = "__core__/lualib/noise.lua",
+          line_number = 304
+        },
+        type = "literal-number"
+      },
+      {
+        literal_value = 50,
+        source_location = {
+          filename = "__core__/lualib/noise.lua",
+          line_number = 305
+        },
+        type = "literal-number"
+      }
+    },
+    function_name = "clamp",
+    source_location = {
+      filename = "__core__/prototypes/noise-programs.lua",
+      line_number = 348
+    },
+    type = "function-application"
+  },
+  name = "debug-temperature",
+  type = "noise-expression"
+}

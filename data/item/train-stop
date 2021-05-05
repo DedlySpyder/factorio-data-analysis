@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/train-stop.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "train-stop",
+  order = "a[train-system]-c[train-stop]",
+  place_result = "train-stop",
+  stack_size = 10,
+  subgroup = "train-transport",
+  type = "item"
+}

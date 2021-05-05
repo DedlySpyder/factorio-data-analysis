@@ -1,0 +1,8 @@
+{
+  name = "the-oil-industry",
+  sound = {
+    filename = "__base__/sound/ambient/the-oil-industry.ogg"
+  },
+  track_type = "main-track",
+  type = "ambient-sound"
+}

@@ -1,0 +1,36 @@
+{
+  icon = "__base__/graphics/icons/iron-ore.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "iron-ore",
+  order = "e[iron-ore]",
+  pictures = {
+    {
+      filename = "__base__/graphics/icons/iron-ore.png",
+      mipmap_count = 4,
+      scale = 0.25,
+      size = 64
+    },
+    {
+      filename = "__base__/graphics/icons/iron-ore-1.png",
+      mipmap_count = 4,
+      scale = 0.25,
+      size = 64
+    },
+    {
+      filename = "__base__/graphics/icons/iron-ore-2.png",
+      mipmap_count = 4,
+      scale = 0.25,
+      size = 64
+    },
+    {
+      filename = "__base__/graphics/icons/iron-ore-3.png",
+      mipmap_count = 4,
+      scale = 0.25,
+      size = 64
+    }
+  },
+  stack_size = 50,
+  subgroup = "raw-resource",
+  type = "item"
+}

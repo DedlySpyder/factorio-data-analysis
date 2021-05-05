@@ -1,0 +1,596 @@
+{
+  ai_settings = {
+    allow_try_return_to_spawner = true,
+    destroy_when_commands_fail = true
+  },
+  attack_parameters = {
+    ammo_type = {
+      action = {
+        action_delivery = {
+          target_effects = {
+            damage = {
+              amount = 7,
+              type = "physical"
+            },
+            type = "damage"
+          },
+          type = "instant"
+        },
+        type = "direct"
+      },
+      category = "melee",
+      target_type = "entity"
+    },
+    animation = {
+      layers = {
+        {
+          animation_speed = 0.4,
+          direction_count = 16,
+          filenames = {
+            "__base__/graphics/entity/biter/biter-attack-01.png",
+            "__base__/graphics/entity/biter/biter-attack-02.png",
+            "__base__/graphics/entity/biter/biter-attack-03.png",
+            "__base__/graphics/entity/biter/biter-attack-04.png"
+          },
+          frame_count = 11,
+          height = 176,
+          hr_version = {
+            animation_speed = 0.4,
+            direction_count = 16,
+            filenames = {
+              "__base__/graphics/entity/biter/hr-biter-attack-01.png",
+              "__base__/graphics/entity/biter/hr-biter-attack-02.png",
+              "__base__/graphics/entity/biter/hr-biter-attack-03.png",
+              "__base__/graphics/entity/biter/hr-biter-attack-04.png"
+            },
+            frame_count = 11,
+            height = 348,
+            line_length = 16,
+            lines_per_file = 4,
+            scale = 0.25,
+            shift = {
+              0,
+              -0.390625
+            },
+            slice = 11,
+            width = 356
+          },
+          line_length = 16,
+          lines_per_file = 4,
+          scale = 0.5,
+          shift = {
+            -0.03125,
+            -0.40625
+          },
+          slice = 11,
+          width = 182
+        },
+        {
+          animation_speed = 0.4,
+          direction_count = 16,
+          filenames = {
+            "__base__/graphics/entity/biter/biter-attack-mask1-01.png",
+            "__base__/graphics/entity/biter/biter-attack-mask1-02.png",
+            "__base__/graphics/entity/biter/biter-attack-mask1-03.png",
+            "__base__/graphics/entity/biter/biter-attack-mask1-04.png"
+          },
+          flags = {
+            "mask"
+          },
+          frame_count = 11,
+          height = 144,
+          hr_version = {
+            animation_speed = 0.4,
+            direction_count = 16,
+            filenames = {
+              "__base__/graphics/entity/biter/hr-biter-attack-mask1-01.png",
+              "__base__/graphics/entity/biter/hr-biter-attack-mask1-02.png",
+              "__base__/graphics/entity/biter/hr-biter-attack-mask1-03.png",
+              "__base__/graphics/entity/biter/hr-biter-attack-mask1-04.png"
+            },
+            frame_count = 11,
+            height = 282,
+            line_length = 16,
+            lines_per_file = 4,
+            scale = 0.25,
+            shift = {
+              -0.015625,
+              -0.640625
+            },
+            slice = 11,
+            tint = {
+              a = 1,
+              b = 0.50999999999999996,
+              g = 0.57999999999999998,
+              r = 0.6
+            },
+            width = 360
+          },
+          line_length = 16,
+          lines_per_file = 4,
+          scale = 0.5,
+          shift = {
+            0,
+            -0.65625
+          },
+          slice = 11,
+          tint = 0 --[=[ ref [""].attack_parameters.animation.layers[2].hr_version.tint ]=],
+          width = 178
+        },
+        {
+          animation_speed = 0.4,
+          direction_count = 16,
+          filenames = {
+            "__base__/graphics/entity/biter/biter-attack-mask2-01.png",
+            "__base__/graphics/entity/biter/biter-attack-mask2-02.png",
+            "__base__/graphics/entity/biter/biter-attack-mask2-03.png",
+            "__base__/graphics/entity/biter/biter-attack-mask2-04.png"
+          },
+          flags = {
+            "mask"
+          },
+          frame_count = 11,
+          height = 144,
+          hr_version = {
+            animation_speed = 0.4,
+            direction_count = 16,
+            filenames = {
+              "__base__/graphics/entity/biter/hr-biter-attack-mask2-01.png",
+              "__base__/graphics/entity/biter/hr-biter-attack-mask2-02.png",
+              "__base__/graphics/entity/biter/hr-biter-attack-mask2-03.png",
+              "__base__/graphics/entity/biter/hr-biter-attack-mask2-04.png"
+            },
+            frame_count = 11,
+            height = 282,
+            line_length = 16,
+            lines_per_file = 4,
+            scale = 0.25,
+            shift = {
+              -0.015625,
+              -0.640625
+            },
+            slice = 11,
+            tint = {
+              a = 1,
+              b = 0.54000000000000004,
+              g = 0.82999999999999989,
+              r = 0.9
+            },
+            width = 358
+          },
+          line_length = 16,
+          lines_per_file = 4,
+          scale = 0.5,
+          shift = {
+            -0.03125,
+            -0.65625
+          },
+          slice = 11,
+          tint = 0 --[=[ ref [""].attack_parameters.animation.layers[3].hr_version.tint ]=],
+          width = 182
+        },
+        {
+          animation_speed = 0.4,
+          direction_count = 16,
+          draw_as_shadow = true,
+          filenames = {
+            "__base__/graphics/entity/biter/biter-attack-shadow-01.png",
+            "__base__/graphics/entity/biter/biter-attack-shadow-02.png",
+            "__base__/graphics/entity/biter/biter-attack-shadow-03.png",
+            "__base__/graphics/entity/biter/biter-attack-shadow-04.png"
+          },
+          frame_count = 11,
+          height = 128,
+          hr_version = {
+            animation_speed = 0.4,
+            direction_count = 16,
+            draw_as_shadow = true,
+            filenames = {
+              "__base__/graphics/entity/biter/hr-biter-attack-shadow-01.png",
+              "__base__/graphics/entity/biter/hr-biter-attack-shadow-02.png",
+              "__base__/graphics/entity/biter/hr-biter-attack-shadow-03.png",
+              "__base__/graphics/entity/biter/hr-biter-attack-shadow-04.png"
+            },
+            frame_count = 11,
+            height = 258,
+            line_length = 16,
+            lines_per_file = 4,
+            scale = 0.25,
+            shift = {
+              0.484375,
+              -0.015625
+            },
+            slice = 11,
+            width = 476
+          },
+          line_length = 16,
+          lines_per_file = 4,
+          scale = 0.5,
+          shift = {
+            0.46875,
+            0
+          },
+          slice = 11,
+          width = 240
+        }
+      }
+    },
+    cooldown = 35,
+    cooldown_deviation = 0.15,
+    range = 0.5,
+    range_mode = "bounding-box-to-bounding-box",
+    sound = {
+      {
+        filename = "__base__/sound/creatures/biter-roar-1.ogg",
+        volume = 0.35
+      },
+      {
+        filename = "__base__/sound/creatures/biter-roar-2.ogg",
+        volume = 0.35
+      },
+      {
+        filename = "__base__/sound/creatures/biter-roar-3.ogg",
+        volume = 0.35
+      },
+      {
+        filename = "__base__/sound/creatures/biter-roar-4.ogg",
+        volume = 0.35
+      },
+      {
+        filename = "__base__/sound/creatures/biter-roar-5.ogg",
+        volume = 0.35
+      },
+      {
+        filename = "__base__/sound/creatures/biter-roar-6.ogg",
+        volume = 0.35
+      }
+    },
+    type = "projectile"
+  },
+  collision_box = {
+    {
+      -0.2,
+      -0.2
+    },
+    {
+      0.2,
+      0.2
+    }
+  },
+  corpse = "small-biter-corpse",
+  damaged_trigger_effect = {
+    damage_type_filters = "fire",
+    entity_name = "enemy-damaged-explosion",
+    offset_deviation = {
+      {
+        -0.5,
+        -0.5
+      },
+      {
+        0.5,
+        0.5
+      }
+    },
+    offsets = {
+      {
+        0,
+        0
+      }
+    },
+    type = "create-entity"
+  },
+  distance_per_frame = 0.125,
+  distraction_cooldown = 300,
+  dying_explosion = "small-biter-die",
+  dying_sound = {
+    {
+      filename = "__base__/sound/creatures/biter-death-1.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/creatures/biter-death-2.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/creatures/biter-death-3.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/creatures/biter-death-4.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/creatures/biter-death-5.ogg",
+      volume = 0.5
+    }
+  },
+  flags = {
+    "placeable-player",
+    "placeable-enemy",
+    "placeable-off-grid",
+    "not-repairable",
+    "breaths-air"
+  },
+  healing_per_tick = 0.01,
+  icon = "__base__/graphics/icons/small-biter.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  max_health = 15,
+  max_pursue_distance = 50,
+  min_pursue_time = 600,
+  movement_speed = 0.2,
+  name = "small-biter",
+  order = "b-a-a",
+  pollution_to_join_attack = 4,
+  resistances = {},
+  run_animation = {
+    layers = {
+      {
+        direction_count = 16,
+        filenames = {
+          "__base__/graphics/entity/biter/biter-run-01.png",
+          "__base__/graphics/entity/biter/biter-run-02.png",
+          "__base__/graphics/entity/biter/biter-run-03.png",
+          "__base__/graphics/entity/biter/biter-run-04.png"
+        },
+        frame_count = 16,
+        height = 158,
+        hr_version = {
+          direction_count = 16,
+          filenames = {
+            "__base__/graphics/entity/biter/hr-biter-run-01.png",
+            "__base__/graphics/entity/biter/hr-biter-run-02.png",
+            "__base__/graphics/entity/biter/hr-biter-run-03.png",
+            "__base__/graphics/entity/biter/hr-biter-run-04.png"
+          },
+          frame_count = 16,
+          height = 310,
+          line_length = 8,
+          lines_per_file = 8,
+          scale = 0.25,
+          shift = {
+            -0.015625,
+            -0.078125
+          },
+          slice = 8,
+          width = 398
+        },
+        line_length = 8,
+        lines_per_file = 8,
+        scale = 0.5,
+        shift = {
+          -0.03125,
+          -0.09375
+        },
+        slice = 8,
+        width = 202
+      },
+      {
+        direction_count = 16,
+        filenames = {
+          "__base__/graphics/entity/biter/biter-run-mask1-01.png",
+          "__base__/graphics/entity/biter/biter-run-mask1-02.png",
+          "__base__/graphics/entity/biter/biter-run-mask1-03.png",
+          "__base__/graphics/entity/biter/biter-run-mask1-04.png"
+        },
+        flags = {
+          "mask"
+        },
+        frame_count = 16,
+        height = 94,
+        hr_version = {
+          direction_count = 16,
+          filenames = {
+            "__base__/graphics/entity/biter/hr-biter-run-mask1-01.png",
+            "__base__/graphics/entity/biter/hr-biter-run-mask1-02.png",
+            "__base__/graphics/entity/biter/hr-biter-run-mask1-03.png",
+            "__base__/graphics/entity/biter/hr-biter-run-mask1-04.png"
+          },
+          frame_count = 16,
+          height = 182,
+          line_length = 8,
+          lines_per_file = 8,
+          scale = 0.25,
+          shift = {
+            -0.015625,
+            -0.578125
+          },
+          slice = 8,
+          tint = 0 --[=[ ref [""].attack_parameters.animation.layers[2].hr_version.tint ]=],
+          width = 238
+        },
+        line_length = 8,
+        lines_per_file = 8,
+        scale = 0.5,
+        shift = {
+          0,
+          -0.59375
+        },
+        slice = 8,
+        tint = 0 --[=[ ref [""].attack_parameters.animation.layers[2].hr_version.tint ]=],
+        width = 118
+      },
+      {
+        direction_count = 16,
+        filenames = {
+          "__base__/graphics/entity/biter/biter-run-mask2-01.png",
+          "__base__/graphics/entity/biter/biter-run-mask2-02.png",
+          "__base__/graphics/entity/biter/biter-run-mask2-03.png",
+          "__base__/graphics/entity/biter/biter-run-mask2-04.png"
+        },
+        flags = {
+          "mask"
+        },
+        frame_count = 16,
+        height = 92,
+        hr_version = {
+          direction_count = 16,
+          filenames = {
+            "__base__/graphics/entity/biter/hr-biter-run-mask2-01.png",
+            "__base__/graphics/entity/biter/hr-biter-run-mask2-02.png",
+            "__base__/graphics/entity/biter/hr-biter-run-mask2-03.png",
+            "__base__/graphics/entity/biter/hr-biter-run-mask2-04.png"
+          },
+          frame_count = 16,
+          height = 184,
+          line_length = 8,
+          lines_per_file = 8,
+          scale = 0.25,
+          shift = {
+            0,
+            -0.59375
+          },
+          slice = 8,
+          tint = 0 --[=[ ref [""].attack_parameters.animation.layers[3].hr_version.tint ]=],
+          width = 232
+        },
+        line_length = 8,
+        lines_per_file = 8,
+        scale = 0.5,
+        shift = {
+          -0.03125,
+          -0.59375
+        },
+        slice = 8,
+        tint = 0 --[=[ ref [""].attack_parameters.animation.layers[3].hr_version.tint ]=],
+        width = 120
+      },
+      {
+        direction_count = 16,
+        draw_as_shadow = true,
+        filenames = {
+          "__base__/graphics/entity/biter/biter-run-shadow-01.png",
+          "__base__/graphics/entity/biter/biter-run-shadow-02.png",
+          "__base__/graphics/entity/biter/biter-run-shadow-03.png",
+          "__base__/graphics/entity/biter/biter-run-shadow-04.png"
+        },
+        frame_count = 16,
+        height = 144,
+        hr_version = {
+          direction_count = 16,
+          draw_as_shadow = true,
+          filenames = {
+            "__base__/graphics/entity/biter/hr-biter-run-shadow-01.png",
+            "__base__/graphics/entity/biter/hr-biter-run-shadow-02.png",
+            "__base__/graphics/entity/biter/hr-biter-run-shadow-03.png",
+            "__base__/graphics/entity/biter/hr-biter-run-shadow-04.png"
+          },
+          frame_count = 16,
+          height = 292,
+          line_length = 8,
+          lines_per_file = 8,
+          scale = 0.25,
+          shift = {
+            0.125,
+            -0.015625
+          },
+          slice = 8,
+          width = 432
+        },
+        line_length = 8,
+        lines_per_file = 8,
+        scale = 0.5,
+        shift = {
+          0.125,
+          0
+        },
+        slice = 8,
+        width = 216
+      }
+    }
+  },
+  running_sound_animation_positions = {
+    2
+  },
+  selection_box = {
+    {
+      -0.4,
+      -0.7
+    },
+    {
+      0.4,
+      0.4
+    }
+  },
+  subgroup = "enemies",
+  type = "unit",
+  vision_distance = 30,
+  walking_sound = {
+    aggregation = {
+      max_count = 2,
+      remove = true
+    },
+    variations = {
+      {
+        filename = "__base__/sound/creatures/biter-walk-1.ogg",
+        volume = 0.3
+      },
+      {
+        filename = "__base__/sound/creatures/biter-walk-2.ogg",
+        volume = 0.3
+      },
+      {
+        filename = "__base__/sound/creatures/biter-walk-3.ogg",
+        volume = 0.3
+      },
+      {
+        filename = "__base__/sound/creatures/biter-walk-4.ogg",
+        volume = 0.3
+      },
+      {
+        filename = "__base__/sound/creatures/biter-walk-5.ogg",
+        volume = 0.3
+      },
+      {
+        filename = "__base__/sound/creatures/biter-walk-6.ogg",
+        volume = 0.3
+      },
+      {
+        filename = "__base__/sound/creatures/biter-walk-7.ogg",
+        volume = 0.3
+      }
+    }
+  },
+  water_reflection = {
+    orientation_to_variation = false,
+    pictures = {
+      filename = "__base__/graphics/entity/biter/biter-reflection.png",
+      height = 28,
+      priority = "extra-high",
+      scale = 2.5,
+      shift = {
+        0.15625,
+        0.46875
+      },
+      variation_count = 1,
+      width = 20
+    },
+    rotate = true
+  },
+  working_sound = {
+    max_sounds_per_type = 2,
+    probability = 0.0013888888888888888,
+    sound = {
+      {
+        filename = "__base__/sound/creatures/biter-call-1.ogg",
+        volume = 0.57999999999999998
+      },
+      {
+        filename = "__base__/sound/creatures/biter-call-2.ogg",
+        volume = 0.57999999999999998
+      },
+      {
+        filename = "__base__/sound/creatures/biter-call-3.ogg",
+        volume = 0.57999999999999998
+      },
+      {
+        filename = "__base__/sound/creatures/biter-call-4.ogg",
+        volume = 0.57999999999999998
+      },
+      {
+        filename = "__base__/sound/creatures/biter-call-5.ogg",
+        volume = 0.57999999999999998
+      }
+    }
+  }
+} --[[incomplete output with shared/self-references skipped]]

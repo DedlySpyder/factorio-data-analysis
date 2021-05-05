@@ -1,0 +1,27 @@
+{
+  category = "crafting-with-fluid",
+  enabled = false,
+  energy_required = 2,
+  ingredients = {
+    {
+      "fast-splitter",
+      1
+    },
+    {
+      "iron-gear-wheel",
+      10
+    },
+    {
+      "advanced-circuit",
+      10
+    },
+    {
+      amount = 80,
+      name = "lubricant",
+      type = "fluid"
+    }
+  },
+  name = "express-splitter",
+  result = "express-splitter",
+  type = "recipe"
+}

@@ -1,0 +1,11 @@
+{
+  amount = 1000000,
+  icon = "__base__/graphics/achievement/mass-production-2.png",
+  icon_size = 128,
+  item_product = "electronic-circuit",
+  limited_to_one_game = false,
+  name = "mass-production-2",
+  order = "d[production]-b[electronic-circuit-production]-b",
+  steam_stats_name = "electronic-circuits-production-overall",
+  type = "produce-achievement"
+}

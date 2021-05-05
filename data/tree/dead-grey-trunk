@@ -1,0 +1,290 @@
+{
+  autoplace = {
+    control = "trees",
+    max_probability = 0.01,
+    order = "a[tree]-b[forest]",
+    peaks = {
+      {
+        influence = -0.8,
+        richness_influence = 0
+      },
+      {
+        influence = 1,
+        noise_layer = "trees",
+        noise_octaves_difference = -1.5,
+        noise_persistence = 0.5,
+        richness_influence = 0
+      },
+      {
+        influence = 1,
+        richness_influence = 0,
+        temperature_max_range = 30,
+        temperature_optimal = 15,
+        temperature_range = 20,
+        water_max_range = 0.2,
+        water_optimal = 0.15,
+        water_range = 0.15
+      },
+      {
+        distance_max_range = 192,
+        distance_optimal = 0,
+        distance_range = 64,
+        distance_top_property_limit = 128,
+        influence = -0.25,
+        richness_influence = 0
+      }
+    },
+    random_probability_penalty = 0.01,
+    sharpness = 0.6
+  },
+  collision_box = {
+    {
+      -0.6,
+      -0.6
+    },
+    {
+      0.6,
+      0.6
+    }
+  },
+  emissions_per_second = -0.0001,
+  flags = {
+    "placeable-neutral",
+    "placeable-off-grid",
+    "breaths-air"
+  },
+  icon = "__base__/graphics/icons/dead-grey-trunk.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  max_health = 20,
+  minable = {
+    count = 2,
+    mining_particle = "wooden-particle",
+    mining_time = 0.5,
+    result = "wood"
+  },
+  name = "dead-grey-trunk",
+  order = "a[tree]-b[dead-tree]",
+  pictures = {
+    {
+      filename = "__base__/graphics/entity/tree/dead-grey-trunk/dead-grey-trunk-00.png",
+      height = 88,
+      hr_version = {
+        filename = "__base__/graphics/entity/tree/dead-grey-trunk/hr-dead-grey-trunk-00.png",
+        height = 178,
+        scale = 0.5,
+        shift = {
+          0.9296875,
+          -0.78125
+        },
+        width = 217
+      },
+      shift = {
+        0.921875,
+        -0.78125
+      },
+      width = 109
+    },
+    {
+      filename = "__base__/graphics/entity/tree/dead-grey-trunk/dead-grey-trunk-01.png",
+      height = 91,
+      hr_version = {
+        filename = "__base__/graphics/entity/tree/dead-grey-trunk/hr-dead-grey-trunk-01.png",
+        height = 185,
+        scale = 0.5,
+        shift = {
+          0.8359375,
+          -0.7578125
+        },
+        width = 205
+      },
+      shift = {
+        0.84375,
+        -0.765625
+      },
+      width = 102
+    },
+    {
+      filename = "__base__/graphics/entity/tree/dead-grey-trunk/dead-grey-trunk-02.png",
+      height = 89,
+      hr_version = {
+        filename = "__base__/graphics/entity/tree/dead-grey-trunk/hr-dead-grey-trunk-02.png",
+        height = 179,
+        scale = 0.5,
+        shift = {
+          0.9140625,
+          -0.7578125
+        },
+        width = 221
+      },
+      shift = {
+        0.921875,
+        -0.765625
+      },
+      width = 111
+    },
+    {
+      filename = "__base__/graphics/entity/tree/dead-grey-trunk/dead-grey-trunk-03.png",
+      height = 83,
+      hr_version = {
+        filename = "__base__/graphics/entity/tree/dead-grey-trunk/hr-dead-grey-trunk-03.png",
+        height = 167,
+        scale = 0.5,
+        shift = {
+          0.90625,
+          -0.6171875
+        },
+        width = 210
+      },
+      shift = {
+        0.90625,
+        -0.640625
+      },
+      width = 106
+    },
+    {
+      filename = "__base__/graphics/entity/tree/dead-grey-trunk/dead-grey-trunk-04.png",
+      height = 93,
+      hr_version = {
+        filename = "__base__/graphics/entity/tree/dead-grey-trunk/hr-dead-grey-trunk-04.png",
+        height = 185,
+        scale = 0.5,
+        shift = {
+          1.0234375,
+          -0.6484375
+        },
+        width = 257
+      },
+      shift = {
+        1.03125,
+        -0.640625
+      },
+      width = 128
+    },
+    {
+      filename = "__base__/graphics/entity/tree/dead-grey-trunk/dead-grey-trunk-05.png",
+      height = 83,
+      hr_version = {
+        filename = "__base__/graphics/entity/tree/dead-grey-trunk/hr-dead-grey-trunk-05.png",
+        height = 166,
+        scale = 0.5,
+        shift = {
+          0.5,
+          -0.109375
+        },
+        width = 226
+      },
+      shift = {
+        0.5,
+        -0.109375
+      },
+      width = 114
+    },
+    {
+      filename = "__base__/graphics/entity/tree/dead-grey-trunk/dead-grey-trunk-06.png",
+      height = 58,
+      hr_version = {
+        filename = "__base__/graphics/entity/tree/dead-grey-trunk/hr-dead-grey-trunk-06.png",
+        height = 117,
+        scale = 0.5,
+        shift = {
+          0.09375,
+          0.0390625
+        },
+        width = 226
+      },
+      shift = {
+        0.109375,
+        0.03125
+      },
+      width = 113
+    },
+    {
+      filename = "__base__/graphics/entity/tree/dead-grey-trunk/dead-grey-trunk-07.png",
+      height = 83,
+      hr_version = {
+        filename = "__base__/graphics/entity/tree/dead-grey-trunk/hr-dead-grey-trunk-07.png",
+        height = 165,
+        scale = 0.5,
+        shift = {
+          0.0859375,
+          -0.0390625
+        },
+        width = 215
+      },
+      shift = {
+        0.09375,
+        -0.046875
+      },
+      width = 108
+    },
+    {
+      filename = "__base__/graphics/entity/tree/dead-grey-trunk/dead-grey-trunk-08.png",
+      height = 88,
+      hr_version = {
+        filename = "__base__/graphics/entity/tree/dead-grey-trunk/hr-dead-grey-trunk-08.png",
+        height = 176,
+        scale = 0.5,
+        shift = {
+          0.2265625,
+          -0.34375
+        },
+        width = 207
+      },
+      shift = {
+        0.21875,
+        -0.34375
+      },
+      width = 104
+    },
+    {
+      filename = "__base__/graphics/entity/tree/dead-grey-trunk/dead-grey-trunk-09.png",
+      height = 60,
+      hr_version = {
+        filename = "__base__/graphics/entity/tree/dead-grey-trunk/hr-dead-grey-trunk-09.png",
+        height = 120,
+        scale = 0.5,
+        shift = {
+          -0.1484375,
+          -0.09375
+        },
+        width = 231
+      },
+      shift = {
+        -0.15625,
+        -0.09375
+      },
+      width = 116
+    }
+  },
+  selection_box = {
+    {
+      -0.8,
+      -0.8
+    },
+    {
+      0.8,
+      0.8
+    }
+  },
+  subgroup = "trees",
+  type = "tree",
+  vehicle_impact_sound = {
+    {
+      filename = "__base__/sound/car-tree-wood-impact-01.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-tree-wood-impact-02.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-tree-wood-impact-03.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-tree-wood-impact-04.ogg",
+      volume = 0.5
+    }
+  }
+}

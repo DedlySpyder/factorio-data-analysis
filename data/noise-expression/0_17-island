@@ -1,0 +1,2066 @@
+{
+  expression = {
+    arguments = {
+      {
+        arguments = {
+          {
+            arguments = {
+              {
+                source_location = {
+                  filename = "__core__/lualib/noise.lua",
+                  line_number = 292
+                },
+                type = "variable",
+                variable_name = "wlc_elevation_minimum"
+              },
+              {
+                arguments = {
+                  {
+                    arguments = {
+                      {
+                        arguments = {
+                          {
+                            arguments = {
+                              {
+                                arguments = {
+                                  {
+                                    arguments = {
+                                      input_scale = {
+                                        literal_value = 0.001953125,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 106
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      output_scale = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 107
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      seed0 = {
+                                        source_location = {
+                                          filename = "__core__/lualib/noise.lua",
+                                          line_number = 284
+                                        },
+                                        type = "variable",
+                                        variable_name = "map_seed"
+                                      },
+                                      seed1 = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 105
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      x = {
+                                        arguments = {
+                                          {
+                                            arguments = {
+                                              {
+                                                source_location = {
+                                                  filename = "__core__/lualib/noise.lua",
+                                                  line_number = 273
+                                                },
+                                                type = "variable",
+                                                variable_name = "x"
+                                              },
+                                              {
+                                                arguments = {
+                                                  {
+                                                    source_location = {
+                                                      filename = "__core__/lualib/noise.lua",
+                                                      line_number = 288
+                                                    },
+                                                    type = "variable",
+                                                    variable_name = "segmentation_multiplier"
+                                                  },
+                                                  {
+                                                    literal_value = 4,
+                                                    source_location = {
+                                                      filename = "__core__/lualib/noise.lua",
+                                                      line_number = 86
+                                                    },
+                                                    type = "literal-number"
+                                                  }
+                                                },
+                                                function_name = "divide",
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 438
+                                                },
+                                                type = "function-application",
+                                                variable_name = "segmentation_multiplier"
+                                              }
+                                            },
+                                            function_name = "multiply",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 440
+                                            },
+                                            type = "function-application"
+                                          },
+                                          {
+                                            literal_value = 10000,
+                                            source_location = {
+                                              filename = "__core__/lualib/noise.lua",
+                                              line_number = 54
+                                            },
+                                            type = "literal-number"
+                                          }
+                                        },
+                                        function_name = "add",
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 440
+                                        },
+                                        type = "function-application"
+                                      },
+                                      y = {
+                                        arguments = {
+                                          {
+                                            source_location = {
+                                              filename = "__core__/lualib/noise.lua",
+                                              line_number = 274
+                                            },
+                                            type = "variable",
+                                            variable_name = "y"
+                                          },
+                                          0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x.arguments[1].arguments[2] ]=]
+                                        },
+                                        function_name = "multiply",
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 441
+                                        },
+                                        type = "function-application"
+                                      }
+                                    },
+                                    function_name = "factorio-basis-noise",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 98
+                                    },
+                                    type = "function-application"
+                                  },
+                                  {
+                                    literal_value = 32,
+                                    source_location = {
+                                      filename = "__core__/lualib/noise.lua",
+                                      line_number = 78
+                                    },
+                                    type = "literal-number"
+                                  }
+                                },
+                                function_name = "multiply",
+                                source_location = {
+                                  filename = "__core__/prototypes/noise-programs.lua",
+                                  line_number = 109
+                                },
+                                type = "function-application"
+                              },
+                              {
+                                arguments = {
+                                  {
+                                    arguments = {
+                                      input_scale = {
+                                        literal_value = 0.00390625,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 106
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      output_scale = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 107
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                      seed1 = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 105
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                      y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                    },
+                                    function_name = "factorio-basis-noise",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 98
+                                    },
+                                    type = "function-application"
+                                  },
+                                  {
+                                    arguments = {
+                                      {
+                                        literal_value = 32,
+                                        source_location = {
+                                          filename = "__core__/lualib/noise.lua",
+                                          line_number = 78
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      {
+                                        arguments = {
+                                          {
+                                            arguments = {
+                                              {
+                                                arguments = {
+                                                  {
+                                                    arguments = {
+                                                      {
+                                                        arguments = {
+                                                          input_scale = {
+                                                            literal_value = 0.0078125,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 106
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          output_scale = {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 107
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          seed0 = {
+                                                            source_location = {
+                                                              filename = "__core__/lualib/noise.lua",
+                                                              line_number = 284
+                                                            },
+                                                            type = "variable",
+                                                            variable_name = "map_seed"
+                                                          },
+                                                          seed1 = {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 105
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          x = {
+                                                            arguments = {
+                                                              {
+                                                                arguments = {
+                                                                  {
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 273
+                                                                    },
+                                                                    type = "variable",
+                                                                    variable_name = "x"
+                                                                  },
+                                                                  {
+                                                                    arguments = {
+                                                                      {
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/noise.lua",
+                                                                          line_number = 288
+                                                                        },
+                                                                        type = "variable",
+                                                                        variable_name = "segmentation_multiplier"
+                                                                      },
+                                                                      {
+                                                                        literal_value = 4,
+                                                                        source_location = {
+                                                                          filename = "__core__/lualib/noise.lua",
+                                                                          line_number = 86
+                                                                        },
+                                                                        type = "literal-number"
+                                                                      }
+                                                                    },
+                                                                    function_name = "divide",
+                                                                    source_location = {
+                                                                      filename = "__core__/prototypes/noise-programs.lua",
+                                                                      line_number = 438
+                                                                    },
+                                                                    type = "function-application",
+                                                                    variable_name = "segmentation_multiplier"
+                                                                  }
+                                                                },
+                                                                function_name = "multiply",
+                                                                source_location = {
+                                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                                  line_number = 440
+                                                                },
+                                                                type = "function-application"
+                                                              },
+                                                              {
+                                                                literal_value = 10000,
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/noise.lua",
+                                                                  line_number = 54
+                                                                },
+                                                                type = "literal-number"
+                                                              }
+                                                            },
+                                                            function_name = "add",
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 440
+                                                            },
+                                                            type = "function-application"
+                                                          },
+                                                          y = {
+                                                            arguments = {
+                                                              {
+                                                                source_location = {
+                                                                  filename = "__core__/lualib/noise.lua",
+                                                                  line_number = 274
+                                                                },
+                                                                type = "variable",
+                                                                variable_name = "y"
+                                                              },
+                                                              {
+                                                                arguments = {
+                                                                  {
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 288
+                                                                    },
+                                                                    type = "variable",
+                                                                    variable_name = "segmentation_multiplier"
+                                                                  },
+                                                                  {
+                                                                    literal_value = 4,
+                                                                    source_location = {
+                                                                      filename = "__core__/lualib/noise.lua",
+                                                                      line_number = 86
+                                                                    },
+                                                                    type = "literal-number"
+                                                                  }
+                                                                },
+                                                                function_name = "divide",
+                                                                source_location = {
+                                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                                  line_number = 438
+                                                                },
+                                                                type = "function-application",
+                                                                variable_name = "segmentation_multiplier"
+                                                              }
+                                                            },
+                                                            function_name = "multiply",
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 441
+                                                            },
+                                                            type = "function-application"
+                                                          }
+                                                        },
+                                                        function_name = "factorio-basis-noise",
+                                                        source_location = {
+                                                          filename = "__core__/prototypes/noise-programs.lua",
+                                                          line_number = 98
+                                                        },
+                                                        type = "function-application"
+                                                      },
+                                                      {
+                                                        literal_value = 0.17000037400082279,
+                                                        source_location = {
+                                                          filename = "__core__/lualib/noise.lua",
+                                                          line_number = 78
+                                                        },
+                                                        type = "literal-number"
+                                                      }
+                                                    },
+                                                    function_name = "multiply",
+                                                    source_location = {
+                                                      filename = "__core__/prototypes/noise-programs.lua",
+                                                      line_number = 109
+                                                    },
+                                                    type = "function-application"
+                                                  },
+                                                  {
+                                                    arguments = {
+                                                      {
+                                                        arguments = {
+                                                          input_scale = {
+                                                            literal_value = 0.015625,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 106
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          output_scale = {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 107
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                                          seed1 = {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 105
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                                          y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                                        },
+                                                        function_name = "factorio-basis-noise",
+                                                        source_location = {
+                                                          filename = "__core__/prototypes/noise-programs.lua",
+                                                          line_number = 98
+                                                        },
+                                                        type = "function-application"
+                                                      },
+                                                      {
+                                                        literal_value = 0.11900026180057595,
+                                                        source_location = {
+                                                          filename = "__core__/lualib/noise.lua",
+                                                          line_number = 78
+                                                        },
+                                                        type = "literal-number"
+                                                      }
+                                                    },
+                                                    function_name = "multiply",
+                                                    source_location = {
+                                                      filename = "__core__/prototypes/noise-programs.lua",
+                                                      line_number = 109
+                                                    },
+                                                    type = "function-application"
+                                                  },
+                                                  {
+                                                    arguments = {
+                                                      {
+                                                        arguments = {
+                                                          input_scale = {
+                                                            literal_value = 0.03125,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 106
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          output_scale = {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 107
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                                          seed1 = {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 105
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                                          y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                                        },
+                                                        function_name = "factorio-basis-noise",
+                                                        source_location = {
+                                                          filename = "__core__/prototypes/noise-programs.lua",
+                                                          line_number = 98
+                                                        },
+                                                        type = "function-application"
+                                                      },
+                                                      {
+                                                        literal_value = 0.083300183260403156,
+                                                        source_location = {
+                                                          filename = "__core__/lualib/noise.lua",
+                                                          line_number = 78
+                                                        },
+                                                        type = "literal-number"
+                                                      }
+                                                    },
+                                                    function_name = "multiply",
+                                                    source_location = {
+                                                      filename = "__core__/prototypes/noise-programs.lua",
+                                                      line_number = 109
+                                                    },
+                                                    type = "function-application"
+                                                  },
+                                                  {
+                                                    arguments = {
+                                                      {
+                                                        arguments = {
+                                                          input_scale = {
+                                                            literal_value = 0.0625,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 106
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          output_scale = {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 107
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                                          seed1 = {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 105
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                                          y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                                        },
+                                                        function_name = "factorio-basis-noise",
+                                                        source_location = {
+                                                          filename = "__core__/prototypes/noise-programs.lua",
+                                                          line_number = 98
+                                                        },
+                                                        type = "function-application"
+                                                      },
+                                                      {
+                                                        literal_value = 0.058310128282282205,
+                                                        source_location = {
+                                                          filename = "__core__/lualib/noise.lua",
+                                                          line_number = 78
+                                                        },
+                                                        type = "literal-number"
+                                                      }
+                                                    },
+                                                    function_name = "multiply",
+                                                    source_location = {
+                                                      filename = "__core__/prototypes/noise-programs.lua",
+                                                      line_number = 109
+                                                    },
+                                                    type = "function-application"
+                                                  },
+                                                  {
+                                                    arguments = {
+                                                      {
+                                                        arguments = {
+                                                          input_scale = {
+                                                            literal_value = 0.125,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 106
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          output_scale = {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 107
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                                          seed1 = {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 105
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                                          y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                                        },
+                                                        function_name = "factorio-basis-noise",
+                                                        source_location = {
+                                                          filename = "__core__/prototypes/noise-programs.lua",
+                                                          line_number = 98
+                                                        },
+                                                        type = "function-application"
+                                                      },
+                                                      {
+                                                        literal_value = 0.040817089797597541,
+                                                        source_location = {
+                                                          filename = "__core__/lualib/noise.lua",
+                                                          line_number = 78
+                                                        },
+                                                        type = "literal-number"
+                                                      }
+                                                    },
+                                                    function_name = "multiply",
+                                                    source_location = {
+                                                      filename = "__core__/prototypes/noise-programs.lua",
+                                                      line_number = 109
+                                                    },
+                                                    type = "function-application"
+                                                  },
+                                                  {
+                                                    arguments = {
+                                                      {
+                                                        arguments = {
+                                                          input_scale = {
+                                                            literal_value = 0.25,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 106
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          output_scale = {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 107
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                                          seed1 = {
+                                                            literal_value = 1,
+                                                            source_location = {
+                                                              filename = "__core__/prototypes/noise-programs.lua",
+                                                              line_number = 105
+                                                            },
+                                                            type = "literal-number"
+                                                          },
+                                                          x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                                          y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                                        },
+                                                        function_name = "factorio-basis-noise",
+                                                        source_location = {
+                                                          filename = "__core__/prototypes/noise-programs.lua",
+                                                          line_number = 98
+                                                        },
+                                                        type = "function-application"
+                                                      },
+                                                      {
+                                                        literal_value = 0.028571962858318276,
+                                                        source_location = {
+                                                          filename = "__core__/lualib/noise.lua",
+                                                          line_number = 78
+                                                        },
+                                                        type = "literal-number"
+                                                      }
+                                                    },
+                                                    function_name = "multiply",
+                                                    source_location = {
+                                                      filename = "__core__/prototypes/noise-programs.lua",
+                                                      line_number = 109
+                                                    },
+                                                    type = "function-application"
+                                                  }
+                                                },
+                                                function_name = "add",
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 269
+                                                },
+                                                type = "function-application"
+                                              },
+                                              {
+                                                literal_value = 0.3,
+                                                source_location = {
+                                                  filename = "__core__/lualib/noise.lua",
+                                                  line_number = 54
+                                                },
+                                                type = "literal-number"
+                                              }
+                                            },
+                                            function_name = "add",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 279
+                                            },
+                                            type = "function-application"
+                                          },
+                                          {
+                                            literal_value = 0.1,
+                                            source_location = {
+                                              filename = "__core__/lualib/noise.lua",
+                                              line_number = 304
+                                            },
+                                            type = "literal-number"
+                                          },
+                                          {
+                                            literal_value = 0.9,
+                                            source_location = {
+                                              filename = "__core__/lualib/noise.lua",
+                                              line_number = 305
+                                            },
+                                            type = "literal-number"
+                                          }
+                                        },
+                                        function_name = "clamp",
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 279
+                                        },
+                                        type = "function-application"
+                                      }
+                                    },
+                                    function_name = "multiply",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 111
+                                    },
+                                    type = "function-application"
+                                  }
+                                },
+                                function_name = "multiply",
+                                source_location = {
+                                  filename = "__core__/prototypes/noise-programs.lua",
+                                  line_number = 109
+                                },
+                                type = "function-application"
+                              },
+                              {
+                                arguments = {
+                                  {
+                                    arguments = {
+                                      input_scale = {
+                                        literal_value = 0.0078125,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 106
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      output_scale = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 107
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                      seed1 = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 105
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                      y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                    },
+                                    function_name = "factorio-basis-noise",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 98
+                                    },
+                                    type = "function-application"
+                                  },
+                                  {
+                                    arguments = {
+                                      0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2] ]=],
+                                      0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2] ]=]
+                                    },
+                                    function_name = "multiply",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 111
+                                    },
+                                    type = "function-application"
+                                  }
+                                },
+                                function_name = "multiply",
+                                source_location = {
+                                  filename = "__core__/prototypes/noise-programs.lua",
+                                  line_number = 109
+                                },
+                                type = "function-application"
+                              },
+                              {
+                                arguments = {
+                                  {
+                                    arguments = {
+                                      input_scale = {
+                                        literal_value = 0.015625,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 106
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      output_scale = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 107
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                      seed1 = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 105
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                      y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                    },
+                                    function_name = "factorio-basis-noise",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 98
+                                    },
+                                    type = "function-application"
+                                  },
+                                  {
+                                    arguments = {
+                                      0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[3].arguments[2] ]=],
+                                      0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2] ]=]
+                                    },
+                                    function_name = "multiply",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 111
+                                    },
+                                    type = "function-application"
+                                  }
+                                },
+                                function_name = "multiply",
+                                source_location = {
+                                  filename = "__core__/prototypes/noise-programs.lua",
+                                  line_number = 109
+                                },
+                                type = "function-application"
+                              },
+                              {
+                                arguments = {
+                                  {
+                                    arguments = {
+                                      input_scale = {
+                                        literal_value = 0.03125,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 106
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      output_scale = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 107
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                      seed1 = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 105
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                      y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                    },
+                                    function_name = "factorio-basis-noise",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 98
+                                    },
+                                    type = "function-application"
+                                  },
+                                  {
+                                    arguments = {
+                                      0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[4].arguments[2] ]=],
+                                      0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2] ]=]
+                                    },
+                                    function_name = "multiply",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 111
+                                    },
+                                    type = "function-application"
+                                  }
+                                },
+                                function_name = "multiply",
+                                source_location = {
+                                  filename = "__core__/prototypes/noise-programs.lua",
+                                  line_number = 109
+                                },
+                                type = "function-application"
+                              },
+                              {
+                                arguments = {
+                                  {
+                                    arguments = {
+                                      input_scale = {
+                                        literal_value = 0.0625,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 106
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      output_scale = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 107
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                      seed1 = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 105
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                      y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                    },
+                                    function_name = "factorio-basis-noise",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 98
+                                    },
+                                    type = "function-application"
+                                  },
+                                  {
+                                    arguments = {
+                                      0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[5].arguments[2] ]=],
+                                      0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2] ]=]
+                                    },
+                                    function_name = "multiply",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 111
+                                    },
+                                    type = "function-application"
+                                  }
+                                },
+                                function_name = "multiply",
+                                source_location = {
+                                  filename = "__core__/prototypes/noise-programs.lua",
+                                  line_number = 109
+                                },
+                                type = "function-application"
+                              },
+                              {
+                                arguments = {
+                                  {
+                                    arguments = {
+                                      input_scale = {
+                                        literal_value = 0.125,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 106
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      output_scale = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 107
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                      seed1 = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 105
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                      y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                    },
+                                    function_name = "factorio-basis-noise",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 98
+                                    },
+                                    type = "function-application"
+                                  },
+                                  {
+                                    arguments = {
+                                      0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[6].arguments[2] ]=],
+                                      0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2] ]=]
+                                    },
+                                    function_name = "multiply",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 111
+                                    },
+                                    type = "function-application"
+                                  }
+                                },
+                                function_name = "multiply",
+                                source_location = {
+                                  filename = "__core__/prototypes/noise-programs.lua",
+                                  line_number = 109
+                                },
+                                type = "function-application"
+                              },
+                              {
+                                arguments = {
+                                  {
+                                    arguments = {
+                                      input_scale = {
+                                        literal_value = 0.25,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 106
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      output_scale = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 107
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                      seed1 = {
+                                        literal_value = 1,
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 105
+                                        },
+                                        type = "literal-number"
+                                      },
+                                      x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                      y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                    },
+                                    function_name = "factorio-basis-noise",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 98
+                                    },
+                                    type = "function-application"
+                                  },
+                                  {
+                                    arguments = {
+                                      0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[7].arguments[2] ]=],
+                                      0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2] ]=]
+                                    },
+                                    function_name = "multiply",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 111
+                                    },
+                                    type = "function-application"
+                                  }
+                                },
+                                function_name = "multiply",
+                                source_location = {
+                                  filename = "__core__/prototypes/noise-programs.lua",
+                                  line_number = 109
+                                },
+                                type = "function-application"
+                              }
+                            },
+                            function_name = "add",
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 280
+                            },
+                            type = "function-application"
+                          },
+                          {
+                            literal_value = -1000,
+                            source_location = {
+                              filename = "__core__/lualib/noise.lua",
+                              line_number = 54
+                            },
+                            type = "literal-number"
+                          }
+                        },
+                        function_name = "add",
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 301
+                        },
+                        type = "function-application"
+                      },
+                      {
+                        arguments = {
+                          {
+                            arguments = {
+                              {
+                                arguments = {
+                                  {
+                                    arguments = {
+                                      {
+                                        arguments = {
+                                          {
+                                            arguments = {
+                                              input_scale = {
+                                                literal_value = 0.0078125,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 106
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              output_scale = {
+                                                literal_value = 1,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 107
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                              seed1 = {
+                                                literal_value = 2,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 105
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                              y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                            },
+                                            function_name = "factorio-basis-noise",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 98
+                                            },
+                                            type = "function-application"
+                                          },
+                                          {
+                                            literal_value = 8,
+                                            source_location = {
+                                              filename = "__core__/lualib/noise.lua",
+                                              line_number = 78
+                                            },
+                                            type = "literal-number"
+                                          }
+                                        },
+                                        function_name = "multiply",
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 109
+                                        },
+                                        type = "function-application"
+                                      },
+                                      {
+                                        arguments = {
+                                          {
+                                            arguments = {
+                                              input_scale = {
+                                                literal_value = 0.015625,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 106
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              output_scale = {
+                                                literal_value = 1,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 107
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                              seed1 = {
+                                                literal_value = 2,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 105
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                              y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                            },
+                                            function_name = "factorio-basis-noise",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 98
+                                            },
+                                            type = "function-application"
+                                          },
+                                          {
+                                            arguments = {
+                                              {
+                                                literal_value = 8,
+                                                source_location = {
+                                                  filename = "__core__/lualib/noise.lua",
+                                                  line_number = 78
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2] ]=]
+                                            },
+                                            function_name = "multiply",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 111
+                                            },
+                                            type = "function-application"
+                                          }
+                                        },
+                                        function_name = "multiply",
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 109
+                                        },
+                                        type = "function-application"
+                                      },
+                                      {
+                                        arguments = {
+                                          {
+                                            arguments = {
+                                              input_scale = {
+                                                literal_value = 0.03125,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 106
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              output_scale = {
+                                                literal_value = 1,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 107
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                              seed1 = {
+                                                literal_value = 2,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 105
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                              y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                            },
+                                            function_name = "factorio-basis-noise",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 98
+                                            },
+                                            type = "function-application"
+                                          },
+                                          {
+                                            arguments = {
+                                              0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2] ]=],
+                                              0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2] ]=]
+                                            },
+                                            function_name = "multiply",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 111
+                                            },
+                                            type = "function-application"
+                                          }
+                                        },
+                                        function_name = "multiply",
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 109
+                                        },
+                                        type = "function-application"
+                                      },
+                                      {
+                                        arguments = {
+                                          {
+                                            arguments = {
+                                              input_scale = {
+                                                literal_value = 0.0625,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 106
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              output_scale = {
+                                                literal_value = 1,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 107
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                              seed1 = {
+                                                literal_value = 2,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 105
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                              y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                            },
+                                            function_name = "factorio-basis-noise",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 98
+                                            },
+                                            type = "function-application"
+                                          },
+                                          {
+                                            arguments = {
+                                              0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[3].arguments[2] ]=],
+                                              0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2] ]=]
+                                            },
+                                            function_name = "multiply",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 111
+                                            },
+                                            type = "function-application"
+                                          }
+                                        },
+                                        function_name = "multiply",
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 109
+                                        },
+                                        type = "function-application"
+                                      },
+                                      {
+                                        arguments = {
+                                          {
+                                            arguments = {
+                                              input_scale = {
+                                                literal_value = 0.125,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 106
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              output_scale = {
+                                                literal_value = 1,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 107
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                              seed1 = {
+                                                literal_value = 2,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 105
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                              y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                            },
+                                            function_name = "factorio-basis-noise",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 98
+                                            },
+                                            type = "function-application"
+                                          },
+                                          {
+                                            arguments = {
+                                              0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[4].arguments[2] ]=],
+                                              0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2] ]=]
+                                            },
+                                            function_name = "multiply",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 111
+                                            },
+                                            type = "function-application"
+                                          }
+                                        },
+                                        function_name = "multiply",
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 109
+                                        },
+                                        type = "function-application"
+                                      },
+                                      {
+                                        arguments = {
+                                          {
+                                            arguments = {
+                                              input_scale = {
+                                                literal_value = 0.25,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 106
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              output_scale = {
+                                                literal_value = 1,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 107
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              seed0 = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.seed0 ]=],
+                                              seed1 = {
+                                                literal_value = 2,
+                                                source_location = {
+                                                  filename = "__core__/prototypes/noise-programs.lua",
+                                                  line_number = 105
+                                                },
+                                                type = "literal-number"
+                                              },
+                                              x = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                                              y = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                                            },
+                                            function_name = "factorio-basis-noise",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 98
+                                            },
+                                            type = "function-application"
+                                          },
+                                          {
+                                            arguments = {
+                                              0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[5].arguments[2] ]=],
+                                              0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[2].arguments[2].arguments[2] ]=]
+                                            },
+                                            function_name = "multiply",
+                                            source_location = {
+                                              filename = "__core__/prototypes/noise-programs.lua",
+                                              line_number = 111
+                                            },
+                                            type = "function-application"
+                                          }
+                                        },
+                                        function_name = "multiply",
+                                        source_location = {
+                                          filename = "__core__/prototypes/noise-programs.lua",
+                                          line_number = 109
+                                        },
+                                        type = "function-application"
+                                      }
+                                    },
+                                    function_name = "add",
+                                    source_location = {
+                                      filename = "__core__/prototypes/noise-programs.lua",
+                                      line_number = 290
+                                    },
+                                    type = "function-application"
+                                  },
+                                  {
+                                    literal_value = 20,
+                                    source_location = {
+                                      filename = "__core__/lualib/noise.lua",
+                                      line_number = 54
+                                    },
+                                    type = "literal-number"
+                                  }
+                                },
+                                function_name = "add",
+                                source_location = {
+                                  filename = "__core__/prototypes/noise-programs.lua",
+                                  line_number = 300
+                                },
+                                type = "function-application"
+                              },
+                              {
+                                source_location = {
+                                  filename = "__core__/lualib/noise.lua",
+                                  line_number = 294
+                                },
+                                type = "variable",
+                                variable_name = "finite_water_level"
+                              }
+                            },
+                            function_name = "add",
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 300
+                            },
+                            type = "function-application"
+                          },
+                          {
+                            arguments = {
+                              {
+                                arguments = {
+                                  {
+                                    source_location = {
+                                      filename = "__core__/lualib/noise.lua",
+                                      line_number = 279
+                                    },
+                                    type = "variable",
+                                    variable_name = "distance"
+                                  },
+                                  0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x.arguments[1].arguments[2] ]=]
+                                },
+                                function_name = "multiply",
+                                source_location = {
+                                  filename = "__core__/prototypes/noise-programs.lua",
+                                  line_number = 300
+                                },
+                                type = "function-application"
+                              },
+                              {
+                                literal_value = 10,
+                                source_location = {
+                                  filename = "__core__/lualib/noise.lua",
+                                  line_number = 86
+                                },
+                                type = "literal-number"
+                              }
+                            },
+                            function_name = "divide",
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 300
+                            },
+                            type = "function-application"
+                          }
+                        },
+                        function_name = "subtract",
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 300
+                        },
+                        type = "function-application"
+                      },
+                      {
+                        literal_value = 1/0 --[[math.huge]],
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 446
+                        },
+                        type = "literal-number"
+                      }
+                    },
+                    function_name = "clamp",
+                    source_location = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[3].source_location ]=],
+                    type = "function-application"
+                  },
+                  {
+                    source_location = {
+                      filename = "__core__/lualib/noise.lua",
+                      line_number = 291
+                    },
+                    type = "variable",
+                    variable_name = "wlc_elevation_offset"
+                  }
+                },
+                function_name = "add",
+                source_location = {
+                  filename = "__core__/prototypes/noise-programs.lua",
+                  line_number = 244
+                },
+                type = "function-application"
+              },
+              {
+                literal_value = 1/0 --[[math.huge]],
+                source_location = {
+                  filename = "__core__/prototypes/noise-programs.lua",
+                  line_number = 242
+                },
+                type = "literal-number"
+              }
+            },
+            function_name = "clamp",
+            source_location = 0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[3].source_location ]=],
+            type = "function-application"
+          },
+          0 --[=[ ref [""].expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x.arguments[1].arguments[2] ]=]
+        },
+        function_name = "divide",
+        source_location = {
+          filename = "__core__/prototypes/noise-programs.lua",
+          line_number = 252
+        },
+        type = "function-application"
+      },
+      {
+        literal_value = -1/0 --[[-math.huge]],
+        source_location = {
+          filename = "__core__/prototypes/noise-programs.lua",
+          line_number = 253
+        },
+        type = "literal-number"
+      },
+      {
+        arguments = {
+          {
+            arguments = {
+              {
+                arguments = {
+                  {
+                    arguments = {
+                      {
+                        arguments = {
+                          {
+                            arguments = {
+                              maximum_distance = {
+                                literal_value = 1024,
+                                source_location = {
+                                  filename = "__core__/lualib/noise.lua",
+                                  line_number = 405
+                                },
+                                type = "literal-number"
+                              },
+                              points = {
+                                source_location = {
+                                  filename = "__core__/prototypes/noise-programs.lua",
+                                  line_number = 202
+                                },
+                                type = "variable",
+                                variable_name = "starting_lake_positions"
+                              },
+                              x = {
+                                source_location = {
+                                  filename = "__core__/lualib/noise.lua",
+                                  line_number = 273
+                                },
+                                type = "variable",
+                                variable_name = "x"
+                              },
+                              y = {
+                                source_location = {
+                                  filename = "__core__/lualib/noise.lua",
+                                  line_number = 274
+                                },
+                                type = "variable",
+                                variable_name = "y"
+                              }
+                            },
+                            function_name = "distance-from-nearest-point",
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 202
+                            },
+                            type = "function-application"
+                          },
+                          {
+                            literal_value = 4,
+                            source_location = {
+                              filename = "__core__/lualib/noise.lua",
+                              line_number = 86
+                            },
+                            type = "literal-number"
+                          }
+                        },
+                        function_name = "divide",
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 205
+                        },
+                        type = "function-application"
+                      },
+                      {
+                        literal_value = 4,
+                        source_location = {
+                          filename = "__core__/lualib/noise.lua",
+                          line_number = 62
+                        },
+                        type = "literal-number"
+                      }
+                    },
+                    function_name = "subtract",
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 205
+                    },
+                    type = "function-application"
+                  },
+                  {
+                    arguments = {
+                      input_scale = {
+                        literal_value = 0.125,
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 27
+                        },
+                        type = "literal-number"
+                      },
+                      output_scale = {
+                        literal_value = 1.5,
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 28
+                        },
+                        type = "literal-number"
+                      },
+                      seed0 = {
+                        source_location = {
+                          filename = "__core__/lualib/noise.lua",
+                          line_number = 284
+                        },
+                        type = "variable",
+                        variable_name = "map_seed"
+                      },
+                      seed1 = {
+                        literal_value = 123,
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 26
+                        },
+                        type = "literal-number"
+                      },
+                      x = 0 --[=[ ref [""].expression.arguments[3].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                      y = 0 --[=[ ref [""].expression.arguments[3].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                    },
+                    function_name = "factorio-basis-noise",
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 206
+                    },
+                    type = "function-application"
+                  }
+                },
+                function_name = "add",
+                source_location = {
+                  filename = "__core__/prototypes/noise-programs.lua",
+                  line_number = 205
+                },
+                type = "function-application"
+              },
+              {
+                literal_value = -1/0 --[[-math.huge]],
+                source_location = {
+                  filename = "__core__/prototypes/noise-programs.lua",
+                  line_number = 231
+                },
+                type = "literal-number"
+              },
+              {
+                arguments = {
+                  {
+                    arguments = {
+                      {
+                        literal_value = -1,
+                        source_location = {
+                          filename = "__core__/lualib/noise.lua",
+                          line_number = 54
+                        },
+                        type = "literal-number"
+                      },
+                      {
+                        arguments = {
+                          {
+                            arguments = {
+                              {
+                                literal_value = 1,
+                                source_location = {
+                                  filename = "__core__/lualib/noise.lua",
+                                  line_number = 31
+                                },
+                                type = "literal-number"
+                              },
+                              {
+                                literal_value = 16,
+                                source_location = {
+                                  filename = "__core__/lualib/noise.lua",
+                                  line_number = 31
+                                },
+                                type = "literal-number"
+                              }
+                            },
+                            function_name = "divide",
+                            source_location = {
+                              filename = "__core__/lualib/noise.lua",
+                              line_number = 31
+                            },
+                            type = "function-application"
+                          },
+                          0 --[=[ ref [""].expression.arguments[3].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1] ]=]
+                        },
+                        function_name = "multiply",
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 233
+                        },
+                        type = "function-application"
+                      }
+                    },
+                    function_name = "add",
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 233
+                    },
+                    type = "function-application"
+                  },
+                  {
+                    arguments = {
+                      {
+                        arguments = {
+                          {
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 212
+                            },
+                            type = "variable",
+                            variable_name = "starting-lake-noise-amplitude"
+                          },
+                          {
+                            literal_value = 16,
+                            source_location = {
+                              filename = "__core__/lualib/noise.lua",
+                              line_number = 86
+                            },
+                            type = "literal-number"
+                          }
+                        },
+                        function_name = "divide",
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 212
+                        },
+                        type = "function-application"
+                      },
+                      {
+                        arguments = {
+                          input_scale = {
+                            literal_value = 0.0078125,
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 68
+                            },
+                            type = "literal-number"
+                          },
+                          octave_input_scale_multiplier = {
+                            literal_value = 2,
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 72
+                            },
+                            type = "literal-number"
+                          },
+                          octave_output_scale_multiplier = {
+                            literal_value = 0.75,
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 71
+                            },
+                            type = "literal-number"
+                          },
+                          octaves = {
+                            literal_value = 5,
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 70
+                            },
+                            type = "literal-number"
+                          },
+                          output_scale = {
+                            literal_value = 16,
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 69
+                            },
+                            type = "literal-number"
+                          },
+                          seed0 = 0 --[=[ ref [""].expression.arguments[3].arguments[1].arguments[1].arguments[2].arguments.seed0 ]=],
+                          seed1 = {
+                            literal_value = 14,
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 67
+                            },
+                            type = "literal-number"
+                          },
+                          x = 0 --[=[ ref [""].expression.arguments[3].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.x ]=],
+                          y = 0 --[=[ ref [""].expression.arguments[3].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1].arguments.y ]=]
+                        },
+                        function_name = "factorio-quick-multioctave-noise",
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 221
+                        },
+                        type = "function-application"
+                      }
+                    },
+                    function_name = "multiply",
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 233
+                    },
+                    type = "function-application"
+                  }
+                },
+                function_name = "add",
+                source_location = {
+                  filename = "__core__/prototypes/noise-programs.lua",
+                  line_number = 233
+                },
+                type = "function-application"
+              }
+            },
+            function_name = "clamp",
+            source_location = 0 --[=[ ref [""].expression.arguments[3].arguments[1].arguments[2].source_location ]=],
+            type = "function-application"
+          },
+          {
+            literal_value = -1/0 --[[-math.huge]],
+            source_location = 0 --[=[ ref [""].expression.arguments[3].arguments[1].arguments[2].source_location ]=],
+            type = "literal-number"
+          },
+          {
+            arguments = {
+              {
+                literal_value = 2,
+                source_location = {
+                  filename = "__core__/prototypes/noise-programs.lua",
+                  line_number = 234
+                },
+                type = "literal-number"
+              },
+              {
+                arguments = {
+                  {
+                    arguments = {
+                      {
+                        literal_value = 2,
+                        source_location = {
+                          filename = "__core__/lualib/noise.lua",
+                          line_number = 54
+                        },
+                        type = "literal-number"
+                      },
+                      {
+                        arguments = {
+                          {
+                            arguments = {
+                              {
+                                literal_value = 1,
+                                source_location = {
+                                  filename = "__core__/lualib/noise.lua",
+                                  line_number = 31
+                                },
+                                type = "literal-number"
+                              },
+                              {
+                                literal_value = 16,
+                                source_location = {
+                                  filename = "__core__/lualib/noise.lua",
+                                  line_number = 31
+                                },
+                                type = "literal-number"
+                              }
+                            },
+                            function_name = "divide",
+                            source_location = {
+                              filename = "__core__/lualib/noise.lua",
+                              line_number = 31
+                            },
+                            type = "function-application"
+                          },
+                          0 --[=[ ref [""].expression.arguments[3].arguments[1].arguments[1].arguments[1].arguments[1].arguments[1] ]=]
+                        },
+                        function_name = "multiply",
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 236
+                        },
+                        type = "function-application"
+                      }
+                    },
+                    function_name = "add",
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 236
+                    },
+                    type = "function-application"
+                  },
+                  {
+                    arguments = {
+                      {
+                        arguments = {
+                          {
+                            source_location = {
+                              filename = "__core__/prototypes/noise-programs.lua",
+                              line_number = 219
+                            },
+                            type = "variable",
+                            variable_name = "starting-lake-noise-amplitude"
+                          },
+                          {
+                            literal_value = 2,
+                            source_location = {
+                              filename = "__core__/lualib/noise.lua",
+                              line_number = 86
+                            },
+                            type = "literal-number"
+                          }
+                        },
+                        function_name = "divide",
+                        source_location = {
+                          filename = "__core__/prototypes/noise-programs.lua",
+                          line_number = 219
+                        },
+                        type = "function-application"
+                      },
+                      0 --[=[ ref [""].expression.arguments[3].arguments[1].arguments[3].arguments[2].arguments[2] ]=]
+                    },
+                    function_name = "multiply",
+                    source_location = {
+                      filename = "__core__/prototypes/noise-programs.lua",
+                      line_number = 236
+                    },
+                    type = "function-application"
+                  }
+                },
+                function_name = "add",
+                source_location = {
+                  filename = "__core__/prototypes/noise-programs.lua",
+                  line_number = 236
+                },
+                type = "function-application"
+              },
+              {
+                literal_value = 1/0 --[[math.huge]],
+                source_location = 0 --[=[ ref [""].expression.arguments[3].arguments[3].arguments[1].source_location ]=],
+                type = "literal-number"
+              }
+            },
+            function_name = "clamp",
+            source_location = 0 --[=[ ref [""].expression.arguments[3].arguments[3].arguments[1].source_location ]=],
+            type = "function-application"
+          }
+        },
+        function_name = "clamp",
+        source_location = 0 --[=[ ref [""].expression.arguments[3].arguments[1].arguments[2].source_location ]=],
+        type = "function-application"
+      }
+    },
+    function_name = "clamp",
+    source_location = 0 --[=[ ref [""].expression.arguments[2].source_location ]=],
+    type = "function-application"
+  },
+  intended_property = "elevation",
+  name = "0_17-island",
+  type = "noise-expression"
+} --[[incomplete output with shared/self-references skipped]]

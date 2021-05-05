@@ -1,0 +1,40 @@
+{
+  effects = {
+    {
+      recipe = "rail",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "locomotive",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "cargo-wagon",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/railway.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "railway",
+  order = "c-g-a",
+  prerequisites = {
+    "logistics-2",
+    "engine"
+  },
+  type = "technology",
+  unit = {
+    count = 75,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      }
+    },
+    time = 30
+  }
+}

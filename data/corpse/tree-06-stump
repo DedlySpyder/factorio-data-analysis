@@ -1,0 +1,274 @@
+{
+  animation = {
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/tree/06/tree-06-a-stump.png",
+      frame_count = 1,
+      height = 62,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/tree/06/hr-tree-06-a-stump.png",
+        frame_count = 1,
+        height = 120,
+        scale = 0.5,
+        shift = {
+          0,
+          -0.09375
+        },
+        width = 118
+      },
+      shift = {
+        0,
+        -0.125
+      },
+      width = 60
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/tree/06/tree-06-b-stump.png",
+      frame_count = 1,
+      height = 68,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/tree/06/hr-tree-06-b-stump.png",
+        frame_count = 1,
+        height = 132,
+        scale = 0.5,
+        shift = {
+          0,
+          0.09375
+        },
+        width = 124
+      },
+      shift = {
+        0,
+        0.0625
+      },
+      width = 62
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/tree/06/tree-06-c-stump.png",
+      frame_count = 1,
+      height = 58,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/tree/06/hr-tree-06-c-stump.png",
+        frame_count = 1,
+        height = 116,
+        scale = 0.5,
+        shift = {
+          -0.09375,
+          0.25
+        },
+        width = 122
+      },
+      shift = {
+        -0.125,
+        0.25
+      },
+      width = 62
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/tree/06/tree-06-d-stump.png",
+      frame_count = 1,
+      height = 64,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/tree/06/hr-tree-06-d-stump.png",
+        frame_count = 1,
+        height = 128,
+        scale = 0.5,
+        shift = {
+          -0.1875,
+          0.25
+        },
+        width = 120
+      },
+      shift = {
+        -0.1875,
+        0.25
+      },
+      width = 60
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/tree/06/tree-06-e-stump.png",
+      frame_count = 1,
+      height = 54,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/tree/06/hr-tree-06-e-stump.png",
+        frame_count = 1,
+        height = 106,
+        scale = 0.5,
+        shift = {
+          -0.25,
+          0.25
+        },
+        width = 126
+      },
+      shift = {
+        -0.25,
+        0.25
+      },
+      width = 64
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/tree/06/tree-06-f-stump.png",
+      frame_count = 1,
+      height = 60,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/tree/06/hr-tree-06-f-stump.png",
+        frame_count = 1,
+        height = 120,
+        scale = 0.5,
+        shift = {
+          -0.3125,
+          0
+        },
+        width = 122
+      },
+      shift = {
+        -0.3125,
+        0
+      },
+      width = 62
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/tree/06/tree-06-g-stump.png",
+      frame_count = 1,
+      height = 64,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/tree/06/hr-tree-06-g-stump.png",
+        frame_count = 1,
+        height = 126,
+        scale = 0.5,
+        shift = {
+          -0.21875,
+          -0.03125
+        },
+        width = 122
+      },
+      shift = {
+        -0.25,
+        -0.0625
+      },
+      width = 64
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/tree/06/tree-06-h-stump.png",
+      frame_count = 1,
+      height = 58,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/tree/06/hr-tree-06-h-stump.png",
+        frame_count = 1,
+        height = 114,
+        scale = 0.5,
+        shift = {
+          -0.15625,
+          0
+        },
+        width = 128
+      },
+      shift = {
+        -0.1875,
+        0
+      },
+      width = 66
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/tree/06/tree-06-i-stump.png",
+      frame_count = 1,
+      height = 66,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/tree/06/hr-tree-06-i-stump.png",
+        frame_count = 1,
+        height = 126,
+        scale = 0.5,
+        shift = {
+          -0.375,
+          0.21875
+        },
+        width = 144
+      },
+      shift = {
+        -0.375,
+        0.1875
+      },
+      width = 70
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/tree/06/tree-06-j-stump.png",
+      frame_count = 1,
+      height = 60,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/tree/06/hr-tree-06-j-stump.png",
+        frame_count = 1,
+        height = 116,
+        scale = 0.5,
+        shift = {
+          -0.3125,
+          0.21875
+        },
+        width = 134
+      },
+      shift = {
+        -0.3125,
+        0.1875
+      },
+      width = 68
+    }
+  },
+  collision_box = {
+    {
+      -0.4,
+      -0.4
+    },
+    {
+      0.4,
+      0.4
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "placeable-off-grid",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/tree-06-stump.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "entity-name.tree-stump"
+  },
+  name = "tree-06-stump",
+  order = "d[remnants]-b[tree]-f[tree-06]",
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -0.5,
+      -0.5
+    },
+    {
+      0.5,
+      0.5
+    }
+  },
+  subgroup = "remnants",
+  tile_height = 1,
+  tile_width = 1,
+  time_before_removed = 54000,
+  type = "corpse"
+}

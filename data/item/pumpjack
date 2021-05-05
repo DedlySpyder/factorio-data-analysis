@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/pumpjack.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "pumpjack",
+  order = "b[fluids]-b[pumpjack]",
+  place_result = "pumpjack",
+  stack_size = 20,
+  subgroup = "extraction-machine",
+  type = "item"
+}

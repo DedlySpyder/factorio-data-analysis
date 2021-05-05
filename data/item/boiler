@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/boiler.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "boiler",
+  order = "b[steam-power]-a[boiler]",
+  place_result = "boiler",
+  stack_size = 50,
+  subgroup = "energy",
+  type = "item"
+}

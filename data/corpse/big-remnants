@@ -1,0 +1,75 @@
+{
+  animation = {
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/remnants/big-remnants.png",
+      frame_count = 1,
+      height = 102,
+      width = 109
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/remnants/big-remnants.png",
+      frame_count = 1,
+      height = 102,
+      width = 109,
+      x = 109
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/remnants/big-remnants.png",
+      frame_count = 1,
+      height = 102,
+      width = 109,
+      x = 218
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/remnants/big-remnants.png",
+      frame_count = 1,
+      height = 102,
+      width = 109,
+      x = 327
+    }
+  },
+  collision_box = {
+    {
+      -1.5,
+      -1.5
+    },
+    {
+      1.5,
+      1.5
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/remnants.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "entity-name.big-remnants"
+  },
+  name = "big-remnants",
+  order = "a-c-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -1.5,
+      -1.5
+    },
+    {
+      1.5,
+      1.5
+    }
+  },
+  subgroup = "generic-remnants",
+  tile_height = 3,
+  tile_width = 3,
+  time_before_removed = 54000,
+  type = "corpse"
+}

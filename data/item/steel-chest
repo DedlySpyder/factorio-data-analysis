@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/steel-chest.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "steel-chest",
+  order = "a[items]-c[steel-chest]",
+  place_result = "steel-chest",
+  stack_size = 50,
+  subgroup = "storage",
+  type = "item"
+}

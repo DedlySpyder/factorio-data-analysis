@@ -1,0 +1,452 @@
+{
+  animation = {
+    {
+      layers = {
+        {
+          direction_count = 1,
+          filename = "__base__/graphics/entity/spawner/spawner-die.png",
+          frame_count = 8,
+          height = 178,
+          hr_version = {
+            direction_count = 1,
+            filename = "__base__/graphics/entity/spawner/hr-spawner-die.png",
+            frame_count = 8,
+            height = 354,
+            line_length = 8,
+            scale = 0.5,
+            shift = {
+              0.09375,
+              -0.0625
+            },
+            width = 490,
+            y = 0
+          },
+          line_length = 8,
+          shift = {
+            0.0625,
+            -0.0625
+          },
+          width = 248,
+          y = 0
+        },
+        {
+          direction_count = 1,
+          filename = "__base__/graphics/entity/spawner/spawner-die-mask.png",
+          flags = {
+            "mask"
+          },
+          frame_count = 8,
+          height = 118,
+          hr_version = {
+            direction_count = 1,
+            filename = "__base__/graphics/entity/spawner/hr-spawner-die-mask.png",
+            flags = {
+              "mask"
+            },
+            frame_count = 8,
+            height = 234,
+            line_length = 8,
+            scale = 0.5,
+            shift = {
+              -0.03125,
+              -0.4375
+            },
+            tint = {
+              a = 0.5,
+              b = 0,
+              g = 0.54000000000000004,
+              r = 0.92000000000000011
+            },
+            width = 276,
+            y = 0
+          },
+          line_length = 8,
+          shift = {
+            -0.0625,
+            -0.4375
+          },
+          tint = 0 --[=[ ref [""].animation[1].layers[2].hr_version.tint ]=],
+          width = 140,
+          y = 0
+        },
+        {
+          direction_count = 1,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/spawner/spawner-die-shadow.png",
+          frame_count = 8,
+          height = 176,
+          hr_version = {
+            direction_count = 1,
+            draw_as_shadow = true,
+            filename = "__base__/graphics/entity/spawner/hr-spawner-die-shadow.png",
+            frame_count = 8,
+            height = 406,
+            line_length = 8,
+            scale = 0.5,
+            shift = {
+              1.125,
+              0.3125
+            },
+            width = 466,
+            y = 0
+          },
+          line_length = 8,
+          shift = {
+            1.125,
+            -0.0625
+          },
+          width = 232,
+          y = 0
+        }
+      }
+    },
+    {
+      layers = {
+        {
+          direction_count = 1,
+          filename = "__base__/graphics/entity/spawner/spawner-die.png",
+          frame_count = 8,
+          height = 178,
+          hr_version = {
+            direction_count = 1,
+            filename = "__base__/graphics/entity/spawner/hr-spawner-die.png",
+            frame_count = 8,
+            height = 354,
+            line_length = 8,
+            scale = 0.5,
+            shift = {
+              0.09375,
+              -0.0625
+            },
+            width = 490,
+            y = 354
+          },
+          line_length = 8,
+          shift = {
+            0.0625,
+            -0.0625
+          },
+          width = 248,
+          y = 178
+        },
+        {
+          direction_count = 1,
+          filename = "__base__/graphics/entity/spawner/spawner-die-mask.png",
+          flags = {
+            "mask"
+          },
+          frame_count = 8,
+          height = 118,
+          hr_version = {
+            direction_count = 1,
+            filename = "__base__/graphics/entity/spawner/hr-spawner-die-mask.png",
+            flags = {
+              "mask"
+            },
+            frame_count = 8,
+            height = 234,
+            line_length = 8,
+            scale = 0.5,
+            shift = {
+              -0.03125,
+              -0.4375
+            },
+            tint = 0 --[=[ ref [""].animation[1].layers[2].hr_version.tint ]=],
+            width = 276,
+            y = 234
+          },
+          line_length = 8,
+          shift = {
+            -0.0625,
+            -0.4375
+          },
+          tint = 0 --[=[ ref [""].animation[1].layers[2].hr_version.tint ]=],
+          width = 140,
+          y = 118
+        },
+        {
+          direction_count = 1,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/spawner/spawner-die-shadow.png",
+          frame_count = 8,
+          height = 176,
+          hr_version = {
+            direction_count = 1,
+            draw_as_shadow = true,
+            filename = "__base__/graphics/entity/spawner/hr-spawner-die-shadow.png",
+            frame_count = 8,
+            height = 406,
+            line_length = 8,
+            scale = 0.5,
+            shift = {
+              1.125,
+              0.3125
+            },
+            width = 466,
+            y = 406
+          },
+          line_length = 8,
+          shift = {
+            1.125,
+            -0.0625
+          },
+          width = 232,
+          y = 176
+        }
+      }
+    },
+    {
+      layers = {
+        {
+          direction_count = 1,
+          filename = "__base__/graphics/entity/spawner/spawner-die.png",
+          frame_count = 8,
+          height = 178,
+          hr_version = {
+            direction_count = 1,
+            filename = "__base__/graphics/entity/spawner/hr-spawner-die.png",
+            frame_count = 8,
+            height = 354,
+            line_length = 8,
+            scale = 0.5,
+            shift = {
+              0.09375,
+              -0.0625
+            },
+            width = 490,
+            y = 708
+          },
+          line_length = 8,
+          shift = {
+            0.0625,
+            -0.0625
+          },
+          width = 248,
+          y = 356
+        },
+        {
+          direction_count = 1,
+          filename = "__base__/graphics/entity/spawner/spawner-die-mask.png",
+          flags = {
+            "mask"
+          },
+          frame_count = 8,
+          height = 118,
+          hr_version = {
+            direction_count = 1,
+            filename = "__base__/graphics/entity/spawner/hr-spawner-die-mask.png",
+            flags = {
+              "mask"
+            },
+            frame_count = 8,
+            height = 234,
+            line_length = 8,
+            scale = 0.5,
+            shift = {
+              -0.03125,
+              -0.4375
+            },
+            tint = 0 --[=[ ref [""].animation[1].layers[2].hr_version.tint ]=],
+            width = 276,
+            y = 468
+          },
+          line_length = 8,
+          shift = {
+            -0.0625,
+            -0.4375
+          },
+          tint = 0 --[=[ ref [""].animation[1].layers[2].hr_version.tint ]=],
+          width = 140,
+          y = 236
+        },
+        {
+          direction_count = 1,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/spawner/spawner-die-shadow.png",
+          frame_count = 8,
+          height = 176,
+          hr_version = {
+            direction_count = 1,
+            draw_as_shadow = true,
+            filename = "__base__/graphics/entity/spawner/hr-spawner-die-shadow.png",
+            frame_count = 8,
+            height = 406,
+            line_length = 8,
+            scale = 0.5,
+            shift = {
+              1.125,
+              0.3125
+            },
+            width = 466,
+            y = 812
+          },
+          line_length = 8,
+          shift = {
+            1.125,
+            -0.0625
+          },
+          width = 232,
+          y = 352
+        }
+      }
+    },
+    {
+      layers = {
+        {
+          direction_count = 1,
+          filename = "__base__/graphics/entity/spawner/spawner-die.png",
+          frame_count = 8,
+          height = 178,
+          hr_version = {
+            direction_count = 1,
+            filename = "__base__/graphics/entity/spawner/hr-spawner-die.png",
+            frame_count = 8,
+            height = 354,
+            line_length = 8,
+            scale = 0.5,
+            shift = {
+              0.09375,
+              -0.0625
+            },
+            width = 490,
+            y = 1062
+          },
+          line_length = 8,
+          shift = {
+            0.0625,
+            -0.0625
+          },
+          width = 248,
+          y = 534
+        },
+        {
+          direction_count = 1,
+          filename = "__base__/graphics/entity/spawner/spawner-die-mask.png",
+          flags = {
+            "mask"
+          },
+          frame_count = 8,
+          height = 118,
+          hr_version = {
+            direction_count = 1,
+            filename = "__base__/graphics/entity/spawner/hr-spawner-die-mask.png",
+            flags = {
+              "mask"
+            },
+            frame_count = 8,
+            height = 234,
+            line_length = 8,
+            scale = 0.5,
+            shift = {
+              -0.03125,
+              -0.4375
+            },
+            tint = 0 --[=[ ref [""].animation[1].layers[2].hr_version.tint ]=],
+            width = 276,
+            y = 702
+          },
+          line_length = 8,
+          shift = {
+            -0.0625,
+            -0.4375
+          },
+          tint = 0 --[=[ ref [""].animation[1].layers[2].hr_version.tint ]=],
+          width = 140,
+          y = 354
+        },
+        {
+          direction_count = 1,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/spawner/spawner-die-shadow.png",
+          frame_count = 8,
+          height = 176,
+          hr_version = {
+            direction_count = 1,
+            draw_as_shadow = true,
+            filename = "__base__/graphics/entity/spawner/hr-spawner-die-shadow.png",
+            frame_count = 8,
+            height = 406,
+            line_length = 8,
+            scale = 0.5,
+            shift = {
+              1.125,
+              0.3125
+            },
+            width = 466,
+            y = 1218
+          },
+          line_length = 8,
+          shift = {
+            1.125,
+            -0.0625
+          },
+          width = 232,
+          y = 528
+        }
+      }
+    }
+  },
+  collision_box = {
+    {
+      -2,
+      -2
+    },
+    {
+      2,
+      2
+    }
+  },
+  dying_speed = 0.04,
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "placeable-off-grid",
+    "not-on-map"
+  },
+  ground_patch = {
+    sheet = {
+      filename = "__base__/graphics/entity/spawner/spawner-idle-integration.png",
+      frame_count = 1,
+      height = 188,
+      hr_version = {
+        filename = "__base__/graphics/entity/spawner/hr-spawner-idle-integration.png",
+        frame_count = 1,
+        height = 380,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.09375,
+          -0.09375
+        },
+        variation_count = 4,
+        width = 522
+      },
+      line_length = 1,
+      shift = {
+        0.0625,
+        -0.0625
+      },
+      variation_count = 4,
+      width = 258
+    }
+  },
+  icon = "__base__/graphics/icons/biter-spawner-corpse.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "biter-spawner-corpse",
+  order = "c[corpse]-b[biter-spawner]",
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -2,
+      -2
+    },
+    {
+      2,
+      2
+    }
+  },
+  subgroup = "corpses",
+  time_before_removed = 54000,
+  type = "corpse"
+} --[[incomplete output with shared/self-references skipped]]

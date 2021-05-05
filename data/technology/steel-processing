@@ -1,0 +1,28 @@
+{
+  effects = {
+    {
+      recipe = "steel-plate",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "steel-chest",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/steel-processing.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "steel-processing",
+  order = "c-a",
+  type = "technology",
+  unit = {
+    count = 50,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      }
+    },
+    time = 5
+  }
+}

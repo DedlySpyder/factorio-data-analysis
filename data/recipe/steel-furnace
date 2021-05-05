@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 3,
+  ingredients = {
+    {
+      "steel-plate",
+      6
+    },
+    {
+      "stone-brick",
+      10
+    }
+  },
+  name = "steel-furnace",
+  result = "steel-furnace",
+  type = "recipe"
+}

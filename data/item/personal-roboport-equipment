@@ -1,0 +1,12 @@
+{
+  default_request_amount = 1,
+  icon = "__base__/graphics/icons/personal-roboport-equipment.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "personal-roboport-equipment",
+  order = "e[robotics]-a[personal-roboport-equipment]",
+  placed_as_equipment_result = "personal-roboport-equipment",
+  stack_size = 20,
+  subgroup = "equipment",
+  type = "item"
+}

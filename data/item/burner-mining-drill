@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/burner-mining-drill.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "burner-mining-drill",
+  order = "a[items]-a[burner-mining-drill]",
+  place_result = "burner-mining-drill",
+  stack_size = 50,
+  subgroup = "extraction-machine",
+  type = "item"
+}

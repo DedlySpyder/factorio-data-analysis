@@ -1,0 +1,28 @@
+{
+  category = "crafting-with-fluid",
+  enabled = false,
+  energy_required = 15,
+  ingredients = {
+    {
+      "concrete",
+      20
+    },
+    {
+      "iron-stick",
+      8
+    },
+    {
+      "steel-plate",
+      1
+    },
+    {
+      amount = 100,
+      name = "water",
+      type = "fluid"
+    }
+  },
+  name = "refined-concrete",
+  result = "refined-concrete",
+  result_count = 10,
+  type = "recipe"
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Factorio_Raw_Data",
+    "version": "0.0.1",
+    "title": "FactorioRawData",
+    "author": "DedlySpyder",
+    "homepage": "",
+    "factorio_version": "1.1",
+    "dependencies": ["base >= 1.1.1"],
+    "description": ""
+}

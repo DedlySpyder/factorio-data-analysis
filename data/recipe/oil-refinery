@@ -1,0 +1,29 @@
+{
+  enabled = false,
+  energy_required = 8,
+  ingredients = {
+    {
+      "steel-plate",
+      15
+    },
+    {
+      "iron-gear-wheel",
+      10
+    },
+    {
+      "stone-brick",
+      10
+    },
+    {
+      "electronic-circuit",
+      10
+    },
+    {
+      "pipe",
+      10
+    }
+  },
+  name = "oil-refinery",
+  result = "oil-refinery",
+  type = "recipe"
+}

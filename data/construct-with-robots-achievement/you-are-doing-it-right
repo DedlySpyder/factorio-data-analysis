@@ -1,0 +1,9 @@
+{
+  icon = "__base__/graphics/achievement/you-are-doing-it-right.png",
+  icon_size = 128,
+  limited_to_one_game = true,
+  more_than_manually = true,
+  name = "you-are-doing-it-right",
+  order = "b[exploration]-b[construct-with-robots]-b[more-than-manually]",
+  type = "construct-with-robots-achievement"
+}

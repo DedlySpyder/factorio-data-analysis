@@ -1,0 +1,65 @@
+{
+  animation = {
+    axially_symmetrical = false,
+    direction_count = 8,
+    filename = "__base__/graphics/entity/cargo-wagon/remnants/cargo-wagon-remnants.png",
+    frame_count = 1,
+    height = 242,
+    hr_version = {
+      axially_symmetrical = false,
+      direction_count = 8,
+      filename = "__base__/graphics/entity/cargo-wagon/remnants/hr-cargo-wagon-remnants.png",
+      frame_count = 1,
+      height = 484,
+      line_length = 1,
+      scale = 0.5,
+      shift = {
+        0.046875,
+        0.1875
+      },
+      variation_count = 1,
+      width = 494
+    },
+    line_length = 1,
+    shift = {
+      0.0625,
+      0.1875
+    },
+    variation_count = 1,
+    width = 248
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "building-direction-8-way",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/cargo-wagon.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.cargo-wagon"
+    }
+  },
+  name = "cargo-wagon-remnants",
+  order = "a-g-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -1,
+      -3
+    },
+    {
+      1,
+      3
+    }
+  },
+  subgroup = "train-transport-remnants",
+  tile_height = 6,
+  tile_width = 2,
+  time_before_removed = 54000,
+  type = "corpse"
+}

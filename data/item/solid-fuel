@@ -1,0 +1,14 @@
+{
+  fuel_acceleration_multiplier = 1.2,
+  fuel_category = "chemical",
+  fuel_top_speed_multiplier = 1.05,
+  fuel_value = "12MJ",
+  icon = "__base__/graphics/icons/solid-fuel.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "solid-fuel",
+  order = "c[solid-fuel]",
+  stack_size = 50,
+  subgroup = "raw-material",
+  type = "item"
+}

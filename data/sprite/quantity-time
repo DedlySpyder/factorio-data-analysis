@@ -1,0 +1,13 @@
+{
+  filename = "__core__/graphics/icons/mip/quantity-time.png",
+  flags = {
+    "gui-icon"
+  },
+  height = 40,
+  mipmap_count = 2,
+  name = "quantity-time",
+  priority = "extra-high-no-scale",
+  scale = 0.5,
+  type = "sprite",
+  width = 28
+}

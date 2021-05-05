@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 3,
+  ingredients = {
+    {
+      "copper-plate",
+      2
+    },
+    {
+      "iron-plate",
+      2
+    }
+  },
+  name = "shotgun-shell",
+  result = "shotgun-shell",
+  type = "recipe"
+}

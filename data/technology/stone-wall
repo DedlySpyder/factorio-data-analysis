@@ -1,0 +1,24 @@
+{
+  effects = {
+    {
+      recipe = "stone-wall",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/stone-wall.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "stone-wall",
+  order = "a-k-a",
+  type = "technology",
+  unit = {
+    count = 10,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      }
+    },
+    time = 10
+  }
+}

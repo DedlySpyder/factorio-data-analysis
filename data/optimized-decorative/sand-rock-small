@@ -1,0 +1,479 @@
+{
+  autoplace = {
+    coverage = 0.011000000000000001,
+    max_probability = 0.77000000000000002,
+    order = "a[doodad]-a[rock]-d[small]",
+    peaks = {
+      {
+        aux_max_range = 0.15000000000000002,
+        aux_optimal = 0.2,
+        aux_range = 0.2,
+        noise_layer = "rocks",
+        noise_octaves_difference = -2,
+        noise_persistence = 0.9,
+        water_max_range = 0.15000000000000002,
+        water_optimal = 0.1,
+        water_range = 0.1
+      }
+    },
+    sharpness = 0.7
+  },
+  collision_box = {
+    {
+      -1.5,
+      -0.5
+    },
+    {
+      1.5,
+      0.5
+    }
+  },
+  name = "sand-rock-small",
+  order = "d[remnants]-d[ship-wreck-grass]-b[small]",
+  pictures = {
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-01.png",
+      height = 23,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-01.png",
+        height = 45,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.40625,
+          0.47656200000000002
+        },
+        width = 56
+      },
+      priority = "extra-high",
+      shift = {
+        0.40625,
+        0.484375
+      },
+      width = 28
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-02.png",
+      height = 22,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-02.png",
+        height = 45,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.296875,
+          0.47656200000000002
+        },
+        width = 54
+      },
+      priority = "extra-high",
+      shift = {
+        0.296875,
+        0.484375
+      },
+      width = 27
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-03.png",
+      height = 20,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-03.png",
+        height = 40,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.328125,
+          0.53125
+        },
+        width = 44
+      },
+      priority = "extra-high",
+      shift = {
+        0.328125,
+        0.53125
+      },
+      width = 22
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-04.png",
+      height = 22,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-04.png",
+        height = 43,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.265625,
+          0.60156200000000002
+        },
+        width = 60
+      },
+      priority = "extra-high",
+      shift = {
+        0.265625,
+        0.59375
+      },
+      width = 30
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-05.png",
+      height = 24,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-05.png",
+        height = 48,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.296875,
+          0.46875
+        },
+        width = 52
+      },
+      priority = "extra-high",
+      shift = {
+        0.296875,
+        0.46875
+      },
+      width = 26
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-06.png",
+      height = 20,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-06.png",
+        height = 39,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.55468799999999998,
+          0.52343799999999998
+        },
+        width = 57
+      },
+      priority = "extra-high",
+      shift = {
+        0.546875,
+        0.53125
+      },
+      width = 29
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-07.png",
+      height = 21,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-07.png",
+        height = 41,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.57031200000000002,
+          0.53906200000000002
+        },
+        width = 73
+      },
+      priority = "extra-high",
+      shift = {
+        0.578125,
+        0.546875
+      },
+      width = 36
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-08.png",
+      height = 23,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-08.png",
+        height = 46,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.640625,
+          0.390625
+        },
+        width = 50
+      },
+      priority = "extra-high",
+      shift = {
+        0.640625,
+        0.390625
+      },
+      width = 25
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-09.png",
+      height = 22,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-09.png",
+        height = 43,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.671875,
+          0.33593800000000003
+        },
+        width = 52
+      },
+      priority = "extra-high",
+      shift = {
+        0.671875,
+        0.34375
+      },
+      width = 26
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-10.png",
+      height = 20,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-10.png",
+        height = 39,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.63281200000000002,
+          0.39843800000000002
+        },
+        width = 63
+      },
+      priority = "extra-high",
+      shift = {
+        0.625,
+        0.40625
+      },
+      width = 32
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-11.png",
+      height = 21,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-11.png",
+        height = 41,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.46093799999999998,
+          0.61718799999999998
+        },
+        width = 57
+      },
+      priority = "extra-high",
+      shift = {
+        0.453125,
+        0.609375
+      },
+      width = 29
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-12.png",
+      height = 26,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-12.png",
+        height = 51,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.46093799999999998,
+          0.57031200000000002
+        },
+        width = 67
+      },
+      priority = "extra-high",
+      shift = {
+        0.46875,
+        0.5625
+      },
+      width = 34
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-13.png",
+      height = 19,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-13.png",
+        height = 37,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.484375,
+          0.78906200000000002
+        },
+        width = 70
+      },
+      priority = "extra-high",
+      shift = {
+        0.484375,
+        0.796875
+      },
+      width = 35
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-14.png",
+      height = 24,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-14.png",
+        height = 48,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.17968799999999998,
+          0.90625
+        },
+        width = 63
+      },
+      priority = "extra-high",
+      shift = {
+        0.1875,
+        0.90625
+      },
+      width = 32
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-15.png",
+      height = 24,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-15.png",
+        height = 48,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.140625,
+          0.78125
+        },
+        width = 56
+      },
+      priority = "extra-high",
+      shift = {
+        0.140625,
+        0.78125
+      },
+      width = 28
+    },
+    {
+      filename = "__base__/graphics/decorative/sand-rock/sand-rock-small-16.png",
+      height = 23,
+      hr_version = {
+        filename = "__base__/graphics/decorative/sand-rock/hr-sand-rock-small-16.png",
+        height = 46,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.03125,
+          0.78125
+        },
+        width = 74
+      },
+      priority = "extra-high",
+      shift = {
+        -0.03125,
+        0.78125
+      },
+      width = 37
+    }
+  },
+  render_layer = "floor",
+  trigger_effect = {
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.2,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.070000000000000009,
+      initial_vertical_speed_deviation = 0.05,
+      offset_deviation = {
+        {
+          -0.1,
+          -0.1
+        },
+        {
+          0.1,
+          0.1
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "small-rock-stone-particle-small",
+      probability = 1,
+      repeat_count = 10,
+      repeat_count_deviation = 0,
+      show_in_tooltip = false,
+      speed_from_center = 0.04,
+      speed_from_center_deviation = 0.05,
+      type = "create-particle"
+    },
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.1,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.85,
+      initial_vertical_speed_deviation = 0.05,
+      offset_deviation = {
+        {
+          -0.1,
+          -0.1
+        },
+        {
+          0.1,
+          0.1
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "small-rock-stone-particle-tiny",
+      probability = 1,
+      repeat_count = 5,
+      repeat_count_deviation = 0,
+      show_in_tooltip = false,
+      speed_from_center = 0.02,
+      speed_from_center_deviation = 0.05,
+      type = "create-particle"
+    }
+  },
+  type = "optimized-decorative",
+  walking_sound = {
+    {
+      filename = "__base__/sound/walking/pebble/stones_01.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_02.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_03.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_04.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_05.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_06.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_07.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_08.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_09.ogg",
+      volume = 0.6
+    }
+  }
+}

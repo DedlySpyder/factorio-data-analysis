@@ -1,0 +1,33 @@
+{
+  category = "inserters",
+  dependencies = {
+    "inserters"
+  },
+  image = "__base__/graphics/tips-and-tricks/limit-chests.png",
+  indent = 1,
+  name = "limit-chests",
+  order = "f",
+  skip_trigger = {
+    count = 2,
+    type = "limit-chest"
+  },
+  tag = "[entity=iron-chest]",
+  trigger = {
+    triggers = {
+      {
+        count = 4,
+        entity = "wooden-chest",
+        match_type_only = true,
+        type = "build-entity"
+      },
+      {
+        count = 4,
+        entity = "inserter",
+        match_type_only = true,
+        type = "build-entity"
+      }
+    },
+    type = "and"
+  },
+  type = "tips-and-tricks-item"
+}

@@ -1,0 +1,20 @@
+{
+  base_color = {
+    b = 0.03,
+    g = 0.32000000000000002,
+    r = 0.15
+  },
+  default_temperature = 25,
+  flow_color = {
+    b = 0.31000000000000001,
+    g = 0.75,
+    r = 0.42999999999999998
+  },
+  heat_capacity = "0.1KJ",
+  icon = "__base__/graphics/icons/fluid/lubricant.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "lubricant",
+  order = "e[lubricant]",
+  type = "fluid"
+}

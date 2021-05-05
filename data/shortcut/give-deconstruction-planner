@@ -1,0 +1,43 @@
+{
+  action = "spawn-item",
+  associated_control_input = "give-deconstruction-planner",
+  disabled_small_icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/new-deconstruction-planner-x24-white.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 24
+  },
+  icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/new-deconstruction-planner-x32-white.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 32
+  },
+  item_to_spawn = "deconstruction-planner",
+  localised_name = {
+    "shortcut.make-deconstruction-planner"
+  },
+  name = "give-deconstruction-planner",
+  order = "b[blueprints]-g[deconstruction-planner]",
+  small_icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/new-deconstruction-planner-x24-white.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 24
+  },
+  style = "red",
+  technology_to_unlock = "construction-robotics",
+  type = "shortcut"
+}

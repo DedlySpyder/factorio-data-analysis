@@ -1,0 +1,25 @@
+{
+  ammo_type = {
+    action = {
+      action_delivery = {
+        projectile = "explosive-rocket",
+        source_effects = {
+          entity_name = "explosion-hit",
+          type = "create-entity"
+        },
+        starting_speed = 0.1,
+        type = "projectile"
+      },
+      type = "direct"
+    },
+    category = "rocket"
+  },
+  icon = "__base__/graphics/icons/explosive-rocket.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "explosive-rocket",
+  order = "d[rocket-launcher]-b[explosive]",
+  stack_size = 200,
+  subgroup = "ammo",
+  type = "ammo"
+}

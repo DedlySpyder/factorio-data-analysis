@@ -1,0 +1,12 @@
+{
+  expression = {
+    literal_value = 6,
+    source_location = {
+      filename = "__core__/lualib/resource-autoplace.lua",
+      line_number = 10
+    },
+    type = "literal-number"
+  },
+  name = "regular-resource-patch-set-count",
+  type = "noise-expression"
+}

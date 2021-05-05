@@ -1,0 +1,143 @@
+{
+  animations = {
+    direction_count = 1,
+    filename = "__core__/graphics/empty.png",
+    frame_count = 1,
+    height = 1,
+    priority = "extra-high",
+    width = 1
+  },
+  created_effect = {
+    action_delivery = {
+      target_effects = {
+        {
+          affects_target = false,
+          frame_speed = 1,
+          frame_speed_deviation = 0.02,
+          initial_height = 1.3999999999999999,
+          initial_height_deviation = 0,
+          initial_vertical_speed = 0.067000000000000002,
+          initial_vertical_speed_deviation = 0.070000000000000009,
+          offset_deviation = {
+            {
+              -0.1992,
+              -1
+            },
+            {
+              0.1992,
+              1
+            }
+          },
+          offsets = {
+            {
+              0.078130000000000006,
+              0.10939999999999999
+            },
+            {
+              0,
+              -0.57030000000000003
+            }
+          },
+          particle_name = "blood-particle",
+          probability = 1,
+          repeat_count = 4,
+          repeat_count_deviation = 2,
+          show_in_tooltip = false,
+          speed_from_center = 0.06,
+          speed_from_center_deviation = 0.037000000000000002,
+          tail_length = 30,
+          tail_length_deviation = 100,
+          tail_width = 1,
+          type = "create-particle"
+        },
+        {
+          affects_target = false,
+          frame_speed = 1,
+          frame_speed_deviation = 0.95499999999999989,
+          initial_height = 0.4,
+          initial_height_deviation = 0.4,
+          initial_vertical_speed = 0.06,
+          initial_vertical_speed_deviation = 0.05,
+          offset_deviation = {
+            {
+              -0.79690000000000003,
+              -1
+            },
+            {
+              0.79690000000000003,
+              1
+            }
+          },
+          offsets = {
+            {
+              -0.09375,
+              -1.0629999999999999
+            }
+          },
+          particle_name = "guts-entrails-particle-small-medium",
+          probability = 1,
+          repeat_count = 6,
+          repeat_count_deviation = 0,
+          show_in_tooltip = false,
+          speed_from_center = 0.05,
+          speed_from_center_deviation = 0.05,
+          tail_length = 3,
+          tail_length_deviation = 0,
+          tail_width = 1,
+          type = "create-particle"
+        },
+        {
+          affects_target = false,
+          frame_speed = 1,
+          frame_speed_deviation = 0,
+          initial_height = 0.2,
+          initial_height_deviation = 0.05,
+          initial_vertical_speed = 0.070999999999999996,
+          initial_vertical_speed_deviation = 0.05,
+          offset_deviation = {
+            {
+              -0.5,
+              -0.5
+            },
+            {
+              0.5,
+              0.5
+            }
+          },
+          offsets = {
+            {
+              -0.0625,
+              -0.38279999999999998
+            }
+          },
+          particle_name = "blood-particle-lower-layer",
+          probability = 1,
+          repeat_count = 36,
+          repeat_count_deviation = 0,
+          show_in_tooltip = false,
+          speed_from_center = 0.02,
+          speed_from_center_deviation = 0.052000000000000002,
+          tail_length = 25,
+          tail_length_deviation = 0,
+          tail_width = 1,
+          type = "create-particle"
+        }
+      },
+      type = "instant"
+    },
+    type = "direct"
+  },
+  flags = {
+    "not-on-map",
+    "hidden"
+  },
+  localised_name = {
+    "dying-explosion-name",
+    {
+      "entity-name.medium-worm-turret"
+    }
+  },
+  name = "medium-worm-die",
+  subgroup = "explosions",
+  type = "explosion"
+}

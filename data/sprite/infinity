@@ -1,0 +1,13 @@
+{
+  filename = "__core__/graphics/icons/mip/infinity.png",
+  flags = {
+    "gui-icon"
+  },
+  height = 32,
+  mipmap_count = 2,
+  name = "infinity",
+  priority = "extra-high-no-scale",
+  scale = 0.5,
+  type = "sprite",
+  width = 24
+}

@@ -1,0 +1,19 @@
+{
+  affected_by_wind = false,
+  animation = {
+    animation_speed = 0.16666666666666665,
+    filename = "__base__/graphics/entity/smoke-fast/smoke-fast.png",
+    frame_count = 16,
+    height = 50,
+    priority = "high",
+    scale = 0.5,
+    width = 50
+  },
+  duration = 105,
+  fade_away_duration = 20,
+  movement_slow_down_factor = 0.95999999999999996,
+  name = "artillery-smoke",
+  render_layer = "building-smoke",
+  show_when_smoke_off = true,
+  type = "trivial-smoke"
+}

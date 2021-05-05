@@ -1,0 +1,615 @@
+{
+  autoplace = {
+    max_probability = 0.01,
+    order = "a[doodad]-b[decal]",
+    peaks = {
+      {
+        aux_max_range = 0.37499999999999996,
+        aux_optimal = 0.8,
+        aux_range = 0.2,
+        water_max_range = 0.37499999999999996,
+        water_optimal = 0.525,
+        water_range = 0.32499999999999996
+      },
+      {
+        influence = 0.2,
+        noise_layer = "red-desert-decal",
+        noise_octaves_difference = -2,
+        noise_persistence = 0.9
+      }
+    },
+    sharpness = 0.3
+  },
+  collision_box = {
+    {
+      -3.75,
+      -2.5625
+    },
+    {
+      3.75,
+      2.5625
+    }
+  },
+  collision_mask = {
+    "doodad-layer",
+    "water-tile",
+    "not-colliding-with-itself"
+  },
+  name = "puberty-decal",
+  order = "b[decorative]-b[red-desert-decal]",
+  pictures = {
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-00.png",
+      height = 169,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-00.png",
+        height = 337,
+        scale = 0.5,
+        shift = {
+          0,
+          -0.0078125
+        },
+        width = 474
+      },
+      shift = {
+        0,
+        -0.015625
+      },
+      width = 236
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-01.png",
+      height = 132,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-01.png",
+        height = 265,
+        scale = 0.5,
+        shift = {
+          0.0078125,
+          -0.0859375
+        },
+        width = 473
+      },
+      shift = {
+        0,
+        -0.09375
+      },
+      width = 236
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-02.png",
+      height = 134,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-02.png",
+        height = 267,
+        scale = 0.5,
+        shift = {
+          0.0078125,
+          -0.1171875
+        },
+        width = 473
+      },
+      shift = {
+        0,
+        -0.125
+      },
+      width = 236
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-03.png",
+      height = 121,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-03.png",
+        height = 243,
+        scale = 0.5,
+        shift = {
+          0.046875,
+          0.0390625
+        },
+        width = 432
+      },
+      shift = {
+        0.046875,
+        0.046875
+      },
+      width = 215
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-04.png",
+      height = 153,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-04.png",
+        height = 305,
+        scale = 0.5,
+        shift = {
+          0,
+          -0.0078125
+        },
+        width = 472
+      },
+      shift = {
+        0,
+        -0.015625
+      },
+      width = 236
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-05.png",
+      height = 112,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-05.png",
+        height = 224,
+        scale = 0.5,
+        shift = {
+          -0.0078125,
+          0
+        },
+        width = 375
+      },
+      shift = {
+        0,
+        0
+      },
+      width = 188
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-06.png",
+      height = 168,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-06.png",
+        height = 335,
+        scale = 0.5,
+        shift = {
+          -0.03125,
+          -0.0234375
+        },
+        width = 296
+      },
+      shift = {
+        -0.03125,
+        -0.03125
+      },
+      width = 148
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-07.png",
+      height = 109,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-07.png",
+        height = 220,
+        scale = 0.5,
+        shift = {
+          -0.28125,
+          0.234375
+        },
+        width = 400
+      },
+      shift = {
+        -0.28125,
+        0.234375
+      },
+      width = 200
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-08.png",
+      height = 169,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-08.png",
+        height = 337,
+        scale = 0.5,
+        shift = {
+          0.078125,
+          -0.0078125
+        },
+        width = 268
+      },
+      shift = {
+        0.078125,
+        -0.015625
+      },
+      width = 133
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-09.png",
+      height = 79,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-09.png",
+        height = 156,
+        scale = 0.5,
+        shift = {
+          0.1875,
+          0.234375
+        },
+        width = 426
+      },
+      shift = {
+        0.1875,
+        0.234375
+      },
+      width = 214
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-10.png",
+      height = 133,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-10.png",
+        height = 267,
+        scale = 0.5,
+        shift = {
+          0.09375,
+          0.1953125
+        },
+        width = 426
+      },
+      shift = {
+        0.109375,
+        0.203125
+      },
+      width = 213
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-11.png",
+      height = 164,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-11.png",
+        height = 329,
+        scale = 0.5,
+        shift = {
+          0,
+          0.0078125
+        },
+        width = 472
+      },
+      shift = {
+        0,
+        0.03125
+      },
+      width = 236
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-12.png",
+      height = 169,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-12.png",
+        height = 337,
+        scale = 0.5,
+        shift = {
+          0,
+          -0.0078125
+        },
+        width = 472
+      },
+      shift = {
+        0,
+        -0.015625
+      },
+      width = 236
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-13.png",
+      height = 138,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-13.png",
+        height = 276,
+        scale = 0.5,
+        shift = {
+          0.6796875,
+          -0.328125
+        },
+        width = 381
+      },
+      shift = {
+        0.671875,
+        -0.34375
+      },
+      width = 191
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-14.png",
+      height = 168,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-14.png",
+        height = 338,
+        scale = 0.5,
+        shift = {
+          0,
+          0
+        },
+        width = 472
+      },
+      shift = {
+        0,
+        0
+      },
+      width = 236
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-15.png",
+      height = 167,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-15.png",
+        height = 336,
+        scale = 0.5,
+        shift = {
+          -0.0078125,
+          -0.015625
+        },
+        width = 473
+      },
+      shift = {
+        0,
+        -0.015625
+      },
+      width = 236
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-16.png",
+      height = 107,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-16.png",
+        height = 215,
+        scale = 0.5,
+        shift = {
+          0.0078125,
+          -0.0234375
+        },
+        width = 327
+      },
+      shift = {
+        0.015625,
+        -0.015625
+      },
+      width = 163
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-17.png",
+      height = 106,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-17.png",
+        height = 212,
+        scale = 0.5,
+        shift = {
+          -0.09375,
+          0.3125
+        },
+        width = 298
+      },
+      shift = {
+        -0.09375,
+        0.3125
+      },
+      width = 148
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-18.png",
+      height = 99,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-18.png",
+        height = 199,
+        scale = 0.5,
+        shift = {
+          -0.4375,
+          0.2421875
+        },
+        width = 286
+      },
+      shift = {
+        -0.4375,
+        0.234375
+      },
+      width = 142
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-19.png",
+      height = 78,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-19.png",
+        height = 157,
+        scale = 0.5,
+        shift = {
+          0.15625,
+          0.0078125
+        },
+        width = 206
+      },
+      shift = {
+        0.140625,
+        0
+      },
+      width = 103
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-20.png",
+      height = 96,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-20.png",
+        height = 190,
+        scale = 0.5,
+        shift = {
+          0.2734375,
+          0.0625
+        },
+        width = 305
+      },
+      shift = {
+        0.28125,
+        0.0625
+      },
+      width = 152
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-21.png",
+      height = 105,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-21.png",
+        height = 209,
+        scale = 0.5,
+        shift = {
+          -0.1640625,
+          -0.0859375
+        },
+        width = 321
+      },
+      shift = {
+        -0.15625,
+        -0.078125
+      },
+      width = 160
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-22.png",
+      height = 91,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-22.png",
+        height = 182,
+        scale = 0.5,
+        shift = {
+          -0.3515625,
+          0.15625
+        },
+        width = 297
+      },
+      shift = {
+        -0.34375,
+        0.140625
+      },
+      width = 148
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-23.png",
+      height = 98,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-23.png",
+        height = 196,
+        scale = 0.5,
+        shift = {
+          -0.125,
+          0.078125
+        },
+        width = 268
+      },
+      shift = {
+        -0.125,
+        0.0625
+      },
+      width = 134
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-24.png",
+      height = 114,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-24.png",
+        height = 229,
+        scale = 0.5,
+        shift = {
+          -0.078125,
+          0.0546875
+        },
+        width = 320
+      },
+      shift = {
+        -0.09375,
+        0.0625
+      },
+      width = 158
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-25.png",
+      height = 74,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-25.png",
+        height = 149,
+        scale = 0.5,
+        shift = {
+          0,
+          -0.0390625
+        },
+        width = 472
+      },
+      shift = {
+        0,
+        -0.03125
+      },
+      width = 236
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-26.png",
+      height = 105,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-26.png",
+        height = 211,
+        scale = 0.5,
+        shift = {
+          0.03125,
+          -0.1640625
+        },
+        width = 180
+      },
+      shift = {
+        0.046875,
+        -0.171875
+      },
+      width = 89
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-27.png",
+      height = 76,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-27.png",
+        height = 153,
+        scale = 0.5,
+        shift = {
+          0.0078125,
+          -0.0234375
+        },
+        width = 325
+      },
+      shift = {
+        0,
+        -0.03125
+      },
+      width = 162
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-28.png",
+      height = 66,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-28.png",
+        height = 132,
+        scale = 0.5,
+        shift = {
+          0,
+          0.140625
+        },
+        width = 326
+      },
+      shift = {
+        0,
+        0.125
+      },
+      width = 162
+    },
+    {
+      filename = "__base__/graphics/decorative/puberty-decal/puberty-decal-29.png",
+      height = 91,
+      hr_version = {
+        filename = "__base__/graphics/decorative/puberty-decal/hr-puberty-decal-29.png",
+        height = 183,
+        scale = 0.5,
+        shift = {
+          0.4140625,
+          -0.6796875
+        },
+        width = 311
+      },
+      shift = {
+        0.421875,
+        -0.671875
+      },
+      width = 155
+    }
+  },
+  render_layer = "decals",
+  tile_layer = 59,
+  type = "optimized-decorative"
+}

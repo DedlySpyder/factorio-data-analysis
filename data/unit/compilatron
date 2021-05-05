@@ -1,0 +1,191 @@
+{
+  attack_parameters = {
+    ammo_category = "melee",
+    ammo_type = {
+      action = {
+        action_delivery = {
+          target_effects = {
+            damage = {
+              amount = 10,
+              type = "physical"
+            },
+            type = "damage"
+          },
+          type = "instant"
+        },
+        type = "direct"
+      },
+      category = "melee",
+      target_type = "entity"
+    },
+    animation = {
+      layers = {
+        {
+          direction_count = 32,
+          draw_as_shadow = true,
+          frame_count = 2,
+          height = 30,
+          hr_version = {
+            axially_symmetrical = false,
+            direction_count = 32,
+            draw_as_shadow = true,
+            frame_count = 2,
+            height = 56,
+            scale = 0.5,
+            shift = {
+              0.484375,
+              -0.015625
+            },
+            stripes = {
+              {
+                filename = "__base__/graphics/entity/compilatron/hr-compilatron-walk-shadow.png",
+                height_in_frames = 32,
+                width_in_frames = 1
+              },
+              0 --[=[ ref [""].attack_parameters.animation.layers[1].hr_version.stripes[1] ]=]
+            },
+            width = 142
+          },
+          shift = {
+            0.59375,
+            0
+          },
+          stripes = {
+            {
+              filename = "__base__/graphics/entity/compilatron/compilatron-walk-shadow.png",
+              height_in_frames = 32,
+              width_in_frames = 1
+            },
+            0 --[=[ ref [""].attack_parameters.animation.layers[1].stripes[1] ]=]
+          },
+          width = 72
+        },
+        {
+          axially_symmetrical = false,
+          direction_count = 32,
+          frame_count = 2,
+          height = 52,
+          hr_version = {
+            axially_symmetrical = false,
+            direction_count = 32,
+            frame_count = 2,
+            height = 104,
+            scale = 0.5,
+            shift = {
+              0,
+              -0.4375
+            },
+            stripes = {
+              {
+                filename = "__base__/graphics/entity/compilatron/hr-compilatron-walk-1.png",
+                height_in_frames = 16,
+                width_in_frames = 2
+              },
+              {
+                filename = "__base__/graphics/entity/compilatron/hr-compilatron-walk-2.png",
+                height_in_frames = 16,
+                width_in_frames = 2
+              }
+            },
+            width = 78
+          },
+          shift = {
+            0,
+            -0.4375
+          },
+          stripes = {
+            {
+              filename = "__base__/graphics/entity/compilatron/compilatron-walk-1.png",
+              height_in_frames = 16,
+              width_in_frames = 2
+            },
+            {
+              filename = "__base__/graphics/entity/compilatron/compilatron-walk-2.png",
+              height_in_frames = 16,
+              width_in_frames = 2
+            }
+          },
+          width = 40
+        }
+      }
+    },
+    cooldown = 35,
+    damage_modifier = 1,
+    range = 0.5,
+    type = "projectile"
+  },
+  can_open_gates = true,
+  collision_box = {
+    {
+      -0.2,
+      -0.2
+    },
+    {
+      0.2,
+      0.2
+    }
+  },
+  distance_per_frame = 0.1,
+  distraction_cooldown = 300,
+  flags = {
+    "placeable-player",
+    "placeable-enemy",
+    "placeable-off-grid",
+    "not-repairable",
+    "breaths-air"
+  },
+  has_belt_immunity = true,
+  healing_per_tick = 0,
+  icon = "__base__/graphics/icons/compilatron.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  map_color = {
+    a = 1,
+    b = 0.57999999999999998,
+    g = 0.36499999999999999,
+    r = 0
+  },
+  max_health = 100,
+  max_pursue_distance = 50,
+  min_pursue_time = 600,
+  movement_speed = 0.2,
+  name = "compilatron",
+  order = "z-z-z",
+  pollution_to_join_attack = 1,
+  run_animation = {
+    layers = {
+      0 --[=[ ref [""].attack_parameters.animation.layers[1] ]=],
+      0 --[=[ ref [""].attack_parameters.animation.layers[2] ]=]
+    }
+  },
+  selectable_in_game = true,
+  selection_box = {
+    {
+      -0.8,
+      -1.3
+    },
+    {
+      0.8,
+      0.5
+    }
+  },
+  subgroup = "enemies",
+  type = "unit",
+  vision_distance = 30,
+  water_reflection = {
+    orientation_to_variation = false,
+    pictures = {
+      filename = "__base__/graphics/entity/compilatron/compilatron-reflection.png",
+      height = 20,
+      priority = "extra-high",
+      scale = 5,
+      shift = {
+        0,
+        1.046875
+      },
+      variation_count = 1,
+      width = 20
+    },
+    rotate = false
+  }
+} --[[incomplete output with shared/self-references skipped]]

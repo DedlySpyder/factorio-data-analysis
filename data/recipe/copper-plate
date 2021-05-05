@@ -1,0 +1,13 @@
+{
+  category = "smelting",
+  energy_required = 3.2000000000000002,
+  ingredients = {
+    {
+      "copper-ore",
+      1
+    }
+  },
+  name = "copper-plate",
+  result = "copper-plate",
+  type = "recipe"
+}

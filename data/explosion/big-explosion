@@ -1,0 +1,49 @@
+{
+  animations = {
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/big-explosion/big-explosion.png",
+      flags = {
+        "compressed"
+      },
+      frame_count = 47,
+      height = 245,
+      line_length = 6,
+      shift = {
+        0.1875,
+        -0.75
+      },
+      width = 197
+    }
+  },
+  flags = {
+    "not-on-map",
+    "hidden"
+  },
+  icon = "__base__/graphics/item-group/effects.png",
+  icon_size = 64,
+  localised_name = {
+    "entity-name.big-explosion"
+  },
+  name = "big-explosion",
+  sound = {
+    aggregation = {
+      max_count = 1,
+      remove = true
+    },
+    audible_distance_modifier = 1.95,
+    variations = {
+      {
+        filename = "__base__/sound/fight/large-explosion-1.ogg",
+        volume = 0.55
+      },
+      {
+        filename = "__base__/sound/fight/large-explosion-2.ogg",
+        volume = 0.55
+      }
+    }
+  },
+  subgroup = "explosions",
+  type = "explosion"
+}

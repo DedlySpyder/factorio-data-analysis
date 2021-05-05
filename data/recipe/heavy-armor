@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 8,
+  ingredients = {
+    {
+      "copper-plate",
+      100
+    },
+    {
+      "steel-plate",
+      50
+    }
+  },
+  name = "heavy-armor",
+  result = "heavy-armor",
+  type = "recipe"
+}

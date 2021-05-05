@@ -1,0 +1,14 @@
+{
+  capsule_action = {
+    equipment = "discharge-defense-equipment",
+    type = "equipment-remote"
+  },
+  icon = "__base__/graphics/icons/discharge-defense-equipment-controller.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "discharge-defense-remote",
+  order = "b[active-defense]-b[discharge-defense-equipment]-b[remote]",
+  stack_size = 1,
+  subgroup = "military-equipment",
+  type = "capsule"
+}

@@ -1,0 +1,75 @@
+{
+  effects = {
+    {
+      ammo_category = "bullet",
+      modifier = 0.4,
+      type = "gun-speed"
+    },
+    {
+      ammo_category = "shotgun-shell",
+      modifier = 0.4,
+      type = "gun-speed"
+    },
+    {
+      ammo_category = "cannon-shell",
+      modifier = 1.5,
+      type = "gun-speed"
+    },
+    {
+      ammo_category = "rocket",
+      modifier = 1.3,
+      type = "gun-speed"
+    }
+  },
+  icon_mipmaps = 4,
+  icon_size = 256,
+  icons = {
+    {
+      icon = "__base__/graphics/technology/weapon-shooting-speed-3.png",
+      icon_mipmaps = 4,
+      icon_size = 256
+    },
+    {
+      icon = "__core__/graphics/icons/technology/constants/constant-speed.png",
+      icon_mipmaps = 3,
+      icon_size = 128,
+      shift = {
+        100,
+        100
+      }
+    }
+  },
+  name = "weapon-shooting-speed-6",
+  order = "e-l-f",
+  prerequisites = {
+    "weapon-shooting-speed-5"
+  },
+  type = "technology",
+  unit = {
+    count = 600,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      },
+      {
+        "chemical-science-pack",
+        1
+      },
+      {
+        "military-science-pack",
+        1
+      },
+      {
+        "utility-science-pack",
+        1
+      }
+    },
+    time = 60
+  },
+  upgrade = true
+}

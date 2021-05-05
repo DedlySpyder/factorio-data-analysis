@@ -1,0 +1,25 @@
+{
+  category = "game-interaction",
+  dependencies = {
+    "introduction"
+  },
+  name = "shoot-targeting",
+  order = "i",
+  simulation = {
+    init = "\n    player = game.create_test_player{name = \"big k\"}\n    player.teleport({-4, 0.5})\n    player.character.direction = 2\n    game.camera_player = player\n    game.camera_player_cursor_position = player.position\n    game.camera_alt_info = true\n\n    step_1 = function()\n      biter = game.surfaces[1].create_entity{name = \"medium-biter\", position = {10 + (math.random() * 2), -4 + (math.random() * 4)}}\n      biter.speed = 0.05\n      biter.set_command\n      {\n        type = defines.command.attack,\n        target = player.character\n      }\n\n      tree = game.surfaces[1].create_entity{name = \"tree-02\", position = {4, 2.5}}\n\n      local count = 60\n      script.on_nth_tick(1, function()\n        if count > 0 then count = count - 1 return end\n        step_2()\n      end)\n    end\n\n    step_2 = function()\n      local rand_x = -1.5\n      local rand_y = -1\n      local position = {0.5 * ((biter.position.x + rand_x) + player.position.x), 0.5 * ((biter.position.y + rand_y) + player.position.y)}\n      player.clear_items_inside()\n      player.insert(\"pistol\")\n      player.insert(\"piercing-rounds-magazine\")\n      player.force.set_ammo_damage_modifier(\"bullet\", 0.5)\n\n      script.on_nth_tick(1, function()\n        if not biter.valid then\n          step_3()\n          return\n        end\n        if game.move_cursor({position = position}) then\n          player.shooting_state = {state  = defines.shooting.shooting_enemies, position = position}\n        end\n      end)\n\n    end\n\n    step_3 = function()\n      local count = 60\n      script.on_nth_tick(1, function()\n        if count > 0 then count = count - 1 return end\n\n        if game.move_cursor({position = tree.position}) then\n          step_4()\n        end\n      end)\n    end\n\n    step_4 = function()\n      local count = 30\n      script.on_nth_tick(1, function()\n        if count > 0 then count = count - 1 return end\n        if not tree.valid then\n          step_5()\n        end\n        player.shooting_state = {state  = defines.shooting.shooting_selected, position = game.camera_player_cursor_position}\n      end)\n    end\n\n    step_5 = function()\n      local count = 30\n      script.on_nth_tick(1, function()\n        if count > 0 then count = count - 1 return end\n        if game.move_cursor({position = player.position}) then\n          reset()\n        end\n      end)\n    end\n\n    reset = function()\n\n      local count = 30\n      script.on_nth_tick(1, function()\n        if count > 0 then count = count - 1 return end\n        start()\n      end)\n    end\n\n    start = function()\n      local count = 30\n      script.on_nth_tick(1, function()\n        if count > 0 then count = count - 1 return end\n        step_1()\n      end)\n    end\n\n    start()\n\n  "
+  },
+  tag = "[item=pistol]",
+  trigger = {
+    triggers = {
+      {
+        type = "group-attack"
+      },
+      {
+        ticks = 486000,
+        type = "time-elapsed"
+      }
+    },
+    type = "or"
+  },
+  type = "tips-and-tricks-item"
+}

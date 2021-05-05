@@ -1,0 +1,131 @@
+{
+  animation = {
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/logistic-robot/remnants/logistic-robot-remnants.png",
+      frame_count = 1,
+      height = 58,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/logistic-robot/remnants/hr-logistic-robot-remnants.png",
+        frame_count = 1,
+        height = 114,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.03125,
+          0.03125
+        },
+        variation_count = 1,
+        width = 116,
+        y = 0
+      },
+      line_length = 1,
+      shift = {
+        0.03125,
+        0.03125
+      },
+      variation_count = 1,
+      width = 58,
+      y = 0
+    },
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/logistic-robot/remnants/logistic-robot-remnants.png",
+      frame_count = 1,
+      height = 58,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/logistic-robot/remnants/hr-logistic-robot-remnants.png",
+        frame_count = 1,
+        height = 114,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.03125,
+          0.03125
+        },
+        variation_count = 1,
+        width = 116,
+        y = 114
+      },
+      line_length = 1,
+      shift = {
+        0.03125,
+        0.03125
+      },
+      variation_count = 1,
+      width = 58,
+      y = 58
+    },
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/logistic-robot/remnants/logistic-robot-remnants.png",
+      frame_count = 1,
+      height = 58,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/logistic-robot/remnants/hr-logistic-robot-remnants.png",
+        frame_count = 1,
+        height = 114,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.03125,
+          0.03125
+        },
+        variation_count = 1,
+        width = 116,
+        y = 228
+      },
+      line_length = 1,
+      shift = {
+        0.03125,
+        0.03125
+      },
+      variation_count = 1,
+      width = 58,
+      y = 116
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "not-on-map",
+    "placeable-off-grid"
+  },
+  icon = "__base__/graphics/icons/logistic-robot.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.logistic-robot"
+    }
+  },
+  name = "logistic-robot-remnants",
+  order = "d[remnants]-a[generic]-a[small]",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -0.5,
+      -0.5
+    },
+    {
+      0.5,
+      0.5
+    }
+  },
+  subgroup = "remnants",
+  tile_height = 3,
+  tile_width = 3,
+  time_before_removed = 54000,
+  type = "corpse"
+}

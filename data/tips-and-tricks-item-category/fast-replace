@@ -1,0 +1,5 @@
+{
+  name = "fast-replace",
+  order = "k-[fast-replace]",
+  type = "tips-and-tricks-item-category"
+}

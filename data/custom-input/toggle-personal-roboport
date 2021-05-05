@@ -1,0 +1,7 @@
+{
+  action = "toggle-personal-roboport",
+  consuming = "game-only",
+  key_sequence = "ALT + R",
+  name = "toggle-personal-roboport",
+  type = "custom-input"
+}

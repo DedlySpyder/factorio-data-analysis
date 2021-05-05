@@ -1,0 +1,25 @@
+{
+  enabled = false,
+  energy_required = 20,
+  ingredients = {
+    {
+      "steel-plate",
+      30
+    },
+    {
+      "iron-gear-wheel",
+      15
+    },
+    {
+      "pipe",
+      10
+    },
+    {
+      "engine-unit",
+      5
+    }
+  },
+  name = "flamethrower-turret",
+  result = "flamethrower-turret",
+  type = "recipe"
+}

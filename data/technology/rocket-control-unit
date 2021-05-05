@@ -1,0 +1,40 @@
+{
+  effects = {
+    {
+      recipe = "rocket-control-unit",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/rocket-control-unit.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "rocket-control-unit",
+  order = "k-a",
+  prerequisites = {
+    "utility-science-pack",
+    "speed-module"
+  },
+  type = "technology",
+  unit = {
+    count = 300,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      },
+      {
+        "chemical-science-pack",
+        1
+      },
+      {
+        "utility-science-pack",
+        1
+      }
+    },
+    time = 45
+  }
+}

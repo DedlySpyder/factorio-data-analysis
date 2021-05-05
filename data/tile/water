@@ -1,0 +1,348 @@
+{
+  autoplace = {
+    probability_expression = {
+      arguments = {
+        {
+          arguments = {
+            {
+              arguments = {
+                {
+                  literal_value = 0,
+                  source_location = {
+                    filename = "__core__/lualib/noise.lua",
+                    line_number = 62
+                  },
+                  type = "literal-number"
+                },
+                {
+                  source_location = {
+                    filename = "__base__/prototypes/tile/tiles.lua",
+                    line_number = 672
+                  },
+                  type = "variable",
+                  variable_name = "elevation"
+                }
+              },
+              function_name = "subtract",
+              source_location = {
+                filename = "__base__/prototypes/tile/tiles.lua",
+                line_number = 673
+              },
+              type = "function-application"
+            },
+            {
+              literal_value = 1/0 --[[math.huge]],
+              source_location = {
+                filename = "__core__/lualib/noise.lua",
+                line_number = 78
+              },
+              type = "literal-number"
+            }
+          },
+          function_name = "multiply",
+          source_location = {
+            filename = "__base__/prototypes/tile/tiles.lua",
+            line_number = 681
+          },
+          type = "function-application"
+        },
+        {
+          literal_value = -1/0 --[[-math.huge]],
+          source_location = {
+            filename = "__base__/prototypes/tile/tiles.lua",
+            line_number = 681
+          },
+          type = "literal-number"
+        },
+        {
+          arguments = {
+            {
+              literal_value = 100,
+              source_location = {
+                filename = "__core__/lualib/noise.lua",
+                line_number = 78
+              },
+              type = "literal-number"
+            },
+            {
+              arguments = {
+                0 --[=[ ref [""].autoplace.probability_expression.arguments[1].arguments[1] ]=],
+                {
+                  literal_value = -1/0 --[[-math.huge]],
+                  source_location = {
+                    filename = "__base__/prototypes/tile/tiles.lua",
+                    line_number = 676
+                  },
+                  type = "literal-number"
+                },
+                {
+                  literal_value = 1,
+                  source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[3].arguments[2].arguments[2].source_location ]=],
+                  type = "literal-number"
+                }
+              },
+              function_name = "clamp",
+              source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[3].arguments[2].arguments[2].source_location ]=],
+              type = "function-application"
+            }
+          },
+          function_name = "multiply",
+          source_location = {
+            filename = "__base__/prototypes/tile/tiles.lua",
+            line_number = 676
+          },
+          type = "function-application"
+        }
+      },
+      function_name = "clamp",
+      source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[2].source_location ]=],
+      type = "function-application"
+    }
+  },
+  collision_mask = {
+    "water-tile",
+    "item-layer",
+    "resource-layer",
+    "player-layer",
+    "doodad-layer"
+  },
+  draw_in_water_layer = true,
+  effect = "water",
+  effect_color = {
+    21,
+    147,
+    167
+  },
+  effect_color_secondary = {
+    49,
+    80,
+    14
+  },
+  layer = 3,
+  map_color = {
+    b = 95,
+    g = 83,
+    r = 51
+  },
+  name = "water",
+  order = "c[water]-a[water]",
+  pollution_absorption_per_second = 5e-06,
+  transitions = {
+    {
+      apply_effect_color_to_overlay = true,
+      background_layer_group = "zero",
+      background_layer_offset = 1,
+      effect_mask = {
+        filename = "__base__/graphics/terrain/effects/water-edge-mask.png",
+        frame_count = 47,
+        line_length = 8,
+        scale = 0.5,
+        size = 64
+      },
+      inner_corner = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-out-of-map-transition-tintable.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-out-of-map-transition-tintable.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      o_transition = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-out-of-map-transition-tintable.png",
+          scale = 0.5,
+          tall = false,
+          x = 0,
+          y = 2304
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-out-of-map-transition-tintable.png",
+        tall = false,
+        x = 0,
+        y = 1152
+      },
+      offset_background_layer_by_tile_layer = true,
+      outer_corner = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-out-of-map-transition-tintable.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-out-of-map-transition-tintable.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      overlay_layer_group = "zero",
+      side = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-out-of-map-transition-tintable.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-out-of-map-transition-tintable.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      to_tiles = {
+        "out-of-map"
+      },
+      transition_group = 2,
+      u_transition = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-out-of-map-transition-tintable.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-out-of-map-transition-tintable.png",
+        tall = true,
+        x = 0,
+        y = 864
+      }
+    }
+  },
+  trigger_effect = {
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.1,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.125,
+      initial_vertical_speed_deviation = 0.069000000000000004,
+      offset_deviation = {
+        {
+          -0.29689999999999998,
+          -0.29689999999999998
+        },
+        {
+          0.29689999999999998,
+          0.29689999999999998
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "water-particle",
+      probability = 1,
+      repeat_count = 10,
+      repeat_count_deviation = 4,
+      show_in_tooltip = false,
+      speed_from_center = 0.05,
+      speed_from_center_deviation = 0.05,
+      tail_length = 12,
+      tail_length_deviation = 20,
+      tail_width = 1,
+      type = "create-particle"
+    },
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.1,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.125,
+      initial_vertical_speed_deviation = 0.069000000000000004,
+      offset_deviation = {
+        {
+          -0.29689999999999998,
+          -0.29689999999999998
+        },
+        {
+          0.29689999999999998,
+          0.29689999999999998
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "water-lower-particle",
+      probability = 1,
+      repeat_count = 7,
+      repeat_count_deviation = 4,
+      show_in_tooltip = false,
+      speed_from_center = 0.05,
+      speed_from_center_deviation = 0.05,
+      tail_length = 12,
+      tail_length_deviation = 20,
+      tail_width = 1,
+      type = "create-particle"
+    }
+  },
+  type = "tile",
+  variants = {
+    empty_transitions = true,
+    main = {
+      {
+        count = 1,
+        hr_version = {
+          count = 1,
+          picture = "__base__/graphics/terrain/water/hr-water1.png",
+          scale = 0.5,
+          size = 1
+        },
+        picture = "__base__/graphics/terrain/water/water1.png",
+        size = 1
+      },
+      {
+        count = 1,
+        hr_version = {
+          count = 1,
+          picture = "__base__/graphics/terrain/water/hr-water2.png",
+          scale = 0.5,
+          size = 2
+        },
+        picture = "__base__/graphics/terrain/water/water2.png",
+        size = 2
+      },
+      {
+        count = 1,
+        hr_version = {
+          count = 1,
+          picture = "__base__/graphics/terrain/water/hr-water4.png",
+          scale = 0.5,
+          size = 4
+        },
+        picture = "__base__/graphics/terrain/water/water4.png",
+        size = 4
+      }
+    }
+  }
+} --[[incomplete output with shared/self-references skipped]]

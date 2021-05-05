@@ -1,0 +1,51 @@
+{
+  effects = {
+    {
+      recipe = "energy-shield-equipment",
+      type = "unlock-recipe"
+    }
+  },
+  icon_mipmaps = 4,
+  icon_size = 256,
+  icons = {
+    {
+      icon = "__base__/graphics/technology/energy-shield-equipment.png",
+      icon_mipmaps = 4,
+      icon_size = 256
+    },
+    {
+      icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
+      icon_mipmaps = 3,
+      icon_size = 128,
+      shift = {
+        100,
+        100
+      }
+    }
+  },
+  name = "energy-shield-equipment",
+  order = "g-e-a",
+  prerequisites = {
+    "solar-panel-equipment",
+    "military-science-pack"
+  },
+  type = "technology",
+  unit = {
+    count = 150,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      },
+      {
+        "military-science-pack",
+        1
+      }
+    },
+    time = 15
+  }
+}

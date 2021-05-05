@@ -1,0 +1,13 @@
+{
+  filename = "__core__/graphics/icons/mip/info-blue-no-border.png",
+  flags = {
+    "gui-icon"
+  },
+  height = 16,
+  mipmap_count = 2,
+  name = "info_no_border",
+  priority = "extra-high-no-scale",
+  scale = 0.5,
+  type = "sprite",
+  width = 16
+}

@@ -1,0 +1,1896 @@
+{
+  autoplace = {
+    probability_expression = {
+      arguments = {
+        {
+          arguments = {
+            {
+              arguments = {
+                {
+                  literal_value = -1/0 --[[-math.huge]],
+                  source_location = {
+                    filename = "__base__/prototypes/tile/tiles.lua",
+                    line_number = 444
+                  },
+                  type = "literal-number"
+                },
+                {
+                  arguments = {
+                    {
+                      arguments = {
+                        {
+                          arguments = {
+                            {
+                              arguments = {
+                                {
+                                  arguments = {
+                                    {
+                                      literal_value = 5.1500000000000004,
+                                      source_location = {
+                                        filename = "__core__/lualib/noise.lua",
+                                        line_number = 62
+                                      },
+                                      type = "literal-number"
+                                    },
+                                    {
+                                      arguments = {
+                                        {
+                                          arguments = {
+                                            {
+                                              source_location = {
+                                                filename = "__base__/prototypes/tile/tiles.lua",
+                                                line_number = 434
+                                              },
+                                              type = "variable",
+                                              variable_name = "moisture"
+                                            },
+                                            {
+                                              literal_value = 5.8499999999999996,
+                                              source_location = {
+                                                filename = "__core__/lualib/noise.lua",
+                                                line_number = 62
+                                              },
+                                              type = "literal-number"
+                                            }
+                                          },
+                                          function_name = "subtract",
+                                          source_location = {
+                                            filename = "__base__/prototypes/tile/tiles.lua",
+                                            line_number = 397
+                                          },
+                                          type = "function-application"
+                                        },
+                                        {
+                                          literal_value = 0,
+                                          source_location = {
+                                            filename = "__core__/lualib/noise.lua",
+                                            line_number = 341
+                                          },
+                                          type = "literal-number"
+                                        },
+                                        {
+                                          literal_value = 1/0 --[[math.huge]],
+                                          source_location = {
+                                            filename = "__core__/lualib/noise.lua",
+                                            line_number = 342
+                                          },
+                                          type = "literal-number"
+                                        }
+                                      },
+                                      function_name = "ridge",
+                                      source_location = {
+                                        filename = "__base__/prototypes/tile/tiles.lua",
+                                        line_number = 397
+                                      },
+                                      type = "function-application"
+                                    }
+                                  },
+                                  function_name = "subtract",
+                                  source_location = {
+                                    filename = "__base__/prototypes/tile/tiles.lua",
+                                    line_number = 400
+                                  },
+                                  type = "function-application"
+                                },
+                                {
+                                  literal_value = 20,
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 78
+                                  },
+                                  type = "literal-number"
+                                }
+                              },
+                              function_name = "multiply",
+                              source_location = {
+                                filename = "__base__/prototypes/tile/tiles.lua",
+                                line_number = 406
+                              },
+                              type = "function-application"
+                            },
+                            {
+                              literal_value = -1/0 --[[-math.huge]],
+                              source_location = {
+                                filename = "__base__/prototypes/tile/tiles.lua",
+                                line_number = 406
+                              },
+                              type = "literal-number"
+                            },
+                            {
+                              literal_value = 1,
+                              source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[2].source_location ]=],
+                              type = "literal-number"
+                            }
+                          },
+                          function_name = "clamp",
+                          source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].arguments[1].arguments[2].arguments[1].arguments[1].arguments[2].source_location ]=],
+                          type = "function-application"
+                        },
+                        {
+                          literal_value = 1,
+                          source_location = {
+                            filename = "__core__/lualib/noise.lua",
+                            line_number = 78
+                          },
+                          type = "literal-number"
+                        }
+                      },
+                      function_name = "multiply",
+                      source_location = {
+                        filename = "__base__/prototypes/tile/tiles.lua",
+                        line_number = 406
+                      },
+                      type = "function-application"
+                    },
+                    {
+                      literal_value = -1/0 --[[-math.huge]],
+                      source_location = {
+                        filename = "__base__/prototypes/tile/tiles.lua",
+                        line_number = 451
+                      },
+                      type = "literal-number"
+                    },
+                    {
+                      arguments = {
+                        {
+                          arguments = {
+                            {
+                              arguments = {
+                                {
+                                  arguments = {
+                                    {
+                                      literal_value = 10.5,
+                                      source_location = {
+                                        filename = "__core__/lualib/noise.lua",
+                                        line_number = 62
+                                      },
+                                      type = "literal-number"
+                                    },
+                                    {
+                                      arguments = {
+                                        {
+                                          arguments = {
+                                            {
+                                              source_location = {
+                                                filename = "__base__/prototypes/tile/tiles.lua",
+                                                line_number = 435
+                                              },
+                                              type = "variable",
+                                              variable_name = "aux"
+                                            },
+                                            {
+                                              literal_value = 0.5,
+                                              source_location = {
+                                                filename = "__core__/lualib/noise.lua",
+                                                line_number = 62
+                                              },
+                                              type = "literal-number"
+                                            }
+                                          },
+                                          function_name = "subtract",
+                                          source_location = {
+                                            filename = "__base__/prototypes/tile/tiles.lua",
+                                            line_number = 397
+                                          },
+                                          type = "function-application"
+                                        },
+                                        {
+                                          literal_value = 0,
+                                          source_location = {
+                                            filename = "__core__/lualib/noise.lua",
+                                            line_number = 341
+                                          },
+                                          type = "literal-number"
+                                        },
+                                        {
+                                          literal_value = 1/0 --[[math.huge]],
+                                          source_location = {
+                                            filename = "__core__/lualib/noise.lua",
+                                            line_number = 342
+                                          },
+                                          type = "literal-number"
+                                        }
+                                      },
+                                      function_name = "ridge",
+                                      source_location = {
+                                        filename = "__base__/prototypes/tile/tiles.lua",
+                                        line_number = 397
+                                      },
+                                      type = "function-application"
+                                    }
+                                  },
+                                  function_name = "subtract",
+                                  source_location = {
+                                    filename = "__base__/prototypes/tile/tiles.lua",
+                                    line_number = 400
+                                  },
+                                  type = "function-application"
+                                },
+                                {
+                                  literal_value = 20,
+                                  source_location = {
+                                    filename = "__core__/lualib/noise.lua",
+                                    line_number = 78
+                                  },
+                                  type = "literal-number"
+                                }
+                              },
+                              function_name = "multiply",
+                              source_location = {
+                                filename = "__base__/prototypes/tile/tiles.lua",
+                                line_number = 406
+                              },
+                              type = "function-application"
+                            },
+                            {
+                              literal_value = -1/0 --[[-math.huge]],
+                              source_location = {
+                                filename = "__base__/prototypes/tile/tiles.lua",
+                                line_number = 406
+                              },
+                              type = "literal-number"
+                            },
+                            {
+                              literal_value = 1,
+                              source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].arguments[1].arguments[2].arguments[3].arguments[1].arguments[2].source_location ]=],
+                              type = "literal-number"
+                            }
+                          },
+                          function_name = "clamp",
+                          source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].arguments[1].arguments[2].arguments[3].arguments[1].arguments[2].source_location ]=],
+                          type = "function-application"
+                        },
+                        {
+                          literal_value = 1,
+                          source_location = {
+                            filename = "__core__/lualib/noise.lua",
+                            line_number = 78
+                          },
+                          type = "literal-number"
+                        }
+                      },
+                      function_name = "multiply",
+                      source_location = {
+                        filename = "__base__/prototypes/tile/tiles.lua",
+                        line_number = 406
+                      },
+                      type = "function-application"
+                    }
+                  },
+                  function_name = "clamp",
+                  source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].arguments[1].arguments[2].arguments[2].source_location ]=],
+                  type = "function-application"
+                },
+                {
+                  literal_value = 1/0 --[[math.huge]],
+                  source_location = {
+                    filename = "__base__/prototypes/tile/tiles.lua",
+                    line_number = 451
+                  },
+                  type = "literal-number"
+                }
+              },
+              function_name = "clamp",
+              source_location = 0 --[=[ ref [""].autoplace.probability_expression.arguments[1].arguments[1].arguments[3].source_location ]=],
+              type = "function-application"
+            },
+            {
+              arguments = {
+                input_scale = {
+                  arguments = {
+                    {
+                      literal_value = 1,
+                      source_location = {
+                        filename = "__core__/lualib/noise.lua",
+                        line_number = 31
+                      },
+                      type = "literal-number"
+                    },
+                    {
+                      literal_value = 6,
+                      source_location = {
+                        filename = "__core__/lualib/noise.lua",
+                        line_number = 31
+                      },
+                      type = "literal-number"
+                    }
+                  },
+                  function_name = "divide",
+                  source_location = {
+                    filename = "__core__/lualib/noise.lua",
+                    line_number = 31
+                  },
+                  type = "function-application"
+                },
+                octaves = {
+                  literal_value = 4,
+                  source_location = {
+                    filename = "__core__/lualib/noise.lua",
+                    line_number = 37
+                  },
+                  type = "literal-number"
+                },
+                output_scale = {
+                  literal_value = 0.66666666666666661,
+                  source_location = {
+                    filename = "__core__/lualib/noise.lua",
+                    line_number = 37
+                  },
+                  type = "literal-number"
+                },
+                persistence = {
+                  literal_value = 0.7,
+                  source_location = {
+                    filename = "__core__/lualib/noise.lua",
+                    line_number = 37
+                  },
+                  type = "literal-number"
+                },
+                seed0 = {
+                  source_location = {
+                    filename = "__base__/prototypes/tile/tiles.lua",
+                    line_number = 387
+                  },
+                  type = "variable",
+                  variable_name = "map_seed"
+                },
+                seed1 = {
+                  arguments = {
+                    {
+                      literal_value = "grass-1",
+                      source_location = {
+                        filename = "__core__/lualib/noise.lua",
+                        line_number = 457
+                      },
+                      type = "literal-string"
+                    }
+                  },
+                  function_name = "noise-layer-name-to-id",
+                  source_location = {
+                    filename = "__base__/prototypes/tile/tiles.lua",
+                    line_number = 388
+                  },
+                  type = "function-application"
+                },
+                x = {
+                  source_location = {
+                    filename = "__base__/prototypes/tile/tiles.lua",
+                    line_number = 384
+                  },
+                  type = "variable",
+                  variable_name = "x"
+                },
+                y = {
+                  source_location = {
+                    filename = "__base__/prototypes/tile/tiles.lua",
+                    line_number = 385
+                  },
+                  type = "variable",
+                  variable_name = "y"
+                }
+              },
+              function_name = "factorio-multioctave-noise",
+              source_location = {
+                filename = "__base__/prototypes/tile/tiles.lua",
+                line_number = 463
+              },
+              type = "function-application"
+            }
+          },
+          function_name = "add",
+          source_location = {
+            filename = "__base__/prototypes/tile/tiles.lua",
+            line_number = 463
+          },
+          type = "function-application"
+        },
+        {
+          literal_value = 0,
+          source_location = {
+            filename = "__core__/lualib/noise.lua",
+            line_number = 54
+          },
+          type = "literal-number"
+        }
+      },
+      function_name = "add",
+      source_location = {
+        filename = "__base__/prototypes/tile/tiles.lua",
+        line_number = 463
+      },
+      type = "function-application"
+    }
+  },
+  collision_mask = {
+    "ground-tile"
+  },
+  layer = 26,
+  map_color = {
+    b = 11,
+    g = 53,
+    r = 55
+  },
+  name = "grass-1",
+  order = "b[natural]-a[grass]-a[grass-1]",
+  pollution_absorption_per_second = 7.5e-06,
+  scorch_mark_color = {
+    a = 1,
+    b = 0.152,
+    g = 0.22200000000000002,
+    r = 0.31800000000000002
+  },
+  transitions = {
+    {
+      inner_corner = {
+        count = 16,
+        hr_version = {
+          count = 16,
+          line_length = 16,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 16,
+        picture = "__base__/graphics/terrain/water-transitions/grass.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      inner_corner_effect_map = {
+        count = 16,
+        hr_version = {
+          count = 16,
+          line_length = 16,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 16,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-mask.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      inner_corner_mask = {
+        count = 16,
+        hr_version = {
+          count = 16,
+          line_length = 16,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass.png",
+          scale = 0.5,
+          x = 2176,
+          y = 0
+        },
+        line_length = 16,
+        picture = "__base__/graphics/terrain/water-transitions/grass.png",
+        x = 1088,
+        y = 0
+      },
+      o_transition = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass.png",
+          scale = 0.5,
+          tall = false,
+          x = 0,
+          y = 2304
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/water-transitions/grass.png",
+        tall = false,
+        x = 0,
+        y = 1152
+      },
+      o_transition_effect_map = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-mask.png",
+          scale = 0.5,
+          tall = false,
+          x = 0,
+          y = 2304
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-mask.png",
+        tall = false,
+        x = 0,
+        y = 1152
+      },
+      o_transition_mask = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass.png",
+          scale = 0.5,
+          x = 2176,
+          y = 2304
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/water-transitions/grass.png",
+        x = 1088,
+        y = 1152
+      },
+      outer_corner = {
+        count = 16,
+        hr_version = {
+          count = 16,
+          line_length = 16,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 16,
+        picture = "__base__/graphics/terrain/water-transitions/grass.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      outer_corner_effect_map = {
+        count = 16,
+        hr_version = {
+          count = 16,
+          line_length = 16,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 16,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-mask.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      outer_corner_mask = {
+        count = 16,
+        hr_version = {
+          count = 16,
+          line_length = 16,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass.png",
+          scale = 0.5,
+          x = 2176,
+          y = 576
+        },
+        line_length = 16,
+        picture = "__base__/graphics/terrain/water-transitions/grass.png",
+        x = 1088,
+        y = 288
+      },
+      side = {
+        count = 16,
+        hr_version = {
+          count = 16,
+          line_length = 16,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 16,
+        picture = "__base__/graphics/terrain/water-transitions/grass.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      side_effect_map = {
+        count = 16,
+        hr_version = {
+          count = 16,
+          line_length = 16,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 16,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-mask.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      side_mask = {
+        count = 16,
+        hr_version = {
+          count = 16,
+          line_length = 16,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1152
+        },
+        line_length = 16,
+        picture = "__base__/graphics/terrain/water-transitions/grass.png",
+        x = 1088,
+        y = 576
+      },
+      side_weights = {
+        1,
+        1,
+        1,
+        1,
+        0.25,
+        0.25,
+        1,
+        1,
+        1,
+        1,
+        0.125,
+        0.25,
+        1,
+        1,
+        1,
+        1
+      },
+      to_tiles = {
+        "water",
+        "deepwater",
+        "water-green",
+        "deepwater-green",
+        "water-shallow",
+        "water-mud",
+        "water-wube"
+      },
+      transition_group = 1,
+      u_transition = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1728
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/water-transitions/grass.png",
+        tall = true,
+        x = 0,
+        y = 864
+      },
+      u_transition_effect_map = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1728
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-mask.png",
+        tall = true,
+        x = 0,
+        y = 864
+      },
+      u_transition_mask = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1728
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/water-transitions/grass.png",
+        x = 1088,
+        y = 864
+      }
+    },
+    {
+      background_layer_group = "zero",
+      background_layer_offset = 1,
+      inner_corner_background = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 0
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 0
+      },
+      inner_corner_mask = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 0
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        x = 1088,
+        y = 0
+      },
+      o_transition_background = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          tall = false,
+          x = 1088,
+          y = 2304
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        tall = false,
+        x = 544,
+        y = 1152
+      },
+      o_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 2304
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        x = 1088,
+        y = 1152
+      },
+      offset_background_layer_by_tile_layer = true,
+      outer_corner_background = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 576
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 288
+      },
+      outer_corner_mask = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 576
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        x = 1088,
+        y = 288
+      },
+      side_background = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1152
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 576
+      },
+      side_mask = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1152
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        x = 1088,
+        y = 576
+      },
+      to_tiles = {
+        "out-of-map"
+      },
+      transition_group = 2,
+      u_transition_background = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 864
+      },
+      u_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/out-of-map-transition.png",
+        x = 1088,
+        y = 864
+      }
+    }
+  },
+  transitions_between_transitions = {
+    {
+      inner_corner = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/water-transitions/grass-transition.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      inner_corner_effect_map = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-to-land-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-to-land-mask.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      inner_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/water-transitions/grass-transition.png",
+        x = 1088,
+        y = 0
+      },
+      outer_corner = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/water-transitions/grass-transition.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      outer_corner_effect_map = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-to-land-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-to-land-mask.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      outer_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/water-transitions/grass-transition.png",
+        x = 1088,
+        y = 288
+      },
+      side = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/water-transitions/grass-transition.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      side_effect_map = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-to-land-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-to-land-mask.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      side_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/water-transitions/grass-transition.png",
+        x = 1088,
+        y = 576
+      },
+      transition_group = 0,
+      transition_group1 = 0,
+      transition_group2 = 1,
+      u_transition = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/water-transitions/grass-transition.png",
+        tall = true,
+        x = 0,
+        y = 864
+      },
+      u_transition_effect_map = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-to-land-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-to-land-mask.png",
+        tall = true,
+        x = 0,
+        y = 864
+      },
+      u_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/water-transitions/hr-grass-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/water-transitions/grass-transition.png",
+        x = 1088,
+        y = 864
+      },
+      water_patch = {
+        filename = "__base__/graphics/terrain/water-transitions/water-patch.png",
+        height = 32,
+        hr_version = {
+          filename = "__base__/graphics/terrain/water-transitions/hr-water-patch.png",
+          height = 64,
+          scale = 0.5,
+          width = 64
+        },
+        width = 32
+      }
+    },
+    {
+      background_layer_group = "zero",
+      background_layer_offset = 1,
+      inner_corner_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 0
+      },
+      inner_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png",
+        x = 1088,
+        y = 0
+      },
+      offset_background_layer_by_tile_layer = true,
+      outer_corner_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 288
+      },
+      outer_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png",
+        x = 1088,
+        y = 288
+      },
+      side_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 576
+      },
+      side_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png",
+        x = 1088,
+        y = 576
+      },
+      transition_group = 0,
+      transition_group1 = 0,
+      transition_group2 = 2,
+      u_transition_background = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 864
+      },
+      u_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png",
+        x = 1088,
+        y = 864
+      }
+    },
+    {
+      background_layer_group = "zero",
+      background_layer_offset = 1,
+      inner_corner = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-shore-out-of-map-transition.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      inner_corner_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-shore-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 0
+      },
+      inner_corner_effect_map = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-to-out-of-map-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-to-out-of-map-mask.png",
+        tall = true,
+        x = 0,
+        y = 0
+      },
+      inner_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-shore-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-shore-out-of-map-transition.png",
+        x = 1088,
+        y = 0
+      },
+      offset_background_layer_by_tile_layer = true,
+      outer_corner = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-shore-out-of-map-transition.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      outer_corner_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-shore-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 288
+      },
+      outer_corner_effect_map = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-to-out-of-map-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-to-out-of-map-mask.png",
+        tall = true,
+        x = 0,
+        y = 288
+      },
+      outer_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-shore-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-shore-out-of-map-transition.png",
+        x = 1088,
+        y = 288
+      },
+      side = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-shore-out-of-map-transition.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      side_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-shore-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 576
+      },
+      side_effect_map = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-to-out-of-map-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-to-out-of-map-mask.png",
+        tall = true,
+        x = 0,
+        y = 576
+      },
+      side_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-shore-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-shore-out-of-map-transition.png",
+        x = 1088,
+        y = 576
+      },
+      transition_group = 1,
+      transition_group1 = 1,
+      transition_group2 = 2,
+      u_transition = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-shore-out-of-map-transition.png",
+        tall = true,
+        x = 0,
+        y = 864
+      },
+      u_transition_background = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-shore-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-shore-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 864
+      },
+      u_transition_effect_map = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/effect-maps/hr-water-grass-to-out-of-map-mask.png",
+          scale = 0.5,
+          tall = true,
+          x = 0,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/effect-maps/water-grass-to-out-of-map-mask.png",
+        tall = true,
+        x = 0,
+        y = 864
+      },
+      u_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-grass-shore-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/grass-shore-out-of-map-transition.png",
+        x = 1088,
+        y = 864
+      }
+    }
+  },
+  trigger_effect = {
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.2,
+      initial_height_deviation = 0.22000000000000002,
+      initial_vertical_speed = 0.1,
+      initial_vertical_speed_deviation = 0.041000000000000005,
+      offset_deviation = {
+        {
+          -0.5,
+          -0.59770000000000003
+        },
+        {
+          0.5,
+          0.59770000000000003
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "grass-1-stone-particle-small",
+      probability = 1,
+      repeat_count = 20,
+      repeat_count_deviation = 5,
+      show_in_tooltip = false,
+      speed_from_center = 0.05,
+      speed_from_center_deviation = 0.05,
+      type = "create-particle"
+    },
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.2,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.125,
+      initial_vertical_speed_deviation = 0.042000000000000002,
+      offset_deviation = {
+        {
+          -0.2,
+          -0.2
+        },
+        {
+          0.3,
+          0.3
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "grass-1-stone-particle-medium",
+      probability = 1,
+      repeat_count = 7,
+      repeat_count_deviation = 2,
+      show_in_tooltip = false,
+      speed_from_center = 0.03,
+      speed_from_center_deviation = 0.05,
+      type = "create-particle"
+    },
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.2,
+      initial_height_deviation = 0.2,
+      initial_vertical_speed = 0.125,
+      initial_vertical_speed_deviation = 0.042000000000000002,
+      offset_deviation = {
+        left_top = {
+          -0.3984,
+          -0.79690000000000003
+        },
+        right_bottom = {
+          0.3984,
+          0.79690000000000003
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "grass-1-stone-lower-particle-medium",
+      probability = 1,
+      repeat_count = 7,
+      repeat_count_deviation = 2,
+      show_in_tooltip = false,
+      speed_from_center = 0.03,
+      speed_from_center_deviation = 0.05,
+      type = "create-particle"
+    },
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.2,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.1,
+      initial_vertical_speed_deviation = 0.05,
+      offset_deviation = {
+        {
+          -0.4,
+          -0.4
+        },
+        {
+          0.4,
+          0.4
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "grass-1-stone-particle-tiny",
+      probability = 1,
+      repeat_count = 15,
+      repeat_count_deviation = 4,
+      show_in_tooltip = false,
+      speed_from_center = 0.03,
+      speed_from_center_deviation = 0.02,
+      type = "create-particle"
+    },
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.1,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.09,
+      initial_vertical_speed_deviation = 0.05,
+      offset_deviation = {
+        {
+          -0.69920000000000009,
+          -0.5
+        },
+        {
+          0.69920000000000009,
+          0.5
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "green-carpet-grass-vegetation-particle-small-medium",
+      probability = 1,
+      repeat_count = 10,
+      repeat_count_deviation = 5,
+      show_in_tooltip = false,
+      speed_from_center = 0.02,
+      speed_from_center_deviation = 0.05,
+      type = "create-particle"
+    }
+  },
+  type = "tile",
+  variants = {
+    inner_corner_mask = {
+      count = 8,
+      hr_version = {
+        count = 8,
+        line_length = 8,
+        picture = "__base__/graphics/terrain/masks/hr-transition-3.png",
+        scale = 0.5,
+        x = 0
+      },
+      line_length = 8,
+      picture = "__base__/graphics/terrain/masks/transition-3.png",
+      x = 0
+    },
+    main = {
+      {
+        count = 16,
+        hr_version = {
+          count = 16,
+          line_length = 16,
+          picture = "__base__/graphics/terrain/hr-grass-1.png",
+          scale = 0.5,
+          size = 1,
+          weights = {
+            0.085,
+            0.085,
+            0.085,
+            0.085,
+            0.086999999999999993,
+            0.085,
+            0.065,
+            0.085,
+            0.045,
+            0.045,
+            0.045,
+            0.045,
+            0.005,
+            0.025,
+            0.045,
+            0.045
+          },
+          y = 0
+        },
+        line_length = 16,
+        picture = "__base__/graphics/terrain/grass-1.png",
+        size = 1,
+        weights = 0 --[=[ ref [""].variants.main[1].hr_version.weights ]=],
+        y = 0
+      },
+      {
+        count = 16,
+        hr_version = {
+          count = 16,
+          line_length = 16,
+          picture = "__base__/graphics/terrain/hr-grass-1.png",
+          probability = 0.90999999999999996,
+          scale = 0.5,
+          size = 2,
+          weights = {
+            0.15,
+            0.15,
+            0.15,
+            0.15,
+            0.017999999999999998,
+            0.02,
+            0.015,
+            0.025,
+            0.015,
+            0.02,
+            0.025,
+            0.015,
+            0.025,
+            0.025,
+            0.01,
+            0.025
+          },
+          y = 128
+        },
+        line_length = 16,
+        picture = "__base__/graphics/terrain/grass-1.png",
+        probability = 0.90999999999999996,
+        size = 2,
+        weights = 0 --[=[ ref [""].variants.main[2].hr_version.weights ]=],
+        y = 64
+      },
+      {
+        count = 16,
+        hr_version = {
+          count = 16,
+          line_length = 16,
+          picture = "__base__/graphics/terrain/hr-grass-1.png",
+          probability = 0.90999999999999996,
+          scale = 0.5,
+          size = 4,
+          weights = {
+            0.1,
+            0.8,
+            0.8,
+            0.1,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          },
+          y = 320
+        },
+        line_length = 16,
+        picture = "__base__/graphics/terrain/grass-1.png",
+        probability = 0.90999999999999996,
+        size = 4,
+        weights = 0 --[=[ ref [""].variants.main[3].hr_version.weights ]=],
+        y = 160
+      }
+    },
+    o_transition_mask = {
+      count = 1,
+      hr_version = {
+        count = 1,
+        line_length = 2,
+        picture = "__base__/graphics/terrain/masks/hr-transition-3.png",
+        scale = 0.5,
+        x = 2304
+      },
+      line_length = 2,
+      picture = "__base__/graphics/terrain/masks/transition-3.png",
+      x = 1152
+    },
+    outer_corner_mask = {
+      count = 8,
+      hr_version = {
+        count = 8,
+        line_length = 8,
+        picture = "__base__/graphics/terrain/masks/hr-transition-3.png",
+        scale = 0.5,
+        x = 576
+      },
+      line_length = 8,
+      picture = "__base__/graphics/terrain/masks/transition-3.png",
+      x = 288
+    },
+    side_mask = {
+      count = 8,
+      hr_version = {
+        count = 8,
+        line_length = 8,
+        picture = "__base__/graphics/terrain/masks/hr-transition-3.png",
+        scale = 0.5,
+        x = 1152
+      },
+      line_length = 8,
+      picture = "__base__/graphics/terrain/masks/transition-3.png",
+      x = 576
+    },
+    u_transition_mask = {
+      count = 1,
+      hr_version = {
+        count = 1,
+        line_length = 1,
+        picture = "__base__/graphics/terrain/masks/hr-transition-3.png",
+        scale = 0.5,
+        x = 1728
+      },
+      line_length = 1,
+      picture = "__base__/graphics/terrain/masks/transition-3.png",
+      x = 864
+    }
+  },
+  vehicle_friction_modifier = 1.6000000000000001,
+  walking_sound = {
+    {
+      filename = "__base__/sound/walking/grass-01.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/grass-02.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/grass-03.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/grass-04.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/grass-05.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/grass-06.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/grass-07.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/grass-08.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/grass-09.ogg",
+      volume = 0.8
+    },
+    {
+      filename = "__base__/sound/walking/grass-10.ogg",
+      volume = 0.8
+    }
+  }
+} --[[incomplete output with shared/self-references skipped]]

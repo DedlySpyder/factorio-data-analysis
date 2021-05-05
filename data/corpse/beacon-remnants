@@ -1,0 +1,99 @@
+{
+  animation = {
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/beacon/remnants/beacon-remnants.png",
+      frame_count = 1,
+      height = 104,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/beacon/remnants/hr-beacon-remnants.png",
+        frame_count = 1,
+        height = 206,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.03125,
+          0.15625
+        },
+        variation_count = 1,
+        width = 212,
+        y = 0
+      },
+      line_length = 1,
+      shift = {
+        0.03125,
+        0.15625
+      },
+      variation_count = 1,
+      width = 106,
+      y = 0
+    },
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/beacon/remnants/beacon-remnants.png",
+      frame_count = 1,
+      height = 104,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/beacon/remnants/hr-beacon-remnants.png",
+        frame_count = 1,
+        height = 206,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.03125,
+          0.15625
+        },
+        variation_count = 1,
+        width = 212,
+        y = 206
+      },
+      line_length = 1,
+      shift = {
+        0.03125,
+        0.15625
+      },
+      variation_count = 1,
+      width = 106,
+      y = 104
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/beacon.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.beacon"
+    }
+  },
+  name = "beacon-remnants",
+  order = "a-d-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -0.5,
+      -1
+    },
+    {
+      0.5,
+      1
+    }
+  },
+  subgroup = "energy-pipe-distribution-remnants",
+  tile_height = 2,
+  tile_width = 1,
+  time_before_removed = 54000,
+  type = "corpse"
+}

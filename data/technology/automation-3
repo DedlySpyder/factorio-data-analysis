@@ -1,0 +1,43 @@
+{
+  effects = {
+    {
+      recipe = "assembling-machine-3",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/automation-3.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  localised_description = {
+    "technology-description.automation-3"
+  },
+  name = "automation-3",
+  order = "a-b-c",
+  prerequisites = {
+    "speed-module",
+    "production-science-pack"
+  },
+  type = "technology",
+  unit = {
+    count = 150,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      },
+      {
+        "chemical-science-pack",
+        1
+      },
+      {
+        "production-science-pack",
+        1
+      }
+    },
+    time = 60
+  }
+}

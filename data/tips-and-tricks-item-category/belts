@@ -1,0 +1,5 @@
+{
+  name = "belts",
+  order = "c-[belts]",
+  type = "tips-and-tricks-item-category"
+}

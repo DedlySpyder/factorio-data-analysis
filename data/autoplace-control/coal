@@ -1,0 +1,14 @@
+{
+  category = "resource",
+  localised_name = {
+    "",
+    "[entity=coal] ",
+    {
+      "entity-name.coal"
+    }
+  },
+  name = "coal",
+  order = "b-d",
+  richness = true,
+  type = "autoplace-control"
+}

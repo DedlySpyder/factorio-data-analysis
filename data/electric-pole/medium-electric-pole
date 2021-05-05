@@ -1,0 +1,310 @@
+{
+  close_sound = {
+    {
+      filename = "__base__/sound/electric-network-close.ogg",
+      volume = 0.6
+    }
+  },
+  collision_box = {
+    {
+      -0.15,
+      -0.15
+    },
+    {
+      0.15,
+      0.15
+    }
+  },
+  connection_points = {
+    {
+      shadow = {
+        copper = {
+          3.578125,
+          -0.203125
+        },
+        green = {
+          3.140625,
+          -0.03125
+        },
+        red = {
+          3.84375,
+          -0.03125
+        }
+      },
+      wire = {
+        copper = {
+          0.234375,
+          -3.109375
+        },
+        green = {
+          -0.234375,
+          -2.890625
+        },
+        red = {
+          0.671875,
+          -2.796875
+        }
+      }
+    },
+    {
+      shadow = {
+        copper = {
+          3.578125,
+          -0.203125
+        },
+        green = {
+          3.0625,
+          -0.359375
+        },
+        red = {
+          3.59375,
+          0.15625
+        }
+      },
+      wire = {
+        copper = {
+          0.234375,
+          -3.109375
+        },
+        green = {
+          -0.140625,
+          -3.125
+        },
+        red = {
+          0.421875,
+          -2.609375
+        }
+      }
+    },
+    {
+      shadow = {
+        copper = {
+          3.578125,
+          -0.203125
+        },
+        green = {
+          3.390625,
+          -0.46875
+        },
+        red = {
+          3.25,
+          0.1875
+        }
+      },
+      wire = {
+        copper = {
+          0.234375,
+          -3.109375
+        },
+        green = {
+          0.203125,
+          -3.21875
+        },
+        red = {
+          0.078125,
+          -2.59375
+        }
+      }
+    },
+    {
+      shadow = {
+        copper = {
+          3.578125,
+          -0.203125
+        },
+        green = {
+          3.71875,
+          -0.359375
+        },
+        red = {
+          3.046875,
+          0.015625
+        }
+      },
+      wire = {
+        copper = {
+          0.234375,
+          -3.109375
+        },
+        green = {
+          0.5625,
+          -3.109375
+        },
+        red = {
+          -0.1875,
+          -2.734375
+        }
+      }
+    }
+  },
+  corpse = "medium-electric-pole-remnants",
+  damaged_trigger_effect = {
+    damage_type_filters = "fire",
+    entity_name = "spark-explosion",
+    offset_deviation = {
+      {
+        -0.2,
+        -2.2000000000000002
+      },
+      {
+        0.2,
+        0.2
+      }
+    },
+    offsets = {
+      {
+        0,
+        1
+      }
+    },
+    type = "create-entity"
+  },
+  drawing_box = {
+    {
+      -0.5,
+      -2.7999999999999998
+    },
+    {
+      0.5,
+      0.5
+    }
+  },
+  dying_explosion = "medium-electric-pole-explosion",
+  fast_replaceable_group = "electric-pole",
+  flags = {
+    "placeable-neutral",
+    "player-creation",
+    "fast-replaceable-no-build-while-moving"
+  },
+  icon = "__base__/graphics/icons/medium-electric-pole.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  max_health = 100,
+  maximum_wire_distance = 9,
+  minable = {
+    mining_time = 0.1,
+    result = "medium-electric-pole"
+  },
+  name = "medium-electric-pole",
+  open_sound = {
+    {
+      filename = "__base__/sound/electric-network-open.ogg",
+      volume = 0.6
+    }
+  },
+  pictures = {
+    layers = {
+      {
+        direction_count = 4,
+        filename = "__base__/graphics/entity/medium-electric-pole/medium-electric-pole.png",
+        height = 124,
+        hr_version = {
+          direction_count = 4,
+          filename = "__base__/graphics/entity/medium-electric-pole/hr-medium-electric-pole.png",
+          height = 252,
+          priority = "extra-high",
+          scale = 0.5,
+          shift = {
+            0.109375,
+            -1.375
+          },
+          width = 84
+        },
+        priority = "extra-high",
+        shift = {
+          0.125,
+          -1.375
+        },
+        width = 40
+      },
+      {
+        direction_count = 4,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/medium-electric-pole/medium-electric-pole-shadow.png",
+        height = 32,
+        hr_version = {
+          direction_count = 4,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/medium-electric-pole/hr-medium-electric-pole-shadow.png",
+          height = 64,
+          priority = "extra-high",
+          scale = 0.5,
+          shift = {
+            1.765625,
+            -0.03125
+          },
+          width = 280
+        },
+        priority = "extra-high",
+        shift = {
+          1.75,
+          -0.03125
+        },
+        width = 140
+      }
+    }
+  },
+  radius_visualisation_picture = {
+    filename = "__base__/graphics/entity/small-electric-pole/electric-pole-radius-visualization.png",
+    height = 12,
+    priority = "extra-high-no-scale",
+    width = 12
+  },
+  resistances = {
+    {
+      percent = 100,
+      type = "fire"
+    }
+  },
+  selection_box = {
+    {
+      -0.5,
+      -0.5
+    },
+    {
+      0.5,
+      0.5
+    }
+  },
+  supply_area_distance = 3.5,
+  track_coverage_during_build_by_moving = true,
+  type = "electric-pole",
+  vehicle_impact_sound = {
+    {
+      filename = "__base__/sound/car-metal-impact-2.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-3.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-4.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-5.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-6.ogg",
+      volume = 0.5
+    }
+  },
+  water_reflection = {
+    orientation_to_variation = false,
+    pictures = {
+      filename = "__base__/graphics/entity/medium-electric-pole/medium-electric-pole-reflection.png",
+      height = 28,
+      priority = "extra-high",
+      scale = 5,
+      shift = {
+        0,
+        1.71875
+      },
+      variation_count = 1,
+      width = 12
+    },
+    rotate = false
+  }
+}

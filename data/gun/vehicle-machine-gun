@@ -1,0 +1,52 @@
+{
+  attack_parameters = {
+    ammo_category = "bullet",
+    cooldown = 4,
+    movement_slow_down_factor = 0.7,
+    projectile_creation_distance = 0.65,
+    range = 20,
+    shell_particle = {
+      center = {
+        0,
+        0
+      },
+      creation_distance = -0.6875,
+      direction_deviation = 0.1,
+      name = "shell-particle",
+      speed = 0.1,
+      speed_deviation = 0.03,
+      starting_frame_speed = 0.4,
+      starting_frame_speed_deviation = 0.1
+    },
+    sound = {
+      {
+        filename = "__base__/sound/fight/heavy-gunshot-1.ogg",
+        volume = 0.4
+      },
+      {
+        filename = "__base__/sound/fight/heavy-gunshot-2.ogg",
+        volume = 0.4
+      },
+      {
+        filename = "__base__/sound/fight/heavy-gunshot-3.ogg",
+        volume = 0.4
+      },
+      {
+        filename = "__base__/sound/fight/heavy-gunshot-4.ogg",
+        volume = 0.4
+      }
+    },
+    type = "projectile"
+  },
+  flags = {
+    "hidden"
+  },
+  icon = "__base__/graphics/icons/submachine-gun.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "vehicle-machine-gun",
+  order = "a[basic-clips]-b[vehicle-machine-gun]",
+  stack_size = 1,
+  subgroup = "gun",
+  type = "gun"
+}

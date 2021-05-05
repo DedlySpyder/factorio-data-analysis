@@ -1,0 +1,19 @@
+{
+  category = "inserters",
+  dependencies = {
+    "inserters"
+  },
+  indent = 1,
+  name = "burner-inserter-refueling",
+  order = "b",
+  simulation = {
+    init = "\n    game.surfaces[1].create_entities_from_blueprint_string\n    {\n      string = \"0eNqVldtugzAMht/F11A1lFN5lWlCULwuEjgoh25VxbsvabeuB1CTy2D7sxP82ydoe4Oj5KShOgHfCVJQvZ1A8T01vfumjyNCBVzjABFQM7iTlg2pUUgdt9hrmCLg1OE3VGyKXgb3oulQ3gQl03sESJprjpf058OxJjO01rNi19gvITqkePeJSlviKJQNEuRyWVDM2CqL4AjVepVNrpQHUPJYxAxifQVE0HGJu4vVhv7eRhg9GnfpJ/xm6YGe05Q3hd7nmeGm/twihJv5c/MQbu7PzUK4xZXbGkkoY04KpZ79j+kSOJ8BlwHgJAS8DQCvQ8CuTX3JLAjM/MGbIHDi3RVBTcH8VZcGcf1VFyQ65q+6INGx/OVwez3bOC2MNlZ4Vx002ti/9Dh9cLK2penO7vv4z71WqDWnvXJuEgdxwNpYW29bFrva7R5r0tLg5PbMeRdVN3svggNKdSmwZGmxTQqWF8W23EzTD1RaWCk=\",\n      position = {0, 0}\n    }\n\n    script.on_nth_tick(2400, function()\n      local chest = game.surfaces[1].find_entities_filtered{name = \"wooden-chest\"}[1]\n      chest.insert({name = \"coal\", count = 20})\n      for k, burner in pairs (game.surfaces[1].find_entities_filtered{name = \"burner-inserter\"}) do\n        burner.clear_items_inside()\n        burner.energy = 400000\n      end\n    end)\n\n  "
+  },
+  tag = "[entity=burner-inserter][item=coal]",
+  trigger = {
+    count = 3,
+    entity = "burner-inserter",
+    type = "build-entity"
+  },
+  type = "tips-and-tricks-item"
+}

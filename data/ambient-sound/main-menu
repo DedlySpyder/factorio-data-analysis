@@ -1,0 +1,9 @@
+{
+  name = "main-menu",
+  sound = {
+    filename = "__base__/sound/ambient/main-menu.ogg",
+    volume = 1
+  },
+  track_type = "menu-track",
+  type = "ambient-sound"
+}

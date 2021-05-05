@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 15,
+  ingredients = {
+    {
+      "distractor-capsule",
+      4
+    },
+    {
+      "speed-module",
+      1
+    }
+  },
+  name = "destroyer-capsule",
+  result = "destroyer-capsule",
+  type = "recipe"
+}

@@ -1,0 +1,149 @@
+{
+  collision_box = {
+    {
+      -4.625,
+      -3.25
+    },
+    {
+      4.6875,
+      3.125
+    }
+  },
+  collision_mask = {
+    "water-tile",
+    "colliding-with-tiles-only"
+  },
+  name = "nuclear-ground-patch",
+  order = "b[decorative]-b[red-desert-decal]",
+  pictures = {
+    {
+      filename = "__base__/graphics/decorative/nuclear-ground-patch/nuclear-ground-patch-00.png",
+      height = 144,
+      hr_version = {
+        filename = "__base__/graphics/decorative/nuclear-ground-patch/hr-nuclear-ground-patch-00.png",
+        height = 284,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.125,
+          -0.21875
+        },
+        width = 388
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        -0.25
+      },
+      width = 194
+    },
+    {
+      filename = "__base__/graphics/decorative/nuclear-ground-patch/nuclear-ground-patch-01.png",
+      height = 132,
+      hr_version = {
+        filename = "__base__/graphics/decorative/nuclear-ground-patch/hr-nuclear-ground-patch-01.png",
+        height = 262,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.125,
+          0.25
+        },
+        width = 372
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        0.25
+      },
+      width = 186
+    },
+    {
+      filename = "__base__/graphics/decorative/nuclear-ground-patch/nuclear-ground-patch-02.png",
+      height = 126,
+      hr_version = {
+        filename = "__base__/graphics/decorative/nuclear-ground-patch/hr-nuclear-ground-patch-02.png",
+        height = 254,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.15625,
+          0.03125
+        },
+        width = 374
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        0.0625
+      },
+      width = 190
+    },
+    {
+      filename = "__base__/graphics/decorative/nuclear-ground-patch/nuclear-ground-patch-03.png",
+      height = 128,
+      hr_version = {
+        filename = "__base__/graphics/decorative/nuclear-ground-patch/hr-nuclear-ground-patch-03.png",
+        height = 252,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.125,
+          -0.09375
+        },
+        width = 364
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        -0.125
+      },
+      width = 182
+    },
+    {
+      filename = "__base__/graphics/decorative/nuclear-ground-patch/nuclear-ground-patch-04.png",
+      height = 130,
+      hr_version = {
+        filename = "__base__/graphics/decorative/nuclear-ground-patch/hr-nuclear-ground-patch-04.png",
+        height = 256,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.375,
+          -0.03125
+        },
+        width = 328
+      },
+      priority = "extra-high",
+      shift = {
+        0.375,
+        -0.0625
+      },
+      width = 164
+    },
+    {
+      filename = "__base__/graphics/decorative/nuclear-ground-patch/nuclear-ground-patch-05.png",
+      height = 130,
+      hr_version = {
+        filename = "__base__/graphics/decorative/nuclear-ground-patch/hr-nuclear-ground-patch-05.png",
+        height = 260,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0625,
+          0.25
+        },
+        width = 374
+      },
+      priority = "extra-high",
+      shift = {
+        0.0625,
+        0.25
+      },
+      width = 188
+    }
+  },
+  render_layer = "decals",
+  tile_layer = 59,
+  type = "optimized-decorative"
+}

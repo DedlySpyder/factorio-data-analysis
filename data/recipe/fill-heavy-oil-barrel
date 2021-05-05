@@ -1,0 +1,79 @@
+{
+  allow_decomposition = false,
+  category = "crafting-with-fluid",
+  enabled = false,
+  energy_required = 0.2,
+  icon_mipmaps = 4,
+  icon_size = 64,
+  icons = {
+    {
+      icon = "__base__/graphics/icons/fluid/barreling/barrel-fill.png",
+      icon_mipmaps = 4,
+      icon_size = 64
+    },
+    {
+      icon = "__base__/graphics/icons/fluid/barreling/barrel-fill-side-mask.png",
+      icon_mipmaps = 4,
+      icon_size = 64,
+      tint = {
+        a = 0.75,
+        b = 0,
+        g = 0.04,
+        r = 0.5
+      }
+    },
+    {
+      icon = "__base__/graphics/icons/fluid/barreling/barrel-fill-top-mask.png",
+      icon_mipmaps = 4,
+      icon_size = 64,
+      tint = {
+        a = 0.75,
+        b = 0.3,
+        g = 0.6,
+        r = 0.85
+      }
+    },
+    {
+      icon = "__base__/graphics/icons/fluid/heavy-oil.png",
+      icon_mipmaps = 4,
+      icon_size = 64,
+      scale = 0.25,
+      shift = {
+        -8,
+        -8
+      }
+    }
+  },
+  ingredients = {
+    {
+      amount = 50,
+      catalyst_amount = 50,
+      name = "heavy-oil",
+      type = "fluid"
+    },
+    {
+      amount = 1,
+      catalyst_amount = 1,
+      name = "empty-barrel",
+      type = "item"
+    }
+  },
+  localised_name = {
+    "recipe-name.fill-barrel",
+    {
+      "fluid-name.heavy-oil"
+    }
+  },
+  name = "fill-heavy-oil-barrel",
+  order = "b[fill-heavy-oil-barrel]",
+  results = {
+    {
+      amount = 1,
+      catalyst_amount = 1,
+      name = "heavy-oil-barrel",
+      type = "item"
+    }
+  },
+  subgroup = "fill-barrel",
+  type = "recipe"
+}

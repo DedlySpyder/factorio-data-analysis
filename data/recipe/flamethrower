@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 10,
+  ingredients = {
+    {
+      "steel-plate",
+      5
+    },
+    {
+      "iron-gear-wheel",
+      10
+    }
+  },
+  name = "flamethrower",
+  result = "flamethrower",
+  type = "recipe"
+}

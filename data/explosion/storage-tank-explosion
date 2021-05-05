@@ -1,0 +1,176 @@
+{
+  animations = {
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/medium-explosion/medium-explosion-1.png",
+      frame_count = 30,
+      height = 112,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/medium-explosion/hr-medium-explosion-1.png",
+        frame_count = 30,
+        height = 224,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          -0.03125,
+          -1.125
+        },
+        width = 124
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        -0.03125,
+        -1.125
+      },
+      width = 62
+    },
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/medium-explosion/medium-explosion-2.png",
+      frame_count = 41,
+      height = 106,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/medium-explosion/hr-medium-explosion-2.png",
+        frame_count = 41,
+        height = 212,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          -0.40625,
+          -1.0625
+        },
+        width = 154
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        -0.40625,
+        -1.0625
+      },
+      width = 78
+    },
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/medium-explosion/medium-explosion-3.png",
+      frame_count = 39,
+      height = 118,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/medium-explosion/hr-medium-explosion-3.png",
+        frame_count = 39,
+        height = 236,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          0.015625,
+          -1.15625
+        },
+        width = 126
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        0.03125,
+        -1.15625
+      },
+      width = 64
+    }
+  },
+  created_effect = {
+    action_delivery = {
+      target_effects = {
+        {
+          initial_height = 0.5,
+          initial_height_deviation = 0.5,
+          initial_vertical_speed = 0.11700000000000002,
+          initial_vertical_speed_deviation = 0.05,
+          offset_deviation = {
+            {
+              -0.3984,
+              -0.69920000000000009
+            },
+            {
+              0.3984,
+              0.69920000000000009
+            }
+          },
+          particle_name = "storage-tank-metal-particle-big",
+          repeat_count = 20,
+          speed_from_center = 0.03,
+          speed_from_center_deviation = 0.05,
+          type = "create-particle"
+        },
+        {
+          initial_height = 0.5,
+          initial_height_deviation = 0.5,
+          initial_vertical_speed = 0.125,
+          initial_vertical_speed_deviation = 0.05,
+          offset_deviation = {
+            {
+              -0.59770000000000003,
+              -0.29689999999999998
+            },
+            {
+              0.59770000000000003,
+              0.29689999999999998
+            }
+          },
+          particle_name = "storage-tank-metal-particle-medium",
+          repeat_count = 27,
+          speed_from_center = 0.05,
+          speed_from_center_deviation = 0.05,
+          type = "create-particle"
+        }
+      },
+      type = "instant"
+    },
+    type = "direct"
+  },
+  flags = {
+    "not-on-map",
+    "hidden"
+  },
+  height = 0,
+  icon = "__base__/graphics/icons/storage-tank.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "dying-explosion-name",
+    {
+      "entity-name.storage-tank"
+    }
+  },
+  name = "storage-tank-explosion",
+  order = "a-d-a",
+  sound = {
+    aggregation = {
+      max_count = 1,
+      remove = true
+    },
+    audible_distance_modifier = 1.95,
+    variations = {
+      {
+        filename = "__base__/sound/fight/large-explosion-1.ogg",
+        volume = 0.55
+      },
+      {
+        filename = "__base__/sound/fight/large-explosion-2.ogg",
+        volume = 0.55
+      }
+    }
+  },
+  subgroup = "storage-explosions",
+  type = "explosion"
+}

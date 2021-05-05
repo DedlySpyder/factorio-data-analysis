@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 3,
+  ingredients = {
+    {
+      "iron-gear-wheel",
+      50
+    },
+    {
+      "copper-plate",
+      50
+    },
+    {
+      "pipe",
+      20
+    }
+  },
+  name = "steam-turbine",
+  result = "steam-turbine",
+  type = "recipe"
+}

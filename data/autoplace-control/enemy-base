@@ -1,0 +1,7 @@
+{
+  category = "enemy",
+  name = "enemy-base",
+  order = "c-z",
+  richness = false,
+  type = "autoplace-control"
+}

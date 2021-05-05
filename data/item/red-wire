@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/red-wire.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "red-wire",
+  order = "b[wires]-a[red-wire]",
+  stack_size = 200,
+  subgroup = "circuit-network",
+  type = "item",
+  wire_count = 1
+}

@@ -1,0 +1,50 @@
+{
+  category = "electric-network",
+  dependencies = {
+    "introduction"
+  },
+  image = "__base__/graphics/tips-and-tricks/electric-network.png",
+  is_title = true,
+  name = "electric-network",
+  order = "a",
+  trigger = {
+    triggers = {
+      {
+        triggers = {
+          {
+            triggers = {
+              {
+                recipe = "steam-engine",
+                type = "unlocked-recipe"
+              },
+              {
+                recipe = "boiler",
+                type = "unlocked-recipe"
+              }
+            },
+            type = "and"
+          },
+          {
+            ticks = 18000,
+            type = "time-elapsed"
+          }
+        },
+        type = "sequence"
+      },
+      {
+        entity = "steam-engine",
+        type = "build-entity"
+      },
+      {
+        entity = "boiler",
+        type = "build-entity"
+      },
+      {
+        entity = "offshore-pump",
+        type = "build-entity"
+      }
+    },
+    type = "or"
+  },
+  type = "tips-and-tricks-item"
+}

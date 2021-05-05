@@ -1,0 +1,14 @@
+{
+  category = "resource",
+  localised_name = {
+    "",
+    "[entity=stone] ",
+    {
+      "entity-name.stone"
+    }
+  },
+  name = "stone",
+  order = "b-c",
+  richness = true,
+  type = "autoplace-control"
+}

@@ -1,0 +1,10 @@
+{
+  icon = "__base__/graphics/icons/advanced-circuit.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "advanced-circuit",
+  order = "f[advanced-circuit]",
+  stack_size = 200,
+  subgroup = "intermediate-product",
+  type = "item"
+}

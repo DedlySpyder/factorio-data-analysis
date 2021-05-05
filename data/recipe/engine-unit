@@ -1,0 +1,22 @@
+{
+  category = "advanced-crafting",
+  enabled = false,
+  energy_required = 10,
+  ingredients = {
+    {
+      "steel-plate",
+      1
+    },
+    {
+      "iron-gear-wheel",
+      1
+    },
+    {
+      "pipe",
+      2
+    }
+  },
+  name = "engine-unit",
+  result = "engine-unit",
+  type = "recipe"
+}

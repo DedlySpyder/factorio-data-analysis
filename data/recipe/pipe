@@ -1,0 +1,22 @@
+{
+  expensive = {
+    ingredients = {
+      {
+        "iron-plate",
+        2
+      }
+    },
+    result = "pipe"
+  },
+  name = "pipe",
+  normal = {
+    ingredients = {
+      {
+        "iron-plate",
+        1
+      }
+    },
+    result = "pipe"
+  },
+  type = "recipe"
+}

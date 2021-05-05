@@ -1,0 +1,8 @@
+{
+  action = "spawn-item",
+  consuming = "game-only",
+  item_to_spawn = "blueprint-book",
+  key_sequence = "",
+  name = "give-blueprint-book",
+  type = "custom-input"
+}

@@ -1,0 +1,212 @@
+{
+  animations = {
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/medium-explosion/medium-explosion-1.png",
+      frame_count = 30,
+      height = 112,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/medium-explosion/hr-medium-explosion-1.png",
+        frame_count = 30,
+        height = 224,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          -0.03125,
+          -1.125
+        },
+        width = 124
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        -0.03125,
+        -1.125
+      },
+      width = 62
+    },
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/medium-explosion/medium-explosion-2.png",
+      frame_count = 41,
+      height = 106,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/medium-explosion/hr-medium-explosion-2.png",
+        frame_count = 41,
+        height = 212,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          -0.40625,
+          -1.0625
+        },
+        width = 154
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        -0.40625,
+        -1.0625
+      },
+      width = 78
+    },
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/medium-explosion/medium-explosion-3.png",
+      frame_count = 39,
+      height = 118,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/medium-explosion/hr-medium-explosion-3.png",
+        frame_count = 39,
+        height = 236,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          0.015625,
+          -1.15625
+        },
+        width = 126
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        0.03125,
+        -1.15625
+      },
+      width = 64
+    }
+  },
+  created_effect = {
+    action_delivery = {
+      target_effects = {
+        {
+          initial_height = 0.3,
+          initial_height_deviation = 0.44000000000000004,
+          initial_vertical_speed = 0.070000000000000009,
+          initial_vertical_speed_deviation = 0.05,
+          offset_deviation = {
+            {
+              -0.88670000000000009,
+              -0.3867
+            },
+            {
+              0.88670000000000009,
+              0.3867
+            }
+          },
+          particle_name = "heat-exchanger-metal-particle-medium",
+          repeat_count = 37,
+          speed_from_center = 0.03,
+          speed_from_center_deviation = 0.05,
+          type = "create-particle"
+        },
+        {
+          initial_height = 0.3,
+          initial_height_deviation = 0.44000000000000004,
+          initial_vertical_speed = 0.08,
+          initial_vertical_speed_deviation = 0.05,
+          offset_deviation = {
+            {
+              -0.39060000000000002,
+              -0.59770000000000003
+            },
+            {
+              0.39060000000000002,
+              0.59770000000000003
+            }
+          },
+          particle_name = "heat-exchanger-metal-particle-small",
+          repeat_count = 34,
+          speed_from_center = 0.03,
+          speed_from_center_deviation = 0.05,
+          type = "create-particle"
+        },
+        {
+          initial_height = 0.3,
+          initial_height_deviation = 0.5,
+          initial_vertical_speed = 0.070000000000000009,
+          initial_vertical_speed_deviation = 0.049000000000000004,
+          offset_deviation = {
+            {
+              -0.58199999999999994,
+              -0.5859
+            },
+            {
+              0.58199999999999994,
+              0.5859
+            }
+          },
+          particle_name = "heat-exchanger-metal-particle-big",
+          repeat_count = 16,
+          speed_from_center = 0.04,
+          speed_from_center_deviation = 0.05,
+          type = "create-particle"
+        }
+      },
+      type = "instant"
+    },
+    type = "direct"
+  },
+  flags = {
+    "not-on-map",
+    "hidden"
+  },
+  height = 0,
+  icon = "__base__/graphics/icons/heat-boiler.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "dying-explosion-name",
+    {
+      "entity-name.heat-exchanger"
+    }
+  },
+  name = "heat-exchanger-explosion",
+  order = "a-f-a",
+  smoke = "smoke-fast",
+  smoke_count = 2,
+  smoke_slow_down_factor = 1,
+  sound = {
+    aggregation = {
+      max_count = 1,
+      remove = true
+    },
+    audible_distance_modifier = 0.7,
+    variations = {
+      {
+        filename = "__base__/sound/fight/medium-explosion-1.ogg",
+        volume = 0.4
+      },
+      {
+        filename = "__base__/sound/fight/medium-explosion-2.ogg",
+        volume = 0.4
+      },
+      {
+        filename = "__base__/sound/fight/medium-explosion-3.ogg",
+        volume = 0.4
+      },
+      {
+        filename = "__base__/sound/fight/medium-explosion-4.ogg",
+        volume = 0.4
+      },
+      {
+        filename = "__base__/sound/fight/medium-explosion-5.ogg",
+        volume = 0.4
+      }
+    }
+  },
+  subgroup = "energy-explosions",
+  type = "explosion"
+}

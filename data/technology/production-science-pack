@@ -1,0 +1,37 @@
+{
+  effects = {
+    {
+      recipe = "production-science-pack",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/production-science-pack.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "production-science-pack",
+  order = "c-a",
+  prerequisites = {
+    "productivity-module",
+    "advanced-material-processing-2",
+    "railway"
+  },
+  type = "technology",
+  unit = {
+    count = 100,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      },
+      {
+        "chemical-science-pack",
+        1
+      }
+    },
+    time = 30
+  }
+}

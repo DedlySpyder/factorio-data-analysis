@@ -1,0 +1,10 @@
+{
+  icon = "__base__/graphics/achievement/golem.png",
+  icon_size = 128,
+  minimum_damage = 500,
+  name = "golem",
+  order = "b[exploration]-g[golem]",
+  should_survive = true,
+  steam_stats_name = "surived-damage-in-one-hit",
+  type = "player-damaged-achievement"
+}

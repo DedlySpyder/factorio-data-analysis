@@ -1,0 +1,10 @@
+{
+  amount = 1000,
+  icon = "__base__/graphics/achievement/computer-age-2.png",
+  icon_size = 128,
+  item_product = "processing-unit",
+  name = "computer-age-2",
+  order = "d[production]-d[processing-unit-production]-b",
+  steam_stats_name = "processing-units-per-hour",
+  type = "produce-per-hour-achievement"
+}

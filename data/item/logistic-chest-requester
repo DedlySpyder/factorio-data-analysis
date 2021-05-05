@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/logistic-chest-requester.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "logistic-chest-requester",
+  order = "b[storage]-e[logistic-chest-requester]",
+  place_result = "logistic-chest-requester",
+  stack_size = 50,
+  subgroup = "logistic-network",
+  type = "item"
+}

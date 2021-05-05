@@ -1,0 +1,61 @@
+{
+  expression = {
+    arguments = {
+      {
+        arguments = {
+          {
+            literal_value = 0,
+            source_location = {
+              filename = "__core__/prototypes/noise-programs.lua",
+              line_number = 570
+            },
+            type = "literal-number"
+          },
+          {
+            arguments = {
+              {
+                source_location = {
+                  filename = "__core__/lualib/noise.lua",
+                  line_number = 279
+                },
+                type = "variable",
+                variable_name = "distance"
+              },
+              {
+                source_location = {
+                  filename = "__core__/lualib/noise.lua",
+                  line_number = 287
+                },
+                type = "variable",
+                variable_name = "starting_area_radius"
+              }
+            },
+            function_name = "subtract",
+            source_location = {
+              filename = "__core__/prototypes/noise-programs.lua",
+              line_number = 570
+            },
+            type = "function-application"
+          },
+          {
+            literal_value = 1/0 --[[math.huge]],
+            source_location = 0 --[=[ ref [""].expression.arguments[1].arguments[1].source_location ]=],
+            type = "literal-number"
+          }
+        },
+        function_name = "clamp",
+        source_location = 0 --[=[ ref [""].expression.arguments[1].arguments[1].source_location ]=],
+        type = "function-application"
+      },
+      0 --[=[ ref [""].expression.arguments[1].arguments[2].arguments[2] ]=]
+    },
+    function_name = "divide",
+    source_location = {
+      filename = "__core__/prototypes/noise-programs.lua",
+      line_number = 570
+    },
+    type = "function-application"
+  },
+  name = "tier_from_start",
+  type = "noise-expression"
+} --[[incomplete output with shared/self-references skipped]]

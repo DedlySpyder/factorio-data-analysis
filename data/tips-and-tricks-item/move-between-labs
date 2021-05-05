@@ -1,0 +1,20 @@
+{
+  category = "inserters",
+  dependencies = {
+    "inserters"
+  },
+  indent = 1,
+  name = "move-between-labs",
+  order = "d",
+  simulation = {
+    init = "\n    local science_1 = \"automation-science-pack\"\n    local science_2 = \"logistic-science-pack\"\n    local technology = \"railway\"\n\n    game.surfaces[1].create_entities_from_blueprint_string\n    {\n      string = \"0eNq1VduOmzAQ/Rc/wwoTLoFfqSpkzECtgo18WTWN8u8dYJdmG7MhUZcnbM+cmTNzPD6TuncwaiEtKc9EcCUNKb+diRGdZP20Z08jkJIICwMJiGTDtOpZTS4BEbKBX6Skl+8BAWmFFbC4z4tTJd1Qg0aD1VHIVkg8CvkPMBYBR2XQTckpFEKFxUsakBP+ZC/pHGGxrwxYK2RnJjsNg3qFyuFZb0FDU03Z4VHLegMBWbaXTN4TVp0wVvDQcAGSQzgy/hPDc+Um6nEUBWRQzWTKbNgDm5P7y+9yCW5YxSurFs3DXrEGt28pHa8JNUIDX07R/624ytnRWeKJcVhjWM2kGZW2YQ29r3LZx8pdBUo8wMnO5Lcwsx3Jp/vbfviatjNn1cCmQP+z8dnKy7ja2Bnfw4m+MfJB5CsE9FhSjcoECbo7hXgVQbeMwy3i4R3wXxnVrm1BV0b8RkQarZ8n8HEN7JCj7jTWobkrqfRGUmv7hdzofvGEdKM90qXRUxzoNodtCVP6YeZtC3fK3Ocff+4f3XE/fO6e3HFPHu/BvhakjwPTXcDZ1cwwoK1/KG3lmvkg8z2Q9CHI4w7I+CHE4hlNx3evJT7M88tdXj30AXnFMbnMjiNN8iLOaZbnRYYa+gMBb6VK\",\n      position = {-2, -2}\n    }\n\n    local items = game.item_prototypes\n    local technologies = game.technology_prototypes\n    if not (technologies[technology] and items[science_1] and items[science_2]) then\n      technology = nil\n      for k, tech in pairs (technologies) do\n        local units = tech.research_unit_ingredients\n        if #units == 2 then\n          technology = tech.name\n          science_1 = units[1].name\n          science_2 = units[2].name\n          break\n        end\n      end\n    end\n\n    if not technology then return end\n\n    chest_1 = game.surfaces[1].find_entity(\"infinity-chest\", {-9.5, -6.5})\n    if chest_1 then\n      chest_1.set_infinity_container_filter(1, {name = science_1, count = 100, index = 1})\n    end\n\n    chest_2 = game.surfaces[1].find_entity(\"infinity-chest\", {-3.5, -6.5})\n    if chest_2 then\n      chest_2.set_infinity_container_filter(1, {name = science_2, count = 100, index = 1})\n    end\n\n    for name, prerequisite in pairs (technologies[technology].prerequisites) do\n      game.forces.player.technologies[name].researched = true\n    end\n\n    game.forces.player.laboratory_speed_modifier = 3\n    game.forces.player.add_research(technology)\n    script.on_event(defines.events.on_research_finished,\n    function(event)\n      if not event.by_script then\n        event.research.researched = false\n        event.research.force.add_research(event.research.name)\n        event.research.force.research_progress = 0\n      end\n    end)\n  ",
+    init_update_count = 800
+  },
+  tag = "[entity=lab]",
+  trigger = {
+    count = 3,
+    entity = "lab",
+    type = "build-entity"
+  },
+  type = "tips-and-tricks-item"
+}

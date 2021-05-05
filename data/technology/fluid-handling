@@ -1,0 +1,96 @@
+{
+  effects = {
+    {
+      recipe = "storage-tank",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "pump",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "empty-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "fill-water-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "empty-water-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "fill-sulfuric-acid-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "empty-sulfuric-acid-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "fill-crude-oil-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "empty-crude-oil-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "fill-heavy-oil-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "empty-heavy-oil-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "fill-light-oil-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "empty-light-oil-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "fill-petroleum-gas-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "empty-petroleum-gas-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "fill-lubricant-barrel",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "empty-lubricant-barrel",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/fluid-handling.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "fluid-handling",
+  order = "d-a-a",
+  prerequisites = {
+    "automation-2",
+    "engine"
+  },
+  type = "technology",
+  unit = {
+    count = 50,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      }
+    },
+    time = 15
+  }
+}

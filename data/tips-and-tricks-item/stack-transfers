@@ -1,0 +1,33 @@
+{
+  category = "game-interaction",
+  dependencies = {
+    "introduction"
+  },
+  image = "__base__/graphics/tips-and-tricks/stack-transfers.png",
+  name = "stack-transfers",
+  order = "f",
+  skip_trigger = {
+    triggers = {
+      {
+        transfer = "stack",
+        type = "stack-transfer"
+      },
+      {
+        transfer = "inventory",
+        type = "stack-transfer"
+      },
+      {
+        transfer = "whole-inventory",
+        type = "stack-transfer"
+      }
+    },
+    type = "and"
+  },
+  tag = "[item=wooden-chest]",
+  trigger = {
+    count = 20,
+    type = "manual-transfer"
+  },
+  tutorial = "stack-transfers",
+  type = "tips-and-tricks-item"
+}

@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 3,
+  ingredients = {
+    {
+      "iron-plate",
+      20
+    },
+    {
+      "steel-plate",
+      5
+    }
+  },
+  name = "storage-tank",
+  result = "storage-tank",
+  type = "recipe"
+}

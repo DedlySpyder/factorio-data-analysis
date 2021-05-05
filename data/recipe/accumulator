@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 10,
+  ingredients = {
+    {
+      "iron-plate",
+      2
+    },
+    {
+      "battery",
+      5
+    }
+  },
+  name = "accumulator",
+  result = "accumulator",
+  type = "recipe"
+}

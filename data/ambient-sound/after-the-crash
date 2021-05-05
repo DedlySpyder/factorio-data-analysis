@@ -1,0 +1,8 @@
+{
+  name = "after-the-crash",
+  sound = {
+    filename = "__base__/sound/ambient/after-the-crash.ogg"
+  },
+  track_type = "early-game",
+  type = "ambient-sound"
+}

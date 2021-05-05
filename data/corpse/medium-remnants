@@ -1,0 +1,143 @@
+{
+  animation = {
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/remnants/medium-remnants.png",
+      frame_count = 1,
+      height = 124,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/remnants/hr-medium-remnants.png",
+        frame_count = 1,
+        height = 246,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0,
+          -0.140625
+        },
+        width = 236,
+        y = 0
+      },
+      line_length = 1,
+      shift = {
+        0,
+        -0.125
+      },
+      width = 118,
+      y = 0
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/remnants/medium-remnants.png",
+      frame_count = 1,
+      height = 124,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/remnants/hr-medium-remnants.png",
+        frame_count = 1,
+        height = 246,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0,
+          -0.140625
+        },
+        width = 236,
+        y = 246
+      },
+      line_length = 1,
+      shift = {
+        0,
+        -0.125
+      },
+      width = 118,
+      y = 124
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/remnants/medium-remnants.png",
+      frame_count = 1,
+      height = 124,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/remnants/hr-medium-remnants.png",
+        frame_count = 1,
+        height = 246,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0,
+          -0.140625
+        },
+        width = 236,
+        y = 492
+      },
+      line_length = 1,
+      shift = {
+        0,
+        -0.125
+      },
+      width = 118,
+      y = 248
+    },
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/remnants/medium-remnants.png",
+      frame_count = 1,
+      height = 124,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/remnants/hr-medium-remnants.png",
+        frame_count = 1,
+        height = 246,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0,
+          -0.140625
+        },
+        width = 236,
+        y = 738
+      },
+      line_length = 1,
+      shift = {
+        0,
+        -0.125
+      },
+      width = 118,
+      y = 372
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "building-direction-8-way",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/remnants.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "entity-name.medium-remnants"
+  },
+  name = "medium-remnants",
+  order = "a-d-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -1.5,
+      -1.5
+    },
+    {
+      1.5,
+      1.5
+    }
+  },
+  subgroup = "generic-remnants",
+  tile_height = 3,
+  tile_width = 3,
+  time_before_removed = 54000,
+  type = "corpse"
+}

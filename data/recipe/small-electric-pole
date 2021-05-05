@@ -1,0 +1,16 @@
+{
+  ingredients = {
+    {
+      "wood",
+      1
+    },
+    {
+      "copper-cable",
+      2
+    }
+  },
+  name = "small-electric-pole",
+  result = "small-electric-pole",
+  result_count = 2,
+  type = "recipe"
+}

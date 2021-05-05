@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 8,
+  ingredients = {
+    {
+      "explosives",
+      10
+    },
+    {
+      "grenade",
+      1
+    },
+    {
+      "empty-barrel",
+      1
+    }
+  },
+  name = "cliff-explosives",
+  result = "cliff-explosives",
+  type = "recipe"
+}

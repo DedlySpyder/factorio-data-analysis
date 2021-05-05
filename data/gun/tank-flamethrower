@@ -1,0 +1,45 @@
+{
+  attack_parameters = {
+    ammo_category = "flamethrower",
+    cooldown = 1,
+    cyclic_sound = {
+      begin_sound = {
+        {
+          filename = "__base__/sound/fight/flamethrower-start.ogg",
+          volume = 1
+        }
+      },
+      end_sound = {
+        {
+          filename = "__base__/sound/fight/flamethrower-end.ogg",
+          volume = 1
+        }
+      },
+      middle_sound = {
+        {
+          filename = "__base__/sound/fight/flamethrower-mid.ogg",
+          volume = 1
+        }
+      }
+    },
+    gun_barrel_length = 1.3999999999999999,
+    gun_center_shift = {
+      -0.17000000000000002,
+      -1.1499999999999999
+    },
+    min_range = 3,
+    range = 9,
+    type = "stream"
+  },
+  flags = {
+    "hidden"
+  },
+  icon = "__base__/graphics/icons/flamethrower.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "tank-flamethrower",
+  order = "b[flamethrower]-b[tank-flamethrower]",
+  stack_size = 1,
+  subgroup = "gun",
+  type = "gun"
+}

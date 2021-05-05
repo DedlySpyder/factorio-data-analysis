@@ -1,0 +1,23 @@
+{
+  flags = {
+    "hidden"
+  },
+  icon_mipmaps = 4,
+  icon_size = 64,
+  icons = {
+    {
+      icon = "__base__/graphics/icons/pipe.png",
+      tint = {
+        b = 1,
+        g = 0.5,
+        r = 0.5
+      }
+    }
+  },
+  name = "infinity-pipe",
+  order = "d[item]-o[infinity-pipe]",
+  place_result = "infinity-pipe",
+  stack_size = 10,
+  subgroup = "other",
+  type = "item"
+}

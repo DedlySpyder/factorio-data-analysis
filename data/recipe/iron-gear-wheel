@@ -1,0 +1,22 @@
+{
+  expensive = {
+    ingredients = {
+      {
+        "iron-plate",
+        4
+      }
+    },
+    result = "iron-gear-wheel"
+  },
+  name = "iron-gear-wheel",
+  normal = {
+    ingredients = {
+      {
+        "iron-plate",
+        2
+      }
+    },
+    result = "iron-gear-wheel"
+  },
+  type = "recipe"
+}

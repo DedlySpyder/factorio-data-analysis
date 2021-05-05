@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 50,
+  ingredients = {
+    {
+      "rocket-control-unit",
+      10
+    },
+    {
+      "explosives",
+      10
+    },
+    {
+      "uranium-235",
+      30
+    }
+  },
+  name = "atomic-bomb",
+  result = "atomic-bomb",
+  type = "recipe"
+}

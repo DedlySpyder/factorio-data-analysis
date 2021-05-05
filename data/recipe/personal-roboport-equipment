@@ -1,0 +1,25 @@
+{
+  enabled = false,
+  energy_required = 10,
+  ingredients = {
+    {
+      "advanced-circuit",
+      10
+    },
+    {
+      "iron-gear-wheel",
+      40
+    },
+    {
+      "steel-plate",
+      20
+    },
+    {
+      "battery",
+      45
+    }
+  },
+  name = "personal-roboport-equipment",
+  result = "personal-roboport-equipment",
+  type = "recipe"
+}

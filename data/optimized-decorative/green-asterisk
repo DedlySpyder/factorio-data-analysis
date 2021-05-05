@@ -1,0 +1,584 @@
+{
+  autoplace = {
+    order = "a[doodad]-z[other]",
+    peaks = {
+      {
+        influence = 1,
+        temperature_max_range = 26.25,
+        temperature_optimal = 17.5,
+        temperature_range = 17.5,
+        water_max_range = 0.225,
+        water_optimal = 0.85,
+        water_range = 0.15
+      },
+      {
+        influence = 0.5,
+        noise_layer = "green-fluff",
+        noise_octaves_difference = -2,
+        noise_persistence = 0.9
+      },
+      {
+        influence = -1
+      }
+    }
+  },
+  collision_box = {
+    {
+      -0.7,
+      -0.7
+    },
+    {
+      0.7,
+      0.7
+    }
+  },
+  name = "green-asterisk",
+  order = "b[decorative]-b[asterisk-mini]-b[green]",
+  pictures = {
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-00.png",
+      height = 40,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-00.png",
+        height = 80,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.15625,
+          -0.125
+        },
+        width = 120
+      },
+      priority = "extra-high",
+      shift = {
+        0.15625,
+        -0.125
+      },
+      width = 60
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-01.png",
+      height = 47,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-01.png",
+        height = 95,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.03125,
+          -0.1796875
+        },
+        width = 130
+      },
+      priority = "extra-high",
+      shift = {
+        0.015625,
+        -0.171875
+      },
+      width = 65
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-02.png",
+      height = 38,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-02.png",
+        height = 76,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0,
+          0.03125
+        },
+        width = 122
+      },
+      priority = "extra-high",
+      shift = {
+        -0.015625,
+        0.03125
+      },
+      width = 61
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-03.png",
+      height = 38,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-03.png",
+        height = 75,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.1796875,
+          -0.0234375
+        },
+        width = 121
+      },
+      priority = "extra-high",
+      shift = {
+        0.1875,
+        -0.03125
+      },
+      width = 60
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-04.png",
+      height = 38,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-04.png",
+        height = 77,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.1171875,
+          -0.1015625
+        },
+        width = 85
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        -0.09375
+      },
+      width = 42
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-05.png",
+      height = 39,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-05.png",
+        height = 77,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.015625,
+          -0.0390625
+        },
+        width = 132
+      },
+      priority = "extra-high",
+      shift = {
+        -0.015625,
+        -0.046875
+      },
+      width = 67
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-06.png",
+      height = 46,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-06.png",
+        height = 92,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.09375,
+          -0.125
+        },
+        width = 84
+      },
+      priority = "extra-high",
+      shift = {
+        0.09375,
+        -0.125
+      },
+      width = 42
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-07.png",
+      height = 40,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-07.png",
+        height = 79,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.1875,
+          -0.0859375
+        },
+        width = 118
+      },
+      priority = "extra-high",
+      shift = {
+        0.1875,
+        -0.09375
+      },
+      width = 60
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-08.png",
+      height = 39,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-08.png",
+        height = 78,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.109375,
+          0.015625
+        },
+        width = 104
+      },
+      priority = "extra-high",
+      shift = {
+        0.109375,
+        0.015625
+      },
+      width = 51
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-09.png",
+      height = 30,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-09.png",
+        height = 61,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.03125,
+          -0.0859375
+        },
+        width = 88
+      },
+      priority = "extra-high",
+      shift = {
+        -0.03125,
+        -0.09375
+      },
+      width = 44
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-10.png",
+      height = 31,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-10.png",
+        height = 63,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0859375,
+          -0.3046875
+        },
+        width = 89
+      },
+      priority = "extra-high",
+      shift = {
+        0.09375,
+        -0.296875
+      },
+      width = 44
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-11.png",
+      height = 28,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-11.png",
+        height = 58,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.4296875,
+          -0.03125
+        },
+        width = 91
+      },
+      priority = "extra-high",
+      shift = {
+        0.421875,
+        -0.03125
+      },
+      width = 45
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-12.png",
+      height = 32,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-12.png",
+        height = 64,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.234375,
+          0.0625
+        },
+        width = 90
+      },
+      priority = "extra-high",
+      shift = {
+        -0.234375,
+        0.0625
+      },
+      width = 45
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-13.png",
+      height = 36,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-13.png",
+        height = 73,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.1328125,
+          -0.1484375
+        },
+        width = 89
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        -0.15625
+      },
+      width = 44
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-14.png",
+      height = 28,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-14.png",
+        height = 56,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.03125,
+          -0.09375
+        },
+        width = 78
+      },
+      priority = "extra-high",
+      shift = {
+        0.03125,
+        -0.09375
+      },
+      width = 38
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-15.png",
+      height = 25,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-15.png",
+        height = 51,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.1015625,
+          -0.0234375
+        },
+        width = 85
+      },
+      priority = "extra-high",
+      shift = {
+        0.109375,
+        -0.015625
+      },
+      width = 43
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-16.png",
+      height = 36,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-16.png",
+        height = 71,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.25,
+          -0.0546875
+        },
+        width = 92
+      },
+      priority = "extra-high",
+      shift = {
+        0.25,
+        -0.0625
+      },
+      width = 46
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-17.png",
+      height = 33,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-17.png",
+        height = 65,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.09375,
+          -0.0078125
+        },
+        width = 90
+      },
+      priority = "extra-high",
+      shift = {
+        0.09375,
+        -0.015625
+      },
+      width = 46
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-18.png",
+      height = 34,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-18.png",
+        height = 69,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.1328125,
+          -0.1484375
+        },
+        width = 117
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        -0.15625
+      },
+      width = 58
+    },
+    {
+      filename = "__base__/graphics/decorative/green-asterisk/green-asterisk-19.png",
+      height = 32,
+      hr_version = {
+        filename = "__base__/graphics/decorative/green-asterisk/hr-green-asterisk-19.png",
+        height = 64,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.015625,
+          -0.0625
+        },
+        width = 82
+      },
+      priority = "extra-high",
+      shift = {
+        0.015625,
+        -0.0625
+      },
+      width = 41
+    }
+  },
+  render_layer = "decorative",
+  trigger_effect = {
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.050999999999999996,
+      initial_vertical_speed_deviation = 0.05,
+      offset_deviation = {
+        {
+          -0.07,
+          -0.07
+        },
+        {
+          0.07,
+          0.07
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "green-asterisk-vegetation-particle-small-medium",
+      probability = 1,
+      repeat_count = 6,
+      repeat_count_deviation = 0,
+      show_in_tooltip = false,
+      speed_from_center = 0.02,
+      speed_from_center_deviation = 0.05,
+      type = "create-particle"
+    },
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.2,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.06,
+      initial_vertical_speed_deviation = 0.05,
+      offset_deviation = {
+        {
+          -0.07,
+          -0.07
+        },
+        {
+          0.07,
+          0.07
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "green-asterisk-wooden-splinter-particle-small",
+      probability = 1,
+      repeat_count = 3,
+      repeat_count_deviation = 0,
+      show_in_tooltip = false,
+      speed_from_center = 0.015,
+      speed_from_center_deviation = 0.03,
+      type = "create-particle"
+    },
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.050999999999999996,
+      initial_vertical_speed_deviation = 0.05,
+      offset_deviation = {
+        {
+          -0.07,
+          -0.07
+        },
+        {
+          0.07,
+          0.07
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "green-asterisk-grass-particle-small-medium",
+      probability = 1,
+      repeat_count = 10,
+      repeat_count_deviation = 0,
+      show_in_tooltip = false,
+      speed_from_center = 0.02,
+      speed_from_center_deviation = 0.05,
+      type = "create-particle"
+    }
+  },
+  type = "optimized-decorative",
+  walking_sound = {
+    {
+      filename = "__base__/sound/walking/plant/plant-01.ogg",
+      volume = 0.4
+    },
+    {
+      filename = "__base__/sound/walking/plant/plant-02.ogg",
+      volume = 0.4
+    },
+    {
+      filename = "__base__/sound/walking/plant/plant-03.ogg",
+      volume = 0.4
+    },
+    {
+      filename = "__base__/sound/walking/plant/plant-04.ogg",
+      volume = 0.4
+    },
+    {
+      filename = "__base__/sound/walking/plant/plant-05.ogg",
+      volume = 0.4
+    }
+  }
+}

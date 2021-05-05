@@ -1,0 +1,16 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "flying-robot-frame",
+      1
+    },
+    {
+      "electronic-circuit",
+      2
+    }
+  },
+  name = "construction-robot",
+  result = "construction-robot",
+  type = "recipe"
+}

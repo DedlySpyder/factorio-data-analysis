@@ -1,0 +1,36 @@
+{
+  icon = "__base__/graphics/icons/stone.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "stone",
+  order = "d[stone]",
+  pictures = {
+    {
+      filename = "__base__/graphics/icons/stone.png",
+      mipmap_count = 4,
+      scale = 0.25,
+      size = 64
+    },
+    {
+      filename = "__base__/graphics/icons/stone-1.png",
+      mipmap_count = 4,
+      scale = 0.25,
+      size = 64
+    },
+    {
+      filename = "__base__/graphics/icons/stone-2.png",
+      mipmap_count = 4,
+      scale = 0.25,
+      size = 64
+    },
+    {
+      filename = "__base__/graphics/icons/stone-3.png",
+      mipmap_count = 4,
+      scale = 0.25,
+      size = 64
+    }
+  },
+  stack_size = 50,
+  subgroup = "raw-resource",
+  type = "item"
+}

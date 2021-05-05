@@ -1,0 +1,16 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "fast-inserter",
+      1
+    },
+    {
+      "electronic-circuit",
+      4
+    }
+  },
+  name = "filter-inserter",
+  result = "filter-inserter",
+  type = "recipe"
+}

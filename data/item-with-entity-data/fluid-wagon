@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/fluid-wagon.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "fluid-wagon",
+  order = "a[train-system]-h[fluid-wagon]",
+  place_result = "fluid-wagon",
+  stack_size = 5,
+  subgroup = "train-transport",
+  type = "item-with-entity-data"
+}

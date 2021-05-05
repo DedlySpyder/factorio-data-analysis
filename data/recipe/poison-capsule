@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 8,
+  ingredients = {
+    {
+      "steel-plate",
+      3
+    },
+    {
+      "electronic-circuit",
+      3
+    },
+    {
+      "coal",
+      10
+    }
+  },
+  name = "poison-capsule",
+  result = "poison-capsule",
+  type = "recipe"
+}

@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 8,
+  ingredients = {
+    {
+      "piercing-rounds-magazine",
+      3
+    },
+    {
+      "electronic-circuit",
+      3
+    },
+    {
+      "iron-gear-wheel",
+      3
+    }
+  },
+  name = "defender-capsule",
+  result = "defender-capsule",
+  type = "recipe"
+}

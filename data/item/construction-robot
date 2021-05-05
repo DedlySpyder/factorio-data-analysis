@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/construction-robot.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "construction-robot",
+  order = "a[robot]-b[construction-robot]",
+  place_result = "construction-robot",
+  stack_size = 50,
+  subgroup = "logistic-network",
+  type = "item"
+}

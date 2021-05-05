@@ -1,0 +1,231 @@
+{
+  collision_box = {
+    {
+      -0.5,
+      -0.5
+    },
+    {
+      0.5,
+      0.5
+    }
+  },
+  collision_mask = {
+    "water-tile"
+  },
+  name = "muddy-stump",
+  order = "b[decorative]-a[stump]-a[muddy]",
+  pictures = {
+    {
+      filename = "__base__/graphics/decorative/muddy-stump/muddy-stump-00.png",
+      height = 44,
+      hr_version = {
+        filename = "__base__/graphics/decorative/muddy-stump/hr-muddy-stump-00.png",
+        height = 90,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.03125,
+          -0.09375
+        },
+        width = 106
+      },
+      priority = "extra-high",
+      shift = {
+        0.0625,
+        -0.0625
+      },
+      width = 52
+    },
+    {
+      filename = "__base__/graphics/decorative/muddy-stump/muddy-stump-01.png",
+      height = 42,
+      hr_version = {
+        filename = "__base__/graphics/decorative/muddy-stump/hr-muddy-stump-01.png",
+        height = 84,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.09375,
+          0
+        },
+        width = 114
+      },
+      priority = "extra-high",
+      shift = {
+        0.0625,
+        0
+      },
+      width = 60
+    },
+    {
+      filename = "__base__/graphics/decorative/muddy-stump/muddy-stump-02.png",
+      height = 48,
+      hr_version = {
+        filename = "__base__/graphics/decorative/muddy-stump/hr-muddy-stump-02.png",
+        height = 92,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.03125,
+          -0.03125
+        },
+        width = 120
+      },
+      priority = "extra-high",
+      shift = {
+        0.0625,
+        -0.0625
+      },
+      width = 58
+    },
+    {
+      filename = "__base__/graphics/decorative/muddy-stump/muddy-stump-03.png",
+      height = 38,
+      hr_version = {
+        filename = "__base__/graphics/decorative/muddy-stump/hr-muddy-stump-03.png",
+        height = 74,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0,
+          0
+        },
+        width = 104
+      },
+      priority = "extra-high",
+      shift = {
+        0,
+        0
+      },
+      width = 52
+    },
+    {
+      filename = "__base__/graphics/decorative/muddy-stump/muddy-stump-04.png",
+      height = 36,
+      hr_version = {
+        filename = "__base__/graphics/decorative/muddy-stump/hr-muddy-stump-04.png",
+        height = 68,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0,
+          -0.03125
+        },
+        width = 92
+      },
+      priority = "extra-high",
+      shift = {
+        0,
+        -0.0625
+      },
+      width = 46
+    },
+    {
+      filename = "__base__/graphics/decorative/muddy-stump/muddy-stump-05.png",
+      height = 40,
+      hr_version = {
+        filename = "__base__/graphics/decorative/muddy-stump/hr-muddy-stump-05.png",
+        height = 80,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.15625,
+          0
+        },
+        width = 92
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        0
+      },
+      width = 48
+    },
+    {
+      filename = "__base__/graphics/decorative/muddy-stump/muddy-stump-06.png",
+      height = 36,
+      hr_version = {
+        filename = "__base__/graphics/decorative/muddy-stump/hr-muddy-stump-06.png",
+        height = 72,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.125,
+          -0.0625
+        },
+        width = 112
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        -0.0625
+      },
+      width = 56
+    },
+    {
+      filename = "__base__/graphics/decorative/muddy-stump/muddy-stump-07.png",
+      height = 42,
+      hr_version = {
+        filename = "__base__/graphics/decorative/muddy-stump/hr-muddy-stump-07.png",
+        height = 84,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.125,
+          -0.0625
+        },
+        width = 88
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        -0.0625
+      },
+      width = 44
+    },
+    {
+      filename = "__base__/graphics/decorative/muddy-stump/muddy-stump-08.png",
+      height = 32,
+      hr_version = {
+        filename = "__base__/graphics/decorative/muddy-stump/hr-muddy-stump-08.png",
+        height = 60,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.125,
+          0.03125
+        },
+        width = 92
+      },
+      priority = "extra-high",
+      shift = {
+        -0.125,
+        0
+      },
+      width = 46
+    },
+    {
+      filename = "__base__/graphics/decorative/muddy-stump/muddy-stump-09.png",
+      height = 36,
+      hr_version = {
+        filename = "__base__/graphics/decorative/muddy-stump/hr-muddy-stump-09.png",
+        height = 72,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.125,
+          -0.0625
+        },
+        width = 96
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        -0.0625
+      },
+      width = 48
+    }
+  },
+  render_layer = "object",
+  type = "optimized-decorative"
+}

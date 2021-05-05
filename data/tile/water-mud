@@ -1,0 +1,534 @@
+{
+  collision_mask = {
+    "water-tile",
+    "item-layer",
+    "resource-layer",
+    "object-layer"
+  },
+  draw_in_water_layer = true,
+  effect = "water",
+  effect_color = {
+    7.75,
+    28.5,
+    33.25,
+    31.875
+  },
+  effect_color_secondary = {
+    a = 0.36099999999999999,
+    b = 0.031000000000000001,
+    g = 0.129,
+    r = 0.031000000000000001
+  },
+  layer = 7,
+  map_color = {
+    b = 90,
+    g = 89,
+    r = 65
+  },
+  name = "water-mud",
+  order = "c[water]-g[water-mud]",
+  pollution_absorption_per_second = 5e-06,
+  scorch_mark_color = {
+    b = 90,
+    g = 89,
+    r = 65
+  },
+  transition_merges_with_tile = "water",
+  transitions = {
+    {
+      background_layer_group = "zero",
+      background_layer_offset = 1,
+      inner_corner_background = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 0
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 0
+      },
+      inner_corner_mask = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 0
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition.png",
+        x = 1088,
+        y = 0
+      },
+      o_transition_background = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition.png",
+          scale = 0.5,
+          tall = false,
+          x = 1088,
+          y = 2304
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition.png",
+        tall = false,
+        x = 544,
+        y = 1152
+      },
+      o_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 2304
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition.png",
+        x = 1088,
+        y = 1152
+      },
+      offset_background_layer_by_tile_layer = true,
+      outer_corner_background = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 576
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 288
+      },
+      outer_corner_mask = {
+        count = 4,
+        hr_version = {
+          count = 4,
+          line_length = 4,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 576
+        },
+        line_length = 4,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition.png",
+        x = 1088,
+        y = 288
+      },
+      side_background = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1152
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 576
+      },
+      side_mask = {
+        count = 8,
+        hr_version = {
+          count = 8,
+          line_length = 8,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1152
+        },
+        line_length = 8,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition.png",
+        x = 1088,
+        y = 576
+      },
+      to_tiles = {
+        "out-of-map"
+      },
+      transition_group = 2,
+      u_transition_background = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition.png",
+        tall = true,
+        x = 544,
+        y = 864
+      },
+      u_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition.png",
+        x = 1088,
+        y = 864
+      }
+    }
+  },
+  transitions_between_transitions = {
+    {
+      background_layer_group = "zero",
+      background_layer_offset = 1,
+      inner_corner_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition-to-water.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition-to-water.png",
+        tall = true,
+        x = 544,
+        y = 0
+      },
+      inner_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition-to-water.png",
+          scale = 0.5,
+          x = 2176,
+          y = 0
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition-to-water.png",
+        x = 1088,
+        y = 0
+      },
+      offset_background_layer_by_tile_layer = true,
+      outer_corner_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition-to-water.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition-to-water.png",
+        tall = true,
+        x = 544,
+        y = 288
+      },
+      outer_corner_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition-to-water.png",
+          scale = 0.5,
+          x = 2176,
+          y = 576
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition-to-water.png",
+        x = 1088,
+        y = 288
+      },
+      side_background = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition-to-water.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition-to-water.png",
+        tall = true,
+        x = 544,
+        y = 576
+      },
+      side_mask = {
+        count = 3,
+        hr_version = {
+          count = 3,
+          line_length = 3,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition-to-water.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1152
+        },
+        line_length = 3,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition-to-water.png",
+        x = 1088,
+        y = 576
+      },
+      transition_group = 0,
+      transition_group1 = 0,
+      transition_group2 = 2,
+      u_transition_background = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition-to-water.png",
+          scale = 0.5,
+          tall = true,
+          x = 1088,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition-to-water.png",
+        tall = true,
+        x = 544,
+        y = 864
+      },
+      u_transition_mask = {
+        count = 1,
+        hr_version = {
+          count = 1,
+          line_length = 1,
+          picture = "__base__/graphics/terrain/out-of-map-transition/hr-water-shallow-out-of-map-transition-to-water.png",
+          scale = 0.5,
+          x = 2176,
+          y = 1728
+        },
+        line_length = 1,
+        picture = "__base__/graphics/terrain/out-of-map-transition/water-shallow-out-of-map-transition-to-water.png",
+        x = 1088,
+        y = 864
+      }
+    }
+  },
+  trigger_effect = {
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.1,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.125,
+      initial_vertical_speed_deviation = 0.069000000000000004,
+      offset_deviation = {
+        {
+          -0.29689999999999998,
+          -0.29689999999999998
+        },
+        {
+          0.29689999999999998,
+          0.29689999999999998
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "shallow-water-2-particle",
+      probability = 1,
+      repeat_count = 10,
+      repeat_count_deviation = 4,
+      show_in_tooltip = false,
+      speed_from_center = 0.05,
+      speed_from_center_deviation = 0.05,
+      tail_length = 12,
+      tail_length_deviation = 20,
+      tail_width = 1,
+      type = "create-particle"
+    },
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.1,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.125,
+      initial_vertical_speed_deviation = 0.069000000000000004,
+      offset_deviation = {
+        {
+          -0.29689999999999998,
+          -0.29689999999999998
+        },
+        {
+          0.29689999999999998,
+          0.29689999999999998
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "shallow-water-2-lower-particle",
+      probability = 1,
+      repeat_count = 7,
+      repeat_count_deviation = 4,
+      show_in_tooltip = false,
+      speed_from_center = 0.05,
+      speed_from_center_deviation = 0.05,
+      tail_length = 12,
+      tail_length_deviation = 20,
+      tail_width = 1,
+      type = "create-particle"
+    }
+  },
+  type = "tile",
+  variants = {
+    inner_corner = {
+      count = 6,
+      hr_version = {
+        count = 6,
+        picture = "__base__/graphics/terrain/water-mud/hr-water-mud-inner-corner.png",
+        scale = 0.5
+      },
+      picture = "__base__/graphics/terrain/water-mud/water-mud-inner-corner.png"
+    },
+    main = {
+      {
+        count = 8,
+        hr_version = {
+          count = 8,
+          picture = "__base__/graphics/terrain/water-mud/hr-water-mud1.png",
+          scale = 0.5,
+          size = 1
+        },
+        picture = "__base__/graphics/terrain/water-mud/water-mud1.png",
+        size = 1
+      },
+      {
+        count = 8,
+        hr_version = {
+          count = 8,
+          picture = "__base__/graphics/terrain/water-mud/hr-water-mud2.png",
+          scale = 0.5,
+          size = 2
+        },
+        picture = "__base__/graphics/terrain/water-mud/water-mud2.png",
+        size = 2
+      },
+      {
+        count = 8,
+        hr_version = {
+          count = 8,
+          picture = "__base__/graphics/terrain/water-mud/hr-water-mud4.png",
+          scale = 0.5,
+          size = 4
+        },
+        picture = "__base__/graphics/terrain/water-mud/water-mud4.png",
+        size = 4
+      }
+    },
+    o_transition = {
+      count = 1,
+      hr_version = {
+        count = 1,
+        picture = "__base__/graphics/terrain/water-mud/hr-water-mud-o.png",
+        scale = 0.5
+      },
+      picture = "__base__/graphics/terrain/water-mud/water-mud-o.png"
+    },
+    outer_corner = {
+      count = 6,
+      hr_version = {
+        count = 6,
+        picture = "__base__/graphics/terrain/water-mud/hr-water-mud-outer-corner.png",
+        scale = 0.5
+      },
+      picture = "__base__/graphics/terrain/water-mud/water-mud-outer-corner.png"
+    },
+    side = {
+      count = 6,
+      hr_version = {
+        count = 6,
+        picture = "__base__/graphics/terrain/water-mud/hr-water-mud-side.png",
+        scale = 0.5
+      },
+      picture = "__base__/graphics/terrain/water-mud/water-mud-side.png"
+    },
+    u_transition = {
+      count = 1,
+      hr_version = {
+        count = 1,
+        picture = "__base__/graphics/terrain/water-mud/hr-water-mud-u.png",
+        scale = 0.5
+      },
+      picture = "__base__/graphics/terrain/water-mud/water-mud-u.png"
+    }
+  },
+  walking_sound = {
+    {
+      filename = "__base__/sound/walking/shallow-water-01.ogg",
+      volume = 1
+    },
+    {
+      filename = "__base__/sound/walking/shallow-water-02.ogg",
+      volume = 1
+    },
+    {
+      filename = "__base__/sound/walking/shallow-water-03.ogg",
+      volume = 1
+    },
+    {
+      filename = "__base__/sound/walking/shallow-water-04.ogg",
+      volume = 1
+    },
+    {
+      filename = "__base__/sound/walking/shallow-water-05.ogg",
+      volume = 1
+    },
+    {
+      filename = "__base__/sound/walking/shallow-water-06.ogg",
+      volume = 1
+    },
+    {
+      filename = "__base__/sound/walking/shallow-water-07.ogg",
+      volume = 1
+    }
+  },
+  walking_speed_modifier = 0.7
+}

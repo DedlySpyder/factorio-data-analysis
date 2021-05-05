@@ -1,0 +1,84 @@
+{
+  expression = {
+    arguments = {
+      {
+        arguments = {
+          {
+            source_location = {
+              filename = "__core__/lualib/noise.lua",
+              line_number = 415
+            },
+            type = "variable",
+            variable_name = "control-setting:enemy-base:frequency:multiplier"
+          },
+          {
+            arguments = {
+              {
+                literal_value = 10,
+                source_location = {
+                  filename = "__core__/lualib/noise.lua",
+                  line_number = 54
+                },
+                type = "literal-number"
+              },
+              {
+                arguments = {
+                  {
+                    literal_value = 3,
+                    source_location = {
+                      filename = "__core__/lualib/noise.lua",
+                      line_number = 78
+                    },
+                    type = "literal-number"
+                  },
+                  {
+                    source_location = {
+                      filename = "__base__/prototypes/entity/enemy-autoplace-utils.lua",
+                      line_number = 119
+                    },
+                    type = "variable",
+                    variable_name = "enemy-base-intensity"
+                  }
+                },
+                function_name = "multiply",
+                source_location = {
+                  filename = "__base__/prototypes/entity/enemy-autoplace-utils.lua",
+                  line_number = 119
+                },
+                type = "function-application"
+              }
+            },
+            function_name = "add",
+            source_location = {
+              filename = "__base__/prototypes/entity/enemy-autoplace-utils.lua",
+              line_number = 119
+            },
+            type = "function-application"
+          }
+        },
+        function_name = "multiply",
+        source_location = {
+          filename = "__base__/prototypes/entity/enemy-autoplace-utils.lua",
+          line_number = 120
+        },
+        type = "function-application"
+      },
+      {
+        literal_value = 1000000,
+        source_location = {
+          filename = "__core__/lualib/noise.lua",
+          line_number = 86
+        },
+        type = "literal-number"
+      }
+    },
+    function_name = "divide",
+    source_location = {
+      filename = "__base__/prototypes/entity/enemy-autoplace-utils.lua",
+      line_number = 120
+    },
+    type = "function-application"
+  },
+  name = "enemy-base-frequency",
+  type = "noise-expression"
+}

@@ -1,0 +1,68 @@
+{
+  animation = {
+    {
+      axially_symmetrical = false,
+      direction_count = 4,
+      filename = "__base__/graphics/entity/steam-turbine/remnants/steam-turbine-remnants.png",
+      frame_count = 1,
+      height = 204,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 4,
+        filename = "__base__/graphics/entity/steam-turbine/remnants/hr-steam-turbine-remnants.png",
+        frame_count = 1,
+        height = 408,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.1875,
+          0
+        },
+        variation_count = 1,
+        width = 460,
+        y = 0
+      },
+      line_length = 1,
+      shift = {
+        0.1875,
+        0
+      },
+      variation_count = 1,
+      width = 230,
+      y = 0
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/steam-turbine.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.steam-turbine"
+    }
+  },
+  name = "steam-turbine-remnants",
+  order = "a-h-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -1.5,
+      -2.5
+    },
+    {
+      1.5,
+      2.5
+    }
+  },
+  subgroup = "energy-remnants",
+  tile_height = 5,
+  tile_width = 3,
+  time_before_removed = 54000,
+  type = "corpse"
+}

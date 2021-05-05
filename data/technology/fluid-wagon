@@ -1,0 +1,32 @@
+{
+  effects = {
+    {
+      recipe = "fluid-wagon",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/fluid-wagon.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "fluid-wagon",
+  order = "c-g-a-b",
+  prerequisites = {
+    "railway",
+    "fluid-handling"
+  },
+  type = "technology",
+  unit = {
+    count = 200,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      }
+    },
+    time = 30
+  }
+}

@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/land-mine.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "land-mine",
+  order = "f[land-mine]",
+  place_result = "land-mine",
+  stack_size = 100,
+  subgroup = "gun",
+  type = "item"
+}

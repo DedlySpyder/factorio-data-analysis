@@ -1,0 +1,9 @@
+{
+  icon = "__base__/graphics/icons/list-dot.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "signal-dot",
+  order = "e[signal]-[3dot]",
+  subgroup = "virtual-signal",
+  type = "virtual-signal"
+}

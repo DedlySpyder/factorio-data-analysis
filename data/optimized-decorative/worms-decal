@@ -1,0 +1,353 @@
+{
+  collision_box = {
+    {
+      -3.1000000000000001,
+      -2.5
+    },
+    {
+      3.1000000000000001,
+      2.5
+    }
+  },
+  name = "worms-decal",
+  order = "b[decorative]-j[bush]-a[mini]-a[green]",
+  pictures = {
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-00.png",
+      height = 104,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-00.png",
+        height = 206,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.34375,
+          -0.375
+        },
+        width = 426
+      },
+      priority = "extra-high",
+      shift = {
+        -0.3125,
+        -0.375
+      },
+      width = 212
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-01.png",
+      height = 110,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-01.png",
+        height = 216,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.1875,
+          -0.46875
+        },
+        width = 400
+      },
+      priority = "extra-high",
+      shift = {
+        -0.1875,
+        -0.5
+      },
+      width = 200
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-02.png",
+      height = 110,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-02.png",
+        height = 232,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.3125,
+          0.15625
+        },
+        width = 436
+      },
+      priority = "extra-high",
+      shift = {
+        0.0625,
+        0
+      },
+      width = 202
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-03.png",
+      height = 96,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-03.png",
+        height = 236,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.3125,
+          -0.34375
+        },
+        width = 472
+      },
+      priority = "extra-high",
+      shift = {
+        0.0625,
+        0
+      },
+      width = 220
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-04.png",
+      height = 122,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-04.png",
+        height = 244,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.21875,
+          0
+        },
+        width = 392
+      },
+      priority = "extra-high",
+      shift = {
+        0.25,
+        0
+      },
+      width = 194
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-05.png",
+      height = 80,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-05.png",
+        height = 158,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0,
+          0.4375
+        },
+        width = 378
+      },
+      priority = "extra-high",
+      shift = {
+        0,
+        0.4375
+      },
+      width = 190
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-06.png",
+      height = 114,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-06.png",
+        height = 226,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0625,
+          -0.0625
+        },
+        width = 444
+      },
+      priority = "extra-high",
+      shift = {
+        0.5625,
+        -0.0625
+      },
+      width = 190
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-07.png",
+      height = 90,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-07.png",
+        height = 178,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.4375,
+          -0.125
+        },
+        width = 376
+      },
+      priority = "extra-high",
+      shift = {
+        0.4375,
+        -0.125
+      },
+      width = 188
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-08.png",
+      height = 96,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-08.png",
+        height = 190,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.53125,
+          -0.3125
+        },
+        width = 398
+      },
+      priority = "extra-high",
+      shift = {
+        0.5625,
+        -0.3125
+      },
+      width = 198
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-09.png",
+      height = 102,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-09.png",
+        height = 206,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.09375,
+          -0.34375
+        },
+        width = 414
+      },
+      priority = "extra-high",
+      shift = {
+        0.0625,
+        -0.3125
+      },
+      width = 210
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-10.png",
+      height = 116,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-10.png",
+        height = 226,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.03125,
+          -0.03125
+        },
+        width = 416
+      },
+      priority = "extra-high",
+      shift = {
+        -0.0625,
+        -0.0625
+      },
+      width = 210
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-11.png",
+      height = 118,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-11.png",
+        height = 232,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.125,
+          -0.15625
+        },
+        width = 368
+      },
+      priority = "extra-high",
+      shift = {
+        -0.125,
+        -0.1875
+      },
+      width = 184
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-12.png",
+      height = 108,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-12.png",
+        height = 214,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.4375,
+          -0.0625
+        },
+        width = 416
+      },
+      priority = "extra-high",
+      shift = {
+        0.4375,
+        -0.0625
+      },
+      width = 208
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-13.png",
+      height = 104,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-13.png",
+        height = 208,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.46875,
+          -0.0625
+        },
+        width = 368
+      },
+      priority = "extra-high",
+      shift = {
+        0.4375,
+        -0.0625
+      },
+      width = 186
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-14.png",
+      height = 60,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-14.png",
+        height = 122,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.90625,
+          0.09375
+        },
+        width = 246
+      },
+      priority = "extra-high",
+      shift = {
+        0.9375,
+        0.125
+      },
+      width = 122
+    },
+    {
+      filename = "__base__/graphics/decorative/worms-decal/worms-decal-15.png",
+      height = 100,
+      hr_version = {
+        filename = "__base__/graphics/decorative/worms-decal/hr-worms-decal-15.png",
+        height = 198,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.125,
+          -0.25
+        },
+        width = 404
+      },
+      priority = "extra-high",
+      shift = {
+        -0.125,
+        -0.25
+      },
+      width = 202
+    }
+  },
+  type = "optimized-decorative"
+}

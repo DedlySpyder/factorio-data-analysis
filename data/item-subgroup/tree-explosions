@@ -1,0 +1,6 @@
+{
+  group = "effects",
+  name = "tree-explosions",
+  order = "cd",
+  type = "item-subgroup"
+}

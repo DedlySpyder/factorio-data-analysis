@@ -1,0 +1,229 @@
+{
+  animation = {
+    {
+      layers = {
+        {
+          axially_symmetrical = false,
+          direction_count = 1,
+          filename = "__base__/graphics/entity/gun-turret/remnants/gun-turret-remnants.png",
+          frame_count = 1,
+          height = 122,
+          hr_version = {
+            axially_symmetrical = false,
+            direction_count = 1,
+            filename = "__base__/graphics/entity/gun-turret/remnants/hr-gun-turret-remnants.png",
+            frame_count = 1,
+            height = 242,
+            line_length = 1,
+            scale = 0.5,
+            shift = {
+              0.09375,
+              -0.046875
+            },
+            variation_count = 1,
+            width = 252,
+            y = 0
+          },
+          line_length = 1,
+          shift = {
+            0.09375,
+            -0.03125
+          },
+          variation_count = 1,
+          width = 126,
+          y = 0
+        },
+        {
+          apply_runtime_tint = true,
+          direction_count = 1,
+          filename = "__base__/graphics/entity/gun-turret/remnants/mask/gun-turret-remnants-mask.png",
+          frame_count = 1,
+          height = 32,
+          hr_version = {
+            apply_runtime_tint = true,
+            direction_count = 1,
+            filename = "__base__/graphics/entity/gun-turret/remnants/mask/hr-gun-turret-remnants-mask.png",
+            frame_count = 1,
+            height = 64,
+            priority = "low",
+            scale = 0.5,
+            shift = {
+              -0.03125,
+              -0.34375
+            },
+            width = 68,
+            y = 0
+          },
+          priority = "low",
+          shift = {
+            -0.03125,
+            -0.34375
+          },
+          width = 34,
+          y = 0
+        }
+      }
+    },
+    {
+      layers = {
+        {
+          axially_symmetrical = false,
+          direction_count = 1,
+          filename = "__base__/graphics/entity/gun-turret/remnants/gun-turret-remnants.png",
+          frame_count = 1,
+          height = 122,
+          hr_version = {
+            axially_symmetrical = false,
+            direction_count = 1,
+            filename = "__base__/graphics/entity/gun-turret/remnants/hr-gun-turret-remnants.png",
+            frame_count = 1,
+            height = 242,
+            line_length = 1,
+            scale = 0.5,
+            shift = {
+              0.09375,
+              -0.046875
+            },
+            variation_count = 1,
+            width = 252,
+            y = 242
+          },
+          line_length = 1,
+          shift = {
+            0.09375,
+            -0.03125
+          },
+          variation_count = 1,
+          width = 126,
+          y = 122
+        },
+        {
+          apply_runtime_tint = true,
+          direction_count = 1,
+          filename = "__base__/graphics/entity/gun-turret/remnants/mask/gun-turret-remnants-mask.png",
+          frame_count = 1,
+          height = 32,
+          hr_version = {
+            apply_runtime_tint = true,
+            direction_count = 1,
+            filename = "__base__/graphics/entity/gun-turret/remnants/mask/hr-gun-turret-remnants-mask.png",
+            frame_count = 1,
+            height = 64,
+            priority = "low",
+            scale = 0.5,
+            shift = {
+              -0.03125,
+              -0.34375
+            },
+            width = 68,
+            y = 64
+          },
+          priority = "low",
+          shift = {
+            -0.03125,
+            -0.34375
+          },
+          width = 34,
+          y = 32
+        }
+      }
+    },
+    {
+      layers = {
+        {
+          axially_symmetrical = false,
+          direction_count = 1,
+          filename = "__base__/graphics/entity/gun-turret/remnants/gun-turret-remnants.png",
+          frame_count = 1,
+          height = 122,
+          hr_version = {
+            axially_symmetrical = false,
+            direction_count = 1,
+            filename = "__base__/graphics/entity/gun-turret/remnants/hr-gun-turret-remnants.png",
+            frame_count = 1,
+            height = 242,
+            line_length = 1,
+            scale = 0.5,
+            shift = {
+              0.09375,
+              -0.046875
+            },
+            variation_count = 1,
+            width = 252,
+            y = 484
+          },
+          line_length = 1,
+          shift = {
+            0.09375,
+            -0.03125
+          },
+          variation_count = 1,
+          width = 126,
+          y = 244
+        },
+        {
+          apply_runtime_tint = true,
+          direction_count = 1,
+          filename = "__base__/graphics/entity/gun-turret/remnants/mask/gun-turret-remnants-mask.png",
+          frame_count = 1,
+          height = 32,
+          hr_version = {
+            apply_runtime_tint = true,
+            direction_count = 1,
+            filename = "__base__/graphics/entity/gun-turret/remnants/mask/hr-gun-turret-remnants-mask.png",
+            frame_count = 1,
+            height = 64,
+            priority = "low",
+            scale = 0.5,
+            shift = {
+              -0.03125,
+              -0.34375
+            },
+            width = 68,
+            y = 128
+          },
+          priority = "low",
+          shift = {
+            -0.03125,
+            -0.34375
+          },
+          width = 34,
+          y = 64
+        }
+      }
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/gun-turret.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.gun-turret"
+    }
+  },
+  name = "gun-turret-remnants",
+  order = "a-c-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -1,
+      -1
+    },
+    {
+      1,
+      1
+    }
+  },
+  subgroup = "defensive-structure-remnants",
+  tile_height = 2,
+  tile_width = 2,
+  time_before_removed = 54000,
+  type = "corpse"
+}

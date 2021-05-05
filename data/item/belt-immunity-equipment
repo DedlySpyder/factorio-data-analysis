@@ -1,0 +1,12 @@
+{
+  default_request_amount = 1,
+  icon = "__base__/graphics/icons/belt-immunity-equipment.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "belt-immunity-equipment",
+  order = "c[belt-immunity]-a[belt-immunity]",
+  placed_as_equipment_result = "belt-immunity-equipment",
+  stack_size = 20,
+  subgroup = "equipment",
+  type = "item"
+}

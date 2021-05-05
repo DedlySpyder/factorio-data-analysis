@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 4,
+  ingredients = {
+    {
+      "engine-unit",
+      20
+    },
+    {
+      "electronic-circuit",
+      10
+    },
+    {
+      "steel-plate",
+      30
+    }
+  },
+  name = "locomotive",
+  result = "locomotive",
+  type = "recipe"
+}

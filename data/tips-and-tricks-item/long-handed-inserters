@@ -1,0 +1,19 @@
+{
+  category = "inserters",
+  dependencies = {
+    "inserters"
+  },
+  indent = 1,
+  name = "long-handed-inserters",
+  order = "c",
+  simulation = {
+    init = "    game.surfaces[1].create_entities_from_blueprint_string\n    {\n      string = \"0eNqlVutyoyAUfhd+646QqNFX6XQcoseUGQIOYLvZTN59j9raNNEGWn+pyHc5Fzxnspc9dEYoR8ozEbVWlpRPZ2LFQXE5vHOnDkhJhIMjiYjix+HJGa5sp42L9yAduUREqAb+kpJeooebQULtjKhjUGAOpxjJwbS8hiscdnmOCCgnnIBJ0fhwqlR/3INBohnO9nvruBNaIUWnrRhvkRxhkoicSBlnl0HWDQLzEHQHyD4AI7Lv2xZMZcU/xKDJfC1QbWYqoVqhcCmuX8C6e/yYJn/SiQNvxnhMGyoLzgl1sMOHBo76Faoe1yRKhaYaIoxLLZcWIjK9nuL2TlzrrgMTd5K7wVat+yHlKDsiR90MX3AXS+CjqDmZz0uB285u3jRuVate2LWVBaB0BpJaHeIXjrQNRt+CQfkLgDexaYTBxI3r2QJ85qmTPpCZzzgthieWmjeL6ubU0a/aMF7vfaB71/VDu9xx7D7L2WkF8RuXconig2FZaeGFknwPQpO1Nv/GMrtNCFtCpgHINAj5s5l7LCJzMFjfzRp2sQo9Z0qolUTRjb+HbZCFbYiF9LGF9WKjqb8HFuQh8wfeBAHnYf2xWSnt3U9PHOZz4NAiTCVbVsmSoDZe8cr8my2o1RgLUrfm0b+NggqFbb1xgyqbpQHdmf7ifGH+LRR0vLA8wEDxm9OF7fz+l8Pf4KdBKrwHKvo1zWHjlDM9XIZJdBxgy6thOSKvOGBNend0mxcsp1meFxmOmv8BO++5HA==\",\n      position = {0,-2},\n    }\n\n    local chests = game.surfaces[1].find_entities_filtered{name = \"wooden-chest\"}\n    global.chest_1 = chests[1]\n    global.chest_2 = chests[2]\n    script.on_nth_tick(600, function()\n      global.chest_1.insert(\"iron-gear-wheel\")\n      global.chest_2.clear_items_inside()\n    end)\n  ",
+    init_update_count = 350
+  },
+  tag = "[entity=long-handed-inserter]",
+  trigger = {
+    technology = "automation",
+    type = "research"
+  },
+  type = "tips-and-tricks-item"
+}

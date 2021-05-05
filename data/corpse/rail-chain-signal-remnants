@@ -1,0 +1,64 @@
+{
+  animation = {
+    {
+      direction_count = 1,
+      filename = "__base__/graphics/entity/rail-chain-signal/remnants/rail-chain-signal-remnants.png",
+      frame_count = 1,
+      height = 48,
+      hr_version = {
+        direction_count = 1,
+        filename = "__base__/graphics/entity/rail-chain-signal/remnants/hr-rail-chain-signal-remnants.png",
+        frame_count = 1,
+        height = 94,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          -0.0625,
+          -0.015625
+        },
+        width = 98,
+        y = 0
+      },
+      line_length = 1,
+      shift = {
+        -0.0625,
+        0
+      },
+      width = 50,
+      y = 0
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "building-direction-8-way",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/rail-chain-signal.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.rail-chain-signal"
+    }
+  },
+  name = "rail-chain-signal-remnants",
+  order = "a-e-a",
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -0.5,
+      -0.5
+    },
+    {
+      0.5,
+      0.5
+    }
+  },
+  subgroup = "train-transport-remnants",
+  tile_height = 1,
+  tile_width = 1,
+  time_before_removed = 54000,
+  type = "corpse"
+}

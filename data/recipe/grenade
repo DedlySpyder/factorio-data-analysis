@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 8,
+  ingredients = {
+    {
+      "iron-plate",
+      5
+    },
+    {
+      "coal",
+      10
+    }
+  },
+  name = "grenade",
+  result = "grenade",
+  type = "recipe"
+}

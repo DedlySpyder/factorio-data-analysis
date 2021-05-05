@@ -1,0 +1,10 @@
+{
+  icon = "__base__/graphics/icons/iron-gear-wheel.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "iron-gear-wheel",
+  order = "c[iron-gear-wheel]",
+  stack_size = 100,
+  subgroup = "intermediate-product",
+  type = "item"
+}

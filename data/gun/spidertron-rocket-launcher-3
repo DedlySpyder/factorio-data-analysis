@@ -1,0 +1,34 @@
+{
+  attack_parameters = {
+    ammo_category = "rocket",
+    cooldown = 60,
+    projectile_center = {
+      0,
+      0.3
+    },
+    projectile_creation_distance = -0.5,
+    projectile_orientation_offset = 0.03125,
+    range = 36,
+    sound = {
+      {
+        filename = "__base__/sound/fight/rocket-launcher.ogg",
+        volume = 0.7
+      }
+    },
+    type = "projectile"
+  },
+  flags = {
+    "hidden"
+  },
+  icon = "__base__/graphics/icons/rocket-launcher.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "item-name.spidertron-rocket-launcher"
+  },
+  name = "spidertron-rocket-launcher-3",
+  order = "z[spider]-a[rocket-launcher]",
+  stack_size = 1,
+  subgroup = "gun",
+  type = "gun"
+}

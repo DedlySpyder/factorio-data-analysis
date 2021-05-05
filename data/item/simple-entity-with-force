@@ -1,0 +1,14 @@
+{
+  flags = {
+    "hidden"
+  },
+  icon = "__base__/graphics/icons/steel-chest.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "simple-entity-with-force",
+  order = "s[simple-entity-with-force]-f[simple-entity-with-force]",
+  place_result = "simple-entity-with-force",
+  stack_size = 50,
+  subgroup = "other",
+  type = "item"
+}

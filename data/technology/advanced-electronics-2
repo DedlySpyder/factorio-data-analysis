@@ -1,0 +1,35 @@
+{
+  effects = {
+    {
+      recipe = "processing-unit",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/advanced-electronics-2.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "advanced-electronics-2",
+  order = "a-d-c",
+  prerequisites = {
+    "chemical-science-pack"
+  },
+  type = "technology",
+  unit = {
+    count = 300,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      },
+      {
+        "chemical-science-pack",
+        1
+      }
+    },
+    time = 30
+  }
+}

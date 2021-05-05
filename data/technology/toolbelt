@@ -1,0 +1,46 @@
+{
+  effects = {
+    {
+      modifier = 10,
+      type = "character-inventory-slots-bonus"
+    }
+  },
+  icon_mipmaps = 4,
+  icon_size = 256,
+  icons = {
+    {
+      icon = "__base__/graphics/technology/toolbelt.png",
+      icon_mipmaps = 4,
+      icon_size = 256
+    },
+    {
+      icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
+      icon_mipmaps = 3,
+      icon_size = 128,
+      shift = {
+        100,
+        100
+      }
+    }
+  },
+  name = "toolbelt",
+  order = "c-k-m",
+  prerequisites = {
+    "logistic-science-pack"
+  },
+  type = "technology",
+  unit = {
+    count = 100,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      }
+    },
+    time = 30
+  }
+}

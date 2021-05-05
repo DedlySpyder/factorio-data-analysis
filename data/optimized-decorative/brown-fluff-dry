@@ -1,0 +1,636 @@
+{
+  autoplace = {
+    max_probability = 1,
+    order = "a[doodad]-e[garballo]",
+    peaks = {
+      {
+        influence = -0.5
+      },
+      {
+        influence = 0.75,
+        noise_layer = "garballo",
+        noise_octaves_difference = -2,
+        noise_persistence = 0.7
+      },
+      {
+        influence = 1,
+        min_influence = 0,
+        richness_influence = 0,
+        temperature_max_range = 10,
+        temperature_optimal = 30,
+        temperature_range = 5,
+        water_max_range = 0.1625,
+        water_optimal = 0.1875,
+        water_range = 0.0625
+      }
+    },
+    random_probability_penalty = 0.4,
+    sharpness = 1
+  },
+  collision_box = {
+    {
+      -0.5,
+      -0.5
+    },
+    {
+      0.5,
+      0.5
+    }
+  },
+  name = "brown-fluff-dry",
+  order = "b[decorative]-g[fluff]-b[dry]-a[brown]",
+  pictures = {
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-00.png",
+      frame_count = 1,
+      height = 22,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-00.png",
+        frame_count = 1,
+        height = 44,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.1015625,
+          -0.0625
+        },
+        width = 67
+      },
+      priority = "extra-high",
+      shift = {
+        0.09375,
+        -0.0625
+      },
+      width = 34
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-01.png",
+      frame_count = 1,
+      height = 29,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-01.png",
+        frame_count = 1,
+        height = 58,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.09375,
+          -0.03125
+        },
+        width = 76
+      },
+      priority = "extra-high",
+      shift = {
+        0.09375,
+        -0.046875
+      },
+      width = 38
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-02.png",
+      frame_count = 1,
+      height = 22,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-02.png",
+        frame_count = 1,
+        height = 44,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0546875,
+          -0.046875
+        },
+        width = 75
+      },
+      priority = "extra-high",
+      shift = {
+        0.046875,
+        -0.0625
+      },
+      width = 37
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-03.png",
+      frame_count = 1,
+      height = 27,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-03.png",
+        frame_count = 1,
+        height = 54,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0703125,
+          -0.046875
+        },
+        width = 65
+      },
+      priority = "extra-high",
+      shift = {
+        0.078125,
+        -0.046875
+      },
+      width = 33
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-04.png",
+      frame_count = 1,
+      height = 27,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-04.png",
+        frame_count = 1,
+        height = 55,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.125,
+          -0.1015625
+        },
+        width = 88
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        -0.109375
+      },
+      width = 44
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-05.png",
+      frame_count = 1,
+      height = 24,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-05.png",
+        frame_count = 1,
+        height = 49,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0703125,
+          -0.0234375
+        },
+        width = 63
+      },
+      priority = "extra-high",
+      shift = {
+        0.078125,
+        -0.03125
+      },
+      width = 31
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-06.png",
+      frame_count = 1,
+      height = 25,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-06.png",
+        frame_count = 1,
+        height = 50,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.109375,
+          -0.078125
+        },
+        width = 74
+      },
+      priority = "extra-high",
+      shift = {
+        0.109375,
+        -0.078125
+      },
+      width = 37
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-07.png",
+      frame_count = 1,
+      height = 27,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-07.png",
+        frame_count = 1,
+        height = 53,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.0546875,
+          -0.1171875
+        },
+        width = 89
+      },
+      priority = "extra-high",
+      shift = {
+        -0.046875,
+        -0.109375
+      },
+      width = 45
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-08.png",
+      frame_count = 1,
+      height = 29,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-08.png",
+        frame_count = 1,
+        height = 58,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.046875,
+          -0.046875
+        },
+        width = 70
+      },
+      priority = "extra-high",
+      shift = {
+        0.046875,
+        -0.046875
+      },
+      width = 35
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-09.png",
+      frame_count = 1,
+      height = 27,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-09.png",
+        frame_count = 1,
+        height = 53,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0390625,
+          -0.0078125
+        },
+        width = 83
+      },
+      priority = "extra-high",
+      shift = {
+        0.03125,
+        -0.015625
+      },
+      width = 42
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-10.png",
+      frame_count = 1,
+      height = 30,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-10.png",
+        frame_count = 1,
+        height = 61,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.078125,
+          -0.0703125
+        },
+        width = 76
+      },
+      priority = "extra-high",
+      shift = {
+        0.09375,
+        -0.0625
+      },
+      width = 38
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-11.png",
+      frame_count = 1,
+      height = 25,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-11.png",
+        frame_count = 1,
+        height = 50,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0546875,
+          -0.0625
+        },
+        width = 71
+      },
+      priority = "extra-high",
+      shift = {
+        0.046875,
+        -0.046875
+      },
+      width = 35
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-12.png",
+      frame_count = 1,
+      height = 29,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-12.png",
+        frame_count = 1,
+        height = 57,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.1171875,
+          -0.0078125
+        },
+        width = 79
+      },
+      priority = "extra-high",
+      shift = {
+        0.125,
+        -0.015625
+      },
+      width = 40
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-13.png",
+      frame_count = 1,
+      height = 25,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-13.png",
+        frame_count = 1,
+        height = 50,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.015625,
+          -0.046875
+        },
+        width = 60
+      },
+      priority = "extra-high",
+      shift = {
+        0.03125,
+        -0.046875
+      },
+      width = 30
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-14.png",
+      frame_count = 1,
+      height = 19,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-14.png",
+        frame_count = 1,
+        height = 38,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0234375,
+          -0.078125
+        },
+        width = 65
+      },
+      priority = "extra-high",
+      shift = {
+        0.015625,
+        -0.078125
+      },
+      width = 33
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-15.png",
+      frame_count = 1,
+      height = 26,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-15.png",
+        frame_count = 1,
+        height = 51,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0390625,
+          -0.0390625
+        },
+        width = 65
+      },
+      priority = "extra-high",
+      shift = {
+        0.046875,
+        -0.03125
+      },
+      width = 33
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-16.png",
+      frame_count = 1,
+      height = 20,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-16.png",
+        frame_count = 1,
+        height = 39,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0390625,
+          -0.0390625
+        },
+        width = 51
+      },
+      priority = "extra-high",
+      shift = {
+        0.03125,
+        -0.03125
+      },
+      width = 26
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-17.png",
+      frame_count = 1,
+      height = 19,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-17.png",
+        frame_count = 1,
+        height = 38,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0546875,
+          -0.03125
+        },
+        width = 49
+      },
+      priority = "extra-high",
+      shift = {
+        0.0625,
+        -0.015625
+      },
+      width = 24
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-18.png",
+      frame_count = 1,
+      height = 17,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-18.png",
+        frame_count = 1,
+        height = 35,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0390625,
+          -0.0390625
+        },
+        width = 53
+      },
+      priority = "extra-high",
+      shift = {
+        0.03125,
+        -0.046875
+      },
+      width = 26
+    },
+    {
+      filename = "__base__/graphics/decorative/brown-fluff-dry/brown-fluff-dry-19.png",
+      frame_count = 1,
+      height = 17,
+      hr_version = {
+        filename = "__base__/graphics/decorative/brown-fluff-dry/hr-brown-fluff-dry-19.png",
+        frame_count = 1,
+        height = 33,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.03125,
+          -0.0390625
+        },
+        width = 46
+      },
+      priority = "extra-high",
+      shift = {
+        0.015625,
+        -0.046875
+      },
+      width = 23
+    }
+  },
+  trigger_effect = {
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.3,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.045,
+      initial_vertical_speed_deviation = 0.05,
+      offset_deviation = {
+        {
+          -0.1,
+          -0.1
+        },
+        {
+          0.1,
+          0.1
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "brown-fluff-dry-vegetation-particle-small-medium",
+      probability = 1,
+      repeat_count = 2,
+      repeat_count_deviation = 2,
+      show_in_tooltip = false,
+      speed_from_center = 0.005,
+      speed_from_center_deviation = 0.003,
+      type = "create-particle"
+    },
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.3,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.042000000000000002,
+      initial_vertical_speed_deviation = 0.047999999999999998,
+      offset_deviation = {
+        {
+          -0.1,
+          -0.1
+        },
+        {
+          0.1,
+          0.1
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "brown-fluff-dry-wooden-splinter-particle-small",
+      probability = 1,
+      repeat_count = 10,
+      repeat_count_deviation = 10,
+      show_in_tooltip = false,
+      speed_from_center = 0.005,
+      speed_from_center_deviation = 0.05,
+      type = "create-particle"
+    },
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.2,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.060999999999999996,
+      initial_vertical_speed_deviation = 0.042999999999999989,
+      offset_deviation = {
+        {
+          -0.1,
+          -0.1
+        },
+        {
+          0.1,
+          0.1
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "brown-carpet-grass-vegetation-particle-small-medium",
+      probability = 1,
+      repeat_count = 10,
+      repeat_count_deviation = 5,
+      show_in_tooltip = false,
+      speed_from_center = 0.01,
+      speed_from_center_deviation = 0.013,
+      type = "create-particle"
+    }
+  },
+  type = "optimized-decorative",
+  walking_sound = {
+    {
+      filename = "__base__/sound/walking/plant/bush-big-01.ogg",
+      volume = 0.3
+    },
+    {
+      filename = "__base__/sound/walking/plant/bush-big-02.ogg",
+      volume = 0.3
+    },
+    {
+      filename = "__base__/sound/walking/plant/bush-big-03.ogg",
+      volume = 0.3
+    },
+    {
+      filename = "__base__/sound/walking/plant/bush-big-04.ogg",
+      volume = 0.3
+    },
+    {
+      filename = "__base__/sound/walking/plant/bush-big-05.ogg",
+      volume = 0.3
+    },
+    {
+      filename = "__base__/sound/walking/plant/bush-big-06.ogg",
+      volume = 0.3
+    },
+    {
+      filename = "__base__/sound/walking/plant/bush-big-07.ogg",
+      volume = 0.3
+    }
+  }
+}

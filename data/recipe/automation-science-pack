@@ -1,0 +1,16 @@
+{
+  energy_required = 5,
+  ingredients = {
+    {
+      "copper-plate",
+      1
+    },
+    {
+      "iron-gear-wheel",
+      1
+    }
+  },
+  name = "automation-science-pack",
+  result = "automation-science-pack",
+  type = "recipe"
+}

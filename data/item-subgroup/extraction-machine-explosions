@@ -1,0 +1,6 @@
+{
+  group = "effects",
+  name = "extraction-machine-explosions",
+  order = "bb",
+  type = "item-subgroup"
+}

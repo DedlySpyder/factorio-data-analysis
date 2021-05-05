@@ -1,0 +1,9 @@
+{
+  equipment_categories = {
+    "armor"
+  },
+  height = 7,
+  name = "medium-equipment-grid",
+  type = "equipment-grid",
+  width = 7
+}

@@ -1,0 +1,8 @@
+{
+  action = "spawn-item",
+  consuming = "game-only",
+  item_to_spawn = "blueprint",
+  key_sequence = "ALT + B",
+  name = "give-blueprint",
+  type = "custom-input"
+}

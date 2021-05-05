@@ -1,0 +1,14 @@
+{
+  icon = "__base__/graphics/icons/satellite.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "satellite",
+  order = "m[satellite]",
+  rocket_launch_product = {
+    "space-science-pack",
+    1000
+  },
+  stack_size = 1,
+  subgroup = "space-related",
+  type = "item"
+}

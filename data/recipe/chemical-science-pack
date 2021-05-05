@@ -1,0 +1,22 @@
+{
+  enabled = false,
+  energy_required = 24,
+  ingredients = {
+    {
+      "engine-unit",
+      2
+    },
+    {
+      "advanced-circuit",
+      3
+    },
+    {
+      "sulfur",
+      1
+    }
+  },
+  name = "chemical-science-pack",
+  result = "chemical-science-pack",
+  result_count = 2,
+  type = "recipe"
+}

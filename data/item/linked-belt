@@ -1,0 +1,14 @@
+{
+  flags = {
+    "hidden"
+  },
+  icon = "__base__/graphics/icons/linked-belt.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "linked-belt",
+  order = "b[items]-b[linked-belt]",
+  place_result = "linked-belt",
+  stack_size = 10,
+  subgroup = "other",
+  type = "item"
+}

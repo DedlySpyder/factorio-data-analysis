@@ -1,0 +1,179 @@
+{
+  autoplace = {
+    max_probability = 0.01,
+    order = "a[doodad]-b[decal]",
+    peaks = {
+      {
+        aux_max_range = 0.37499999999999996,
+        aux_optimal = 0.8,
+        aux_range = 0.2,
+        water_max_range = 0.37499999999999996,
+        water_optimal = 0.525,
+        water_range = 0.32499999999999996
+      },
+      {
+        influence = 0.2,
+        noise_layer = "red-desert-decal",
+        noise_octaves_difference = -2,
+        noise_persistence = 0.9
+      }
+    },
+    sharpness = 0.3
+  },
+  collision_box = {
+    {
+      -4.40625,
+      -5.6875
+    },
+    {
+      4.375,
+      5.625
+    }
+  },
+  collision_mask = {
+    "doodad-layer",
+    "water-tile",
+    "not-colliding-with-itself"
+  },
+  name = "red-desert-decal",
+  order = "b[decorative]-b[red-desert-decal]",
+  pictures = {
+    {
+      filename = "__base__/graphics/decorative/red-desert-decal/red-desert-decal-00.png",
+      height = 282,
+      hr_version = {
+        filename = "__base__/graphics/decorative/red-desert-decal/hr-red-desert-decal-00.png",
+        height = 565,
+        scale = 0.5,
+        width = 567
+      },
+      width = 284
+    },
+    {
+      dice_y = 2,
+      filename = "__base__/graphics/decorative/red-desert-decal/red-desert-decal-01.png",
+      height = 377,
+      hr_version = {
+        dice_y = 2,
+        filename = "__base__/graphics/decorative/red-desert-decal/hr-red-desert-decal-01.png",
+        height = 753,
+        scale = 0.5,
+        width = 553
+      },
+      width = 277
+    },
+    {
+      filename = "__base__/graphics/decorative/red-desert-decal/red-desert-decal-02.png",
+      height = 235,
+      hr_version = {
+        filename = "__base__/graphics/decorative/red-desert-decal/hr-red-desert-decal-02.png",
+        height = 471,
+        scale = 0.5,
+        width = 567
+      },
+      width = 283
+    },
+    {
+      filename = "__base__/graphics/decorative/red-desert-decal/red-desert-decal-03.png",
+      height = 213,
+      hr_version = {
+        filename = "__base__/graphics/decorative/red-desert-decal/hr-red-desert-decal-03.png",
+        height = 425,
+        scale = 0.5,
+        width = 567
+      },
+      width = 284
+    },
+    {
+      filename = "__base__/graphics/decorative/red-desert-decal/red-desert-decal-04.png",
+      height = 282,
+      hr_version = {
+        filename = "__base__/graphics/decorative/red-desert-decal/hr-red-desert-decal-04.png",
+        height = 565,
+        scale = 0.5,
+        width = 557
+      },
+      width = 279
+    },
+    {
+      filename = "__base__/graphics/decorative/red-desert-decal/red-desert-decal-05.png",
+      height = 281,
+      hr_version = {
+        filename = "__base__/graphics/decorative/red-desert-decal/hr-red-desert-decal-05.png",
+        height = 563,
+        scale = 0.5,
+        width = 555
+      },
+      width = 277
+    },
+    {
+      filename = "__base__/graphics/decorative/red-desert-decal/red-desert-decal-06.png",
+      height = 283,
+      hr_version = {
+        filename = "__base__/graphics/decorative/red-desert-decal/hr-red-desert-decal-06.png",
+        height = 565,
+        scale = 0.5,
+        width = 567
+      },
+      width = 284
+    },
+    {
+      filename = "__base__/graphics/decorative/red-desert-decal/red-desert-decal-07.png",
+      height = 283,
+      hr_version = {
+        filename = "__base__/graphics/decorative/red-desert-decal/hr-red-desert-decal-07.png",
+        height = 565,
+        scale = 0.5,
+        width = 567
+      },
+      width = 284
+    },
+    {
+      filename = "__base__/graphics/decorative/red-desert-decal/red-desert-decal-08.png",
+      height = 283,
+      hr_version = {
+        filename = "__base__/graphics/decorative/red-desert-decal/hr-red-desert-decal-08.png",
+        height = 565,
+        scale = 0.5,
+        width = 567
+      },
+      width = 284
+    },
+    {
+      filename = "__base__/graphics/decorative/red-desert-decal/red-desert-decal-09.png",
+      height = 283,
+      hr_version = {
+        filename = "__base__/graphics/decorative/red-desert-decal/hr-red-desert-decal-09.png",
+        height = 565,
+        scale = 0.5,
+        width = 567
+      },
+      width = 284
+    },
+    {
+      filename = "__base__/graphics/decorative/red-desert-decal/red-desert-decal-10.png",
+      height = 282,
+      hr_version = {
+        filename = "__base__/graphics/decorative/red-desert-decal/hr-red-desert-decal-10.png",
+        height = 564,
+        scale = 0.5,
+        width = 567
+      },
+      width = 284
+    },
+    {
+      filename = "__base__/graphics/decorative/red-desert-decal/red-desert-decal-11.png",
+      height = 204,
+      hr_version = {
+        filename = "__base__/graphics/decorative/red-desert-decal/hr-red-desert-decal-11.png",
+        height = 409,
+        scale = 0.5,
+        width = 371
+      },
+      width = 186
+    }
+  },
+  render_layer = "decals",
+  tile_layer = 59,
+  type = "optimized-decorative"
+}

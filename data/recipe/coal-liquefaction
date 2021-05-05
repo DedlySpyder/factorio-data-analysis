@@ -1,0 +1,47 @@
+{
+  allow_decomposition = false,
+  category = "oil-processing",
+  enabled = false,
+  energy_required = 5,
+  icon = "__base__/graphics/icons/fluid/coal-liquefaction.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  ingredients = {
+    {
+      amount = 10,
+      name = "coal",
+      type = "item"
+    },
+    {
+      amount = 25,
+      name = "heavy-oil",
+      type = "fluid"
+    },
+    {
+      amount = 50,
+      name = "steam",
+      type = "fluid"
+    }
+  },
+  name = "coal-liquefaction",
+  order = "a[oil-processing]-c[coal-liquefaction]",
+  results = {
+    {
+      amount = 90,
+      name = "heavy-oil",
+      type = "fluid"
+    },
+    {
+      amount = 20,
+      name = "light-oil",
+      type = "fluid"
+    },
+    {
+      amount = 10,
+      name = "petroleum-gas",
+      type = "fluid"
+    }
+  },
+  subgroup = "fluid-recipes",
+  type = "recipe"
+}

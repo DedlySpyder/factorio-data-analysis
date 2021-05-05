@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 30,
+  ingredients = {
+    {
+      "productivity-module",
+      4
+    },
+    {
+      "advanced-circuit",
+      5
+    },
+    {
+      "processing-unit",
+      5
+    }
+  },
+  name = "productivity-module-2",
+  result = "productivity-module-2",
+  type = "recipe"
+}

@@ -1,0 +1,8 @@
+{
+  action = "spawn-item",
+  consuming = "game-only",
+  item_to_spawn = "deconstruction-planner",
+  key_sequence = "ALT + D",
+  name = "give-deconstruction-planner",
+  type = "custom-input"
+}

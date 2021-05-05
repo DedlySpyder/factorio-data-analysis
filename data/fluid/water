@@ -1,0 +1,21 @@
+{
+  base_color = {
+    b = 0.6,
+    g = 0.34000000000000004,
+    r = 0
+  },
+  default_temperature = 15,
+  flow_color = {
+    b = 0.7,
+    g = 0.7,
+    r = 0.7
+  },
+  heat_capacity = "0.2KJ",
+  icon = "__base__/graphics/icons/fluid/water.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  max_temperature = 100,
+  name = "water",
+  order = "a[fluid]-a[water]",
+  type = "fluid"
+}

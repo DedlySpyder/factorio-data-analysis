@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 10,
+  ingredients = {
+    {
+      "steel-plate",
+      5
+    },
+    {
+      "electronic-circuit",
+      15
+    },
+    {
+      "copper-plate",
+      5
+    }
+  },
+  name = "solar-panel",
+  result = "solar-panel",
+  type = "recipe"
+}

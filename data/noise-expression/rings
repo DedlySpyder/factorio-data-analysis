@@ -1,0 +1,56 @@
+{
+  expression = {
+    arguments = {
+      {
+        arguments = {
+          {
+            source_location = {
+              filename = "__core__/lualib/noise.lua",
+              line_number = 279
+            },
+            type = "variable",
+            variable_name = "distance"
+          },
+          {
+            literal_value = 4,
+            source_location = {
+              filename = "__core__/lualib/noise.lua",
+              line_number = 86
+            },
+            type = "literal-number"
+          }
+        },
+        function_name = "divide",
+        source_location = {
+          filename = "__core__/prototypes/noise-programs.lua",
+          line_number = 401
+        },
+        type = "function-application"
+      },
+      {
+        literal_value = -32,
+        source_location = {
+          filename = "__core__/lualib/noise.lua",
+          line_number = 341
+        },
+        type = "literal-number"
+      },
+      {
+        literal_value = 32,
+        source_location = {
+          filename = "__core__/lualib/noise.lua",
+          line_number = 342
+        },
+        type = "literal-number"
+      }
+    },
+    function_name = "ridge",
+    source_location = {
+      filename = "__core__/prototypes/noise-programs.lua",
+      line_number = 401
+    },
+    type = "function-application"
+  },
+  name = "rings",
+  type = "noise-expression"
+}

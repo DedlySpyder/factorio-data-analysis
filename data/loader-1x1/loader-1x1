@@ -1,0 +1,75 @@
+{
+  animation_speed_coefficient = 32,
+  belt_animation_set = {
+    animation_set = {
+      direction_count = 20,
+      filename = "__base__/graphics/entity/transport-belt/transport-belt.png",
+      frame_count = 16,
+      height = 64,
+      hr_version = {
+        direction_count = 20,
+        filename = "__base__/graphics/entity/transport-belt/hr-transport-belt.png",
+        frame_count = 16,
+        height = 128,
+        priority = "extra-high",
+        scale = 0.5,
+        width = 128
+      },
+      priority = "extra-high",
+      width = 64
+    }
+  },
+  collision_box = {
+    {
+      -0.4,
+      -0.4
+    },
+    {
+      0.4,
+      0.4
+    }
+  },
+  container_distance = 1,
+  filter_count = 5,
+  flags = {
+    "hidden"
+  },
+  icon = "__base__/graphics/icons/loader.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  max_health = 170,
+  name = "loader-1x1",
+  selection_box = {
+    {
+      -0.5,
+      -0.5
+    },
+    {
+      0.5,
+      0.5
+    }
+  },
+  speed = 0.03125,
+  structure = {
+    direction_in = {
+      sheet = {
+        filename = "__base__/graphics/entity/loader/loader-structure.png",
+        height = 64,
+        priority = "extra-high",
+        width = 64
+      }
+    },
+    direction_out = {
+      sheet = {
+        filename = "__base__/graphics/entity/loader/loader-structure.png",
+        height = 64,
+        priority = "extra-high",
+        width = 64,
+        y = 64
+      }
+    }
+  },
+  structure_render_layer = "lower-object",
+  subgroup = "other",
+  type = "loader-1x1"
+}

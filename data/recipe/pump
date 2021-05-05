@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 2,
+  ingredients = {
+    {
+      "engine-unit",
+      1
+    },
+    {
+      "steel-plate",
+      1
+    },
+    {
+      "pipe",
+      1
+    }
+  },
+  name = "pump",
+  result = "pump",
+  type = "recipe"
+}

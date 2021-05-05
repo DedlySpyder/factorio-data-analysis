@@ -1,0 +1,29 @@
+{
+  enabled = false,
+  energy_required = 4,
+  ingredients = {
+    {
+      "engine-unit",
+      64
+    },
+    {
+      "iron-gear-wheel",
+      10
+    },
+    {
+      "steel-plate",
+      40
+    },
+    {
+      "pipe",
+      16
+    },
+    {
+      "advanced-circuit",
+      20
+    }
+  },
+  name = "artillery-wagon",
+  result = "artillery-wagon",
+  type = "recipe"
+}

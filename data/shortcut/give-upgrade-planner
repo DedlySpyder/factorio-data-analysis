@@ -1,0 +1,43 @@
+{
+  action = "spawn-item",
+  associated_control_input = "give-upgrade-planner",
+  disabled_small_icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/new-upgrade-planner-x24-white.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 24
+  },
+  icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/new-upgrade-planner-x32-white.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 32
+  },
+  item_to_spawn = "upgrade-planner",
+  localised_name = {
+    "shortcut.make-upgrade-planner"
+  },
+  name = "give-upgrade-planner",
+  order = "b[blueprints]-h[upgrade-planner]",
+  small_icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/new-upgrade-planner-x24-white.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 24
+  },
+  style = "green",
+  technology_to_unlock = "construction-robotics",
+  type = "shortcut"
+}

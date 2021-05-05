@@ -1,0 +1,199 @@
+{
+  animation = {
+    {
+      direction_count = 2,
+      filename = "__base__/graphics/entity/heat-pipe/remnants/heat-pipe-remnants.png",
+      frame_count = 1,
+      height = 52,
+      hr_version = {
+        direction_count = 2,
+        filename = "__base__/graphics/entity/heat-pipe/remnants/hr-heat-pipe-remnants.png",
+        frame_count = 1,
+        height = 100,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.015625,
+          -0.046875
+        },
+        width = 122,
+        y = 0
+      },
+      line_length = 1,
+      shift = {
+        0.03125,
+        -0.03125
+      },
+      width = 62,
+      y = 0
+    },
+    {
+      direction_count = 2,
+      filename = "__base__/graphics/entity/heat-pipe/remnants/heat-pipe-remnants.png",
+      frame_count = 1,
+      height = 52,
+      hr_version = {
+        direction_count = 2,
+        filename = "__base__/graphics/entity/heat-pipe/remnants/hr-heat-pipe-remnants.png",
+        frame_count = 1,
+        height = 100,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.015625,
+          -0.046875
+        },
+        width = 122,
+        y = 200
+      },
+      line_length = 1,
+      shift = {
+        0.03125,
+        -0.03125
+      },
+      width = 62,
+      y = 104
+    },
+    {
+      direction_count = 2,
+      filename = "__base__/graphics/entity/heat-pipe/remnants/heat-pipe-remnants.png",
+      frame_count = 1,
+      height = 52,
+      hr_version = {
+        direction_count = 2,
+        filename = "__base__/graphics/entity/heat-pipe/remnants/hr-heat-pipe-remnants.png",
+        frame_count = 1,
+        height = 100,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.015625,
+          -0.046875
+        },
+        width = 122,
+        y = 400
+      },
+      line_length = 1,
+      shift = {
+        0.03125,
+        -0.03125
+      },
+      width = 62,
+      y = 208
+    },
+    {
+      direction_count = 2,
+      filename = "__base__/graphics/entity/heat-pipe/remnants/heat-pipe-remnants.png",
+      frame_count = 1,
+      height = 52,
+      hr_version = {
+        direction_count = 2,
+        filename = "__base__/graphics/entity/heat-pipe/remnants/hr-heat-pipe-remnants.png",
+        frame_count = 1,
+        height = 100,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.015625,
+          -0.046875
+        },
+        width = 122,
+        y = 600
+      },
+      line_length = 1,
+      shift = {
+        0.03125,
+        -0.03125
+      },
+      width = 62,
+      y = 312
+    },
+    {
+      direction_count = 2,
+      filename = "__base__/graphics/entity/heat-pipe/remnants/heat-pipe-remnants.png",
+      frame_count = 1,
+      height = 52,
+      hr_version = {
+        direction_count = 2,
+        filename = "__base__/graphics/entity/heat-pipe/remnants/hr-heat-pipe-remnants.png",
+        frame_count = 1,
+        height = 100,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.015625,
+          -0.046875
+        },
+        width = 122,
+        y = 800
+      },
+      line_length = 1,
+      shift = {
+        0.03125,
+        -0.03125
+      },
+      width = 62,
+      y = 416
+    },
+    {
+      direction_count = 2,
+      filename = "__base__/graphics/entity/heat-pipe/remnants/heat-pipe-remnants.png",
+      frame_count = 1,
+      height = 52,
+      hr_version = {
+        direction_count = 2,
+        filename = "__base__/graphics/entity/heat-pipe/remnants/hr-heat-pipe-remnants.png",
+        frame_count = 1,
+        height = 100,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.015625,
+          -0.046875
+        },
+        width = 122,
+        y = 1000
+      },
+      line_length = 1,
+      shift = {
+        0.03125,
+        -0.03125
+      },
+      width = 62,
+      y = 520
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/heat-pipe.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.heat-pipe"
+    }
+  },
+  name = "heat-pipe-remnants",
+  order = "a-f-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -0.5,
+      -0.5
+    },
+    {
+      0.5,
+      0.5
+    }
+  },
+  subgroup = "energy-remnants",
+  tile_height = 1,
+  tile_width = 1,
+  time_before_removed = 54000,
+  type = "corpse"
+}

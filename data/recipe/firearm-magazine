@@ -1,0 +1,13 @@
+{
+  energy_required = 1,
+  ingredients = {
+    {
+      "iron-plate",
+      4
+    }
+  },
+  name = "firearm-magazine",
+  result = "firearm-magazine",
+  result_count = 1,
+  type = "recipe"
+}

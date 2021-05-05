@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/roboport.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "roboport",
+  order = "c[signal]-a[roboport]",
+  place_result = "roboport",
+  stack_size = 10,
+  subgroup = "logistic-network",
+  type = "item"
+}

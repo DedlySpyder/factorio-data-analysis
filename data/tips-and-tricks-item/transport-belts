@@ -1,0 +1,18 @@
+{
+  category = "belts",
+  dependencies = {
+    "introduction"
+  },
+  is_title = true,
+  name = "transport-belts",
+  order = "a",
+  simulation = {
+    init = "    game.surfaces[1].create_entities_from_blueprint_string\n    {\n      string = \"0eNq1muuOokoQx9+Fz7Lp+8VX2WwMajuHBIFAs9k5E9/9tLgqu0NpFceZL3OB+XVVdf/rAn5k22oIbVfWMVt/ZOWuqfts/f0j68u3uqjOf4vvbcjWWRnDMVtldXE8/xa7ou7bpov5NlQxO62yst6HX9man36sslDHMpbhQhp/ed/Uw3EbunTDjVHWh7JOl/LdP6GPid02ffq3pj6vmlC5/qZX2Xv6wX7T4wqX+zd9iLGs3/rzfV04Nj/DZkjXqhi6sN+cDU2XYjeE02n1aX1xWz/8arvQ93nVFPt05cH6Jq1+DUPdDmd/P3El3i/+FX4pvF+c4pdG+yW+wi2DdktQvLI37JDObffWNen75Sw/OAdqdOw3uxkiAHeQTB5sxRk9g/JolHhC4oxwQG9myRduJeeEI8qm6+/LLuwul83zveUCH3/3p6PThebIEk+2NLLCkw2NrPFkTSMbPFnRyBZPljSyowj/xhY44fO7XPu2KmOcP9t35lx9YguyhwRYHM9iYBzFHBmvMSIYLzFOAyt6KoXCquko8beNag6MV5QEwXPHXljEwbxpVCCA+BqnaZbiK54hgSVeV5YGxovM08ACsWmOsGkS36PeOwCxoAM4FFUfVtnlz5cp4Lpu19R5WxUxpDV3KffGc2eStubY7M/Xi5hXoRgtug8UcxqUdzkf0v15Wfehm40QZ2DU5/KE1AsqMUeRzQIym09B0i6o6jgr3aLWmE0rJDwk+QUtA8psxRa0DDgyX9Qy4AKiCL2qoJktF/QRfP60qQW1k2MKnlpQSRkKbOj1iWOSsrJ0MKBh5egVCdogT08tAEozTA9rRgTgmOb05ARZI+iyhqySdBRklaKrFnW6tKbkGg6iEbOKNvTZACU9belgVLLQjjxzMFTQPSHo7HnMwWRvMNK6bepzww0nZ09UQIwgc1Gn20jyeIPj4uWoSFxNzvVA7jGGPNXgdsqSSwiOSy9NQKo0njDEIM68ZeRpC+Wx5fTZiL10NNo1bRu6lwxHVpCHI4bpKe1dwP2w7WMx3voZKkekmDVN0R/OouY2q+lg4PmONfTHvDgbLb1NAx4TWkfvsSCUp6OAyDlGr/0SU/vdgieZqEduTpBrBxBGJ8kkKIqTd3lVMr4rd3moU2PynpScZHwodmEuLY1M9akt2Q6HQ+g2fflvGPPJ9WtuZYKIrulVYU6+M5ipwo9ADUTF0gUOvAtzjq5DnJsePzwBbnpGVyP08pDwwu0qmr8l87yr9YLc1aFi6SXmmfXDUNL7QiiSBF3cSqpFeWnoijOAkZaOsgDKYRuIm9QsJtt6T9ewgd5nLxAKyOJofzXFX84E/q07mxj5snfuTGI9UzTH6NoCg79EXA6CmUnAwU30E8pTiXJm8Zvo/iC/eDZouslkoBcMBpy5Ja1Fbkef/InUTHDm6Z/1cq9/3fT/ozb57MyjuSdXv8M0y8APmOpLYnHZ76ZOO74ru91QRtKU+WN1+QjgevKJwVX2My1yEY7jynphubHWO3k6/Qf2REee\",\n      position = {2, 2},\n    }\n  ",
+    init_update_count = 720
+  },
+  trigger = {
+    recipe = "transport-belt",
+    type = "unlocked-recipe"
+  },
+  type = "tips-and-tricks-item"
+}

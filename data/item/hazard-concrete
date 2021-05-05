@@ -1,0 +1,17 @@
+{
+  icon = "__base__/graphics/icons/hazard-concrete.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "hazard-concrete",
+  order = "b[concrete]-b[hazard]",
+  place_as_tile = {
+    condition = {
+      "water-tile"
+    },
+    condition_size = 1,
+    result = "hazard-concrete-left"
+  },
+  stack_size = 100,
+  subgroup = "terrain",
+  type = "item"
+}

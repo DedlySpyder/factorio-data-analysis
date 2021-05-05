@@ -1,0 +1,15 @@
+{
+  category = "crafting",
+  enabled = false,
+  energy_required = 0.5,
+  ingredients = {
+    {
+      "stone",
+      20
+    }
+  },
+  name = "landfill",
+  result = "landfill",
+  result_count = 1,
+  type = "recipe"
+}

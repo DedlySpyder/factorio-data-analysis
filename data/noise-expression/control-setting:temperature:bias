@@ -1,0 +1,12 @@
+{
+  expression = {
+    literal_value = 0,
+    source_location = {
+      filename = "__core__/prototypes/noise-programs.lua",
+      line_number = 598
+    },
+    type = "literal-number"
+  },
+  name = "control-setting:temperature:bias",
+  type = "noise-expression"
+}

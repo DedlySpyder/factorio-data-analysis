@@ -1,0 +1,30 @@
+{
+  category = "centrifuging",
+  enabled = false,
+  energy_required = 12,
+  icon = "__base__/graphics/icons/uranium-processing.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  ingredients = {
+    {
+      "uranium-ore",
+      10
+    }
+  },
+  name = "uranium-processing",
+  order = "k[uranium-processing]",
+  results = {
+    {
+      amount = 1,
+      name = "uranium-235",
+      probability = 0.0070000000000000009
+    },
+    {
+      amount = 1,
+      name = "uranium-238",
+      probability = 0.99299999999999997
+    }
+  },
+  subgroup = "raw-material",
+  type = "recipe"
+}

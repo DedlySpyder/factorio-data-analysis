@@ -1,0 +1,18 @@
+{
+  enabled = false,
+  energy_required = 10,
+  hidden = true,
+  ingredients = {
+    {
+      "express-transport-belt",
+      5
+    },
+    {
+      "fast-loader",
+      1
+    }
+  },
+  name = "express-loader",
+  result = "express-loader",
+  type = "recipe"
+}

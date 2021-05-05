@@ -1,0 +1,11 @@
+{
+  flags = {
+    "not-on-map",
+    "placeable-off-grid"
+  },
+  name = "tutorial-flying-text",
+  speed = 0.02,
+  text_alignment = "center",
+  time_to_live = 120,
+  type = "flying-text"
+}

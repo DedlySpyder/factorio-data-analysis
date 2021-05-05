@@ -1,0 +1,25 @@
+{
+  enabled = false,
+  energy_required = 5,
+  ingredients = {
+    {
+      "steel-plate",
+      5
+    },
+    {
+      "iron-gear-wheel",
+      5
+    },
+    {
+      "electronic-circuit",
+      5
+    },
+    {
+      "pipe",
+      5
+    }
+  },
+  name = "chemical-plant",
+  result = "chemical-plant",
+  type = "recipe"
+}

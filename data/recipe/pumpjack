@@ -1,0 +1,25 @@
+{
+  enabled = false,
+  energy_required = 5,
+  ingredients = {
+    {
+      "steel-plate",
+      5
+    },
+    {
+      "iron-gear-wheel",
+      10
+    },
+    {
+      "electronic-circuit",
+      5
+    },
+    {
+      "pipe",
+      10
+    }
+  },
+  name = "pumpjack",
+  result = "pumpjack",
+  type = "recipe"
+}

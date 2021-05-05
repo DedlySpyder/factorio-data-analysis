@@ -1,0 +1,56 @@
+{
+  expression = {
+    arguments = {
+      {
+        arguments = {
+          {
+            source_location = {
+              filename = "__core__/lualib/noise.lua",
+              line_number = 279
+            },
+            type = "variable",
+            variable_name = "distance"
+          },
+          {
+            literal_value = 0,
+            source_location = {
+              filename = "__core__/lualib/noise.lua",
+              line_number = 304
+            },
+            type = "literal-number"
+          },
+          {
+            literal_value = 2400,
+            source_location = {
+              filename = "__core__/lualib/noise.lua",
+              line_number = 305
+            },
+            type = "literal-number"
+          }
+        },
+        function_name = "clamp",
+        source_location = {
+          filename = "__base__/prototypes/entity/enemy-autoplace-utils.lua",
+          line_number = 104
+        },
+        type = "function-application"
+      },
+      {
+        literal_value = 325,
+        source_location = {
+          filename = "__core__/lualib/noise.lua",
+          line_number = 86
+        },
+        type = "literal-number"
+      }
+    },
+    function_name = "divide",
+    source_location = {
+      filename = "__base__/prototypes/entity/enemy-autoplace-utils.lua",
+      line_number = 104
+    },
+    type = "function-application"
+  },
+  name = "enemy-base-intensity",
+  type = "noise-expression"
+}

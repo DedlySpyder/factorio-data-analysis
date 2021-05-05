@@ -1,0 +1,20 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "steel-chest",
+      1
+    },
+    {
+      "electronic-circuit",
+      3
+    },
+    {
+      "advanced-circuit",
+      1
+    }
+  },
+  name = "logistic-chest-requester",
+  result = "logistic-chest-requester",
+  type = "recipe"
+}

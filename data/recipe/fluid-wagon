@@ -1,0 +1,25 @@
+{
+  enabled = false,
+  energy_required = 1.5,
+  ingredients = {
+    {
+      "iron-gear-wheel",
+      10
+    },
+    {
+      "steel-plate",
+      16
+    },
+    {
+      "pipe",
+      8
+    },
+    {
+      "storage-tank",
+      1
+    }
+  },
+  name = "fluid-wagon",
+  result = "fluid-wagon",
+  type = "recipe"
+}

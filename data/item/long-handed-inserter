@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/long-handed-inserter.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "long-handed-inserter",
+  order = "c[long-handed-inserter]",
+  place_result = "long-handed-inserter",
+  stack_size = 50,
+  subgroup = "inserter",
+  type = "item"
+}

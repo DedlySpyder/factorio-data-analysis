@@ -1,0 +1,40 @@
+{
+  effects = {
+    {
+      recipe = "coal-liquefaction",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/coal-liquefaction.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "coal-liquefaction",
+  order = "d-c",
+  prerequisites = {
+    "advanced-oil-processing",
+    "production-science-pack"
+  },
+  type = "technology",
+  unit = {
+    count = 200,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      },
+      {
+        "chemical-science-pack",
+        1
+      },
+      {
+        "production-science-pack",
+        1
+      }
+    },
+    time = 30
+  }
+}

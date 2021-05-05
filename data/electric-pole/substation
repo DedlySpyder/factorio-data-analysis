@@ -1,0 +1,319 @@
+{
+  close_sound = {
+    {
+      filename = "__base__/sound/electric-network-close.ogg",
+      volume = 0.6
+    }
+  },
+  collision_box = {
+    {
+      -0.7,
+      -0.7
+    },
+    {
+      0.7,
+      0.7
+    }
+  },
+  connection_points = {
+    {
+      shadow = {
+        copper = {
+          4.25,
+          0.25
+        },
+        green = {
+          3.875,
+          0.25
+        },
+        red = {
+          4.71875,
+          0.28125
+        }
+      },
+      wire = {
+        copper = {
+          0,
+          -2.6875
+        },
+        green = {
+          -0.65625,
+          -2.5625
+        },
+        red = {
+          0.6875,
+          -2.53125
+        }
+      }
+    },
+    {
+      shadow = {
+        copper = {
+          4.15625,
+          0.28125
+        },
+        green = {
+          4.5,
+          0.65625
+        },
+        red = {
+          3.4375,
+          -0.09375
+        }
+      },
+      wire = {
+        copper = {
+          0,
+          -2.65625
+        },
+        green = {
+          0.46875,
+          -2.1875
+        },
+        red = {
+          -0.46875,
+          -2.875
+        }
+      }
+    },
+    {
+      shadow = {
+        copper = {
+          4.15625,
+          0.28125
+        },
+        green = {
+          3.96875,
+          0.8125
+        },
+        red = {
+          3.96875,
+          -0.25
+        }
+      },
+      wire = {
+        copper = {
+          0,
+          -2.65625
+        },
+        green = {
+          0,
+          -2.0625
+        },
+        red = {
+          0,
+          -3.03125
+        }
+      }
+    },
+    {
+      shadow = {
+        copper = {
+          4.15625,
+          0.28125
+        },
+        green = {
+          3.46875,
+          0.625
+        },
+        red = {
+          4.5,
+          -0.09375
+        }
+      },
+      wire = {
+        copper = {
+          0,
+          -2.6875
+        },
+        green = {
+          -0.46875,
+          -2.21875
+        },
+        red = {
+          0.46875,
+          -2.875
+        }
+      }
+    }
+  },
+  corpse = "substation-remnants",
+  damaged_trigger_effect = {
+    damage_type_filters = "fire",
+    entity_name = "spark-explosion",
+    offset_deviation = {
+      {
+        -0.5,
+        -2.5
+      },
+      {
+        0.5,
+        0.5
+      }
+    },
+    offsets = {
+      {
+        0,
+        1
+      }
+    },
+    type = "create-entity"
+  },
+  drawing_box = {
+    {
+      -1,
+      -3
+    },
+    {
+      1,
+      1
+    }
+  },
+  dying_explosion = "substation-explosion",
+  flags = {
+    "placeable-neutral",
+    "player-creation"
+  },
+  icon = "__base__/graphics/icons/substation.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  max_health = 200,
+  maximum_wire_distance = 18,
+  minable = {
+    mining_time = 0.1,
+    result = "substation"
+  },
+  name = "substation",
+  open_sound = {
+    {
+      filename = "__base__/sound/electric-network-open.ogg",
+      volume = 0.6
+    }
+  },
+  pictures = {
+    layers = {
+      {
+        direction_count = 4,
+        filename = "__base__/graphics/entity/substation/substation.png",
+        height = 136,
+        hr_version = {
+          direction_count = 4,
+          filename = "__base__/graphics/entity/substation/hr-substation.png",
+          height = 270,
+          priority = "high",
+          scale = 0.5,
+          shift = {
+            0,
+            -0.96875
+          },
+          width = 138
+        },
+        priority = "high",
+        shift = {
+          0,
+          -0.96875
+        },
+        width = 70
+      },
+      {
+        direction_count = 4,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/substation/substation-shadow.png",
+        height = 52,
+        hr_version = {
+          direction_count = 4,
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/substation/hr-substation-shadow.png",
+          height = 104,
+          priority = "high",
+          scale = 0.5,
+          shift = {
+            1.9375,
+            0.3125
+          },
+          width = 370
+        },
+        priority = "high",
+        shift = {
+          1.9375,
+          0.3125
+        },
+        width = 186
+      }
+    }
+  },
+  radius_visualisation_picture = {
+    filename = "__base__/graphics/entity/small-electric-pole/electric-pole-radius-visualization.png",
+    height = 12,
+    priority = "extra-high-no-scale",
+    width = 12
+  },
+  resistances = {
+    {
+      percent = 90,
+      type = "fire"
+    }
+  },
+  selection_box = {
+    {
+      -1,
+      -1
+    },
+    {
+      1,
+      1
+    }
+  },
+  supply_area_distance = 9,
+  track_coverage_during_build_by_moving = true,
+  type = "electric-pole",
+  vehicle_impact_sound = {
+    {
+      filename = "__base__/sound/car-metal-impact-2.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-3.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-4.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-5.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-6.ogg",
+      volume = 0.5
+    }
+  },
+  water_reflection = {
+    orientation_to_variation = false,
+    pictures = {
+      filename = "__base__/graphics/entity/substation/substation-reflection.png",
+      height = 28,
+      priority = "extra-high",
+      scale = 5,
+      shift = {
+        0,
+        1.71875
+      },
+      variation_count = 1,
+      width = 20
+    },
+    rotate = false
+  },
+  working_sound = {
+    audible_distance_modifier = 0.32000000000000002,
+    fade_in_ticks = 30,
+    fade_out_ticks = 40,
+    max_sounds_per_type = 3,
+    sound = {
+      filename = "__base__/sound/substation.ogg",
+      volume = 0.4
+    },
+    use_doppler_shift = false
+  }
+}

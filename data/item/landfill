@@ -1,0 +1,17 @@
+{
+  icon = "__base__/graphics/icons/landfill.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "landfill",
+  order = "c[landfill]-a[dirt]",
+  place_as_tile = {
+    condition = {
+      "ground-tile"
+    },
+    condition_size = 1,
+    result = "landfill"
+  },
+  stack_size = 100,
+  subgroup = "terrain",
+  type = "item"
+}

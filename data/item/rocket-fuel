@@ -1,0 +1,14 @@
+{
+  fuel_acceleration_multiplier = 1.8,
+  fuel_category = "chemical",
+  fuel_top_speed_multiplier = 1.1499999999999999,
+  fuel_value = "100MJ",
+  icon = "__base__/graphics/icons/rocket-fuel.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "rocket-fuel",
+  order = "p[rocket-fuel]",
+  stack_size = 10,
+  subgroup = "intermediate-product",
+  type = "item"
+}

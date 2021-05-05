@@ -1,0 +1,12 @@
+{
+  default_request_amount = 5,
+  icon = "__base__/graphics/icons/exoskeleton-equipment.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "exoskeleton-equipment",
+  order = "d[exoskeleton]-a[exoskeleton-equipment]",
+  placed_as_equipment_result = "exoskeleton-equipment",
+  stack_size = 20,
+  subgroup = "equipment",
+  type = "item"
+}

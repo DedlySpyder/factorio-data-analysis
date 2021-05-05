@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 20,
+  ingredients = {
+    {
+      "steel-plate",
+      20
+    },
+    {
+      "electronic-circuit",
+      20
+    },
+    {
+      "battery",
+      12
+    }
+  },
+  name = "laser-turret",
+  result = "laser-turret",
+  type = "recipe"
+}

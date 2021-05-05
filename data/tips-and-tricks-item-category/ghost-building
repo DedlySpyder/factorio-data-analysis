@@ -1,0 +1,5 @@
+{
+  name = "ghost-building",
+  order = "j-[ghost-building]",
+  type = "tips-and-tricks-item-category"
+}

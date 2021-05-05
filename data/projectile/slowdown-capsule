@@ -1,0 +1,111 @@
+{
+  acceleration = 0.005,
+  action = {
+    {
+      action_delivery = {
+        target_effects = {
+          {
+            entity_name = "slowdown-capsule-explosion",
+            type = "create-entity"
+          }
+        },
+        type = "instant"
+      },
+      type = "direct"
+    },
+    {
+      action_delivery = {
+        target_effects = {
+          {
+            sticker = "slowdown-sticker",
+            type = "create-sticker"
+          }
+        },
+        type = "instant"
+      },
+      force = "enemy",
+      radius = 9,
+      type = "area"
+    }
+  },
+  animation = {
+    animation_speed = 0.25,
+    draw_as_glow = true,
+    filename = "__base__/graphics/entity/slowdown-capsule/slowdown-capsule.png",
+    frame_count = 16,
+    height = 30,
+    hr_version = {
+      animation_speed = 0.25,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/slowdown-capsule/hr-slowdown-capsule.png",
+      frame_count = 16,
+      height = 60,
+      line_length = 8,
+      priority = "high",
+      scale = 0.5,
+      shift = {
+        0.015625,
+        0.015625
+      },
+      width = 60
+    },
+    line_length = 8,
+    priority = "high",
+    shift = {
+      0.03125,
+      0
+    },
+    width = 32
+  },
+  flags = {
+    "not-on-map"
+  },
+  name = "slowdown-capsule",
+  shadow = {
+    animation_speed = 0.25,
+    draw_as_shadow = true,
+    filename = "__base__/graphics/entity/slowdown-capsule/slowdown-capsule-shadow.png",
+    frame_count = 16,
+    height = 24,
+    hr_version = {
+      animation_speed = 0.25,
+      draw_as_shadow = true,
+      filename = "__base__/graphics/entity/slowdown-capsule/hr-slowdown-capsule-shadow.png",
+      frame_count = 16,
+      height = 48,
+      line_length = 8,
+      priority = "high",
+      scale = 0.5,
+      shift = {
+        0.0625,
+        0.421875
+      },
+      width = 64
+    },
+    line_length = 8,
+    priority = "high",
+    shift = {
+      0.0625,
+      0.40625
+    },
+    width = 32
+  },
+  smoke = {
+    {
+      deviation = {
+        0.15,
+        0.15
+      },
+      frequency = 1,
+      name = "smoke-fast",
+      position = {
+        0,
+        0
+      },
+      starting_frame = 3,
+      starting_frame_deviation = 5,
+      starting_frame_speed_deviation = 5
+    }
+  },
+  type = "projectile"
+}

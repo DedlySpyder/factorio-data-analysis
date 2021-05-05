@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/constant-combinator.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "constant-combinator",
+  order = "c[combinators]-c[constant-combinator]",
+  place_result = "constant-combinator",
+  stack_size = 50,
+  subgroup = "circuit-network",
+  type = "item"
+}

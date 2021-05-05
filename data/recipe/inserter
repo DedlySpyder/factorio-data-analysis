@@ -1,0 +1,19 @@
+{
+  ingredients = {
+    {
+      "electronic-circuit",
+      1
+    },
+    {
+      "iron-gear-wheel",
+      1
+    },
+    {
+      "iron-plate",
+      1
+    }
+  },
+  name = "inserter",
+  result = "inserter",
+  type = "recipe"
+}

@@ -1,0 +1,12 @@
+{
+  default_request_amount = 5,
+  icon = "__base__/graphics/icons/personal-laser-defense-equipment.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "personal-laser-defense-equipment",
+  order = "b[active-defense]-a[personal-laser-defense-equipment]",
+  placed_as_equipment_result = "personal-laser-defense-equipment",
+  stack_size = 20,
+  subgroup = "military-equipment",
+  type = "item"
+}

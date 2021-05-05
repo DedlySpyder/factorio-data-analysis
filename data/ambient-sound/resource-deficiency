@@ -1,0 +1,8 @@
+{
+  name = "resource-deficiency",
+  sound = {
+    filename = "__base__/sound/ambient/resource-deficiency.ogg"
+  },
+  track_type = "early-game",
+  type = "ambient-sound"
+}

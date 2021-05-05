@@ -1,0 +1,43 @@
+{
+  category = "crafting",
+  expensive = {
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {
+        "steel-plate",
+        2
+      },
+      {
+        "copper-plate",
+        20
+      },
+      {
+        "plastic-bar",
+        30
+      }
+    },
+    result = "low-density-structure"
+  },
+  name = "low-density-structure",
+  normal = {
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {
+        "steel-plate",
+        2
+      },
+      {
+        "copper-plate",
+        20
+      },
+      {
+        "plastic-bar",
+        5
+      }
+    },
+    result = "low-density-structure"
+  },
+  type = "recipe"
+}

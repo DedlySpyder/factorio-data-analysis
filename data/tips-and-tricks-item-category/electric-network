@@ -1,0 +1,5 @@
+{
+  name = "electric-network",
+  order = "d-[electric-network]",
+  type = "tips-and-tricks-item-category"
+}

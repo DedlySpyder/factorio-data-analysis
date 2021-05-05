@@ -1,0 +1,30 @@
+{
+  enabled = false,
+  energy_required = 1,
+  hidden = true,
+  ingredients = {
+    {
+      "inserter",
+      5
+    },
+    {
+      "electronic-circuit",
+      5
+    },
+    {
+      "iron-gear-wheel",
+      5
+    },
+    {
+      "iron-plate",
+      5
+    },
+    {
+      "transport-belt",
+      5
+    }
+  },
+  name = "loader",
+  result = "loader",
+  type = "recipe"
+}

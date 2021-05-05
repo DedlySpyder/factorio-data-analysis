@@ -1,0 +1,37 @@
+{
+  category = "copy-paste",
+  dependencies = {
+    "copy-paste"
+  },
+  indent = 1,
+  name = "copy-paste-requester-chest",
+  order = "d",
+  simulation = {
+    init = "      game.surfaces[1].create_entities_from_blueprint_string\n      {\n        string = \"0eNqFkt1ugzAMhd/F10kF9IeVV5mmKqSGWoKEJmEaQ3n3GVqhaqVbbqxE9nfOiTxC2fTYOTIBihFIW+OheB/BU21UM72FoUMogAK2IMCodro5W9rOugBRAJkzfkGRRvHvmPIe27IhU8tW6QsZlNkDIosfAtAECoQ3G/NlOJm+LdGxxrMBAZ31PGDNpMoQuRcwQJHEyc+v+exvJ0+s7eYGk8lmzzYdappToUFXD9JfCJuzxGtPXctSsCK5XSQbW5MPpKW+oA/SB+tUjSsB0rsq17UQu1dEx0a4cs/LINk6cr8gsUEdHCPvEXkx0FVKr/hMZmLO/1L2VYXu5OmbEWmynBWlw6Lk+9IHNfNeoI9x2od5g4qHPRXwic7PzdlbusuPWZ4e8vyYb2P8ASSf7zY=\",\n        position = {-1, 4}\n      }\n\n    player = game.create_test_player{name = \"big k\"}\n    player.teleport({0, 3.5})\n    game.camera_player = player\n    game.camera_player_cursor_position = player.position\n    game.camera_alt_info = true\n    roboport = game.surfaces[1].find_entity(\"roboport\", {-5, 0})\n    roboport.insert({name = \"logistic-robot\", count = 5})\n    game.forces.player.worker_robots_speed_modifier = 1\n    game.forces.player.worker_robots_storage_bonus = 8\n    storage_chest = game.surfaces[1].find_entity(\"logistic-chest-storage\", {-1.5, 1.5})\n    requester_chest = game.surfaces[1].find_entity(\"logistic-chest-requester\", {3.5, 2.5})\n\n    update_player_selected = function()\n      player.update_selected_entity(game.camera_player_cursor_position)\n      local selected = player.selected\n      if not selected then\n        if fake_source_box then\n          fake_source_box.destroy()\n          fake_source_box = nil\n        end\n        return\n      end\n\n      if copy_source and copy_source ~= selected then\n        if fake_source_box then\n          fake_source_box.destroy()\n        end\n        fake_source_box = game.surfaces[1].create_entity{name = \"highlight-box\", box_type = \"copy\", source = copy_source, position = copy_source.position}\n      end\n    end\n\n    step_1 = function()\n      script.on_nth_tick(1, function()\n        local finished = game.move_cursor({position = {3.5, -0.5}})\n        update_player_selected()\n        if finished then\n          step_2()\n        end\n      end)\n    end\n\n    step_2 = function()\n      local wait = 30\n      copy_source = player.selected\n      game.surfaces[1].play_sound{path = \"utility/entity_settings_copied\"}\n      script.on_nth_tick(1, function()\n        wait = wait - 1\n        if wait >= 0 then return end\n        local finished = game.move_cursor{position = {3.5, 2.5}}\n        local last = last_selected\n        update_player_selected()\n\n        if finished then\n          local selected = player.selected\n          selected.copy_settings(copy_source, player)\n          step_3()\n        end\n      end)\n    end\n\n    step_3 = function()\n      local wait = 30\n      script.on_nth_tick(1, function()\n        wait = wait - 1\n        if wait > 0 then return end\n        local finished = game.move_cursor({position = player.position})\n        update_player_selected()\n        if fake_source_box and not player.selected then\n          fake_source_box.destroy()\n          fake_source_box = nil\n        end\n        if finished then\n          reset()\n        end\n      end)\n    end\n\n    reset = function()\n      local time = 60\n      script.on_nth_tick(1, function()\n        if game.surfaces[1].count_entities_filtered{name = \"logistic-robot\", limit = 1} > 0 then return end\n        time = time - 1\n        if time > 0 then return end\n        requester_chest.clear_items_inside()\n        requester_chest.clear_request_slot(1)\n        requester_chest.clear_request_slot(2)\n        copy_source = nil\n        start()\n      end)\n    end\n\n    start = function()\n      storage_chest.clear_items_inside()\n      storage_chest.insert(\"steel-plate\")\n      storage_chest.insert(\"advanced-circuit\")\n\n      local start_tick = game.tick + 60\n      script.on_nth_tick(1, function()\n        if game.tick >= start_tick then\n          step_1()\n        end\n      end)\n    end\n\n    start()\n\n  "
+  },
+  skip_trigger = {
+    count = 2,
+    match_type_only = true,
+    source = "assembling-machine-1",
+    target = "logistic-chest-requester",
+    type = "paste-entity-settings"
+  },
+  tag = "[entity=logistic-chest-requester]",
+  trigger = {
+    triggers = {
+      {
+        count = 10,
+        entity = "logistic-chest-requester",
+        match_type_only = true,
+        type = "build-entity"
+      },
+      {
+        count = 20,
+        logistic_chest_only = true,
+        type = "set-logistic-request"
+      }
+    },
+    type = "sequence"
+  },
+  type = "tips-and-tricks-item"
+}

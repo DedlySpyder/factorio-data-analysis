@@ -1,0 +1,16 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "electronic-circuit",
+      1
+    },
+    {
+      "iron-plate",
+      5
+    }
+  },
+  name = "rail-chain-signal",
+  result = "rail-chain-signal",
+  type = "recipe"
+}

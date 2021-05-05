@@ -1,0 +1,7 @@
+{
+  category = "terrain",
+  name = "trees",
+  order = "c-y",
+  richness = true,
+  type = "autoplace-control"
+}

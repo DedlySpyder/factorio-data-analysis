@@ -1,0 +1,21 @@
+{
+  category = "belts",
+  dependencies = {
+    "splitters"
+  },
+  indent = 1,
+  name = "splitter-filters",
+  order = "d",
+  simulation = {
+    init = "    game.surfaces[1].create_entities_from_blueprint_string\n    {\n      string = \"0eNrNWttuozAQ/Rc/Q+Url/zKqooocbtIBBCY7lZV/n1N6JZ242Rnxn3oWwLkHM9wZjhj8soe2tkOY9M5tntlTd13E9v9eGVT89RV7XLMvQyW7Vjj7JElrKuOyzc3Vt009KNLH2zr2ClhTXewv9lOnO4TZjvXuMauSOcvL/tuPj7Y0V/wjtF0j03nT6X1Tzs5jz30k/9Z3y2sHioV0tyZhL34j1l+Z84k60/2k3Wu6Z6m5dLRHvtnu5/9udbZ0R72y1r9KTfONmHr0XUtf5nHvkufbDWmv35a23rqup+XDAjOE3bsD8tFlUtbW50XtsV2OiUXEcn3iB795WnbVwd/OBSO/hTMoRltvV7gId7S3M9umJeEXtCozzT/3IEQnXzPXnZBGCDQEQQXEekAgUETiOsRhAgymrb0V2rLtn6FXl9NndbNWM+N2+QlKfLK0fLSFHkVtNyZb527Ep07Q8md4BGloyHKFiKCYYkphPlP45qGtnHuSn74hvb/TiJURKUbSK8SOoJBgxi2bjV7jY1Po9fh4Sq8KG/Av0uo6a4pKMOxZRC2G4LNrz3JQ2QGmbkCA66R4CUGXOHAJceASyS4wIAj1SolBpwjwbdyvtUjeLHBXkhy7fbXevyq1L33of3omf1lrX0MKldqRKC8RAZqMOAZEjzDgOdIcExBc2TNSUxBc2S3kCWq83EV1WcVx7CVRVybVVvJX7UeZR4TjoS7tjLe8IZchFI04yi/70CnNNo2SpI8TISpU5DiUlkEgwzbRpVHWC91BbOg9UYJ8c6qpIErCLjmaK0IilY0cd9EEMrssWqncJ3V/TDYMa2rh9ZGjmZaRkiTg/YzYnZMBOjma8QEtRUBB6wd40Q+DGc8XF86o8EJUJ5z6qQkCI88XVAnJVrdlbRJCZQ5w2mTEgxc0IYZDtrKk7QxDLZyRVs5qGaNpnl82MoN7VEDA89oHh8GntM8Pgy8oHp8SocwJdHjkxpExhEenxJOJkgeX3yhx8/QrzhMScolbZZ4I/sqk3MeJoa2cjZyjsgi3qicYwph0oyBKSB1mtFswuXNDr6codqEwNoBVUO1CbfYbiiXZhNgtyWn2QQguCA9yYHgkvQkB4LTbEKgNYXANWjPc9unNeWFas7ihGxq5oa0ewtME8o2FEjwnLQdCwQvSFYNCE7bFYCBF5xk1YDggmTVgOCSaNVIXbpQNKtGa9KFhls1WjiGYtXeqChW7T5Z/5ez+/A3noQ9e0OzLrkQOi9lLrI8Lwt1Ov0BCV2ymA==\",\n      position = {-1, -1}\n    }\n    game.camera_alt_info = true\n  ",
+    init_update_count = 800
+  },
+  tag = "[entity=splitter][item=electronic-circuit]",
+  trigger = {
+    count = 10,
+    entity = "splitter",
+    match_type_only = true,
+    type = "build-entity"
+  },
+  type = "tips-and-tricks-item"
+}

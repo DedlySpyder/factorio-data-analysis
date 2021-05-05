@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/logistic-chest-active-provider.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "logistic-chest-active-provider",
+  order = "b[storage]-c[logistic-chest-active-provider]",
+  place_result = "logistic-chest-active-provider",
+  stack_size = 50,
+  subgroup = "logistic-network",
+  type = "item"
+}

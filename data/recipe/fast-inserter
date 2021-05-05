@@ -1,0 +1,20 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "electronic-circuit",
+      2
+    },
+    {
+      "iron-plate",
+      2
+    },
+    {
+      "inserter",
+      1
+    }
+  },
+  name = "fast-inserter",
+  result = "fast-inserter",
+  type = "recipe"
+}

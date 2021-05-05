@@ -1,0 +1,12 @@
+{
+  expression = {
+    literal_value = 1,
+    source_location = {
+      filename = "__core__/prototypes/noise-programs.lua",
+      line_number = 633
+    },
+    type = "literal-number"
+  },
+  name = "starting-lake-noise-amplitude",
+  type = "noise-expression"
+}

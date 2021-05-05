@@ -1,0 +1,27 @@
+{
+  acceleration = 0.001,
+  action = {
+    {
+      action_delivery = {
+        target_effects = {
+          {
+            entity_name = "cluster-nuke-explosion",
+            type = "create-entity"
+          }
+        },
+        type = "instant"
+      },
+      type = "direct"
+    }
+  },
+  flags = {
+    "not-on-map",
+    "hidden"
+  },
+  name = "atomic-bomb-wave-spawns-cluster-nuke-explosion",
+  speed_modifier = {
+    1,
+    0.70699999999999994
+  },
+  type = "projectile"
+}

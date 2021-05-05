@@ -1,0 +1,16 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "copper-cable",
+      5
+    },
+    {
+      "electronic-circuit",
+      2
+    }
+  },
+  name = "constant-combinator",
+  result = "constant-combinator",
+  type = "recipe"
+}

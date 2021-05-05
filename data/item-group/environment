@@ -1,0 +1,8 @@
+{
+  icon = "__core__/graphics/icons/category/environment.png",
+  icon_mipmaps = 2,
+  icon_size = 128,
+  name = "environment",
+  order = "h",
+  type = "item-group"
+}

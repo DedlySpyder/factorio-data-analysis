@@ -1,0 +1,18 @@
+{
+  enabled = false,
+  energy_required = 5,
+  ingredients = {
+    {
+      "steel-plate",
+      1
+    },
+    {
+      "explosives",
+      2
+    }
+  },
+  name = "land-mine",
+  result = "land-mine",
+  result_count = 4,
+  type = "recipe"
+}

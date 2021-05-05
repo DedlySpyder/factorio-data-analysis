@@ -1,0 +1,253 @@
+{
+  animations = {
+    direction_count = 1,
+    filename = "__core__/graphics/empty.png",
+    frame_count = 1,
+    height = 1,
+    priority = "extra-high",
+    width = 1
+  },
+  created_effect = {
+    action_delivery = {
+      target_effects = {
+        {
+          affects_target = false,
+          frame_speed = 0.5,
+          frame_speed_deviation = 0,
+          initial_height = 1,
+          initial_height_deviation = 0,
+          initial_vertical_speed = 0.1,
+          initial_vertical_speed_deviation = 0.05,
+          offset_deviation = {
+            left_top = {
+              -0.097659999999999982,
+              -0.097659999999999982
+            },
+            right_bottom = {
+              0.097659999999999982,
+              0.097659999999999982
+            }
+          },
+          offsets = {
+            {
+              0,
+              0
+            }
+          },
+          particle_name = "slowdown-capsule-particle",
+          probability = 1,
+          repeat_count = 4,
+          repeat_count_deviation = 0,
+          rotate_offsets = false,
+          show_in_tooltip = false,
+          speed_from_center = 0.05,
+          speed_from_center_deviation = 0.01,
+          tail_length = 15,
+          tail_length_deviation = 1,
+          tail_width = 1,
+          type = "create-particle"
+        },
+        {
+          affects_target = false,
+          frame_speed = 0.3,
+          frame_speed_deviation = 0,
+          initial_height = 0.7,
+          initial_height_deviation = 0.14000000000000002,
+          initial_vertical_speed = 0.1,
+          initial_vertical_speed_deviation = 0.05,
+          offset_deviation = {
+            left_top = {
+              -0.49610000000000003,
+              -0.39450000000000003
+            },
+            right_bottom = {
+              0.49610000000000003,
+              0.39450000000000003
+            }
+          },
+          offsets = {
+            {
+              0,
+              0
+            }
+          },
+          particle_name = "slowdown-capsule-particle-big",
+          probability = 1,
+          repeat_count = 2,
+          repeat_count_deviation = 0,
+          rotate_offsets = false,
+          show_in_tooltip = false,
+          speed_from_center = 0.06,
+          speed_from_center_deviation = 0.01,
+          tail_length = 15,
+          tail_length_deviation = 1,
+          tail_width = 1,
+          type = "create-particle"
+        },
+        {
+          affects_target = false,
+          frame_speed = 0.5,
+          frame_speed_deviation = 0,
+          initial_height = 0.3,
+          initial_height_deviation = 0.03,
+          initial_vertical_speed = 0.012,
+          initial_vertical_speed_deviation = 0,
+          offset_deviation = {
+            left_top = {
+              -0.19139999999999999,
+              -0.29689999999999998
+            },
+            right_bottom = {
+              0.19139999999999999,
+              0.29689999999999998
+            }
+          },
+          offsets = {
+            {
+              0,
+              0
+            }
+          },
+          particle_name = "slowdown-capsule-particle",
+          probability = 1,
+          repeat_count = 5,
+          repeat_count_deviation = 0,
+          rotate_offsets = false,
+          show_in_tooltip = false,
+          speed_from_center = 0.1,
+          speed_from_center_deviation = 0,
+          tail_length = 10,
+          tail_length_deviation = 0,
+          tail_width = 1,
+          type = "create-particle"
+        },
+        {
+          affects_target = false,
+          frame_speed = 0.5,
+          frame_speed_deviation = 0,
+          initial_height = 0.3,
+          initial_height_deviation = 0.03,
+          initial_vertical_speed = 0.021000000000000001,
+          initial_vertical_speed_deviation = 0.05,
+          offset_deviation = {
+            left_top = {
+              -0.097659999999999982,
+              -0.29689999999999998
+            },
+            right_bottom = {
+              0.097659999999999982,
+              0.29689999999999998
+            }
+          },
+          offsets = {
+            {
+              0,
+              0
+            }
+          },
+          particle_name = "slowdown-capsule-particle-big",
+          probability = 1,
+          repeat_count = 5,
+          repeat_count_deviation = 0,
+          rotate_offsets = false,
+          show_in_tooltip = false,
+          speed_from_center = 0.070000000000000009,
+          speed_from_center_deviation = 0.05,
+          tail_length = 10,
+          tail_length_deviation = 0,
+          tail_width = 1,
+          type = "create-particle"
+        },
+        {
+          affects_target = false,
+          frame_speed = 0.25,
+          frame_speed_deviation = 0,
+          initial_height = 0.2,
+          initial_height_deviation = 0.5,
+          initial_vertical_speed = 0.050999999999999996,
+          initial_vertical_speed_deviation = 0.05,
+          offset_deviation = {
+            left_top = {
+              -0.5,
+              0
+            },
+            right_bottom = {
+              0.5,
+              0
+            }
+          },
+          offsets = {
+            {
+              0,
+              0
+            }
+          },
+          particle_name = "slowdown-capsule-particle-big",
+          probability = 1,
+          repeat_count = 7,
+          repeat_count_deviation = 0,
+          rotate_offsets = false,
+          show_in_tooltip = false,
+          speed_from_center = 0.05,
+          speed_from_center_deviation = 0.05,
+          tail_length = 7,
+          tail_length_deviation = 0,
+          tail_width = 1,
+          type = "create-particle"
+        }
+      },
+      type = "instant"
+    },
+    type = "direct"
+  },
+  flags = {
+    "not-on-map",
+    "hidden"
+  },
+  height = 0,
+  icon = "__base__/graphics/icons/slowdown-capsule.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "dying-explosion-name",
+    {
+      "entity-name.slowdown-capsule"
+    }
+  },
+  name = "slowdown-capsule-explosion",
+  order = "a-a-a",
+  render_layer = "lower-object-above-shadow",
+  smoke = "smoke-fast",
+  smoke_count = 2,
+  smoke_slow_down_factor = 1,
+  sound = {
+    aggregation = {
+      max_count = 1,
+      remove = true
+    },
+    variations = {
+      {
+        filename = "__base__/sound/small-explosion-1.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/small-explosion-2.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/small-explosion-3.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/small-explosion-4.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/small-explosion-5.ogg",
+        volume = 0.5
+      }
+    }
+  },
+  subgroup = "gun-explosions",
+  type = "explosion"
+}

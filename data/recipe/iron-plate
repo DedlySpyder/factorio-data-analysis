@@ -1,0 +1,13 @@
+{
+  category = "smelting",
+  energy_required = 3.2000000000000002,
+  ingredients = {
+    {
+      "iron-ore",
+      1
+    }
+  },
+  name = "iron-plate",
+  result = "iron-plate",
+  type = "recipe"
+}

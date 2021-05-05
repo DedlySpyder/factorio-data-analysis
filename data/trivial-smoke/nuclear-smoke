@@ -1,0 +1,28 @@
+{
+  affected_by_wind = true,
+  animation = {
+    animation_speed = 0.16666666666666665,
+    filename = "__base__/graphics/entity/smoke-fast/smoke-fast.png",
+    frame_count = 16,
+    height = 50,
+    priority = "high",
+    scale = 2.5,
+    width = 50
+  },
+  color = {
+    a = 0.5,
+    b = 0.34499999999999997,
+    g = 0.47799999999999994,
+    r = 0.62699999999999996
+  },
+  cyclic = true,
+  duration = 30,
+  end_scale = 0.2,
+  fade_away_duration = 20,
+  fade_in_duration = 10,
+  name = "nuclear-smoke",
+  render_layer = "higher-object-under",
+  spread_duration = 100,
+  start_scale = 2,
+  type = "trivial-smoke"
+}

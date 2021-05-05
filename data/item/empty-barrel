@@ -1,0 +1,10 @@
+{
+  icon = "__base__/graphics/icons/fluid/barreling/empty-barrel.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "empty-barrel",
+  order = "d[empty-barrel]",
+  stack_size = 10,
+  subgroup = "intermediate-product",
+  type = "item"
+}

@@ -1,0 +1,45 @@
+{
+  category = "crafting-with-fluid",
+  expensive = {
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {
+        "electronic-circuit",
+        20
+      },
+      {
+        "advanced-circuit",
+        2
+      },
+      {
+        amount = 10,
+        name = "sulfuric-acid",
+        type = "fluid"
+      }
+    },
+    result = "processing-unit"
+  },
+  name = "processing-unit",
+  normal = {
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {
+        "electronic-circuit",
+        20
+      },
+      {
+        "advanced-circuit",
+        2
+      },
+      {
+        amount = 5,
+        name = "sulfuric-acid",
+        type = "fluid"
+      }
+    },
+    result = "processing-unit"
+  },
+  type = "recipe"
+}

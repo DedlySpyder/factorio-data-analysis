@@ -1,0 +1,16 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "speed-module",
+      4
+    },
+    {
+      "assembling-machine-2",
+      2
+    }
+  },
+  name = "assembling-machine-3",
+  result = "assembling-machine-3",
+  type = "recipe"
+}

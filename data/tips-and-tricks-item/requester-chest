@@ -1,0 +1,19 @@
+{
+  category = "logistic-network",
+  dependencies = {
+    "logistic-network"
+  },
+  indent = 1,
+  name = "requester-chest",
+  order = "f",
+  simulation = {
+    init = "    game.surfaces[1].create_entities_from_blueprint_string\n    {\n      string = \"0eNqtmO2OojAUhu+lv2FCPwD1VjbGIBzdJtgybTHrGu59i8ywOJaxZfQPAu3T0/Px0vaK9nULjeLCoM0V8VIKjTa/rkjzoyjq/pm5NIA2iBs4oQiJ4tTfKbmXjVQGdRHiooI/aIO76Gk3owqh+37xHuppZ9JtIwTCcMNhMOB2c9mJ9rQHZekjQ7d7bQrDpbDcRmp++2tHtJjYNrvYy7rrjfmCICMCaiiN4mUMAtTxEtvZgzoUJTwSR2CE9u3hAGqn+V/LwMn4cwxFx6G4OHBhX8Xlb9DGYTF7S4ch0rf05o+h/U6DMVwcdd9OwUmeYdfad7W1FKpd71b76lDUGiI0PB789uklA1DHTV2YflKlbPsAW6MjdJJV36AwcQ3FzaQxgFuX29g4l1oWlX3yOAc6nUHFlfXu7a31+EcayNY0bR/wB3w6lxyO4N67ajIQc4CzBWDmA84XgKkPeDWCDzYwNis1KON0+MgllusgrScxO3JtbKrf8i9W8N7aqwtKp8wIfbTcTXPrM1GiZ1lmM+nRKJx4Oy69t2WaUi4w9nUcm+VmLi7xNjgPM5h6g7MwMPMGr8LA6VMV6MPr5o0qwMWMCODMWzAxvjc8TDCNasFVMDh//LQ9lt0wcOIErOZKrim05meIGyXPvPq+nLG7nPFP6jl5QTlHY+OvH1Epelu4Kltu/vchMxJAwiUg8UlPEqwAiY8AkHAB8DM3vP79uOHl78f1rv5kQfGTBcWfvLD2Se61tsTDUpA4Ea+o/plvOVkHLwu8Vhs0+YGoUH9RWaITFAfrBPVJZEpCdYL66ASlwTrhZy4L1gk/bhqsE37czFcn6AKdoHm4TtAX6gRdhS/8mbum6ToclbpRLFm0rR3ELA3b1jIcvq/NXrqtfSImC3a3xHd7my3Z3TIaHuhsJtAs5AgEO1epLF1+BmKJ3yTLNhqOejaTA6UInW34Bl+tMMvXJMdZnq+zvOv+AWqFHeQ=\",\n      position = {2,0}\n    }\n\n    local roboport = game.surfaces[1].find_entities_filtered{name = \"roboport\"}[1]\n    roboport.insert({name = \"logistic-robot\", count = 10})\n    game.camera_alt_info = true\n\n    game.forces.player.worker_robots_speed_modifier = 1\n\n  ",
+    init_update_count = 600
+  },
+  tag = "[item=logistic-chest-requester]",
+  trigger = {
+    technology = "logistic-system",
+    type = "research"
+  },
+  type = "tips-and-tricks-item"
+}

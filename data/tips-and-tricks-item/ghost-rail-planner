@@ -1,0 +1,40 @@
+{
+  category = "ghost-building",
+  dependencies = {
+    "ghost-building",
+    "rail-building"
+  },
+  indent = 1,
+  name = "ghost-rail-planner",
+  order = "b",
+  simulation = {
+    init = "    player = game.create_test_player{name = \"kovarex\"}\n    player.teleport{-10, 3.5}\n    game.camera_player = player\n    game.camera_position = {0, 0}\n    game.camera_zoom = 1\n    game.surfaces[1].build_checkerboard({{-16, -9}, {16, 9}})\n    game.surfaces[1].create_entities_from_blueprint_string\n    {\n      string = \"0eNqVms1u4kAQhN9lziby9PzzKlG0IomVtQQmAmd3EfK7L6wvkZZSd52IE/joSZfb5Slf3ev+a/g8jdPstlc3vh2ns9s+X915/Jh2+/vv5svn4LZunIeD69y0O9yPzvNxGja/d/u9Wzo3Tu/DH7f1y0vnhmke53FYKf8OLj+mr8PrcLq94dHnO/d5PN8+cpzu33bDbHx+Sp273H/qn9KydP+BxAgqGigYQVEDRSMoaaBkBIkGykZQ0EDFCOo1UDWCvAZqNlDVOL63gZoKMipbFbY3KlsVtjcqWxW2NypbFbY3KlsVtjcqWxW2typbBRmVrZ4h3qZstSCxCVutR2y6Vv/TYpO12nqxqVrVothErZ4cYtO0eraKTdL6ddGmaHWeiU3Q6oAVo55VQQeboPVrULApWr8qBpuk9et0sGladw7BJmrdywSbqnWbFmyyNti0whq+BkCVBVUAauTIBwXFnuSAeqLnJj7CCIdBqwpk41E5keSgehLb9gJAmQVlACpk31FBrPVA9TSu8QCTSOMBVpU82XdUjpAcVE9g254AKLKgCECJ7DsqKJMcVE/hGo8wlcOgVTWy76Cc3JMcUE/+rufTbvz4OW9uL487v5LC0rn38TS8rX+UR1SxU5OdGkhFBLDmSHIEcBInCYTJHAatqpCKQOVUkoPqafRWGNjl6VkQ2i7y7M0w4AjJQfUErvEIE8lbaoBJZN9RObS1BhzWWaN6WGON6iF9NdpqJG01qKZyrhpROFONlkR6alQMaalRNayjBnOwsoYazMFKzmWEIccyWhU7lYH/aOxQBv6jkX4aYUg7jVbFumng7htrpoG7b+RMRhhyJKNVsRMZ3Ds3diKDe+dGeumGshbSS1fEYVNEnP6wMSImsTkiJrFBIiYlMgDEpExmkphUyAgQkyqZSmJS40JAnAH2XCyJQZ4LATFIuFgSgwIXAmJQ5GJJDEpcCIhBmYslMYhMEzGI3NLDIG5PD2fSPZVKYo6nUkDMESqVxJxApYCYE6lUEnMSlQJiTqZSScwpVAqIOZVKJTGncSEgfjai52JJDPJcCIhBwsWSGBS4EBCDIhdLYhCZJmIQ6a9X0Eu3Prq2/fakW+d+DafzugNafSxNis+ltBKX5S8wT2da\",\n      position = {0, 0}\n    }\n\n    start_rail = game.surfaces[1].find_entities_filtered{name = \"straight-rail\"}[2]\n\n    step_1 = function()\n      player.cursor_stack.set_stack{name = \"rail\", count = 50}\n      script.on_nth_tick(1, function()\n        if game.move_cursor{position = {start_rail.position.x + 0.5, start_rail.position.y}} then\n          step_2()\n        end\n      end)\n    end\n\n    step_2 = function()\n      local count = 30\n      script.on_nth_tick(1, function()\n        count = count - 1\n        if count > 0 then return end\n        game.activate_rail_planner({ghost_mode = true})\n        step_3()\n      end)\n    end\n\n    step_3 = function()\n      script.on_nth_tick(1, function()\n        if game.move_cursor{position = {start_rail.position.x + 26, start_rail.position.y}} then\n          step_4()\n        end\n      end)\n    end\n\n    step_4 = function()\n      script.on_nth_tick(1, function()\n        if game.move_cursor{position = {start_rail.position.x + 26, start_rail.position.y + 8}, speed = 0.1} then\n          player.raw_build_from_cursor{ghost_mode = true}\n          step_5()\n        end\n      end)\n    end\n\n    step_5 = function()\n      local count = 30\n      script.on_nth_tick(1, function()\n        count = count - 1\n        if count > 0 then return end\n        game.deactivate_rail_planner()\n        player.clear_cursor()\n        reset()\n      end)\n    end\n\n    reset = function()\n      local count = 30\n      script.on_nth_tick(1, function()\n        count = count - 1\n        if count > 0 then return end\n        if game.move_cursor{position = player.position} then\n          for k, ghost in pairs(game.surfaces[1].find_entities_filtered{name = \"entity-ghost\"}) do\n            ghost.destroy()\n          end\n          start()\n        end\n      end)\n    end\n\n    start = function()\n      local count = 30\n      script.on_nth_tick(1, function()\n        count = count - 1\n        if count > 0 then return end\n        step_1()\n      end)\n    end\n\n    start()\n  "
+  },
+  tag = "[item=rail][item=construction-robot]",
+  trigger = {
+    triggers = {
+      {
+        triggers = {
+          {
+            entity = "roboport",
+            match_type_only = true,
+            type = "build-entity"
+          },
+          {
+            event_type = "crafting-finished",
+            item = "personal-roboport-equipment",
+            type = "craft-item"
+          }
+        },
+        type = "or"
+      },
+      {
+        count = 100,
+        entity = "straight-rail",
+        type = "build-entity"
+      }
+    },
+    type = "sequence"
+  },
+  type = "tips-and-tricks-item"
+}

@@ -1,0 +1,21 @@
+{
+  category = "centrifuging",
+  enabled = false,
+  energy_required = 90,
+  icon = "__base__/graphics/icons/nuclear-fuel.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  ingredients = {
+    {
+      "uranium-235",
+      1
+    },
+    {
+      "rocket-fuel",
+      1
+    }
+  },
+  name = "nuclear-fuel",
+  result = "nuclear-fuel",
+  type = "recipe"
+}

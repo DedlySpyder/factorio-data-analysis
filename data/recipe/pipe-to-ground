@@ -1,0 +1,16 @@
+{
+  ingredients = {
+    {
+      "pipe",
+      10
+    },
+    {
+      "iron-plate",
+      5
+    }
+  },
+  name = "pipe-to-ground",
+  result = "pipe-to-ground",
+  result_count = 2,
+  type = "recipe"
+}

@@ -1,0 +1,8 @@
+{
+  name = "censeqs-discrepancy",
+  sound = {
+    filename = "__base__/sound/ambient/censeqs-discrepancy.ogg"
+  },
+  track_type = "main-track",
+  type = "ambient-sound"
+}

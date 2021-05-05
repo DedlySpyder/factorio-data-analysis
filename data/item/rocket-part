@@ -1,0 +1,13 @@
+{
+  flags = {
+    "hidden"
+  },
+  icon = "__base__/graphics/icons/rocket-part.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "rocket-part",
+  order = "q[rocket-part]",
+  stack_size = 5,
+  subgroup = "intermediate-product",
+  type = "item"
+}

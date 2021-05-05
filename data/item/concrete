@@ -1,0 +1,17 @@
+{
+  icon = "__base__/graphics/icons/concrete.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "concrete",
+  order = "b[concrete]-a[plain]",
+  place_as_tile = {
+    condition = {
+      "water-tile"
+    },
+    condition_size = 1,
+    result = "concrete"
+  },
+  stack_size = 100,
+  subgroup = "terrain",
+  type = "item"
+}

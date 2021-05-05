@@ -1,0 +1,72 @@
+{
+  capsule_action = {
+    attack_parameters = {
+      activation_type = "throw",
+      ammo_category = "capsule",
+      ammo_type = {
+        action = {
+          {
+            action_delivery = {
+              projectile = "distractor-capsule",
+              starting_speed = 0.3,
+              type = "projectile"
+            },
+            type = "direct"
+          },
+          {
+            action_delivery = {
+              target_effects = {
+                {
+                  sound = {
+                    {
+                      filename = "__base__/sound/fight/throw-projectile-1.ogg",
+                      volume = 0.4
+                    },
+                    {
+                      filename = "__base__/sound/fight/throw-projectile-2.ogg",
+                      volume = 0.4
+                    },
+                    {
+                      filename = "__base__/sound/fight/throw-projectile-3.ogg",
+                      volume = 0.4
+                    },
+                    {
+                      filename = "__base__/sound/fight/throw-projectile-4.ogg",
+                      volume = 0.4
+                    },
+                    {
+                      filename = "__base__/sound/fight/throw-projectile-5.ogg",
+                      volume = 0.4
+                    },
+                    {
+                      filename = "__base__/sound/fight/throw-projectile-6.ogg",
+                      volume = 0.4
+                    }
+                  },
+                  type = "play-sound"
+                }
+              },
+              type = "instant"
+            },
+            type = "direct"
+          }
+        },
+        category = "capsule",
+        target_type = "position"
+      },
+      cooldown = 30,
+      projectile_creation_distance = 0.6,
+      range = 25,
+      type = "projectile"
+    },
+    type = "throw"
+  },
+  icon = "__base__/graphics/icons/distractor.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "distractor-capsule",
+  order = "e[defender-capsule]",
+  stack_size = 100,
+  subgroup = "capsule",
+  type = "capsule"
+}

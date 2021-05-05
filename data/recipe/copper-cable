@@ -1,0 +1,12 @@
+{
+  ingredients = {
+    {
+      "copper-plate",
+      1
+    }
+  },
+  name = "copper-cable",
+  result = "copper-cable",
+  result_count = 2,
+  type = "recipe"
+}

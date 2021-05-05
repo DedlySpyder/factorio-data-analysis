@@ -1,0 +1,18 @@
+{
+  affected_by_wind = false,
+  animation = {
+    animation_speed = 0.26666666666666665,
+    filename = "__base__/graphics/entity/smoke-fast/smoke-fast.png",
+    frame_count = 16,
+    height = 50,
+    priority = "high",
+    width = 50
+  },
+  duration = 40,
+  fade_away_duration = 30,
+  movement_slow_down_factor = 0.95,
+  name = "smoke-train-stop",
+  render_layer = "lower-object",
+  show_when_smoke_off = true,
+  type = "trivial-smoke"
+}

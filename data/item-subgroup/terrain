@@ -1,0 +1,6 @@
+{
+  group = "logistics",
+  name = "terrain",
+  order = "i",
+  type = "item-subgroup"
+}

@@ -1,0 +1,20 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "steel-plate",
+      10
+    },
+    {
+      "advanced-circuit",
+      5
+    },
+    {
+      "copper-plate",
+      5
+    }
+  },
+  name = "substation",
+  result = "substation",
+  type = "recipe"
+}

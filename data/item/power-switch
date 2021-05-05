@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/power-switch.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "power-switch",
+  order = "d[other]-a[power-switch]",
+  place_result = "power-switch",
+  stack_size = 50,
+  subgroup = "circuit-network",
+  type = "item"
+}

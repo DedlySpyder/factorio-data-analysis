@@ -1,0 +1,13 @@
+{
+  icon = "__base__/graphics/icons/spidertron.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  icon_tintable = "__base__/graphics/icons/spidertron-tintable.png",
+  icon_tintable_mask = "__base__/graphics/icons/spidertron-tintable-mask.png",
+  name = "spidertron",
+  order = "b[personal-transport]-c[spidertron]-a[spider]",
+  place_result = "spidertron",
+  stack_size = 1,
+  subgroup = "transport",
+  type = "item-with-entity-data"
+}

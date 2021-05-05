@@ -1,0 +1,43 @@
+{
+  action = "spawn-item",
+  associated_control_input = "give-blueprint",
+  disabled_small_icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/new-blueprint-x24-white.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 24
+  },
+  icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/new-blueprint-x32-white.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 32
+  },
+  item_to_spawn = "blueprint",
+  localised_name = {
+    "shortcut.make-blueprint"
+  },
+  name = "give-blueprint",
+  order = "b[blueprints]-e[blueprint]",
+  small_icon = {
+    filename = "__base__/graphics/icons/shortcut-toolbar/mip/new-blueprint-x24-white.png",
+    flags = {
+      "gui-icon"
+    },
+    mipmap_count = 2,
+    priority = "extra-high-no-scale",
+    scale = 0.5,
+    size = 24
+  },
+  style = "blue",
+  technology_to_unlock = "construction-robotics",
+  type = "shortcut"
+}

@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 2,
+  ingredients = {
+    {
+      "splitter",
+      1
+    },
+    {
+      "iron-gear-wheel",
+      10
+    },
+    {
+      "electronic-circuit",
+      10
+    }
+  },
+  name = "fast-splitter",
+  result = "fast-splitter",
+  type = "recipe"
+}

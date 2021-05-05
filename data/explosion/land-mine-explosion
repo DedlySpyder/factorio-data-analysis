@@ -1,0 +1,111 @@
+{
+  animations = {
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/small-explosion/small-explosion-1.png",
+      frame_count = 24,
+      height = 90,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/small-explosion/hr-small-explosion-1.png",
+        frame_count = 24,
+        height = 178,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          -0.03125,
+          -0.75
+        },
+        width = 88
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        -0.03125,
+        -0.75
+      },
+      width = 44
+    },
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/small-explosion/small-explosion-2.png",
+      frame_count = 24,
+      height = 76,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/small-explosion/hr-small-explosion-2.png",
+        frame_count = 24,
+        height = 152,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          0.0625,
+          -0.234375
+        },
+        width = 92
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        0.0625,
+        -0.25
+      },
+      width = 46
+    }
+  },
+  flags = {
+    "not-on-map",
+    "hidden"
+  },
+  height = 0,
+  icon = "__base__/graphics/icons/land-mine.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "dying-explosion-name",
+    {
+      "entity-name.land-mine"
+    }
+  },
+  name = "land-mine-explosion",
+  order = "a-a-a",
+  smoke = "smoke-fast",
+  smoke_count = 2,
+  smoke_slow_down_factor = 1,
+  sound = {
+    aggregation = {
+      max_count = 1,
+      remove = true
+    },
+    variations = {
+      {
+        filename = "__base__/sound/small-explosion-1.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/small-explosion-2.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/small-explosion-3.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/small-explosion-4.ogg",
+        volume = 0.5
+      },
+      {
+        filename = "__base__/sound/small-explosion-5.ogg",
+        volume = 0.5
+      }
+    }
+  },
+  subgroup = "gun-explosions",
+  type = "explosion"
+}

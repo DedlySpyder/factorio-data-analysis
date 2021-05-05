@@ -1,0 +1,34 @@
+{
+  acceleration = 0,
+  action = {
+    {
+      action_delivery = {
+        target_effects = {
+          damage = {
+            amount = 400,
+            type = "explosion"
+          },
+          lower_damage_modifier = 1,
+          lower_distance_threshold = 0,
+          type = "damage",
+          upper_damage_modifier = 0.1,
+          upper_distance_threshold = 35,
+          vaporize = false
+        },
+        type = "instant"
+      },
+      ignore_collision_condition = true,
+      radius = 3,
+      type = "area"
+    }
+  },
+  flags = {
+    "not-on-map"
+  },
+  name = "atomic-bomb-wave",
+  speed_modifier = {
+    1,
+    0.70699999999999994
+  },
+  type = "projectile"
+}

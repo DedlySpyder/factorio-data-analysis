@@ -1,0 +1,78 @@
+{
+  animation = {
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/centrifuge/remnants/centrifuge-remnants.png",
+      frame_count = 1,
+      height = 142,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/centrifuge/remnants/hr-centrifuge-remnants.png",
+        frame_count = 1,
+        height = 284,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.21875,
+          0.125
+        },
+        variation_count = 1,
+        width = 286,
+        y = 0
+      },
+      line_length = 1,
+      shift = {
+        0.21875,
+        0.125
+      },
+      variation_count = 1,
+      width = 144,
+      y = 0
+    }
+  },
+  collision_box = {
+    {
+      -0.4,
+      -0.4
+    },
+    {
+      0.4,
+      0.4
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/centrifuge.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.centrifuge"
+    }
+  },
+  name = "centrifuge-remnants",
+  order = "a-f-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -1.5,
+      -1.5
+    },
+    {
+      1.5,
+      1.5
+    }
+  },
+  subgroup = "production-machine-remnants",
+  tile_height = 3,
+  tile_width = 3,
+  time_before_removed = 54000,
+  type = "corpse"
+}

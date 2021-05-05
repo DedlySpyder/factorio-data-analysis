@@ -1,0 +1,31 @@
+{
+  effects = {
+    {
+      recipe = "fast-inserter",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "filter-inserter",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/fast-inserter.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "fast-inserter",
+  order = "a-d-a",
+  prerequisites = {
+    "electronics"
+  },
+  type = "technology",
+  unit = {
+    count = 30,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      }
+    },
+    time = 15
+  }
+}

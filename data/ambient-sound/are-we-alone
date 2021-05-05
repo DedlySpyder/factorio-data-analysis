@@ -1,0 +1,8 @@
+{
+  name = "are-we-alone",
+  sound = {
+    filename = "__base__/sound/ambient/are-we-alone.ogg"
+  },
+  track_type = "main-track",
+  type = "ambient-sound"
+}

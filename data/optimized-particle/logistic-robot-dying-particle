@@ -1,0 +1,203 @@
+{
+  ended_on_ground_trigger_effect = {
+    {
+      entity_name = "logistic-robot-remnants",
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      type = "create-entity"
+    },
+    {
+      sound = {
+        {
+          filename = "__base__/sound/fight/robot-die-impact-01.ogg",
+          volume = 0.7
+        },
+        {
+          filename = "__base__/sound/fight/robot-die-impact-02.ogg",
+          volume = 0.7
+        },
+        {
+          filename = "__base__/sound/fight/robot-die-impact-03.ogg",
+          volume = 0.7
+        }
+      },
+      type = "play-sound"
+    }
+  },
+  life_time = 1000,
+  movement_modifier = 0.95,
+  name = "logistic-robot-dying-particle",
+  pictures = {
+    {
+      animation_speed = 1,
+      direction_count = 0,
+      filename = "__base__/graphics/entity/logistic-robot/logistic-robot.png",
+      frame_count = 16,
+      height = 42,
+      hr_version = {
+        animation_speed = 1,
+        direction_count = 0,
+        filename = "__base__/graphics/entity/logistic-robot/hr-logistic-robot.png",
+        frame_count = 16,
+        height = 84,
+        line_length = 16,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          0,
+          -0.09375
+        },
+        width = 80,
+        y = 252
+      },
+      line_length = 16,
+      priority = "high",
+      shift = {
+        0,
+        -0.09375
+      },
+      width = 41,
+      y = 126
+    },
+    {
+      animation_speed = 1,
+      direction_count = 0,
+      filename = "__base__/graphics/entity/logistic-robot/logistic-robot.png",
+      frame_count = 16,
+      height = 42,
+      hr_version = {
+        animation_speed = 1,
+        direction_count = 0,
+        filename = "__base__/graphics/entity/logistic-robot/hr-logistic-robot.png",
+        frame_count = 16,
+        height = 84,
+        line_length = 16,
+        priority = "high",
+        run_mode = "backward",
+        scale = 0.5,
+        shift = {
+          0,
+          -0.09375
+        },
+        width = 80,
+        y = 252
+      },
+      line_length = 16,
+      priority = "high",
+      run_mode = "backward",
+      shift = {
+        0,
+        -0.09375
+      },
+      width = 41,
+      y = 126
+    }
+  },
+  regular_trigger_effect = {
+    {
+      probability = 0.5,
+      smoke_name = "smoke-fast",
+      starting_frame_deviation = 5,
+      type = "create-trivial-smoke"
+    },
+    {
+      initial_height = 0.2,
+      initial_vertical_speed = 0.15,
+      initial_vertical_speed_deviation = 0.05,
+      offset_deviation = {
+        {
+          -0.25,
+          -0.25
+        },
+        {
+          0.25,
+          0.25
+        }
+      },
+      particle_name = "spark-particle",
+      probability = 0.2,
+      speed_from_center = 0.1,
+      speed_from_center_deviation = 0.05,
+      tail_length = 10,
+      tail_length_deviation = 5,
+      tail_width = 5,
+      type = "create-particle"
+    }
+  },
+  regular_trigger_effect_frequency = 2,
+  shadows = {
+    {
+      animation_speed = 1,
+      direction_count = 0,
+      draw_as_shadow = true,
+      filename = "__base__/graphics/entity/logistic-robot/logistic-robot-shadow.png",
+      frame_count = 16,
+      height = 29,
+      hr_version = {
+        animation_speed = 1,
+        direction_count = 0,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/logistic-robot/hr-logistic-robot-shadow.png",
+        frame_count = 16,
+        height = 57,
+        line_length = 16,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          0.2421875,
+          0.2171875
+        },
+        width = 115,
+        y = 171
+      },
+      line_length = 16,
+      priority = "high",
+      shift = {
+        0.25,
+        0.209375
+      },
+      width = 58,
+      y = 29
+    },
+    {
+      animation_speed = 1,
+      direction_count = 0,
+      draw_as_shadow = true,
+      filename = "__base__/graphics/entity/logistic-robot/logistic-robot-shadow.png",
+      frame_count = 16,
+      height = 29,
+      hr_version = {
+        animation_speed = 1,
+        direction_count = 0,
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/logistic-robot/hr-logistic-robot-shadow.png",
+        frame_count = 16,
+        height = 57,
+        line_length = 16,
+        priority = "high",
+        run_mode = "backward",
+        scale = 0.5,
+        shift = {
+          0.2421875,
+          0.2171875
+        },
+        width = 115,
+        y = 171
+      },
+      line_length = 16,
+      priority = "high",
+      run_mode = "backward",
+      shift = {
+        0.25,
+        0.209375
+      },
+      width = 58,
+      y = 29
+    }
+  },
+  type = "optimized-particle"
+}

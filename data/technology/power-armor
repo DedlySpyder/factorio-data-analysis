@@ -1,0 +1,37 @@
+{
+  effects = {
+    {
+      recipe = "power-armor",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/power-armor.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "power-armor",
+  order = "g-c-a",
+  prerequisites = {
+    "modular-armor",
+    "electric-engine",
+    "advanced-electronics-2"
+  },
+  type = "technology",
+  unit = {
+    count = 200,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      },
+      {
+        "chemical-science-pack",
+        1
+      }
+    },
+    time = 30
+  }
+}

@@ -1,0 +1,17 @@
+{
+  enabled = false,
+  energy_required = 1,
+  ingredients = {
+    {
+      "steel-plate",
+      10
+    },
+    {
+      "copper-plate",
+      20
+    }
+  },
+  name = "heat-pipe",
+  result = "heat-pipe",
+  type = "recipe"
+}

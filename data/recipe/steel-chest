@@ -1,0 +1,12 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "steel-plate",
+      8
+    }
+  },
+  name = "steel-chest",
+  result = "steel-chest",
+  type = "recipe"
+}

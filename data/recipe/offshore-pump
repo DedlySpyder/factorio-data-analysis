@@ -1,0 +1,19 @@
+{
+  ingredients = {
+    {
+      "electronic-circuit",
+      2
+    },
+    {
+      "pipe",
+      1
+    },
+    {
+      "iron-gear-wheel",
+      1
+    }
+  },
+  name = "offshore-pump",
+  result = "offshore-pump",
+  type = "recipe"
+}

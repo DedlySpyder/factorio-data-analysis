@@ -1,0 +1,133 @@
+{
+  animations = {
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/medium-explosion/medium-explosion-1.png",
+      frame_count = 30,
+      height = 112,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/medium-explosion/hr-medium-explosion-1.png",
+        frame_count = 30,
+        height = 224,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          -0.03125,
+          -1.125
+        },
+        width = 124
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        -0.03125,
+        -1.125
+      },
+      width = 62
+    },
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/medium-explosion/medium-explosion-2.png",
+      frame_count = 41,
+      height = 106,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/medium-explosion/hr-medium-explosion-2.png",
+        frame_count = 41,
+        height = 212,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          -0.40625,
+          -1.0625
+        },
+        width = 154
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        -0.40625,
+        -1.0625
+      },
+      width = 78
+    },
+    {
+      animation_speed = 0.5,
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/medium-explosion/medium-explosion-3.png",
+      frame_count = 39,
+      height = 118,
+      hr_version = {
+        animation_speed = 0.5,
+        draw_as_glow = true,
+        filename = "__base__/graphics/entity/medium-explosion/hr-medium-explosion-3.png",
+        frame_count = 39,
+        height = 236,
+        line_length = 6,
+        priority = "high",
+        scale = 0.5,
+        shift = {
+          0.015625,
+          -1.15625
+        },
+        width = 126
+      },
+      line_length = 6,
+      priority = "high",
+      shift = {
+        0.03125,
+        -1.15625
+      },
+      width = 64
+    }
+  },
+  flags = {
+    "not-on-map",
+    "hidden"
+  },
+  height = 0,
+  icon = "__base__/graphics/item-group/effects.png",
+  icon_size = 64,
+  localised_name = {
+    "entity-name.grenade-explosion"
+  },
+  name = "grenade-explosion",
+  sound = {
+    aggregation = {
+      max_count = 1,
+      remove = true
+    },
+    audible_distance_modifier = 0.7,
+    variations = {
+      {
+        filename = "__base__/sound/fight/medium-explosion-1.ogg",
+        volume = 0.4
+      },
+      {
+        filename = "__base__/sound/fight/medium-explosion-2.ogg",
+        volume = 0.4
+      },
+      {
+        filename = "__base__/sound/fight/medium-explosion-3.ogg",
+        volume = 0.4
+      },
+      {
+        filename = "__base__/sound/fight/medium-explosion-4.ogg",
+        volume = 0.4
+      },
+      {
+        filename = "__base__/sound/fight/medium-explosion-5.ogg",
+        volume = 0.4
+      }
+    }
+  },
+  subgroup = "explosions",
+  type = "explosion"
+}

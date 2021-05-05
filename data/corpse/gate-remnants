@@ -1,0 +1,134 @@
+{
+  animation = {
+    {
+      axially_symmetrical = false,
+      direction_count = 4,
+      filename = "__base__/graphics/entity/gate/remnants/gate-remnants-var-1.png",
+      frame_count = 1,
+      height = 42,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 4,
+        filename = "__base__/graphics/entity/gate/remnants/hr-gate-remnants-var-1.png",
+        frame_count = 1,
+        height = 82,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0,
+          0.03125
+        },
+        variation_count = 1,
+        width = 86
+      },
+      line_length = 1,
+      shift = {
+        0,
+        0.03125
+      },
+      variation_count = 1,
+      width = 44
+    },
+    {
+      axially_symmetrical = false,
+      direction_count = 4,
+      filename = "__base__/graphics/entity/gate/remnants/gate-remnants-var-2.png",
+      frame_count = 1,
+      height = 42,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 4,
+        filename = "__base__/graphics/entity/gate/remnants/hr-gate-remnants-var-2.png",
+        frame_count = 1,
+        height = 82,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          -0.015625,
+          0
+        },
+        variation_count = 1,
+        width = 84
+      },
+      line_length = 1,
+      shift = {
+        -0.03125,
+        0
+      },
+      variation_count = 1,
+      width = 42
+    },
+    {
+      axially_symmetrical = false,
+      direction_count = 4,
+      filename = "__base__/graphics/entity/gate/remnants/gate-remnants-var-3.png",
+      frame_count = 1,
+      height = 42,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 4,
+        filename = "__base__/graphics/entity/gate/remnants/hr-gate-remnants-var-3.png",
+        frame_count = 1,
+        height = 84,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0,
+          0.015625
+        },
+        variation_count = 1,
+        width = 82
+      },
+      line_length = 1,
+      shift = {
+        0,
+        0
+      },
+      variation_count = 1,
+      width = 42
+    }
+  },
+  collision_box = {
+    {
+      -0.4,
+      -0.4
+    },
+    {
+      0.4,
+      0.4
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/gate.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.gate"
+    }
+  },
+  name = "gate-remnants",
+  order = "a-b-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -0.5,
+      -0.5
+    },
+    {
+      0.5,
+      0.5
+    }
+  },
+  subgroup = "defensive-structure-remnants",
+  tile_height = 1,
+  tile_width = 1,
+  time_before_removed = 54000,
+  type = "corpse"
+}

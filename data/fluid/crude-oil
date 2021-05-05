@@ -1,0 +1,20 @@
+{
+  base_color = {
+    b = 0,
+    g = 0,
+    r = 0
+  },
+  default_temperature = 25,
+  flow_color = {
+    b = 0.5,
+    g = 0.5,
+    r = 0.5
+  },
+  heat_capacity = "0.1KJ",
+  icon = "__base__/graphics/icons/fluid/crude-oil.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "crude-oil",
+  order = "a[fluid]-b[crude-oil]",
+  type = "fluid"
+}

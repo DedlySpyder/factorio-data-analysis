@@ -1,0 +1,99 @@
+{
+  animation = {
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/roboport/remnants/roboport-remnants.png",
+      frame_count = 1,
+      height = 180,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/roboport/remnants/hr-roboport-remnants.png",
+        frame_count = 1,
+        height = 358,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.0625,
+          0.25
+        },
+        variation_count = 1,
+        width = 364,
+        y = 0
+      },
+      line_length = 1,
+      shift = {
+        0.0625,
+        0.25
+      },
+      variation_count = 1,
+      width = 182,
+      y = 0
+    },
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/roboport/remnants/roboport-remnants.png",
+      frame_count = 1,
+      height = 180,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/roboport/remnants/hr-roboport-remnants.png",
+        frame_count = 1,
+        height = 358,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.0625,
+          0.25
+        },
+        variation_count = 1,
+        width = 364,
+        y = 358
+      },
+      line_length = 1,
+      shift = {
+        0.0625,
+        0.25
+      },
+      variation_count = 1,
+      width = 182,
+      y = 180
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/roboport.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.roboport"
+    }
+  },
+  name = "roboport-remnants",
+  order = "a-h-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -2,
+      -2
+    },
+    {
+      2,
+      2
+    }
+  },
+  subgroup = "logistic-network-remnants",
+  tile_height = 3,
+  tile_width = 3,
+  time_before_removed = 54000,
+  type = "corpse"
+}

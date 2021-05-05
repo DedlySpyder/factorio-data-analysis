@@ -1,0 +1,10 @@
+{
+  amount = 400000,
+  icon = "__base__/graphics/achievement/iron-throne-3.png",
+  icon_size = 128,
+  item_product = "iron-plate",
+  name = "iron-throne-3",
+  order = "d[production]-e[iron-throne-3]",
+  steam_stats_name = "iron-plates-per-hour",
+  type = "produce-per-hour-achievement"
+}

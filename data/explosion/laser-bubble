@@ -1,0 +1,25 @@
+{
+  animations = {
+    {
+      draw_as_glow = true,
+      filename = "__base__/graphics/entity/laser-bubble/laser-bubble.png",
+      frame_count = 5,
+      height = 8,
+      priority = "extra-high",
+      width = 8
+    }
+  },
+  flags = {
+    "not-on-map",
+    "hidden"
+  },
+  localised_name = {
+    "entity-name.laser-bubble"
+  },
+  name = "laser-bubble",
+  smoke = "smoke-fast",
+  smoke_count = 2,
+  smoke_slow_down_factor = 1,
+  subgroup = "explosions",
+  type = "explosion"
+}

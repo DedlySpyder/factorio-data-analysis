@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 30,
+  ingredients = {
+    {
+      "speed-module",
+      4
+    },
+    {
+      "advanced-circuit",
+      5
+    },
+    {
+      "processing-unit",
+      5
+    }
+  },
+  name = "speed-module-2",
+  result = "speed-module-2",
+  type = "recipe"
+}

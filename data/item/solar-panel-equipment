@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/solar-panel-equipment.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "solar-panel-equipment",
+  order = "a[energy-source]-a[solar-panel]",
+  placed_as_equipment_result = "solar-panel-equipment",
+  stack_size = 20,
+  subgroup = "equipment",
+  type = "item"
+}

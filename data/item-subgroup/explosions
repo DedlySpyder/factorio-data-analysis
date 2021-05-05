@@ -1,0 +1,6 @@
+{
+  group = "effects",
+  name = "explosions",
+  order = "de",
+  type = "item-subgroup"
+}

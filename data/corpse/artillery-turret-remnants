@@ -1,0 +1,68 @@
+{
+  animation = {
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/artillery-turret/remnants/artillery-turret-remnants.png",
+      frame_count = 1,
+      height = 146,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/artillery-turret/remnants/hr-artillery-turret-remnants.png",
+        frame_count = 1,
+        height = 290,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.296875,
+          0.046875
+        },
+        variation_count = 1,
+        width = 326,
+        y = 0
+      },
+      line_length = 1,
+      shift = {
+        0.3125,
+        0.0625
+      },
+      variation_count = 1,
+      width = 164,
+      y = 0
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/artillery-turret.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.artillery-turret"
+    }
+  },
+  name = "artillery-turret-remnants",
+  order = "a-f-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -1.5,
+      -1.5
+    },
+    {
+      1.5,
+      1.5
+    }
+  },
+  subgroup = "defensive-structure-remnants",
+  tile_height = 3,
+  tile_width = 3,
+  time_before_removed = 54000,
+  type = "corpse"
+}

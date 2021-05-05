@@ -1,0 +1,10 @@
+{
+  flags = {
+    "hidden"
+  },
+  icon = "__core__/graphics/icons/unknown.png",
+  icon_size = 64,
+  name = "item-unknown",
+  stack_size = 1,
+  type = "item"
+}

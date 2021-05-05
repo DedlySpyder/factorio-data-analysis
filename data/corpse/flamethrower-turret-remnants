@@ -1,0 +1,95 @@
+{
+  animation = {
+    layers = {
+      {
+        axially_symmetrical = false,
+        direction_count = 4,
+        filename = "__base__/graphics/entity/flamethrower-turret/remnants/flamethrower-turret-remnants.png",
+        frame_count = 1,
+        height = 164,
+        hr_version = {
+          axially_symmetrical = false,
+          direction_count = 4,
+          filename = "__base__/graphics/entity/flamethrower-turret/remnants/hr-flamethrower-turret-remnants.png",
+          frame_count = 1,
+          height = 326,
+          line_length = 1,
+          scale = 0.5,
+          shift = {
+            -0.046875,
+            -0.125
+          },
+          variation_count = 1,
+          width = 302
+        },
+        line_length = 1,
+        shift = {
+          -0.03125,
+          -0.125
+        },
+        variation_count = 1,
+        width = 152
+      },
+      {
+        apply_runtime_tint = true,
+        direction_count = 4,
+        filename = "__base__/graphics/entity/flamethrower-turret/remnants/mask/flamethrower-turret-remnants-mask.png",
+        frame_count = 1,
+        height = 82,
+        hr_version = {
+          apply_runtime_tint = true,
+          direction_count = 4,
+          filename = "__base__/graphics/entity/flamethrower-turret/remnants/mask/hr-flamethrower-turret-remnants-mask.png",
+          frame_count = 1,
+          height = 164,
+          priority = "low",
+          scale = 0.5,
+          shift = {
+            0,
+            -0.109375
+          },
+          width = 164
+        },
+        priority = "low",
+        shift = {
+          0,
+          -0.125
+        },
+        width = 82
+      }
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/flamethrower-turret.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.flamethrower-turret"
+    }
+  },
+  name = "flamethrower-turret-remnants",
+  order = "a-e-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -1,
+      -1.5
+    },
+    {
+      1,
+      1.5
+    }
+  },
+  subgroup = "defensive-structure-remnants",
+  tile_height = 3,
+  tile_width = 2,
+  time_before_removed = 54000,
+  type = "corpse"
+}

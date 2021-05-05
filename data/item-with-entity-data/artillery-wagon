@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/artillery-wagon.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "artillery-wagon",
+  order = "a[train-system]-i[artillery-wagon]",
+  place_result = "artillery-wagon",
+  stack_size = 5,
+  subgroup = "train-transport",
+  type = "item-with-entity-data"
+}

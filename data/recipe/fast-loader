@@ -1,0 +1,18 @@
+{
+  enabled = false,
+  energy_required = 3,
+  hidden = true,
+  ingredients = {
+    {
+      "fast-transport-belt",
+      5
+    },
+    {
+      "loader",
+      1
+    }
+  },
+  name = "fast-loader",
+  result = "fast-loader",
+  type = "recipe"
+}

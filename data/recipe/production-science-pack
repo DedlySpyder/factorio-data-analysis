@@ -1,0 +1,22 @@
+{
+  enabled = false,
+  energy_required = 21,
+  ingredients = {
+    {
+      "electric-furnace",
+      1
+    },
+    {
+      "productivity-module",
+      1
+    },
+    {
+      "rail",
+      30
+    }
+  },
+  name = "production-science-pack",
+  result = "production-science-pack",
+  result_count = 3,
+  type = "recipe"
+}

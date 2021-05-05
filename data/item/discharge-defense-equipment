@@ -1,0 +1,12 @@
+{
+  default_request_amount = 1,
+  icon = "__base__/graphics/icons/discharge-defense-equipment.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "discharge-defense-equipment",
+  order = "b[active-defense]-b[discharge-defense-equipment]-a[equipment]",
+  placed_as_equipment_result = "discharge-defense-equipment",
+  stack_size = 20,
+  subgroup = "military-equipment",
+  type = "item"
+}

@@ -1,0 +1,20 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "stone-wall",
+      1
+    },
+    {
+      "steel-plate",
+      2
+    },
+    {
+      "electronic-circuit",
+      2
+    }
+  },
+  name = "gate",
+  result = "gate",
+  type = "recipe"
+}

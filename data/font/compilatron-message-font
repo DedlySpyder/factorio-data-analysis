@@ -1,0 +1,6 @@
+{
+  from = "default-semibold",
+  name = "compilatron-message-font",
+  size = 18,
+  type = "font"
+}

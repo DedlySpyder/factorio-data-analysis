@@ -1,0 +1,10 @@
+{
+  icon = "__base__/graphics/icons/processing-unit.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "processing-unit",
+  order = "g[processing-unit]",
+  stack_size = 100,
+  subgroup = "intermediate-product",
+  type = "item"
+}

@@ -1,0 +1,18 @@
+{
+  enabled = false,
+  energy_required = 2,
+  ingredients = {
+    {
+      "iron-gear-wheel",
+      40
+    },
+    {
+      "underground-belt",
+      2
+    }
+  },
+  name = "fast-underground-belt",
+  result = "fast-underground-belt",
+  result_count = 2,
+  type = "recipe"
+}

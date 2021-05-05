@@ -1,0 +1,25 @@
+{
+  enabled = false,
+  energy_required = 2,
+  ingredients = {
+    {
+      "iron-plate",
+      3
+    },
+    {
+      "iron-stick",
+      4
+    },
+    {
+      "copper-cable",
+      5
+    },
+    {
+      "electronic-circuit",
+      4
+    }
+  },
+  name = "programmable-speaker",
+  result = "programmable-speaker",
+  type = "recipe"
+}

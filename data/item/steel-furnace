@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/steel-furnace.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "steel-furnace",
+  order = "b[steel-furnace]",
+  place_result = "steel-furnace",
+  stack_size = 50,
+  subgroup = "smelting-machine",
+  type = "item"
+}

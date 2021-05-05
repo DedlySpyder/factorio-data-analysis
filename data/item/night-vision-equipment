@@ -1,0 +1,12 @@
+{
+  default_request_amount = 1,
+  icon = "__base__/graphics/icons/night-vision-equipment.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "night-vision-equipment",
+  order = "f[night-vision]-a[night-vision-equipment]",
+  placed_as_equipment_result = "night-vision-equipment",
+  stack_size = 20,
+  subgroup = "equipment",
+  type = "item"
+}

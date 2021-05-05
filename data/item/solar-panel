@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/solar-panel.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "solar-panel",
+  order = "d[solar-panel]-a[solar-panel]",
+  place_result = "solar-panel",
+  stack_size = 50,
+  subgroup = "energy",
+  type = "item"
+}

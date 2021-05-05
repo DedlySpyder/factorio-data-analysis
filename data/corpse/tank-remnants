@@ -1,0 +1,92 @@
+{
+  animation = {
+    layers = {
+      {
+        direction_count = 4,
+        filename = "__base__/graphics/entity/tank/remnants/tank-remnants.png",
+        frame_count = 1,
+        height = 190,
+        hr_version = {
+          direction_count = 4,
+          filename = "__base__/graphics/entity/tank/remnants/hr-tank-remnants.png",
+          frame_count = 1,
+          height = 380,
+          line_length = 1,
+          scale = 0.5,
+          shift = {
+            0.125,
+            0.015625
+          },
+          width = 414
+        },
+        line_length = 1,
+        shift = {
+          0.125,
+          0
+        },
+        width = 208
+      },
+      {
+        apply_runtime_tint = true,
+        direction_count = 4,
+        filename = "__base__/graphics/entity/tank/remnants/mask/tank-remnants-mask.png",
+        frame_count = 1,
+        height = 110,
+        hr_version = {
+          apply_runtime_tint = true,
+          direction_count = 4,
+          filename = "__base__/graphics/entity/tank/remnants/mask/hr-tank-remnants-mask.png",
+          frame_count = 1,
+          height = 218,
+          priority = "low",
+          scale = 0.5,
+          shift = {
+            0.203125,
+            -0.046875
+          },
+          width = 250
+        },
+        priority = "low",
+        shift = {
+          0.21875,
+          -0.03125
+        },
+        width = 126
+      }
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "building-direction-8-way",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/tank.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.tank"
+    }
+  },
+  name = "tank-remnants",
+  order = "a-k-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -1.5,
+      -2.5
+    },
+    {
+      1.5,
+      2.5
+    }
+  },
+  subgroup = "transport-remnants",
+  tile_height = 5,
+  tile_width = 3,
+  time_before_removed = 54000,
+  type = "corpse"
+}

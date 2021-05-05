@@ -1,0 +1,161 @@
+{
+  animation = {
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/electric-mining-drill/remnants/electric-mining-drill-remnants.png",
+      frame_count = 1,
+      height = 166,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/electric-mining-drill/remnants/hr-electric-mining-drill-remnants.png",
+        frame_count = 1,
+        height = 328,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.21875,
+          -0.015625
+        },
+        variation_count = 1,
+        width = 356,
+        y = 0
+      },
+      line_length = 1,
+      shift = {
+        0.21875,
+        0
+      },
+      variation_count = 1,
+      width = 178,
+      y = 0
+    },
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/electric-mining-drill/remnants/electric-mining-drill-remnants.png",
+      frame_count = 1,
+      height = 166,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/electric-mining-drill/remnants/hr-electric-mining-drill-remnants.png",
+        frame_count = 1,
+        height = 328,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.21875,
+          -0.015625
+        },
+        variation_count = 1,
+        width = 356,
+        y = 328
+      },
+      line_length = 1,
+      shift = {
+        0.21875,
+        0
+      },
+      variation_count = 1,
+      width = 178,
+      y = 166
+    },
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/electric-mining-drill/remnants/electric-mining-drill-remnants.png",
+      frame_count = 1,
+      height = 166,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/electric-mining-drill/remnants/hr-electric-mining-drill-remnants.png",
+        frame_count = 1,
+        height = 328,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.21875,
+          -0.015625
+        },
+        variation_count = 1,
+        width = 356,
+        y = 656
+      },
+      line_length = 1,
+      shift = {
+        0.21875,
+        0
+      },
+      variation_count = 1,
+      width = 178,
+      y = 332
+    },
+    {
+      axially_symmetrical = false,
+      direction_count = 1,
+      filename = "__base__/graphics/entity/electric-mining-drill/remnants/electric-mining-drill-remnants.png",
+      frame_count = 1,
+      height = 166,
+      hr_version = {
+        axially_symmetrical = false,
+        direction_count = 1,
+        filename = "__base__/graphics/entity/electric-mining-drill/remnants/hr-electric-mining-drill-remnants.png",
+        frame_count = 1,
+        height = 328,
+        line_length = 1,
+        scale = 0.5,
+        shift = {
+          0.21875,
+          -0.015625
+        },
+        variation_count = 1,
+        width = 356,
+        y = 984
+      },
+      line_length = 1,
+      shift = {
+        0.21875,
+        0
+      },
+      variation_count = 1,
+      width = 178,
+      y = 498
+    }
+  },
+  final_render_layer = "remnants",
+  flags = {
+    "placeable-neutral",
+    "not-on-map"
+  },
+  icon = "__base__/graphics/icons/electric-mining-drill.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  localised_name = {
+    "remnant-name",
+    {
+      "entity-name.electric-mining-drill"
+    }
+  },
+  name = "electric-mining-drill-remnants",
+  order = "a-a-a",
+  remove_on_tile_placement = false,
+  selectable_in_game = false,
+  selection_box = {
+    {
+      -1.5,
+      -1.5
+    },
+    {
+      1.5,
+      1.5
+    }
+  },
+  subgroup = "extraction-machine-remnants",
+  tile_height = 3,
+  tile_width = 3,
+  time_before_removed = 54000,
+  type = "corpse"
+}

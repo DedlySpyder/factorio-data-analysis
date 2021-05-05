@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 20,
+  ingredients = {
+    {
+      "personal-roboport-equipment",
+      5
+    },
+    {
+      "processing-unit",
+      100
+    },
+    {
+      "low-density-structure",
+      20
+    }
+  },
+  name = "personal-roboport-mk2-equipment",
+  result = "personal-roboport-mk2-equipment",
+  type = "recipe"
+}

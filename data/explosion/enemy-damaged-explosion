@@ -1,0 +1,35 @@
+{
+  animations = {
+    {
+      direction_count = 1,
+      filename = "__core__/graphics/empty.png",
+      frame_count = 1,
+      height = 1,
+      priority = "extra-high",
+      width = 1
+    }
+  },
+  created_effect = {
+    action_delivery = {
+      target_effects = {
+        {
+          entity_name = "blood-fountain-hit-spray",
+          repeat_count = 1,
+          type = "create-entity"
+        }
+      },
+      type = "instant"
+    },
+    type = "direct"
+  },
+  flags = {
+    "not-on-map"
+  },
+  height = 0.3,
+  icon = "__base__/graphics/icons/small-biter.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "enemy-damaged-explosion",
+  subgroup = "hit-effects",
+  type = "explosion"
+}

@@ -1,0 +1,20 @@
+{
+  enabled = false,
+  ingredients = {
+    {
+      "electronic-circuit",
+      1
+    },
+    {
+      "copper-cable",
+      3
+    },
+    {
+      "iron-plate",
+      1
+    }
+  },
+  name = "small-lamp",
+  result = "small-lamp",
+  type = "recipe"
+}

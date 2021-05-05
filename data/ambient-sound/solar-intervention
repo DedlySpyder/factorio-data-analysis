@@ -1,0 +1,8 @@
+{
+  name = "solar-intervention",
+  sound = {
+    filename = "__base__/sound/ambient/solar-intervention.ogg"
+  },
+  track_type = "main-track",
+  type = "ambient-sound"
+}

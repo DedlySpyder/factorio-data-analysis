@@ -1,0 +1,479 @@
+{
+  autoplace = {
+    coverage = 0.011000000000000001,
+    max_probability = 0.77000000000000002,
+    order = "a[doodad]-a[rock]-e[tiny]",
+    peaks = {
+      {
+        aux_max_range = 0.39999999999999996,
+        aux_optimal = 0.5,
+        aux_range = 0.5,
+        noise_layer = "rocks",
+        noise_octaves_difference = -2,
+        noise_persistence = 0.9,
+        water_max_range = 0.39999999999999996,
+        water_optimal = 0.65,
+        water_range = 0.35
+      }
+    },
+    sharpness = 0.7
+  },
+  collision_box = {
+    {
+      -0.1,
+      -0.1
+    },
+    {
+      0.1,
+      0.1
+    }
+  },
+  name = "rock-tiny",
+  order = "b[decorative]-l[rock]-e[tiny]",
+  pictures = {
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-01.png",
+      height = 11,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-01.png",
+        height = 21,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0390625,
+          0.0234375
+        },
+        width = 29
+      },
+      priority = "extra-high",
+      shift = {
+        0.03125,
+        0.015625
+      },
+      width = 15
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-02.png",
+      height = 10,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-02.png",
+        height = 19,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0078125,
+          0.0234375
+        },
+        width = 30
+      },
+      priority = "extra-high",
+      shift = {
+        0,
+        0.03125
+      },
+      width = 15
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-03.png",
+      height = 12,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-03.png",
+        height = 24,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0234375,
+          0.0234375
+        },
+        width = 29
+      },
+      priority = "extra-high",
+      shift = {
+        0.015625,
+        0.015625
+      },
+      width = 15
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-04.png",
+      height = 10,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-04.png",
+        height = 20,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.03125,
+          0.015625
+        },
+        width = 32
+      },
+      priority = "extra-high",
+      shift = {
+        0.03125,
+        0.015625
+      },
+      width = 16
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-05.png",
+      height = 13,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-05.png",
+        height = 25,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0,
+          -0.0078125
+        },
+        width = 29
+      },
+      priority = "extra-high",
+      shift = {
+        0,
+        -0.015625
+      },
+      width = 15
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-06.png",
+      height = 12,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-06.png",
+        height = 24,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0,
+          -0.0234375
+        },
+        width = 36
+      },
+      priority = "extra-high",
+      shift = {
+        0,
+        -0.03125
+      },
+      width = 18
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-07.png",
+      height = 17,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-07.png",
+        height = 34,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.34375,
+          -0.13281200000000002
+        },
+        width = 78
+      },
+      priority = "extra-high",
+      shift = {
+        -0.34375,
+        -0.140625
+      },
+      width = 39
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-08.png",
+      height = 10,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-08.png",
+        height = 19,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          -0.03125,
+          0
+        },
+        width = 35
+      },
+      priority = "extra-high",
+      shift = {
+        -0.03125,
+        0
+      },
+      width = 18
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-09.png",
+      height = 10,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-09.png",
+        height = 20,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0234375,
+          0.015625
+        },
+        width = 28
+      },
+      priority = "extra-high",
+      shift = {
+        0.015625,
+        0.015625
+      },
+      width = 14
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-10.png",
+      height = 10,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-10.png",
+        height = 20,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0078125,
+          -0.0234375
+        },
+        width = 29
+      },
+      priority = "extra-high",
+      shift = {
+        0.015625,
+        -0.03125
+      },
+      width = 15
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-11.png",
+      height = 10,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-11.png",
+        height = 20,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.046875,
+          0.0078125
+        },
+        width = 29
+      },
+      priority = "extra-high",
+      shift = {
+        0.046875,
+        0
+      },
+      width = 15
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-12.png",
+      height = 11,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-12.png",
+        height = 22,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.015625,
+          0
+        },
+        width = 29
+      },
+      priority = "extra-high",
+      shift = {
+        0.015625,
+        0
+      },
+      width = 15
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-13.png",
+      height = 10,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-13.png",
+        height = 19,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.03125,
+          0.015625
+        },
+        width = 27
+      },
+      priority = "extra-high",
+      shift = {
+        0.03125,
+        0.015625
+      },
+      width = 14
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-14.png",
+      height = 10,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-14.png",
+        height = 19,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0078125,
+          0.0078125
+        },
+        width = 27
+      },
+      priority = "extra-high",
+      shift = {
+        0.015625,
+        0.015625
+      },
+      width = 14
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-15.png",
+      height = 11,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-15.png",
+        height = 22,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.0078125,
+          0.015625
+        },
+        width = 26
+      },
+      priority = "extra-high",
+      shift = {
+        0,
+        0.015625
+      },
+      width = 13
+    },
+    {
+      filename = "__base__/graphics/decorative/rock-tiny/rock-tiny-16.png",
+      height = 10,
+      hr_version = {
+        filename = "__base__/graphics/decorative/rock-tiny/hr-rock-tiny-16.png",
+        height = 20,
+        priority = "extra-high",
+        scale = 0.5,
+        shift = {
+          0.03125,
+          0.0078125
+        },
+        width = 27
+      },
+      priority = "extra-high",
+      shift = {
+        0.03125,
+        0
+      },
+      width = 14
+    }
+  },
+  render_layer = "decorative",
+  trigger_effect = {
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.3,
+      initial_height_deviation = 0.1,
+      initial_vertical_speed = 0.05,
+      initial_vertical_speed_deviation = 0.05,
+      offset_deviation = {
+        {
+          -0.1,
+          -0.1
+        },
+        {
+          0.1,
+          0.1
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "tiny-rock-stone-particle-tiny",
+      probability = 1,
+      repeat_count = 10,
+      repeat_count_deviation = 0,
+      show_in_tooltip = false,
+      speed_from_center = 0.02,
+      speed_from_center_deviation = 0.05,
+      type = "create-particle"
+    },
+    {
+      affects_target = false,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      initial_height = 0.3,
+      initial_height_deviation = 0.5,
+      initial_vertical_speed = 0.070000000000000009,
+      initial_vertical_speed_deviation = 0.05,
+      offset_deviation = {
+        {
+          -0.1,
+          -0.1
+        },
+        {
+          0.1,
+          0.1
+        }
+      },
+      offsets = {
+        {
+          0,
+          0
+        }
+      },
+      particle_name = "small-rock-stone-particle-small",
+      probability = 1,
+      repeat_count = 6,
+      repeat_count_deviation = 0,
+      show_in_tooltip = false,
+      speed_from_center = 0.02,
+      speed_from_center_deviation = 0.05,
+      type = "create-particle"
+    }
+  },
+  type = "optimized-decorative",
+  walking_sound = {
+    {
+      filename = "__base__/sound/walking/pebble/stones_01.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_02.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_03.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_04.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_05.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_06.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_07.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_08.ogg",
+      volume = 0.6
+    },
+    {
+      filename = "__base__/sound/walking/pebble/stones_09.ogg",
+      volume = 0.6
+    }
+  }
+}

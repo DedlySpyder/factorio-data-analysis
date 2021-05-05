@@ -1,0 +1,30 @@
+{
+  expensive = {
+    ingredients = {
+      {
+        "iron-plate",
+        2
+      },
+      {
+        "copper-cable",
+        8
+      }
+    },
+    result = "electronic-circuit"
+  },
+  name = "electronic-circuit",
+  normal = {
+    ingredients = {
+      {
+        "iron-plate",
+        1
+      },
+      {
+        "copper-cable",
+        3
+      }
+    },
+    result = "electronic-circuit"
+  },
+  type = "recipe"
+}

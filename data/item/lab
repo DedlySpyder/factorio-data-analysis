@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/lab.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "lab",
+  order = "g[lab]",
+  place_result = "lab",
+  stack_size = 10,
+  subgroup = "production-machine",
+  type = "item"
+}

@@ -1,0 +1,12 @@
+{
+  expression = {
+    literal_value = 1,
+    source_location = {
+      filename = "__core__/prototypes/noise-programs.lua",
+      line_number = 593
+    },
+    type = "literal-number"
+  },
+  name = "control-setting:temperature:frequency:multiplier",
+  type = "noise-expression"
+}

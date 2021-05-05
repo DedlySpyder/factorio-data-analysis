@@ -1,0 +1,15 @@
+{
+  ingredients = {
+    {
+      "iron-plate",
+      1
+    },
+    {
+      "iron-gear-wheel",
+      1
+    }
+  },
+  name = "burner-inserter",
+  result = "burner-inserter",
+  type = "recipe"
+}

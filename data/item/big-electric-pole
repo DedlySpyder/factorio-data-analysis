@@ -1,0 +1,11 @@
+{
+  icon = "__base__/graphics/icons/big-electric-pole.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  name = "big-electric-pole",
+  order = "a[energy]-c[big-electric-pole]",
+  place_result = "big-electric-pole",
+  stack_size = 50,
+  subgroup = "energy-pipe-distribution",
+  type = "item"
+}

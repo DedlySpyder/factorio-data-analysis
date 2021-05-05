@@ -1,0 +1,5 @@
+{
+  bonus_gui_order = "s",
+  name = "grenade",
+  type = "ammo-category"
+}

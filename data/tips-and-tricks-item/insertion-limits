@@ -1,0 +1,21 @@
+{
+  category = "inserters",
+  dependencies = {
+    "inserters"
+  },
+  indent = 1,
+  name = "insertion-limits",
+  order = "e",
+  simulation = {
+    init = "    game.surfaces[1].create_entities_from_blueprint_string\n    {\n      string = \"0eNrFmd2yojAMx9+l13CGlhbEV9nZcVCipzNQmFLOrnvGd9+C5/ixWyTxRu8U+CVN+k9C/WTbeoDOauPY+pPpXWt6tv7xyXp9MGU9/uaOHbA10w4aFjFTNuM3Z0vTd6118RZqx04R06aC32zNT9Hiw9tW12BvHhKnnxED47TTcDY/fTluzNBs/Z1rfnkWatg5q3cxGLCHY+wdB7svd+DxXdt7QmtGw56aROzI1jFPvKFKW//cdE1GbDvs92A3vf7jkTy5fEbf/7EsLpa12WvjL8Wd7gLWYvmmzgZXb2pa2vn2TQ/OaXPox/u+UL2DcoxHB3bn7ZUHmLz1QfK/lG6wo1ue1rTVeHvp4qbtfZQD/qVo//hL/JMX//ph27ty8mguVasQQWFX+JoFZlj3XrM/8ot7o1exa+ODbQdTPdrAuXcwgFrhUXwBVaBRSySeoFFL6+NPVZmYizNV3JcZQSozXDyRJzFtpNvSFiKnT6QNR5b0LOLAip5THPgq1gYqPTTxJdFdWweTq74N8JlNcxWYVy3U8e4dvBQfkZIZ0lVfdWsO8Xvpm2Plt14P1u++EDK9Rd6tPgsZKObadwDNZ9GhwIoE34aSe/KjOvir/Fr4TR3kD+tgDeVMIRQcr4OCFFdB0G42SxYhcvrvzPSgGvDgquUygT8mqEXCAiBbBCysAd/DMlri8B2toOWtQM8sL1JDmpCLzXf9mimEKX+iunBMNFPxBBlVttKUQE5IPks8eUUCKzy4IIEzPDgjgXM8OCeBV3iwIoGv8t17AT1ShaRsN5ngHZYUhyVBe4IEJkgvJYFTdIhJipYE3ZEELQm6I1U3mWEjQQsEXnU0d/Gio8UXP5ySNprCa46kDMWxaSOVCIUXHKmkKXynI1UehdcbqbYrvNxIzUjhuxypeyq83EjtXt2+FJZVsCzwGVx0OX013TCe0f5PD8ypM++v/F4dwTnVQtN+wGbw12ovBag247mvv+TsAMGzM0JD5N/7MsXELaNMo4pEpkyjgkSmTKMpiSyfmKBFeM7P1BOs0cvxjH/6H2B9859DxD7A9mfHV1zmhch5ludFlp9OfwHsVwl5\",\n      position = {-2,-3}\n    }\n    global.chest = game.surfaces[1].find_entities_filtered{name = \"steel-chest\"}[1]\n    script.on_nth_tick(2000, function() global.chest.insert(\"coal\") for k, v in pairs (game.surfaces[1].find_entities_filtered{name = \"boiler\"}) do v.clear_items_inside() end end)\n  ",
+    init_update_count = 150
+  },
+  tag = "[entity=boiler]",
+  trigger = {
+    count = 5,
+    entity = "inserter",
+    match_type_only = true,
+    type = "build-entity"
+  },
+  type = "tips-and-tricks-item"
+}

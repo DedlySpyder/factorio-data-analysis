@@ -1,0 +1,44 @@
+{
+  icon_mipmaps = 4,
+  icon_size = 64,
+  icons = {
+    {
+      icon = "__base__/graphics/icons/fluid/barreling/empty-barrel.png",
+      icon_mipmaps = 4,
+      icon_size = 64
+    },
+    {
+      icon = "__base__/graphics/icons/fluid/barreling/barrel-side-mask.png",
+      icon_mipmaps = 4,
+      icon_size = 64,
+      tint = {
+        a = 0.75,
+        b = 0.6,
+        g = 0.34000000000000004,
+        r = 0
+      }
+    },
+    {
+      icon = "__base__/graphics/icons/fluid/barreling/barrel-hoop-top-mask.png",
+      icon_mipmaps = 4,
+      icon_size = 64,
+      tint = {
+        a = 0.75,
+        b = 0.7,
+        g = 0.7,
+        r = 0.7
+      }
+    }
+  },
+  localised_name = {
+    "item-name.filled-barrel",
+    {
+      "fluid-name.water"
+    }
+  },
+  name = "water-barrel",
+  order = "b[water-barrel]",
+  stack_size = 10,
+  subgroup = "barrel",
+  type = "item"
+}

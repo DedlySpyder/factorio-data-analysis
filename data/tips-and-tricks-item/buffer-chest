@@ -1,0 +1,18 @@
+{
+  category = "logistic-network",
+  dependencies = {
+    "logistic-network"
+  },
+  indent = 1,
+  name = "buffer-chest",
+  order = "g",
+  simulation = {
+    init = "    game.surfaces[1].create_entities_from_blueprint_string\n    {\n      string = \"0eNqt0lFvhCAMAOD/0me4qPN0x19Zlot61TVRIIBmnuG/DzVnluDexlMh9GubdIG6H1Ebkg7EAtQoaUF8LGCpk1W/vrlZIwgghwMwkNWw3oyqlVbGgWdA8oHfIFL/yQClI0e4G9tlvstxqNGED0e2HWvrKkdKBlErS1sYagUmYTCD4IX3LBKyQ8AeG2eo4SjRdDMP/aNpqwZjMHuBDOqxbdHcLT2DkSbHOSn1Fo8ayfy60clZq/mR36uOrAutNl9oHdeVtTQh10ZN9AhfYza97PAanNnXv+x9vlh8gcm5V/xDr9lKhwXY1kT82ioGExq7ZWTvaV7esjItyvJW5t7/AL9E090=\",\n      position = {-2, -2}\n    }\n\n    local roboport = game.surfaces[1].find_entities_filtered{name = \"roboport\"}[1]\n    roboport.insert({name = \"logistic-robot\", count = 2})\n    buffer_chest = game.surfaces[1].find_entities_filtered{name = \"logistic-chest-buffer\"}[1]\n    buffer_chest.set_request_slot({name = \"iron-plate\", count = 100}, 1)\n    buffer_chest.set_request_slot({name = \"copper-plate\", count = 100}, 2)\n    provider_chest_1 = game.surfaces[1].find_entities_filtered{name = \"logistic-chest-passive-provider\"}[1]\n    provider_chest_2 = game.surfaces[1].find_entities_filtered{name = \"logistic-chest-passive-provider\"}[2]\n    game.camera_alt_info = false\n\n    game.forces.player.worker_robots_speed_modifier = 1\n    game.forces.player.character_logistic_requests = true\n\n    step_1 = function()\n      character = game.surfaces[1].create_entity\n      {\n        name = \"character\",\n        position = {5.5, -10},\n        force = \"player\"\n      }\n      character.walking_state = {walking = true, direction = defines.direction.south}\n      script.on_nth_tick(1, function()\n        if character.position.y >= 0.5 then\n          character.walking_state = {walking = false}\n          step_2()\n        end\n      end)\n    end\n\n    step_2 = function()\n      buffer_chest.insert({name = \"iron-plate\", count = 100})\n      buffer_chest.insert({name = \"copper-plate\", count = 100})\n      provider_chest_1.insert({name = \"iron-plate\", count = 100})\n      provider_chest_2.insert({name = \"copper-plate\", count = 100})\n      character.set_personal_logistic_slot(1, {name = \"iron-plate\", min = 2, max = 1000})\n      character.set_personal_logistic_slot(2, {name = \"copper-plate\", min = 2, max = 1000})\n      script.on_nth_tick(1, function()\n        if character.get_main_inventory().get_item_count(\"iron-plate\") < 2 then return end\n        if character.get_main_inventory().get_item_count(\"copper-plate\") < 2 then return end\n        step_3()\n      end)\n    end\n\n    step_3 = function()\n      local count = 30\n      script.on_nth_tick(1, function()\n        count = count - 1\n        if count > 0 then return end\n        character.walking_state = {walking = true, direction = defines.direction.south}\n        step_4()\n      end)\n    end\n\n    step_4 = function()\n      script.on_nth_tick(1, function()\n        if game.surfaces[1].count_entities_filtered{name = \"logistic-robot\"} > 0 then return end\n        reset()\n      end)\n    end\n\n    reset = function()\n      if character and character.valid then character.destroy() end\n      buffer_chest.clear_items_inside()\n      provider_chest_1.clear_items_inside()\n      provider_chest_2.clear_items_inside()\n      start()\n    end\n\n    start = function()\n      count = 60\n      script.on_nth_tick(1, function()\n        count = count -1\n        if count > 0 then return end\n        step_1()\n      end)\n    end\n\n    start()\n\n  "
+  },
+  tag = "[item=logistic-chest-buffer]",
+  trigger = {
+    technology = "logistic-system",
+    type = "research"
+  },
+  type = "tips-and-tricks-item"
+}

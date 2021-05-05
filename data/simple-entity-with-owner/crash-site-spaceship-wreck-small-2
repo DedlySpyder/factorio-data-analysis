@@ -1,0 +1,150 @@
+{
+  alert_when_damaged = false,
+  allow_copy_paste = false,
+  collision_box = {
+    {
+      -0.7,
+      0
+    },
+    {
+      0.7,
+      0.8
+    }
+  },
+  dying_explosion = "medium-explosion",
+  flags = {
+    "placeable-player",
+    "player-creation",
+    "hidden",
+    "not-rotatable",
+    "placeable-off-grid",
+    "not-blueprintable",
+    "not-deconstructable"
+  },
+  icon = "__base__/graphics/icons/crash-site-spaceship-wreck-small-2.png",
+  icon_mipmaps = 4,
+  icon_size = 64,
+  integration_patch = {
+    filename = "__base__/graphics/entity/crash-site-spaceship/spaceship-wreck-small-2-ground.png",
+    frame_count = 1,
+    height = 78,
+    hr_version = {
+      filename = "__base__/graphics/entity/crash-site-spaceship/hr-spaceship-wreck-small-2-ground.png",
+      frame_count = 1,
+      height = 154,
+      line_length = 1,
+      priority = "high",
+      scale = 0.5,
+      shift = {
+        -0.4375,
+        0.6875
+      },
+      width = 232
+    },
+    line_length = 1,
+    priority = "high",
+    shift = {
+      -0.4375,
+      0.6875
+    },
+    width = 116
+  },
+  integration_patch_render_layer = "decals",
+  localised_name = {
+    "entity-name.crash-site-spaceship-wreck-small"
+  },
+  map_color = {
+    a = 1,
+    b = 0.57999999999999998,
+    g = 0.36499999999999999,
+    r = 0
+  },
+  max_health = 50,
+  minable = {
+    mining_time = 0.75
+  },
+  name = "crash-site-spaceship-wreck-small-2",
+  picture = {
+    layers = {
+      {
+        filename = "__base__/graphics/entity/crash-site-spaceship/spaceship-wreck-small-2.png",
+        height = 52,
+        hr_version = {
+          filename = "__base__/graphics/entity/crash-site-spaceship/hr-spaceship-wreck-small-2.png",
+          height = 102,
+          scale = 0.5,
+          shift = {
+            -0.25,
+            0.5
+          },
+          width = 146
+        },
+        shift = {
+          -0.25,
+          0.5
+        },
+        width = 74
+      },
+      {
+        draw_as_shadow = true,
+        filename = "__base__/graphics/entity/crash-site-spaceship/spaceship-wreck-small-2-shadow.png",
+        height = 38,
+        hr_version = {
+          draw_as_shadow = true,
+          filename = "__base__/graphics/entity/crash-site-spaceship/hr-spaceship-wreck-small-2-shadow.png",
+          height = 76,
+          scale = 0.5,
+          shift = {
+            0.21875,
+            0.59375
+          },
+          width = 92
+        },
+        shift = {
+          0.25,
+          0.5625
+        },
+        width = 44
+      }
+    }
+  },
+  resistances = {
+    {
+      percent = 100,
+      type = "fire"
+    }
+  },
+  selection_box = {
+    {
+      -0.7,
+      0
+    },
+    {
+      0.7,
+      0.8
+    }
+  },
+  type = "simple-entity-with-owner",
+  vehicle_impact_sound = {
+    {
+      filename = "__base__/sound/car-metal-impact-2.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-3.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-4.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-5.ogg",
+      volume = 0.5
+    },
+    {
+      filename = "__base__/sound/car-metal-impact-6.ogg",
+      volume = 0.5
+    }
+  }
+}

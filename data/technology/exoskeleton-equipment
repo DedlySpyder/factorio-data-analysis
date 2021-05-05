@@ -1,0 +1,52 @@
+{
+  effects = {
+    {
+      recipe = "exoskeleton-equipment",
+      type = "unlock-recipe"
+    }
+  },
+  icon_mipmaps = 4,
+  icon_size = 256,
+  icons = {
+    {
+      icon = "__base__/graphics/technology/exoskeleton-equipment.png",
+      icon_mipmaps = 4,
+      icon_size = 256
+    },
+    {
+      icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
+      icon_mipmaps = 3,
+      icon_size = 128,
+      shift = {
+        100,
+        100
+      }
+    }
+  },
+  name = "exoskeleton-equipment",
+  order = "g-h",
+  prerequisites = {
+    "advanced-electronics-2",
+    "electric-engine",
+    "solar-panel-equipment"
+  },
+  type = "technology",
+  unit = {
+    count = 50,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      },
+      {
+        "chemical-science-pack",
+        1
+      }
+    },
+    time = 30
+  }
+}

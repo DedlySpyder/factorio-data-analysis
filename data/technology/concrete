@@ -1,0 +1,44 @@
+{
+  effects = {
+    {
+      recipe = "concrete",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "hazard-concrete",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "refined-concrete",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "refined-hazard-concrete",
+      type = "unlock-recipe"
+    }
+  },
+  icon = "__base__/graphics/technology/concrete.png",
+  icon_mipmaps = 4,
+  icon_size = 256,
+  name = "concrete",
+  order = "c-c-c",
+  prerequisites = {
+    "advanced-material-processing",
+    "automation-2"
+  },
+  type = "technology",
+  unit = {
+    count = 250,
+    ingredients = {
+      {
+        "automation-science-pack",
+        1
+      },
+      {
+        "logistic-science-pack",
+        1
+      }
+    },
+    time = 30
+  }
+}

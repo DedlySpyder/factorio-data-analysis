@@ -1,0 +1,10 @@
+{
+  category = "game-interaction",
+  dependencies = {
+    "introduction"
+  },
+  image = "__base__/graphics/tips-and-tricks/clear-cursor.png",
+  name = "clear-cursor",
+  order = "d",
+  type = "tips-and-tricks-item"
+}

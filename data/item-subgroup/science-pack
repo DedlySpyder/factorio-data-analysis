@@ -1,0 +1,6 @@
+{
+  group = "intermediate-products",
+  name = "science-pack",
+  order = "h",
+  type = "item-subgroup"
+}

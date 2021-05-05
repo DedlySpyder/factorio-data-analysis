@@ -1,0 +1,21 @@
+{
+  enabled = false,
+  energy_required = 60,
+  ingredients = {
+    {
+      "effectivity-module-2",
+      5
+    },
+    {
+      "advanced-circuit",
+      5
+    },
+    {
+      "processing-unit",
+      5
+    }
+  },
+  name = "effectivity-module-3",
+  result = "effectivity-module-3",
+  type = "recipe"
+}

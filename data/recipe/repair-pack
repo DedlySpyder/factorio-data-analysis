@@ -1,0 +1,15 @@
+{
+  ingredients = {
+    {
+      "electronic-circuit",
+      2
+    },
+    {
+      "iron-gear-wheel",
+      2
+    }
+  },
+  name = "repair-pack",
+  result = "repair-pack",
+  type = "recipe"
+}
