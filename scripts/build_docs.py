@@ -62,7 +62,7 @@ def parse_prototypes(raw_prototypes):
 	pattern = re.compile(r'FactorioDataRawDump\(<<(.*?)>>,<<(.*?)>>,<<(.*?)>>\)', re.MULTILINE | re.DOTALL)
 	for raw in raw_prototypes:
 		match = pattern.search(raw)
-		vprint('Found %s - %s' % (match[1], match[2]))
+		vprint(f'Found {match[1]} - {match[2]}')
 		write_prototype(match[1], match[2], match[3])
 
 
@@ -75,32 +75,36 @@ def write_prototype(category, name, data):
 
 
 def run_factorio():
-	print('Running local Factorio to generate fresh logs')
-	completed = subprocess.run(
-		[FACTORIO_EXE, '--create', str(TMP_DIR / 'dummy_map')],
-		stderr=subprocess.PIPE,
-		stdout=subprocess.PIPE
-	)
-
-	if completed.returncode > 0:
-		print('ERROR: Factorio failed to run:')
-		print(completed.stderr)
-
-	print('Factorio ran successfully')
+	_run_factorio('--create', str(TMP_DIR / 'dummy_map'))
 
 
 def upgrade_factorio(version): #TODO - test this
-	print('Upgrading Factorio to ' + version)
-	completed = subprocess.run(
-		[FACTORIO_EXE, '--apply-update', version],
-		stderr=subprocess.PIPE
+	_run_factorio('--apply-update', version)
+
+def _run_factorio(*args):
+	args = list(args)
+	vprint(f'Running Factorio from {FACTORIO_EXE} with args: {args}')
+	proc = subprocess.Popen(
+		[FACTORIO_EXE] + args,
+		stderr=subprocess.PIPE,
+		stdout=subprocess.PIPE,
+		bufsize=1
 	)
 
-	if completed.returncode > 0:
-		print('ERROR: Failed to upgrade Factorio:')
-		print(completed.stderr)
-		sys.exit(completed.returncode)
-	print('Successfully upgraded Factorio')
+	for line in iter(proc.stdout.readline, None):
+		if not line:
+			break
+		vprint(line.decode('utf-8'), end='')
+	proc.stdout.close()
+	proc.wait()
+
+	if proc.returncode > 0:
+		print('ERROR: Factorio failed to run:')
+		print(proc.stderr.read().decode('utf-8'))
+		return proc.returncode
+	else:
+		print('Factorio ran successfully')
+		return 0
 
 
 def main(log_lines):
@@ -113,7 +117,7 @@ def main(log_lines):
 
 	if DATA_RAW_DIR.exists():
 		data = str(DATA_RAW_DIR)
-		print('Deleting data directory %s recursively' % data)
+		print(f'Deleting data directory {data} recursively')
 		shutil.rmtree(data)
 
 	parse_prototypes(raw_prototypes)
