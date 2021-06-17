@@ -8,6 +8,9 @@
   icon = "__base__/graphics/technology/gate.png",
   icon_mipmaps = 4,
   icon_size = 256,
+  localised_description = {
+    "technology-description.gates"
+  },
   name = "gate",
   order = "a-l-a",
   prerequisites = {
