@@ -129,6 +129,7 @@ if __name__ == '__main__':
 		description="""Builds the data_raw directory with all prototype data from the local Factorio instance"""
 	)
 
+	parser.add_argument('-e', '--exe', action='store', help=f'Factorio exe file to use instead of {FACTORIO_EXE}')
 	parser.add_argument('-f', '--file', action='store', help='Log file to read, instead of launching local Factorio install')
 	parser.add_argument('-u', '--upgrade', action='store', help='Upgrade local Factorio before running, to provided version')
 	parser.add_argument('-v', '--verbose', action='store_true', help='Verbose logging')
@@ -137,6 +138,11 @@ if __name__ == '__main__':
 
 	if args.verbose:
 		vprint = print
+
+	if args.exe:
+		FACTORIO_EXE = Path(args.exe)
+		if not args.file:
+			FACTORIO_LOG_FILE = (FACTORIO_EXE.parent / '../../factorio-current.log').absolute().resolve()
 
 	if args.upgrade:
 		upgrade_factorio(args.upgrade)
