@@ -26,7 +26,8 @@
   },
   selection_cursor_box_type = "copy",
   selection_mode = {
-    "blueprint"
+    "blueprint",
+    "avoid-rolling-stock"
   },
   stack_size = 1,
   subgroup = "tool",

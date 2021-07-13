@@ -1,13 +1,4 @@
 {
-  ability_icon = {
-    filename = "__base__/graphics/icons/discharge-defense-equipment-controller.png",
-    flags = {
-      "icon"
-    },
-    mipmap_count = 4,
-    priority = "extra-high-no-scale",
-    size = 64
-  },
   attack_parameters = {
     ammo_category = "electric",
     ammo_type = {

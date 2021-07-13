@@ -580,6 +580,7 @@
     0,
     1
   },
+  flying_text_ttl = 80,
   forced_enabled_recipe_slot_background_tint = {
     a = 0.8,
     b = 0,
@@ -603,6 +604,7 @@
   icon_shadow_inset = 9.8879999999999999,
   icon_shadow_radius = 17.248000000000001,
   icon_shadow_sharpness = 0,
+  inventory_width = 10,
   item_outline_color = {
     0,
     0,
@@ -849,7 +851,9 @@
   medium_blueprint_area_size = 200,
   minimum_recipe_overload_multiplier = 2,
   missing_preview_sprite_location = "__core__/graphics/missing-preview.png",
+  module_inventory_width = 10,
   name = "default",
+  normalised_achievement_icon_size = 100,
   player_colors = {
     {
       chat_color = {
@@ -1097,6 +1101,8 @@
     g = 0.75,
     r = 0.75
   },
+  select_group_row_count = 6,
+  select_slot_row_count = 10,
   server_command_console_chat_color = {
     a = 1,
     b = 0.75,
@@ -1111,6 +1117,7 @@
     g = 0.8,
     r = 0.8
   },
+  tooltip_monitor_edge_border = 10,
   train_button_hovered_tint = {
     a = 0.7,
     b = 0,
@@ -1176,6 +1183,7 @@
     g = 0.1,
     r = 0.05
   },
+  tutorial_notice_icon_size = 96,
   type = "utility-constants",
   unit_group_max_pursue_distance = 50,
   unit_group_pathfind_resolution = 0,

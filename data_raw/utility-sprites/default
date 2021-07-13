@@ -550,6 +550,14 @@
     scale = 0.5,
     size = 32
   },
+  close_map_preview = {
+    filename = "__core__/graphics/icons/close-map-preview.png",
+    flags = {
+      "gui-icon"
+    },
+    priority = "extra-high-no-scale",
+    size = 64
+  },
   close_white = {
     filename = "__core__/graphics/icons/close-white.png",
     flags = {

@@ -10704,6 +10704,7 @@
   },
   map_generator_close_preview_button = {
     icon_horizontal_align = "left",
+    left_padding = -4,
     parent = "back_button",
     type = "button_style",
     width = 160
