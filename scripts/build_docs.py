@@ -1,5 +1,6 @@
 import argparse
 import re
+import requests
 import shutil
 import subprocess
 import sys
@@ -78,8 +79,106 @@ def run_factorio():
 	_run_factorio('--create', str(TMP_DIR / 'dummy_map'))
 
 
-def upgrade_factorio(version): #TODO - test this
-	_run_factorio('--apply-update', version)
+def upgrade_factorio():
+	version = get_current_version()
+	upgrade_path = get_upgrade_path(get_upgrade_versions(), version)
+
+	upgrade_count = len(upgrade_path)
+	if upgrade_count == 0:
+		print("Factorio fully updated")
+		return
+
+	print(f'Upgrading Factorio in {len(upgrade_path)} steps')
+	for upgrade in upgrade_path:
+		base_version = upgrade["from"]
+		to = upgrade["to"]
+		print(f'Upgrading from {base_version} to {to}')
+
+		upgrade_link = get_upgrade_link(base_version, to)
+		vprint(f'Upgrade link: {upgrade_link}')
+
+		upgrade_file = download_upgrade_zip(upgrade_link, to)
+		vprint(f'Upgrade file: {upgrade_file}')
+
+		print('Applying update to Factorio')
+		_run_factorio('--apply-update', upgrade_file)
+		print(f'Successfully updated to {to}')
+		print()
+
+
+def get_current_version():
+	lines = _run_factorio('--version')
+	for line in lines:
+		match = re.match('Version: ([\d\.]*) .*', line)
+		if match:
+			return match.group(1)
+	raise RuntimeError('Failed to get current version of Factorio')
+
+
+def download_upgrade_zip(url, to):
+	file = TMP_DIR / f'{to}.zip'
+	r = _run_get(url)
+	open(file, 'wb').write(r.content)
+	return str(file)
+
+
+def get_upgrade_link(base_version, to):
+	links = _run_get('https://updater.factorio.com/get-download-link', {
+		'package': 'core-linux_headless64',
+		'from': base_version,
+		'to': to
+	}).json()
+	if len(links) < 1:
+		raise RuntimeError(f'Failed to get upgrade links: {links}')
+	return links[0]
+
+
+def get_upgrade_versions():
+	return _run_get('https://updater.factorio.com/get-available-versions').json()
+
+
+def _run_get(url, params={}):
+	try:
+		r = requests.get(url, params=params)
+		r.raise_for_status()
+		return r
+	except Exception as e:
+		print('Error: Could not get list of updates for updater')
+		raise SystemExit(e)
+
+
+def get_upgrade_path(versions, from_version):
+	print('Calculating upgrade path')
+	upgrade_path = []
+	latest_upgrade = from_version
+	while True:
+		upgrade = highest_single_upgrade(versions, latest_upgrade)
+		if upgrade is None:
+			break
+		upgrade_path.append(upgrade)
+		latest_upgrade = upgrade['to']
+	return upgrade_path
+
+
+def highest_single_upgrade(versions, from_version):
+	highest = None
+	for v in versions['core-linux_headless64']:
+		if 'from' in v and v['from'] == from_version:
+			vprint(f'Found possible upgrade from {from_version} to {v["to"]}')
+			if highest is None or version_is_higher(v['to'], highest):
+				highest = v
+
+	return highest
+
+
+def version_is_higher(version, test):
+	v1, v2, v3 = [int(n) for n in version.split('.')]
+	t1, t2, t3 = [int(n) for n in test.split('.')]
+	if t1 > v1 or (t1 == v1 and t2 > v2) or (t1 == v1 and t2 == v2 and t3 > v3):
+		print(f'{test} is higher than {version}')
+		return True
+	return False
+
 
 def _run_factorio(*args):
 	args = list(args)
@@ -91,10 +190,15 @@ def _run_factorio(*args):
 		bufsize=1
 	)
 
+	lines = []
 	for line in iter(proc.stdout.readline, None):
 		if not line:
 			break
-		vprint(line.decode('utf-8'), end='')
+		line = line.decode('utf-8')
+		lines.append(line)
+		vprint(line, end='')
+	vprint('End of output')
+	vprint()
 	proc.stdout.close()
 	proc.wait()
 
@@ -104,7 +208,7 @@ def _run_factorio(*args):
 		return proc.returncode
 	else:
 		print('Factorio ran successfully')
-		return 0
+		return lines
 
 
 def main(log_lines):
@@ -131,7 +235,7 @@ if __name__ == '__main__':
 
 	parser.add_argument('-e', '--exe', action='store', help=f'Factorio exe file to use instead of {FACTORIO_EXE}')
 	parser.add_argument('-f', '--file', action='store', help='Log file to read, instead of launching local Factorio install')
-	parser.add_argument('-u', '--upgrade', action='store', help='Upgrade local Factorio before running, to provided version')
+	parser.add_argument('-u', '--upgrade', action='store_true', help='Upgrade local Factorio before running, to provided version')
 	parser.add_argument('-v', '--verbose', action='store_true', help='Verbose logging')
 
 	args = parser.parse_args()
@@ -144,10 +248,10 @@ if __name__ == '__main__':
 		if not args.file:
 			FACTORIO_LOG_FILE = (FACTORIO_EXE.parent / '../../factorio-current.log').absolute().resolve()
 
-	if args.upgrade:
-		upgrade_factorio(args.upgrade)
-
 	create_tmp()
+
+	if args.upgrade:
+		upgrade_factorio()
 
 	log_file = None
 	if args.file:
