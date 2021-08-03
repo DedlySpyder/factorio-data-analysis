@@ -1,6 +1,7 @@
-for category, prototypes in pairs(data.raw) do
-    for name, prototype in pairs(prototypes) do
-        log("FactorioDataRawDump(<<" .. category .. ">>,<<" .. name .. ">>,<<" .. serpent.block(prototype, {comment = true, refcomment = true, tablecomment = false}) .. ">>)")
-    end
-end
-log("DONE")
+-- TODO - need to figure out a way to do this last if not doing a full diff (still use the hook, but call it on the last run?)
+--for category, prototypes in pairs(data.raw) do
+--    for name, prototype in pairs(prototypes) do
+--        log("FactorioDataRawDump(<<" .. category .. ">>,<<" .. name .. ">>,<<" .. serpent.block(prototype, {comment = true, refcomment = true, tablecomment = false}) .. ">>)")
+--    end
+--end
+--log("DONE")
