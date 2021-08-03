@@ -76,7 +76,7 @@ def write_prototype(category, name, data):
 
 
 def run_factorio():
-	_run_factorio('--create', str(TMP_DIR / 'dummy_map'))
+	_run_factorio('--no-log-rotation', '--create', str(TMP_DIR / 'dummy_map'))
 
 
 def upgrade_factorio():
