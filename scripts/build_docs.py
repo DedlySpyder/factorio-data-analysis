@@ -49,7 +49,7 @@ def parse_log_lines_to_raw_prototypes(log_file_lines):
 				content.append(''.join(prototype))
 				prototype = []
 
-		if 'DONE' in line:
+		if '<<DONE>>' in line:
 			content.append(''.join(prototype))
 			break
 
