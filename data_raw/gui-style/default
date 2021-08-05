@@ -14935,7 +14935,6 @@
     vertical_spacing = 0
   },
   shortcut_bar_expand_button = {
-    bottom_padding = 4,
     height = 16,
     left_click_sound = {
       {
@@ -14943,9 +14942,9 @@
         volume = 1
       }
     },
-    left_padding = 2,
+    left_padding = -2,
     parent = "frame_button",
-    right_padding = 2,
+    right_padding = -2,
     selected_graphical_set = {
       base = {
         corner_size = 8,
@@ -14980,7 +14979,6 @@
         }
       }
     },
-    top_padding = 4,
     type = "button_style",
     width = 8
   },
