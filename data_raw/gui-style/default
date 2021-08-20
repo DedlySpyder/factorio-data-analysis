@@ -10706,8 +10706,7 @@
     icon_horizontal_align = "left",
     left_padding = -4,
     parent = "back_button",
-    type = "button_style",
-    width = 160
+    type = "button_style"
   },
   map_generator_confirm_button = {
     parent = "confirm_double_arrow_button",
@@ -10786,8 +10785,6 @@
   },
   map_generator_preview_button = {
     icon_horizontal_align = "left",
-    maximal_width = 250,
-    natural_width = 136,
     parent = "forward_button",
     type = "button_style"
   },
