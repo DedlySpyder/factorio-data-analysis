@@ -1,5 +1,6 @@
 local dump = require("__Factorio_Raw_Data__/dump")
 
+log("<<START - FactorioDataRawDump>>")
 debug.sethook(function()
     local info = debug.getinfo(2, "nS")
     if info.what == "main" then
@@ -11,7 +12,7 @@ debug.sethook(function()
         local stageRaw = parts[#parts]
         local stage = string.sub(stageRaw, 1, #stageRaw - 4)
         log("<<START>><<" .. modName .. ">><<" .. stage .. ">>")
-        dump()
+        --dump()
         log("<<DONE>>")
     end
 end, "r")

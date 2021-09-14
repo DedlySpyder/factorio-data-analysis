@@ -76,7 +76,7 @@ def write_prototype(category, name, data):
 
 
 def run_factorio():
-	_run_factorio('--create', str(TMP_DIR / 'dummy_map'))
+	_run_factorio('--instrument-mod', 'Factorio_Raw_Data', '--create', str(TMP_DIR / 'dummy_map'))
 
 
 def upgrade_factorio():
@@ -228,6 +228,7 @@ def main(log_lines):
 	parse_prototypes(raw_prototypes)
 	cleanup_tmp()
 
+import data_parser
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser(
@@ -262,4 +263,5 @@ if __name__ == '__main__':
 
 	lines = read_log_file_lines(log_file)
 
-	main(lines)
+	parser = data_parser.Data_Parser(DATA_RAW_DIR, args.verbose, args.verbose)
+	parser.parse_lines(lines)

@@ -2,3 +2,4 @@ factorio/*
 !factorio/mods
 
 .idea
+__pycache__/
