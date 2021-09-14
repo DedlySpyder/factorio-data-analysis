@@ -3,9 +3,10 @@ import re
 import requests
 import shutil
 import subprocess
-import sys
 
 from pathlib import Path
+
+import data_parser
 
 
 PROJECT_ROOT_PATH = (Path(__file__).parent / '..').absolute().resolve()
@@ -36,43 +37,6 @@ def read_log_file_lines(path):
 	print('Reading log file: ' + str(path))
 	with path.resolve().open() as f:
 		return f.readlines()
-
-
-def parse_log_lines_to_raw_prototypes(log_file_lines):
-	content = []
-	prototype = []
-	open_prototype = False
-	for line in log_file_lines:
-		if 'FactorioDataRawDump' in line:
-			open_prototype = True
-			if len(prototype) > 0:
-				content.append(''.join(prototype))
-				prototype = []
-
-		if '<<DONE>>' in line:
-			content.append(''.join(prototype))
-			break
-
-		if open_prototype:
-			prototype.append(line)
-	return content
-
-
-def parse_prototypes(raw_prototypes):
-	print('Parsing %d prototypes' % len(raw_prototypes))
-	pattern = re.compile(r'FactorioDataRawDump\(<<(.*?)>>,<<(.*?)>>,<<(.*?)>>\)', re.MULTILINE | re.DOTALL)
-	for raw in raw_prototypes:
-		match = pattern.search(raw)
-		vprint(f'Found {match[1]} - {match[2]}')
-		write_prototype(match[1], match[2], match[3])
-
-
-def write_prototype(category, name, data):
-	path = DATA_RAW_DIR / category / name
-	vprint('Outputting data to ' + str(path))
-	path.parent.mkdir(parents=True, exist_ok=True)
-	with path.open('w') as f:
-		f.write(data)
 
 
 def run_factorio():
@@ -197,9 +161,6 @@ def _run_factorio(*args):
 			break
 		line = line.decode('utf-8')
 		lines.append(line)
-		vprint(line, end='')
-	vprint('End of output')
-	vprint()
 	proc.stdout.close()
 	proc.wait()
 
@@ -212,23 +173,19 @@ def _run_factorio(*args):
 		return lines
 
 
-def main(log_lines):
+def main(log_lines, args):
 	create_tmp()
-
-	raw_prototypes = parse_log_lines_to_raw_prototypes(log_lines)
-	if len(raw_prototypes) == 0:
-		print('ERROR: No prototypes found in log file')
-		return
 
 	if DATA_RAW_DIR.exists():
 		data = str(DATA_RAW_DIR)
 		print(f'Deleting data directory {data} recursively')
 		shutil.rmtree(data)
 
-	parse_prototypes(raw_prototypes)
+	parser = data_parser.Data_Parser(DATA_RAW_DIR, args.verbose or args.trace, args.trace)
+	parser.parse_lines(log_lines)
+
 	cleanup_tmp()
 
-import data_parser
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser(
@@ -239,6 +196,7 @@ if __name__ == '__main__':
 	parser.add_argument('-f', '--file', action='store', help='Log file to read, instead of launching local Factorio install')
 	parser.add_argument('-u', '--upgrade', action='store_true', help='Upgrade local Factorio before running, to provided version')
 	parser.add_argument('-v', '--verbose', action='store_true', help='Verbose logging')
+	parser.add_argument('-vv', '--trace', action='store_true', help='Trace logging')
 
 	args = parser.parse_args()
 
@@ -263,5 +221,4 @@ if __name__ == '__main__':
 
 	lines = read_log_file_lines(log_file)
 
-	parser = data_parser.Data_Parser(DATA_RAW_DIR, args.verbose, args.verbose)
-	parser.parse_lines(lines)
+	main(lines, args)
