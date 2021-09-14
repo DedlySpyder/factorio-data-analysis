@@ -76,7 +76,7 @@ def write_prototype(category, name, data):
 
 
 def run_factorio():
-	_run_factorio('--no-log-rotation', '--create', str(TMP_DIR / 'dummy_map'))
+	_run_factorio('--create', str(TMP_DIR / 'dummy_map'))
 
 
 def upgrade_factorio():
@@ -180,6 +180,7 @@ def version_is_higher(version, test):
 	return False
 
 
+# https://wiki.factorio.com/Command_line_parameters
 def _run_factorio(*args):
 	args = list(args)
 	vprint(f'Running Factorio from {FACTORIO_EXE} with args: {args}')
