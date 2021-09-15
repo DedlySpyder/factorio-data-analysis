@@ -1,5 +1,11 @@
 local dump = require("__Factorio_Raw_Data__/dump")
 
+local data_stages = {
+    data = true,
+    ["data-updates"] = true,
+    ["data-final-fixes"] = true
+}
+
 log("<<START - FactorioDataRawDump>>")
 debug.sethook(function()
     local info = debug.getinfo(2, "nS")
@@ -11,9 +17,11 @@ debug.sethook(function()
 
         local stageRaw = parts[#parts]
         local stage = string.sub(stageRaw, 1, #stageRaw - 4)
-        log("<<START>><<" .. modName .. ">><<" .. stage .. ">>")
-        --dump()
-        log("<<DONE>>")
+
+        if data_stages[stage] then
+            log("<<START>><<" .. modName .. ">><<" .. stage .. ">>")
+            dump()
+            log("<<DONE>>")
+        end
     end
 end, "r")
-
