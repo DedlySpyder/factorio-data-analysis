@@ -74,6 +74,12 @@ class Data_Parser:
         branch_name = f'diff-{datetime.datetime.now().replace(microsecond=0).isoformat().replace(":", "-")}'
         print(f'Creating diff branch: {branch_name}')
         self._run_git('checkout', '-b', branch_name)
+        self._run_git('add', self.output_dir)
+        self._run_git(
+            'commit',
+            '-m', f'Empty data_raw',
+            fail_on_err=False
+        )
 
     def start_sub_stage(self, line):
         self.t_print(f'Starting sub stage parsing for line: {line}')
