@@ -1,4 +1,6 @@
+import datetime
 import re
+import subprocess
 
 START_MOD_PARSING_FLAG = '<<START - FactorioDataRawDump>>'
 END_MOD_PARSING_FLAG = '<<DONE - FactorioDataRawDump>>'
@@ -34,9 +36,44 @@ class Data_Parser:
         if self.trace:
             print(*args, **kwargs)
 
+    def _run_git(self, *args, fail_on_err=True):
+        args = [str(a) for a in list(args)]
+        self.d_print('Running git with args:', args)
+        proc = subprocess.Popen(
+            ['git'] + list(args),
+            stderr=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+            bufsize=1
+        )
+
+        self.t_print('Git stdout:')
+        stdout = []
+        for line in iter(proc.stdout.readline, None):
+            if not line:
+                break
+            line = line.decode('utf-8')
+            stdout.append(line)
+            self.t_print(line, end='')
+        proc.wait()
+
+        if proc.returncode > 0:
+            if fail_on_err:
+                print('Git stderr:')
+                print(proc.stderr.read().decode('utf-8'))
+                raise RuntimeError('ERROR: Git command failed to run')
+            else:
+                self.d_print('Git command failed (not failing), stderr:', proc.stderr.read().decode('utf-8'))
+                output = ''.join(stdout)
+                self.d_print('stdout:', output)
+                return proc.returncode, output
+        return 0, ''
+
     def start_parsing(self):
         self.d_print('Starting mod output parsing')
         self.parsing = True
+        branch_name = f'diff-{datetime.datetime.now().replace(microsecond=0).isoformat().replace(":", "-")}'
+        print(f'Creating diff branch: {branch_name}')
+        self._run_git('checkout', '-b', branch_name)
 
     def start_sub_stage(self, line):
         self.t_print(f'Starting sub stage parsing for line: {line}')
@@ -64,14 +101,23 @@ class Data_Parser:
         path = self.output_dir / category / name
         self.t_print('Writing prototype to', path, '--', category, '-', name)
         path.parent.mkdir(parents=True, exist_ok=True)
-        # with path.open('w') as f:
-        #     f.write(prototype)
+        with path.open('w') as f:
+            f.write(prototype)
 
     def end_sub_stage(self):
         print(f'Ending sub stage parsing for mod {self.mod_name}, in data stage {self.data_stage}')
+        self._run_git('add', self.output_dir)
+        code, stdout = self._run_git(
+            'commit',
+            '-m', f'{self.mod_name} changes from {self.data_stage} stage',
+            fail_on_err=False
+        )
+        if code > 0:
+            if 'no changes added to commit' in stdout:
+                print(f'No changes for {self.mod_name} for {self.data_stage} stage')
+            else:
+                raise RuntimeError('ERROR: Git commit failed to run with changes')
         self.sub_stage_parsing = False
-        # TODO - pack up current prototype (ship and git commit?)
-        # subprocess seems best from what I can find
 
     def end_parsing(self):
         self.d_print('Ending parsing mod output')
