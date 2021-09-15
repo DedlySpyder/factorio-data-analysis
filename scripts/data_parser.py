@@ -35,42 +35,43 @@ class Data_Parser:
             print(*args, **kwargs)
 
     def start_parsing(self):
-        self.d_print('Starting parsing mod output')
+        self.d_print('Starting mod output parsing')
         self.parsing = True
 
     def start_sub_stage(self, line):
-        self.t_print('Starting parsing sub stage for line:', line)
+        self.t_print(f'Starting sub stage parsing for line: {line}')
         self.sub_stage_parsing = True
         matches = SUB_STAGE_PATTERN.match(line)
         if not matches:
-            raise RuntimeError('Line is invalid for sub stage start: ' + line)
+            raise RuntimeError(f'Line is invalid for sub stage start: {line}')
         
         self.mod_name = matches[1]
         self.data_stage = matches[2]
         
-        print('Sub stage started for mod', self.mod_name, ', in data stage', self.data_stage)
+        print(f'Sub stage parsing started for mod {self.mod_name}, in data stage {self.data_stage}')
 
     def parse_prototype(self, prototype):
         self.t_print('Parsing prototype for line:', prototype)
         matches = PROTOTYPE_PATTERN.match(prototype)
         if not matches:
-            raise RuntimeError('Line is invalid for prototype: ' + prototype)
+            raise RuntimeError(f'Line is invalid for prototype: {prototype}')
 
         category, name, prototype = matches[1], matches[2], matches[3]
-        self.t_print('Parsed prototype:', category, ' - ', name)
+        self.t_print('Parsed prototype:', category, '-', name)
         self.write_prototype(category, name, prototype)
 
     def write_prototype(self, category, name, prototype):
         path = self.output_dir / category / name
-        self.t_print('Writing prototype to ', path, ':', category, ' - ', name)
+        self.t_print('Writing prototype to', path, '--', category, '-', name)
         path.parent.mkdir(parents=True, exist_ok=True)
-        with path.open('w') as f:
-            f.write(prototype)
+        # with path.open('w') as f:
+        #     f.write(prototype)
 
     def end_sub_stage(self):
-        print('Ending parsing sub stage for mod', self.mod_name, ', in data stage', self.data_stage)
+        print(f'Ending sub stage parsing for mod {self.mod_name}, in data stage {self.data_stage}')
         self.sub_stage_parsing = False
-        # pack up current prototype (ship and git commit?)
+        # TODO - pack up current prototype (ship and git commit?)
+        # subprocess seems best from what I can find
 
     def end_parsing(self):
         self.d_print('Ending parsing mod output')
