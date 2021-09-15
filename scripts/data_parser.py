@@ -113,7 +113,7 @@ class Data_Parser:
             fail_on_err=False
         )
         if code > 0:
-            if 'no changes added to commit' in stdout:
+            if 'no changes added to commit' in stdout or 'nothing added to commit' in stdout:
                 print(f'No changes for {self.mod_name} for {self.data_stage} stage')
             else:
                 raise RuntimeError('ERROR: Git commit failed to run with changes')
