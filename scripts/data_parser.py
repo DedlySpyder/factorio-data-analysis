@@ -42,8 +42,7 @@ class Data_Parser:
         proc = subprocess.Popen(
             ['git'] + list(args),
             stderr=subprocess.PIPE,
-            stdout=subprocess.PIPE,
-            bufsize=1
+            stdout=subprocess.PIPE
         )
 
         self.t_print('Git stdout:')

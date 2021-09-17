@@ -151,8 +151,7 @@ def _run_factorio(*args):
 	proc = subprocess.Popen(
 		[FACTORIO_EXE] + args,
 		stderr=subprocess.PIPE,
-		stdout=subprocess.PIPE,
-		bufsize=1
+		stdout=subprocess.PIPE
 	)
 
 	lines = []
