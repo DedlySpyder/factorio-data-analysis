@@ -164,9 +164,11 @@ def _run_factorio(*args):
 	proc.wait()
 
 	if proc.returncode > 0:
-		print('ERROR: Factorio failed to run:')
+		print('stderr:')
 		print(proc.stderr.read().decode('utf-8'))
-		return proc.returncode
+		print('stdout:')
+		print(''.join(lines))
+		raise RuntimeError('Factorio failed to run')
 	else:
 		print('Factorio ran successfully')
 		return lines
