@@ -22,20 +22,15 @@ fixed soon and will be the supported version moving forward.
 
 
 # Data Diff
-The `scripts/build_docs.py` will build a diff of every mod/data sub-stage in the game. This is done by dumping the
+Run `scripts/build_docs.py diff` to build a diff of every mod/data sub-stage in the game. This is done by dumping the
 `data.raw` table after every mod runs in every data stage. Running with a bunch of mods may take some time to run.
 
 The diff will be stored in a local branch timestamped for this run, something like `diff-YYYY-MM-DDThh-mm-ss`. Git can
 then be used to check the full diff of various files.
 
 
-# Generation - TODO
-This isn't on the mod portal, but if for some reason you want to generate this with mod data then setup for this is the following:
-
-1. Download [Factorio headless](https://factorio.com/get-download/latest/headless/linux64) to the `factorio/` directory.
-   1a. Optional: Added any desired mods to the `factorio/mod` directory
-2. Run the `scripts/build_docs.py` script with python 3.5 or newer (developed on 3.6.8)
-3. All prototypes should be in the `data_raw` directory
+# Generation
+Run `scripts/build_docs.py final` to dumps the final result of `data.raw` from after all mods run.
 
 
 # Future Development
