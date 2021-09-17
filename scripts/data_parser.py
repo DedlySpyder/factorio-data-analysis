@@ -11,6 +11,10 @@ SUB_STAGE_PATTERN = re.compile(r'.*<<START>><<(.*)>><<(.*)>>')
 PROTOTYPE_PATTERN = re.compile(r'.*FactorioDataRawDump\(<<(.*?)>>,<<(.*?)>>,<<(.*?)>>\)', re.MULTILINE | re.DOTALL)
 
 
+def git_stub(self, *args, fail_on_err=True):
+    return 0, ''
+
+
 # TODO - perf - future - parse while Factorio is running
 class Data_Parser:
     parsing = False
@@ -22,11 +26,15 @@ class Data_Parser:
     data_stage = 'Uninitialized'
 
     # Debug is some extra printing, trace is very noisy
-    def __init__(self, output_dir, debug=False, trace=False):
+    def __init__(self, output_dir, debug=False, trace=False, skip_git=False):
         self.output_dir = output_dir
 
         self.debug = debug
         self.trace = trace
+
+        self.skip_git = skip_git
+        if skip_git:
+            self._run_git = git_stub
 
     def d_print(self, *args, **kwargs):
         if self.debug:
@@ -71,7 +79,8 @@ class Data_Parser:
         self.d_print('Starting mod output parsing')
         self.parsing = True
         branch_name = f'diff-{datetime.datetime.now().replace(microsecond=0).isoformat().replace(":", "-")}'
-        print(f'Creating diff branch: {branch_name}')
+        if not self.skip_git:
+            print(f'Creating diff branch: {branch_name}')
         self._run_git('checkout', '-b', branch_name)
         self._run_git('add', self.output_dir)
         self._run_git(
