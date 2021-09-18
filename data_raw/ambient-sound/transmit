@@ -1,8 +1,0 @@
-{
-  name = "transmit",
-  sound = {
-    filename = "__base__/sound/ambient/transmit.ogg"
-  },
-  track_type = "interlude",
-  type = "ambient-sound"
-}

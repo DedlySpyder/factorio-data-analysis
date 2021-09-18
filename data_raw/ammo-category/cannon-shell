@@ -1,5 +1,0 @@
-{
-  bonus_gui_order = "q",
-  name = "cannon-shell",
-  type = "ammo-category"
-}

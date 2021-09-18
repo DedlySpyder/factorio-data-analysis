@@ -1,6 +1,0 @@
-{
-  group = "production",
-  name = "module",
-  order = "f",
-  type = "item-subgroup"
-}

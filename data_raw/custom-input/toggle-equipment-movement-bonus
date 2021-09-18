@@ -1,7 +1,0 @@
-{
-  action = "toggle-equipment-movement-bonus",
-  consuming = "game-only",
-  key_sequence = "ALT + E",
-  name = "toggle-equipment-movement-bonus",
-  type = "custom-input"
-}

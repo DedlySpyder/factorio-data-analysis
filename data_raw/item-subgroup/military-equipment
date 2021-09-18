@@ -1,6 +1,0 @@
-{
-  group = "combat",
-  name = "military-equipment",
-  order = "f",
-  type = "item-subgroup"
-}

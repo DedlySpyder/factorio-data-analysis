@@ -1,7 +1,0 @@
-{
-  icon = "__core__/graphics/icons/unknown.png",
-  icon_size = 64,
-  name = "signal-unknown",
-  subgroup = "other",
-  type = "virtual-signal"
-}

@@ -1,6 +1,0 @@
-{
-  from = "default-bold",
-  name = "default-large-bold",
-  size = 18,
-  type = "font"
-}

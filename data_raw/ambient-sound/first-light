@@ -1,8 +1,0 @@
-{
-  name = "first-light",
-  sound = {
-    filename = "__base__/sound/ambient/first-light.ogg"
-  },
-  track_type = "interlude",
-  type = "ambient-sound"
-}

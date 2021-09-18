@@ -1,5 +1,0 @@
-{
-  bonus_gui_order = "y",
-  name = "melee",
-  type = "ammo-category"
-}

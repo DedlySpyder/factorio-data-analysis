@@ -1,5 +1,0 @@
-{
-  bonus_gui_order = "t",
-  name = "landmine",
-  type = "ammo-category"
-}

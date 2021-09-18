@@ -1,5 +1,0 @@
-{
-  bonus_gui_order = "p",
-  name = "shotgun-shell",
-  type = "ammo-category"
-}

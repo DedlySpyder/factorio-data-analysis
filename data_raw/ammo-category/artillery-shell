@@ -1,5 +1,0 @@
-{
-  bonus_gui_order = "o",
-  name = "artillery-shell",
-  type = "ammo-category"
-}

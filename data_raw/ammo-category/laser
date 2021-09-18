@@ -1,5 +1,0 @@
-{
-  bonus_gui_order = "j",
-  name = "laser",
-  type = "ammo-category"
-}

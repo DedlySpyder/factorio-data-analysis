@@ -1,5 +1,0 @@
-{
-  bonus_gui_order = "u",
-  name = "rocket",
-  type = "ammo-category"
-}

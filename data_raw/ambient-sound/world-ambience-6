@@ -1,9 +1,0 @@
-{
-  name = "world-ambience-6",
-  sound = {
-    filename = "__base__/sound/ambient/world-ambience-6.ogg",
-    volume = 1
-  },
-  track_type = "interlude",
-  type = "ambient-sound"
-}

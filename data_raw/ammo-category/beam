@@ -1,5 +1,0 @@
-{
-  bonus_gui_order = "r",
-  name = "beam",
-  type = "ammo-category"
-}

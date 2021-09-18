@@ -1,8 +1,0 @@
-{
-  amount = 1,
-  icon = "__base__/graphics/achievement/you-have-got-a-package.png",
-  icon_size = 128,
-  name = "you-have-got-a-package",
-  order = "b[exploration]-d[deliver-by-robots]-a",
-  type = "deliver-by-robots-achievement"
-}

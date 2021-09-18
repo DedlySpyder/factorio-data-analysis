@@ -1,5 +1,0 @@
-{
-  bonus_gui_order = "l",
-  name = "bullet",
-  type = "ammo-category"
-}

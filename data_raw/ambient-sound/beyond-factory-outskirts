@@ -1,8 +1,0 @@
-{
-  name = "beyond-factory-outskirts",
-  sound = {
-    filename = "__base__/sound/ambient/beyond-factory-outskirts.ogg"
-  },
-  track_type = "main-track",
-  type = "ambient-sound"
-}

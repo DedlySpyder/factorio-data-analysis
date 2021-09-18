@@ -1,8 +1,0 @@
-{
-  icon = "__base__/graphics/item-group/production.png",
-  icon_mipmaps = 2,
-  icon_size = 128,
-  name = "production",
-  order = "b",
-  type = "item-group"
-}

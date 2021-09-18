@@ -1,9 +1,0 @@
-{
-  allowed_without_fight = false,
-  icon = "__base__/graphics/achievement/no-time-for-chitchat.png",
-  icon_size = 128,
-  name = "no-time-for-chitchat",
-  order = "f[limitation]-e[no-time-for-chitchat]",
-  type = "finish-the-game-achievement",
-  until_second = 54000
-}

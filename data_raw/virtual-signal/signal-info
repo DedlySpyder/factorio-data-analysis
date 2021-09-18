@@ -1,9 +1,0 @@
-{
-  icon = "__base__/graphics/icons/info.png",
-  icon_mipmaps = 4,
-  icon_size = 64,
-  name = "signal-info",
-  order = "e[signal]-[2info]",
-  subgroup = "virtual-signal",
-  type = "virtual-signal"
-}

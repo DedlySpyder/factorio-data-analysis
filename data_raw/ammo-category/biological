@@ -1,5 +1,0 @@
-{
-  bonus_gui_order = "z",
-  name = "biological",
-  type = "ammo-category"
-}

@@ -1,6 +1,0 @@
-{
-  group = "other",
-  name = "other",
-  order = "z",
-  type = "item-subgroup"
-}

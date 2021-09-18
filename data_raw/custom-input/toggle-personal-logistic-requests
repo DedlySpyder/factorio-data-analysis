@@ -1,7 +1,0 @@
-{
-  action = "toggle-personal-logistic-requests",
-  consuming = "game-only",
-  key_sequence = "ALT + L",
-  name = "toggle-personal-logistic-requests",
-  type = "custom-input"
-}

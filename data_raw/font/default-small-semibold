@@ -1,6 +1,0 @@
-{
-  from = "default-semibold",
-  name = "default-small-semibold",
-  size = 12,
-  type = "font"
-}

@@ -1,9 +1,0 @@
-{
-  amount = 10000,
-  icon = "__base__/graphics/achievement/delivery-service.png",
-  icon_size = 128,
-  name = "delivery-service",
-  order = "b[exploration]-d[deliver-by-robots]-b",
-  steam_stats_name = "delivered-by-robots",
-  type = "deliver-by-robots-achievement"
-}

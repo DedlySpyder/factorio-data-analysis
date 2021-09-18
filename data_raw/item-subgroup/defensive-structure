@@ -1,6 +1,0 @@
-{
-  group = "combat",
-  name = "defensive-structure",
-  order = "g",
-  type = "item-subgroup"
-}
