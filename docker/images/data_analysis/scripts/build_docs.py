@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import os
 import re
 import requests
 import shutil
@@ -31,6 +32,15 @@ def cleanup_tmp():
 	if TMP_DIR.exists():
 		print('Cleaning up temp directory: ' + str(TMP_DIR))
 		shutil.rmtree(str(TMP_DIR))
+
+
+def cleanup_output():
+	# shutil.rmtree seems to have some major issues with Docker volumes
+	if OUTPUT_DIR.exists():
+		data = str(OUTPUT_DIR)
+		print(f'Deleting data directory {data} recursively')
+		for fd in os.listdir(data):
+			shutil.rmtree(os.path.join(data, fd))
 
 
 def read_log_file_lines(path):
@@ -180,11 +190,7 @@ def _run_factorio(*args):
 
 def main(log_lines, args):
 	create_tmp()
-
-	if DATA_RAW_DIR.exists():
-		data = str(DATA_RAW_DIR)
-		print(f'Deleting data directory {data} recursively')
-		shutil.rmtree(data)
+	cleanup_output()
 
 	skip_git = args.mode != 'diff'
 	parser = data_parser.Data_Parser(OUTPUT_DIR, args.verbose or args.trace, args.trace, skip_git)
