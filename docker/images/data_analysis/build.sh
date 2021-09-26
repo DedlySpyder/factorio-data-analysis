@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -eou pipefail
+set -eo pipefail
 
 # Build and publish the specified version of the data_analysis Factorio tool to Docker Hub (also builds latest image)
 
@@ -9,11 +9,16 @@ IMAGE_REPO_NAME="factorio-data-analysis"
 
 if [[ -z "$1" ]]; then
   echo "Missing version to build"
-  echo "Usage: $0 [version]"
+  echo "Usage: $0 [version] (-l)"
+  echo "  -l will not push changes to docker hub"
   exit 1
 fi
 
 VERSION="$1"
+LOCAL=false
+if [[ "$2" == "-l" ]]; then
+  LOCAL=true
+fi
 
 HERE="$(readlink -f "$(dirname "$)")")"
 
@@ -24,5 +29,7 @@ docker build "$HERE" \
   -t "$IMAGE_REPO_NAME:latest" \
   -t "$REPO_USERNAME/$IMAGE_REPO_NAME:latest"
 
-echo "Pushing $REPO_USERNAME/$IMAGE_REPO_NAME"
-docker push -a "$REPO_USERNAME/$IMAGE_REPO_NAME"
+if [ "$LOCAL" == false ]; then
+  echo "Pushing $REPO_USERNAME/$IMAGE_REPO_NAME"
+  docker push -a "$REPO_USERNAME/$IMAGE_REPO_NAME"
+fi
