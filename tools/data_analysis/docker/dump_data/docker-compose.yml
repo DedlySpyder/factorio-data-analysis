@@ -1,5 +1,3 @@
-# TODO - name of service, image name, need 2 of these I guess?
-# Args to do diff or full dump
 version: "3.9"
 services:
   factorio_dump_data:
@@ -8,4 +6,4 @@ services:
     command: final
     volumes:
       - ${MODS_DIRECTORY:-../../mods}:/factorio/mods
-      - ${OUTPUT_DIRECTORY:-../../data}:/output
+      - ${OUTPUT_DIRECTORY:-../../dump_data}:/output
