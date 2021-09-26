@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import argparse
 import re
 import requests
@@ -9,12 +11,11 @@ from pathlib import Path
 import data_parser
 
 
-PROJECT_ROOT_PATH = (Path(__file__).parent / '..').absolute().resolve()
-DATA_RAW_DIR = PROJECT_ROOT_PATH / 'data_raw'
+OUTPUT_DIR = Path('/output')
 
-FACTORIO_EXE = PROJECT_ROOT_PATH / 'factorio/bin/x64/factorio'
-FACTORIO_LOG_FILE = PROJECT_ROOT_PATH / 'factorio/factorio-current.log'
-TMP_DIR = PROJECT_ROOT_PATH / '_tmp'
+FACTORIO_EXE = Path('/factorio/bin/x64/factorio')
+FACTORIO_LOG_FILE = Path('/factorio/factorio-current.log')
+TMP_DIR = Path('/tmp/build_docs_tmp')
 
 
 vprint = lambda *_, **__: None
@@ -186,7 +187,7 @@ def main(log_lines, args):
 		shutil.rmtree(data)
 
 	skip_git = args.mode != 'diff'
-	parser = data_parser.Data_Parser(DATA_RAW_DIR, args.verbose or args.trace, args.trace, skip_git)
+	parser = data_parser.Data_Parser(OUTPUT_DIR, args.verbose or args.trace, args.trace, skip_git)
 	parser.parse_lines(log_lines)
 
 	cleanup_tmp()
