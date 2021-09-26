@@ -1,4 +1,7 @@
-# Factorio Raw Data
+# Factorio Data Analysis
+
+# TODO - needs rewritten
+
 Yet another dump of `data.raw` from Factorio. This one however uses the keys to organize the prototypes into files.
 `data.raw[category][name]` translates to the file `data_raw/category/name`.
 
