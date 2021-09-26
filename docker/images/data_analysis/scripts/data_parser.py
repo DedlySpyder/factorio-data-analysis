@@ -49,6 +49,7 @@ class Data_Parser:
         self.d_print('Running git with args:', args)
         proc = subprocess.Popen(
             ['git'] + list(args),
+            cwd=self.output_dir,
             stderr=subprocess.PIPE,
             stdout=subprocess.PIPE
         )
@@ -81,8 +82,11 @@ class Data_Parser:
         branch_name = f'diff-{datetime.datetime.now().replace(microsecond=0).isoformat().replace(":", "-")}'
         if not self.skip_git:
             print(f'Creating diff branch: {branch_name}')
+        self._run_git('init')
+        self._run_git('config', '--local', 'user.email', 'you@example.com')
+        self._run_git('config', '--local', 'user.name', 'You')
         self._run_git('checkout', '-b', branch_name)
-        self._run_git('add', self.output_dir)
+        self._run_git('add', '.')
         self._run_git(
             'commit',
             '-m', f'Empty data_raw',
@@ -120,7 +124,7 @@ class Data_Parser:
 
     def end_sub_stage(self):
         print(f'Ending sub stage parsing for mod {self.mod_name}, in data stage {self.data_stage}')
-        self._run_git('add', self.output_dir)
+        self._run_git('add', '.')
         code, stdout = self._run_git(
             'commit',
             '-m', f'{self.mod_name} changes from {self.data_stage} stage',
