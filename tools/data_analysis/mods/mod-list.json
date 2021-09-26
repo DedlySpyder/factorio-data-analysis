@@ -9,6 +9,11 @@
     },
     
     {
+      "name": "Factorio_Incremental_Raw_Data",
+      "enabled": true
+    },
+    
+    {
       "name": "Factorio_Raw_Data",
       "enabled": true
     }
