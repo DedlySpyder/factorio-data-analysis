@@ -111,4 +111,5 @@ class DataParser:
 
             elif START_MOD_PARSING_FLAG in line:
                 self.d_print('Starting mod output parsing')
+                self.parsing = True
                 self.start_parsing()
