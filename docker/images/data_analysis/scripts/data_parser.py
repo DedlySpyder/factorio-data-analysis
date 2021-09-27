@@ -1,4 +1,3 @@
-import datetime
 import re
 import subprocess
 
@@ -113,3 +112,83 @@ class DataParser:
                 self.d_print('Starting mod output parsing')
                 self.parsing = True
                 self.start_parsing()
+
+
+class FinalDataParser(DataParser):
+    def __init__(self, output_dir, **kwargs):
+        DataParser.__init__(self, output_dir, **kwargs)
+
+    def _stub(self):
+        return
+    start_parsing = _stub
+    start_sub_stage = _stub
+    end_sub_stage = _stub
+    end_parsing = _stub
+
+
+class DiffDataParser(DataParser):
+    def __init__(self, output_dir, **kwargs):
+        DataParser.__init__(self, output_dir, **kwargs)
+
+    def _run_git(self, *args, fail_on_err=True):
+        args = [str(a) for a in list(args)]
+        self.d_print('Running git with args:', args)
+        proc = subprocess.Popen(
+            ['git'] + list(args),
+            cwd=self.output_dir,
+            stderr=subprocess.PIPE,
+            stdout=subprocess.PIPE
+        )
+
+        self.t_print('Git stdout:')
+        stdout = []
+        for line in iter(proc.stdout.readline, None):
+            if not line:
+                break
+            line = line.decode('utf-8')
+            stdout.append(line)
+            self.t_print(line, end='')
+        proc.wait()
+
+        if proc.returncode > 0:
+            if fail_on_err:
+                print('Git stderr:')
+                print(proc.stderr.read().decode('utf-8'))
+                raise RuntimeError('ERROR: Git command failed to run')
+            else:
+                self.d_print('Git command failed (not failing), stderr:', proc.stderr.read().decode('utf-8'))
+                output = ''.join(stdout)
+                self.d_print('stdout:', output)
+                return proc.returncode, output
+        return 0, ''
+
+    def start_parsing(self):
+        print(f'Initializing git in output directory')
+        self._run_git('init')
+        self._run_git('config', '--local', 'user.email', 'you@example.com')
+        self._run_git('config', '--local', 'user.name', 'You')
+        self._run_git('add', '.')
+        self._run_git(
+            'commit',
+            '-m', f'Empty data_raw',
+            fail_on_err=False
+        )
+
+    def start_sub_stage(self):
+        return
+
+    def end_sub_stage(self):
+        self._run_git('add', '.')
+        code, stdout = self._run_git(
+            'commit',
+            '-m', f'{self.mod_name} changes from {self.data_stage} stage',
+            fail_on_err=False
+        )
+        if code > 0:
+            if 'no changes added to commit' in stdout or 'nothing added to commit' in stdout:
+                print(f'No changes for {self.mod_name} for {self.data_stage} stage')
+            else:
+                raise RuntimeError('ERROR: Git commit failed to run with changes')
+
+    def end_parsing(self):
+        return
