@@ -192,8 +192,7 @@ def main(log_lines, args):
 	create_tmp()
 	cleanup_output()
 
-	skip_git = args.mode != 'diff'
-	parser = data_parser.DataParser(OUTPUT_DIR, args.verbose or args.trace, args.trace, skip_git)
+	parser = data_parser.DataParser(OUTPUT_DIR, args.verbose or args.trace, args.trace)
 	parser.parse_lines(log_lines)
 
 	cleanup_tmp()
