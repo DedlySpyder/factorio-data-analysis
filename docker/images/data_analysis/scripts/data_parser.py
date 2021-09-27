@@ -13,10 +13,6 @@ SUB_STAGE_PATTERN = re.compile(r'.*<<START>><<(.*)>><<(.*)>>')
 PROTOTYPE_PATTERN = re.compile(r'.*FactorioDataRawDump\(<<(.*?)>>,<<(.*?)>>,<<(.*?)>>\)', re.MULTILINE | re.DOTALL)
 
 
-def git_stub(self, *args, fail_on_err=True):
-    return 0, ''
-
-
 # TODO - perf - future - parse while Factorio is running
 class Data_Parser:
     parsing = False
@@ -28,15 +24,10 @@ class Data_Parser:
     data_stage = 'Uninitialized'
 
     # Debug is some extra printing, trace is very noisy
-    def __init__(self, output_dir, debug=False, trace=False, skip_git=False):
+    def __init__(self, output_dir, debug=False, trace=False):
         self.output_dir = output_dir
-
         self.debug = debug
         self.trace = trace
-
-        self.skip_git = skip_git
-        if skip_git:
-            self._run_git = git_stub
 
     def d_print(self, *args, **kwargs):
         if self.debug:
@@ -46,65 +37,28 @@ class Data_Parser:
         if self.trace:
             print(*args, **kwargs)
 
-    def _run_git(self, *args, fail_on_err=True):
-        args = [str(a) for a in list(args)]
-        self.d_print('Running git with args:', args)
-        proc = subprocess.Popen(
-            ['git'] + list(args),
-            cwd=self.output_dir,
-            stderr=subprocess.PIPE,
-            stdout=subprocess.PIPE
-        )
-
-        self.t_print('Git stdout:')
-        stdout = []
-        for line in iter(proc.stdout.readline, None):
-            if not line:
-                break
-            line = line.decode('utf-8')
-            stdout.append(line)
-            self.t_print(line, end='')
-        proc.wait()
-
-        if proc.returncode > 0:
-            if fail_on_err:
-                print('Git stderr:')
-                print(proc.stderr.read().decode('utf-8'))
-                raise RuntimeError('ERROR: Git command failed to run')
-            else:
-                self.d_print('Git command failed (not failing), stderr:', proc.stderr.read().decode('utf-8'))
-                output = ''.join(stdout)
-                self.d_print('stdout:', output)
-                return proc.returncode, output
-        return 0, ''
-
+    # Any work before the mod parsing starts
     def start_parsing(self):
-        self.d_print('Starting mod output parsing')
-        self.parsing = True
-        branch_name = f'diff-{datetime.datetime.now().replace(microsecond=0).isoformat().replace(":", "-")}'
-        if not self.skip_git:
-            print(f'Creating diff branch: {branch_name}')
-        self._run_git('init')
-        self._run_git('config', '--local', 'user.email', 'you@example.com')
-        self._run_git('config', '--local', 'user.name', 'You')
-        self._run_git('checkout', '-b', branch_name)
-        self._run_git('add', '.')
-        self._run_git(
-            'commit',
-            '-m', f'Empty data_raw',
-            fail_on_err=False
-        )
+        raise NotImplementedError("Start parsing method not implemented")
 
-    def start_sub_stage(self, line):
-        self.t_print(f'Starting sub stage parsing for line: {line}')
-        self.sub_stage_parsing = True
+    # Any work after parsing the sub stage start line (mod_name and data_stage will be populated here)
+    def start_sub_stage(self):
+        raise NotImplementedError("Start sub stage method not implemented")
+
+    # Any work after parsing is complete for each sub stage
+    def end_sub_stage(self):
+        raise NotImplementedError("End sub stage method not implemented")
+
+    # Any work after parsing is complete for all sub stages
+    def end_parsing(self):
+        raise NotImplementedError("End parsing method not implemented")
+
+    def parse_sub_stage_start(self, line):
         matches = SUB_STAGE_PATTERN.match(line)
         if not matches:
             raise RuntimeError(f'Line is invalid for sub stage start: {line}')
-        
         self.mod_name = matches[1]
         self.data_stage = matches[2]
-        
         print(f'Sub stage parsing started for mod {self.mod_name}, in data stage {self.data_stage}')
 
     def parse_prototype(self, prototype):
@@ -124,24 +78,6 @@ class Data_Parser:
         with path.open('w') as f:
             f.write(prototype)
 
-    def end_sub_stage(self):
-        print(f'Ending sub stage parsing for mod {self.mod_name}, in data stage {self.data_stage}')
-        self._run_git('add', '.')
-        code, stdout = self._run_git(
-            'commit',
-            '-m', f'{self.mod_name} changes from {self.data_stage} stage',
-            fail_on_err=False
-        )
-        if code > 0:
-            if 'no changes added to commit' in stdout or 'nothing added to commit' in stdout:
-                print(f'No changes for {self.mod_name} for {self.data_stage} stage')
-            else:
-                raise RuntimeError('ERROR: Git commit failed to run with changes')
-        self.sub_stage_parsing = False
-
-    def end_parsing(self):
-        self.d_print('Ending parsing mod output')
-
     def parse_lines(self, lines):
         for l in lines:
             if self.parsing:
@@ -149,19 +85,30 @@ class Data_Parser:
                     if self.open_prototype:
                         self.prototype += l
                         if END_PROTOTYPE_FLAG in l:
-                            self.parse_prototype(self.prototype)
                             self.open_prototype = False
+                            self.parse_prototype(self.prototype)
                     else:
                         if END_SUB_STAGE_PARSING_FLAG in l:
+                            print(f'Ending sub stage parsing for mod {self.mod_name}, in data stage {self.data_stage}')
+                            self.sub_stage_parsing = False
                             self.end_sub_stage()
+
                         elif START_PROTOTYPE_FLAG in l:
                             self.open_prototype = True
                             self.prototype = l
                 else:
                     if START_SUB_STAGE_PARSING_FLAG in l:
-                        self.start_sub_stage(l)
+                        self.t_print(f'Starting sub stage parsing for line: {l}')
+                        self.sub_stage_parsing = True
+                        self.parse_sub_stage_start(l)
+                        self.start_sub_stage()
+
                     elif END_MOD_PARSING_FLAG in l:
+                        self.d_print('Ending parsing mod output')
+                        self.parsing = False
                         self.end_parsing()
+                        return
 
             elif START_MOD_PARSING_FLAG in l:
+                self.d_print('Starting mod output parsing')
                 self.start_parsing()
