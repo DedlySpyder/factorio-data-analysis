@@ -14,7 +14,7 @@ PROTOTYPE_PATTERN = re.compile(r'.*FactorioDataRawDump\(<<(.*?)>>,<<(.*?)>>,<<(.
 
 
 # TODO - perf - future - parse while Factorio is running
-class Data_Parser:
+class DataParser:
     parsing = False
     sub_stage_parsing = False
     open_prototype = False
@@ -79,36 +79,36 @@ class Data_Parser:
             f.write(prototype)
 
     def parse_lines(self, lines):
-        for l in lines:
+        for line in lines:
             if self.parsing:
                 if self.sub_stage_parsing:
                     if self.open_prototype:
-                        self.prototype += l
-                        if END_PROTOTYPE_FLAG in l:
+                        self.prototype += line
+                        if END_PROTOTYPE_FLAG in line:
                             self.open_prototype = False
                             self.parse_prototype(self.prototype)
                     else:
-                        if END_SUB_STAGE_PARSING_FLAG in l:
+                        if END_SUB_STAGE_PARSING_FLAG in line:
                             print(f'Ending sub stage parsing for mod {self.mod_name}, in data stage {self.data_stage}')
                             self.sub_stage_parsing = False
                             self.end_sub_stage()
 
-                        elif START_PROTOTYPE_FLAG in l:
+                        elif START_PROTOTYPE_FLAG in line:
                             self.open_prototype = True
-                            self.prototype = l
+                            self.prototype = line
                 else:
-                    if START_SUB_STAGE_PARSING_FLAG in l:
-                        self.t_print(f'Starting sub stage parsing for line: {l}')
+                    if START_SUB_STAGE_PARSING_FLAG in line:
+                        self.t_print(f'Starting sub stage parsing for line: {line}')
                         self.sub_stage_parsing = True
-                        self.parse_sub_stage_start(l)
+                        self.parse_sub_stage_start(line)
                         self.start_sub_stage()
 
-                    elif END_MOD_PARSING_FLAG in l:
+                    elif END_MOD_PARSING_FLAG in line:
                         self.d_print('Ending parsing mod output')
                         self.parsing = False
                         self.end_parsing()
                         return
 
-            elif START_MOD_PARSING_FLAG in l:
+            elif START_MOD_PARSING_FLAG in line:
                 self.d_print('Starting mod output parsing')
                 self.start_parsing()
