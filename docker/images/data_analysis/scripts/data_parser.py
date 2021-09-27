@@ -6,6 +6,8 @@ START_MOD_PARSING_FLAG = '<<START - FactorioDataRawDump>>'
 END_MOD_PARSING_FLAG = '<<DONE - FactorioDataRawDump>>'
 START_SUB_STAGE_PARSING_FLAG = '<<START>>'
 END_SUB_STAGE_PARSING_FLAG = '<<DONE>>'
+START_PROTOTYPE_FLAG = 'FactorioDataAnalysisPrototypeStart('
+END_PROTOTYPE_FLAG = ')FactorioDataAnalysisPrototypeEnd'
 
 SUB_STAGE_PATTERN = re.compile(r'.*<<START>><<(.*)>><<(.*)>>')
 PROTOTYPE_PATTERN = re.compile(r'.*FactorioDataRawDump\(<<(.*?)>>,<<(.*?)>>,<<(.*?)>>\)', re.MULTILINE | re.DOTALL)
@@ -146,13 +148,13 @@ class Data_Parser:
                 if self.sub_stage_parsing:
                     if self.open_prototype:
                         self.prototype += l
-                        if '>>)' in l:
+                        if END_PROTOTYPE_FLAG in l:
                             self.parse_prototype(self.prototype)
                             self.open_prototype = False
                     else:
                         if END_SUB_STAGE_PARSING_FLAG in l:
                             self.end_sub_stage()
-                        elif 'FactorioDataRawDump(' in l:
+                        elif START_PROTOTYPE_FLAG in l:
                             self.open_prototype = True
                             self.prototype = l
                 else:
