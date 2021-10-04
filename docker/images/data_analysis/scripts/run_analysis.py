@@ -39,8 +39,9 @@ def get_parser(mode, debug=False, trace=False):
 
 def main(mode, debug=False, trace=False):
     mod = select_instrument_mod(mode)
-    run_factorio(
-        ['--instrument-mod', mod, '--create', DUMMY_SAVE_NAME],
+    _, lines = run_factorio(
+        '--instrument-mod', mod,
+        '--create', DUMMY_SAVE_NAME,
         verbose=debug
     )
 
