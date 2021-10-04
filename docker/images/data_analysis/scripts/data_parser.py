@@ -1,6 +1,8 @@
 import re
 import subprocess
 
+from pathlib import Path
+
 START_MOD_PARSING_FLAG = '<<START - FactorioDataRawDump>>'
 END_MOD_PARSING_FLAG = '<<DONE - FactorioDataRawDump>>'
 START_SUB_STAGE_PARSING_FLAG = '<<START>>'
@@ -27,7 +29,7 @@ class DataParser:
 
     # Debug is some extra printing, trace is very noisy
     def __init__(self, output_dir, debug=False, trace=False):
-        self.output_dir = output_dir
+        self.output_dir = Path(output_dir)
         self.debug = debug
         self.trace = trace
 
