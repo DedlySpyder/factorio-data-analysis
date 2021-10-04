@@ -9,7 +9,10 @@ START_PROTOTYPE_FLAG = 'FactorioDataAnalysisPrototypeStart('
 END_PROTOTYPE_FLAG = ')FactorioDataAnalysisPrototypeEnd'
 
 SUB_STAGE_PATTERN = re.compile(r'.*<<START>><<(.*)>><<(.*)>>')
-PROTOTYPE_PATTERN = re.compile(r'.*FactorioDataRawDump\(<<(.*?)>>,<<(.*?)>>,<<(.*?)>>\)', re.MULTILINE | re.DOTALL)
+PROTOTYPE_PATTERN = re.compile(
+    r'.*FactorioDataAnalysisPrototypeStart\(<<(.*?)>>,<<(.*?)>>,<<(.*?)>>\)FactorioDataAnalysisPrototypeEnd',
+    re.MULTILINE | re.DOTALL
+)
 
 
 # TODO - perf - future - parse while Factorio is running
