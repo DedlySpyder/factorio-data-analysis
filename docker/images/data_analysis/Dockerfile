@@ -11,4 +11,4 @@ COPY scripts /scripts
 
 RUN chmod +x /scripts/*
 
-ENTRYPOINT ["/scripts/build_docs.py"]
+ENTRYPOINT ["/scripts/run_analysis.py"]
