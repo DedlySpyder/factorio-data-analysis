@@ -72,9 +72,15 @@ data sub-stage.
         'mode',
         action='store',
         choices=['final', 'diff'],
-        help="""Select final/differential generation mode"""
+        help="""select final/differential generation mode"""
     )
-    arg_parser.add_argument('-v', '--verbose', action='count', default=0)
+    arg_parser.add_argument(
+        '-v',
+        '--verbose',
+        action='count',
+        default=0,
+        help='set verbosity level (add up to 2 times for finer logging)'
+    )
 
     args = arg_parser.parse_args()
     main(
