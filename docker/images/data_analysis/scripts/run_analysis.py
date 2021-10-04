@@ -54,7 +54,7 @@ def main(mode, debug=False, trace=False):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(
+    arg_parser = argparse.ArgumentParser(
         description="""
 Runs Factorio and dumps the data.raw from the data stage for analysis. This can either be a final or differential dump
 of the data.
@@ -67,15 +67,15 @@ data sub-stage.
 """,
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    parser.add_argument(
+    arg_parser.add_argument(
         'mode',
         action='store',
         choices=['final', 'diff'],
         help="""Select final/differential generation mode"""
     )
-    parser.add_argument('-v', '--verbose', action='count', default=0)
+    arg_parser.add_argument('-v', '--verbose', action='count', default=0)
 
-    args = parser.parse_args()
+    args = arg_parser.parse_args()
     main(
         args.mode,
         debug=args.verbose > 0,
