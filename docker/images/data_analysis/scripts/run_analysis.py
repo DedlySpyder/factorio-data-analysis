@@ -5,7 +5,7 @@ import os
 import shutil
 
 from factorio_runner import run_factorio
-
+import data_parser
 
 DUMMY_SAVE_NAME = '/tmp/dummy_save'
 DUMMY_SAVE_FILE_NAME = DUMMY_SAVE_NAME + '.zip'
@@ -28,6 +28,15 @@ def select_instrument_mod(mode):
         raise NotImplementedError(f'Script mode {mode} invalid')
 
 
+def get_parser(mode, debug=False, trace=False):
+    if mode == 'final':
+        return data_parser.FinalDataParser(OUTPUT_DIR, debug=debug, trace=trace)
+    elif mode == 'diff':
+        return data_parser.DiffDataParser(OUTPUT_DIR, debug=debug, trace=trace)
+    else:
+        raise NotImplementedError(f'No parser found for {mode}')
+
+
 def main(mode, debug=False, trace=False):
     mod = select_instrument_mod(mode)
     run_factorio(
@@ -37,7 +46,8 @@ def main(mode, debug=False, trace=False):
 
     cleanup_output()
 
-    # TODO - call parser
+    parser = get_parser(mode, debug, trace)
+    parser.parse_lines(lines)
 
     if os.path.isfile(DUMMY_SAVE_FILE_NAME):
         os.remove(DUMMY_SAVE_FILE_NAME)
