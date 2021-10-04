@@ -1,8 +1,8 @@
 version: "3.9"
 services:
-  factorio_dump_data:
+  factorio_diff_data:
     image: dedlyspyder/factorio-data-analysis:latest
-    container_name: factorio-data-analysis_dump_data
+    container_name: factorio-data-analysis_diff_data
     command: diff
     volumes:
       - ${MODS_DIRECTORY:-../../mods}:/factorio/mods
