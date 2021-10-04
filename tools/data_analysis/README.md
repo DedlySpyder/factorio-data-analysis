@@ -1,42 +1,39 @@
 # Factorio Data Analysis
+This tools uses a [docker image](https://hub.docker.com/repository/docker/dedlyspyder/factorio-data-analysis) to handle
+portability. [Docker](https://www.docker.com/products/docker-desktop) is required for use. Docker compose is recommended for easy
+usage.
 
-# TODO - needs rewritten
-
-Yet another dump of `data.raw` from Factorio. This one however uses the keys to organize the prototypes into files.
-`data.raw[category][name]` translates to the file `data_raw/category/name`.
-
-If you're looking for a specific prototype on GitHub, press `t` to search by file name or use `filename:___` in the
-search box.
+[Script Source](https://github.com/DedlySpyder/FactorioTooling/blob/main/docker/images/data_analysis/scripts)
 
 
-# Local Setup
-This tool assumes a Linux environment with Python 3.5+ (developed on 3.6.8) and Git installed.
+## Usage
+This tool has 2 main modes of operation:
 
-[comment]: <> (1. Download [Factorio headless]&#40;https://factorio.com/get-download/latest/headless/linux64&#41; to the `factorio/` directory.)
-1. Download [Factorio for Linux](https://www.factorio.com/download) to the `factorio/` directory (bin/data/etc should be
-   directly in the factorio directory)
-2. Optional: Added any desired mods to the `factorio/mod` directory
+* `diff` -  Dump the state of `data.raw` after each mod runs a data sub-stage, then commit it to diff to use as a 
+  difference viewer
+* `final` - Dump the final state of `data.raw` after all mods have modified it
 
-Note: This could in theory work with Max or Windows versions of Factorio, but I'm not sure how well the output parsing
-will work with them.
-
-NOTE 2: This doesn't currently work with headless, due to instrument mode not working with it. This will hopefully be
-fixed soon and will be the supported version moving forward.
+  
+**NOTE: the mods directory used for this tool must contain the 2 mods from this [mods](./mods) directory here**
 
 
-# Data Diff
-Run `scripts/build_docs.py diff` to build a diff of every mod/data sub-stage in the game. This is done by dumping the
-`data.raw` table after every mod runs in every data stage. Running with a bunch of mods may take some time to run.
+### Docker Compose - Preferred
+Running the relevant [compose file](./docker) for this tool will use any mods in the [mods](./mods) directory here for
+analysis. The output for either mode will be in a directory here named either `diff_data` or `final_data`.
 
-The diff will be stored in a local branch timestamped for this run, something like `diff-YYYY-MM-DDThh-mm-ss`. Git can
-then be used to check the full diff of various files.
-
-
-# Generation
-Run `scripts/build_docs.py final` to dumps the final result of `data.raw` from after all mods run.
+Either of these directories can be overridden by creating a `.env` file in the same directory as the `docker-compose.yml`
+file. An [example](./docker/example.env) of this file is provided.
 
 
-# Future Development
-* Fix base data.raw dump for repo searching
-* Parse while the game is still running
-* Refactor to use a docker image for customization and portability
+### Manual Docker Runs
+Running this tool manually requires mounting a `/factorio/mods` and an `output` directory inside the container. An
+example docker run command to mount the mods directory here, and output to a `data` directory here looks like this:
+
+```shell
+docker run -t \
+  --mount type=bind,source="$(pwd)"/mods,target=/factorio/mods \
+  --mount type=bind,source="$(pwd)"/data,target=/output \
+  dedlyspyder/factorio-data-analysis [final/diff]
+```
+
+This will run the underlying python script directly, so passing in `-h` or `--help` will provide more help if required.
