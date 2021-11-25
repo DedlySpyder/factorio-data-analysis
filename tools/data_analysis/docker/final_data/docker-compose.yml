@@ -3,6 +3,8 @@ services:
   factorio_final_data:
     image: dedlyspyder/factorio-data-analysis:latest
     container_name: factorio-data-analysis_final_data
+    environment:
+      - PYTHONUNBUFFERED=1
     command: final
     volumes:
       - ${MODS_DIRECTORY:-../../mods}:/factorio/mods

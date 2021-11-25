@@ -3,6 +3,8 @@ services:
   factorio_diff_data:
     image: dedlyspyder/factorio-data-analysis:latest
     container_name: factorio-data-analysis_diff_data
+    environment:
+      - PYTHONUNBUFFERED=1
     command: diff
     volumes:
       - ${MODS_DIRECTORY:-../../mods}:/factorio/mods
