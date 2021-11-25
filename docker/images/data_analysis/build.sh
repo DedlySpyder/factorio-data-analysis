@@ -32,4 +32,9 @@ docker build "$HERE" \
 if [ "$LOCAL" == false ]; then
   echo "Pushing $REPO_USERNAME/$IMAGE_REPO_NAME"
   docker push -a "$REPO_USERNAME/$IMAGE_REPO_NAME"
+
+  mapfile -t images_to_cleanup < <(docker images "$REPO_USERNAME/$IMAGE_REPO_NAME" | grep "$REPO_USERNAME" | grep -Ev 'latest|<none>' | awk '{print $1":"$2}')
+  for image in "${images_to_cleanup[@]}"; do
+    docker rmi "$image"
+  done
 fi
