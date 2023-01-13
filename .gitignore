@@ -2,9 +2,9 @@
 __pycache__/
 
 # Data Analysis
-tools/data_analysis/data
-tools/data_analysis/docker/*/.env
+runtime/data
+runtime/docker/*/.env
 
-tools/data_analysis/mods/
-!tools/data_analysis/mods/Factorio_Incremental_Raw_Data
-!tools/data_analysis/mods/Factorio_Raw_Data
+runtime/mods/
+!runtime/mods/Factorio_Incremental_Raw_Data
+!runtime/mods/Factorio_Raw_Data
