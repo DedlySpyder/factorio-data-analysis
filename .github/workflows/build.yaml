@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - id: factorioVersion
         name: Parse Factorio version from Headless Docker Version
-        run: echo "version=$(cut -d "_" -f 1)" >> $GITHUB_OUTPUT
+        run: echo "version=$(echo "${{ inputs.headless_docker_version }}" | cut -d "-" -f 1)" >> $GITHUB_OUTPUT
       - id: scriptVersion
         name: Parse Factorio version from Headless Docker Version
         run: echo "version=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
