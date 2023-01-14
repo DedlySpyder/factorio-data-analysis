@@ -25,7 +25,11 @@ jobs:
       - id: scriptVersion
         name: Parse Factorio version from Headless Docker Version
         run: echo "version=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
+      - id: validateTag
+        name: Check if this build has already been completed
+        run: ./.github/workflows/scripts/validate_new_version.sh "${{ steps.versionParse.outputs.version }}-${{ steps.scriptVersion.outputs.version }}" # Outputs `exists` as true/false
       - name: Build and push image
+        if: steps.validateTag.outputs.exists == 'false'
         uses: docker/build-push-action@v3
         with:
           context: ./docker
