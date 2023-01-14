@@ -34,7 +34,7 @@ jobs:
         with:
           context: ./docker
           build-args: HEADLESS_VERSION=${{ inputs.headless_docker_version }}
-#          push: true
+          push: true
           tags: |
             dedlyspyder/factorio-data-analysis:${{ steps.factorioVersion.outputs.version }}-${{ steps.scriptVersion.outputs.version }}
             dedlyspyder/factorio-data-analysis:latest
