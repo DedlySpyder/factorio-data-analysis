@@ -1,4 +1,5 @@
-FROM dedlyspyder/factorio-headless-ubuntu:experimental
+ARG HEADLESS_VERSION
+FROM dedlyspyder/factorio-headless-ubuntu:${HEADLESS_VERSION}
 
 RUN apt-get update \
     && apt-get install -y \
